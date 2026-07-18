@@ -1,0 +1,1 @@
+import {issues} from "@/content/issues";export default function sitemap(){const base=process.env.NEXT_PUBLIC_SITE_URL||"https://example.com";return [{url:base,lastModified:new Date(),changeFrequency:"daily",priority:1},...issues.map(x=>({url:`${base}/daily/${x.slug}`,lastModified:new Date(x.isoDate),changeFrequency:"never",priority:.8}))]}
