@@ -44,7 +44,10 @@ jobs:
           effort: high
           sandbox: workspace-write
           safety-strategy: drop-sudo
-          codex-args: '["--search", "--ephemeral"]'
+          # codex-action forwards these arguments to `codex exec`. Live search
+          # is therefore enabled through a config override rather than the
+          # top-level-only `--search` flag.
+          codex-args: '["-c", "web_search=\"live\"", "--ephemeral"]'
           output-file: ${{ runner.temp }}/codex-output.md
 
       - name: Upload Codex report
