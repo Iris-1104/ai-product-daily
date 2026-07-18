@@ -1,1 +1,49 @@
-export default function ProductCard({product,index}){return <article className="product"><div className="productMeta"><span className="tag">{product.tag}</span><span className="number">{String(index).padStart(2,"0")}</span></div><h2>{product.title}</h2><p className="productName">{product.name}</p><img src={product.image} alt={`${product.name} 产品视觉`} loading="lazy"/><div className="twoGrid"><div><p className="caps">这是什么</p><p>{product.summary}</p></div><div><p className="caps">适合谁</p><div className="audience">{product.audience.map(x=><span key={x}>{x}</span>)}</div></div></div><div className="insight"><p className="caps">产品启发</p><p>{product.insight}</p></div>{product.sourceUrl?<a className="source" href={product.sourceUrl} target="_blank" rel="noreferrer">查看原文 ↗</a>:null}</article>}
+import MediaGallery from "@/components/MediaGallery";
+import SourceLinks from "@/components/SourceLinks";
+
+export default function ProductCard({ product, index }) {
+  const number = String(index).padStart(2, "0");
+  const dimensions = [
+    { label: "杀手锏功能", value: product.killerFeature },
+    { label: "关键产品体验", value: product.experience },
+    { label: "增长策略", value: product.growth },
+    { label: "商业模式", value: product.businessModel }
+  ];
+
+  const renderDimension = (item) => (
+    <section key={item.label}>
+      <h4>{item.label}</h4>
+      <p>{item.value}</p>
+    </section>
+  );
+
+  return (
+    <article className="productReport" id={`product-${product.slug}`}>
+      <header className="reportHeader">
+        <div className="reportEyebrow">
+          <span>{number}</span>
+          <span>{product.tag}</span>
+        </div>
+        <h2>{product.name}</h2>
+        <h3>{product.tagline}</h3>
+        <div className="quickContext">
+          <p>{product.positioning}</p>
+          <p>{product.audience.join(" · ")}</p>
+        </div>
+      </header>
+
+      <MediaGallery media={product} alt={`${product.name} 产品视觉`} className="reportMedia" />
+
+      <div className="dimensionGrid">
+        {dimensions.map(renderDimension)}
+      </div>
+
+      <section className="founderInsight">
+        <p className="caps">对 AI 创业者 / AI 产品设计的启发</p>
+        <p>{product.insight}</p>
+      </section>
+
+      <SourceLinks item={product} />
+    </article>
+  );
+}
