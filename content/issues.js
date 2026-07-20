@@ -416,6 +416,205 @@ const industryEvents20260719 = [
   }
 ];
 
+const products20260720 = [
+  {
+    slug: "basert",
+    name: "BaseRT",
+    tag: "Local LLM Runtime",
+    tagline: "为 Apple Silicon 提供一条命令启动、无需 API Key 的高性能本地模型运行时",
+    image: "https://www.basecompute.co/preview.png",
+    positioning: "定位为 Apple Silicon 设备上的本地 LLM 推理运行时。壁垒来自面向 Metal 与芯片内存架构的软硬件协同优化、覆盖主流开源模型的兼容层，以及可复现的真机基准。",
+    audience: ["Mac 开发者", "本地 AI 应用团队", "隐私敏感型企业"],
+    killerFeature: "一条命令即可在 Mac 上加载并服务模型，官方基准称部分预填充任务最高可比 llama.cpp 快 6.4 倍、比 MLX 快 3.9 倍。",
+    experience: "用户安装运行时后选择模型并启动本地端点，编码 Agent 或应用可直接连接；请求不需要云端 API Key，数据也无需离开设备。",
+    growth: "用免费运行时和公开基准吸引 Mac 开发者，通过文档、研究报告、模型兼容清单与编码 Agent 场景形成技术口碑。",
+    businessModel: "开发者运行时当前免费，企业通过私有部署、性能优化与技术支持等定制合作进行商业化。",
+    insight: "端侧模型的竞争不只看参数规模；针对硬件的内核优化、可复现基准和现成工具兼容，才会直接转化为等待时间与使用成本优势。",
+    sourceUrl: "https://www.basecompute.co/getbasert",
+    sourceLabel: "BaseCompute 官方产品页",
+    sources: [
+      { label: "BaseRT 产品页", url: "https://www.basecompute.co/getbasert" },
+      { label: "官方文档", url: "https://docs.basecompute.co/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/basert" }
+    ]
+  },
+  {
+    slug: "rewisp",
+    name: "Rewisp",
+    tag: "Ambient Memory",
+    tagline: "把 Mac 屏幕中的文字变化沉淀成可搜索、可追问且完全本地的个人工作记忆",
+    image: "https://yashmitb.github.io/Rewisp/assets/shots/today.png",
+    positioning: "定位为 macOS 上的开源环境记忆层。壁垒来自不落盘截图的本地 OCR、文本版本追踪、语义检索，以及通过 MCP 向多种编码和对话工具开放记忆。",
+    audience: ["知识工作者", "研究人员", "使用 Claude、Cursor 或 VS Code 的开发者"],
+    killerFeature: "持续记录屏幕文字而非图片，并能回答某个页面发生了什么变化、用户承诺过什么，以及相关上下文在哪里出现。",
+    experience: "用户通过快捷面板搜索或追问一天的工作，晚上收到摘要；原始截图不写入磁盘，SQLite 记忆、敏感应用排除、Touch ID Vault 与删除控制都留在本机。",
+    growth: "以 MIT 开源、免费下载和 GitHub 协作降低信任门槛，再借 MCP 接入 Claude、Cursor、VS Code 等现有工作流扩大使用面。",
+    businessModel: "当前为免费开源的独立项目，主要依靠社区贡献和资助支持，尚未公布付费订阅。",
+    insight: "环境记忆产品的核心不是捕获越多越好，而是在回忆价值、存储最小化、敏感应用排除和用户可删除性之间建立可信默认值。",
+    sourceUrl: "https://yashmitb.github.io/Rewisp/",
+    sourceLabel: "Rewisp 官方网站",
+    sources: [
+      { label: "Rewisp 官网", url: "https://yashmitb.github.io/Rewisp/" },
+      { label: "Rewisp GitHub", url: "https://github.com/yashmitb/Rewisp" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/rewisp-an-ambient-memory-for-your-mac" }
+    ]
+  },
+  {
+    slug: "double-career-agent",
+    name: "Double",
+    tag: "Career Agent",
+    tagline: "用持续理解个人经历的 AI Career Agent 完成岗位判断、材料定制和人脉引荐",
+    image: "https://trydouble.ai/assets/og-banner.jpg",
+    positioning: "定位为通过消息界面工作的个人求职 Agent。壁垒来自薪酬与招聘数据、对个人经历的长期记忆、职位匹配排序，以及从建议到申请执行的闭环。",
+    audience: ["主动求职者", "职业转型者", "需要提高申请效率的专业人士"],
+    killerFeature: "结合个人背景与实时岗位数据排序机会，生成定制申请材料并寻找暖介绍，在真正发送前保留用户确认。",
+    experience: "用户像与职业顾问聊天一样补充目标和经历，Double 持续更新上下文，再给出岗位解释、材料草稿和下一步动作，关键外发操作由用户批准。",
+    growth: "用每月免费 Credits 降低首次体验门槛，通过可分享的职业建议、求职结果和人脉引荐形成口碑，再以更高任务额度推动升级。",
+    businessModel: "采用 Credits 订阅：免费档每月 75 Credits，Pro 每月 15 美元含 700 Credits，Max 每月 45 美元含 2500 Credits。",
+    insight: "高风险个人 Agent 应把推荐依据与最终授权做成体验主线；越接近代用户申请和联系他人，越需要可检查的中间结果。",
+    sourceUrl: "https://trydouble.ai/",
+    sourceLabel: "Double 官方网站",
+    sources: [
+      { label: "Double 官网", url: "https://trydouble.ai/" },
+      { label: "官方定价", url: "https://trydouble.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/double-6" }
+    ]
+  },
+  {
+    slug: "citedspy",
+    name: "CitedSpy",
+    tag: "AI Search Analytics",
+    tagline: "持续追踪品牌在主流 AI 搜索答案中的出现、引用、情绪和竞争份额",
+    image: "https://www.citedspy.com/og/default.png",
+    positioning: "定位为 AI 搜索可见度监测平台。壁垒来自跨模型、跨提示变体的持续采样，引用和情绪归因，以及把单次回答转成可比较的时间序列。",
+    audience: ["品牌营销团队", "SEO 与内容团队", "代理商和公关团队"],
+    killerFeature: "同时监测 ChatGPT、Perplexity、Gemini、Copilot、Claude 与 Grok，识别品牌缺席、竞品引用来源和情绪变化。",
+    experience: "用户配置品牌、竞品与关键问题后获得自动周报或日报，可查看各模型的可见度分布、引用缺口和需要优先补强的内容。",
+    growth: "用 14 天试用和可直接汇报的自动报告获客，借代理商多品牌场景与可见度基准扩大账户，再通过更新频率和席位升级。",
+    businessModel: "按品牌数量、追踪问题、更新频率和团队席位分层订阅，当前从个人档到 Growth、Pro 与企业方案逐级销售。",
+    insight: "生成式搜索优化不能依赖一次手动提问；只有固定问题集、模型与提示变体的重复采样，才能区分稳定分布和偶然回答。",
+    sourceUrl: "https://www.citedspy.com/",
+    sourceLabel: "CitedSpy 官方网站",
+    sources: [
+      { label: "CitedSpy 官网", url: "https://www.citedspy.com/" },
+      { label: "官方定价", url: "https://www.citedspy.com/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/citedspy" }
+    ]
+  },
+  {
+    slug: "panguard-ai",
+    name: "Panguard.AI",
+    tag: "Agent Security",
+    tagline: "用开源技能审计与运行时防护拦截 AI Agent 的恶意提示、工具调用和供应链风险",
+    image: "https://panguard.ai/og-image.png",
+    positioning: "定位为 AI Agent 的开源安全运行时。壁垒来自技能安装前扫描、提示和工具调用的实时策略层、异常检测，以及可共享的攻击战术规则网络。",
+    audience: ["Agent 开发者", "企业安全团队", "部署 Claude、Cursor、Codex CLI 等工具的组织"],
+    killerFeature: "在 Skill 安装前做静态风险扫描，并在运行时检查输入、工具和输出，触发阻断、告警或响应 Playbook。",
+    experience: "开发者通过开源组件接入常见 Agent 平台，先审计第三方 Skill，再在真实运行中获得分层防护与事件记录；策略既可本地使用也可纳入团队治理。",
+    growth: "以 MIT 开源、免费社区版和公开规则库扩大开发者覆盖，通过支持更多 Agent 框架和攻击情报协作形成网络效应。",
+    businessModel: "Community 版免费；Team 当前标价每月 500 美元并采用候补名单，Business 为定制方案，Enterprise 从每年 15 万美元起。",
+    insight: "Agent 安全必须同时覆盖安装前供应链和运行中动作；只扫描提示或只做模型评测，都无法保护会调用真实工具的生产系统。",
+    sourceUrl: "https://panguard.ai/",
+    sourceLabel: "Panguard.AI 官方网站",
+    sources: [
+      { label: "Panguard.AI 官网", url: "https://panguard.ai/" },
+      { label: "官方文档", url: "https://docs.panguard.ai/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/panguard-ai" }
+    ]
+  }
+];
+
+const industryEvents20260720 = [
+  {
+    slug: "emdoor-ailyn-ai-hub",
+    name: "Emdoor · Ailyn AI Hub",
+    summary: "Ailyn AI Hub 在 WAIC 2026 首发，以统一智能层调度 PC、NAS、算力盒与 IoT 设备上的模型和数据",
+    image: "https://mma.prnasia.com/media2/3006622/image1.jpg?p=medium600",
+    impact: "硬件厂商正在把竞争从单台 AI PC 扩展到家庭与企业的多设备编排层，存储、算力、模型和个人数据的跨端协同可能形成新的系统入口。",
+    insight: "多设备 AI 产品应先定义身份、权限、数据位置和离线降级，再追求无缝调度；否则统一入口会同时放大隐私与故障半径。",
+    sourceUrl: "https://en.prnasia.com/releases/global/emdoor-launches-ailyn-ai-hub-at-waic-2026-unifying-intelligence-across-every-device-541142.shtml",
+    sourceLabel: "Emdoor 官方新闻稿",
+    sources: [
+      { label: "Emdoor 新闻稿", url: "https://en.prnasia.com/releases/global/emdoor-launches-ailyn-ai-hub-at-waic-2026-unifying-intelligence-across-every-device-541142.shtml" },
+      { label: "Emdoor Digital", url: "https://www.emdoordigital.com/" }
+    ]
+  },
+  {
+    slug: "black-lake-industrial-agents",
+    name: "Black Lake · Industrial Agents",
+    summary: "黑湖科技在 WAIC 2026 展示面向订单、报价、排产和交付决策的工业 Agent，并入选 SAIL Top30",
+    image: "https://www.blacklake.cn/home/industrial-process-stage-outsourcing-supplier-top-raster.png?v=20260702-supplier-top",
+    impact: "制造业 Agent 正从知识问答进入受产能、物料、交期和工艺约束的真实决策流程，行业数据与系统连接的重要性开始高于通用对话能力。",
+    insight: "垂直 Agent 应用真实约束验证决策，并把公司披露的准确率、客户数与独立效果评估分开呈现，避免把演示指标直接当成生产价值。",
+    sourceUrl: "https://www.prnewswire.com/apac/news-releases/black-lake-technologies-shortlisted-as-sail-award-top30-finalist-and-selected-as-global-industrial-ai-flagship-case-showcasing-latest-industrial-agent-at-waic-2026-302828984.html",
+    sourceLabel: "Black Lake 官方新闻稿",
+    sources: [
+      { label: "官方新闻稿", url: "https://www.prnewswire.com/apac/news-releases/black-lake-technologies-shortlisted-as-sail-award-top30-finalist-and-selected-as-global-industrial-ai-flagship-case-showcasing-latest-industrial-agent-at-waic-2026-302828984.html" },
+      { label: "黑湖科技官网", url: "https://www.blacklake.cn/" }
+    ]
+  },
+  {
+    slug: "iflytek-guidex-waic",
+    name: "iFLYTEK · GuideX",
+    summary: "GuideX 在 WAIC 2026 强调从回答问题升级为完成公共服务任务，以多模态交互串起完整服务流程",
+    image: "https://www.iflytek.com/en/Public/Uploads/uploadfile/images/20251125/jingguoqian.png",
+    impact: "数字人产品正在摆脱展示型问答，向机场、政务大厅和零售等场景的任务终端演进，语音、视觉、业务系统和异常转人工必须一起工作。",
+    insight: "公共服务 Agent 的核心指标应是任务完成率、排队时间和人工接管质量，而不是对话轮数；多模态交互也必须有无障碍和噪声环境测试。",
+    sourceUrl: "https://www.iflytek.com/en/businessproducts/digitalhuman/guidex.html",
+    sourceLabel: "iFLYTEK GuideX 官方产品页",
+    sources: [
+      { label: "GuideX 产品页", url: "https://www.iflytek.com/en/businessproducts/digitalhuman/guidex.html" },
+      { label: "iFLYTEK 官方案例", url: "https://www.iflytek.com/en/news-events/news/337.html" },
+      { label: "GlobeNewswire", url: "https://www.globenewswire.com/news-release/2026/04/10/3271505/0/en/guidex-iflytek-brings-virtual-human-services-into-real-world-scenarios-at-gitex-asia-2026.html" }
+    ]
+  },
+  {
+    slug: "doordash-cli",
+    name: "DoorDash · dd-cli",
+    summary: "DoorDash 发布 dd-cli 限量测试，让开发者和 AI Agent 从终端搜索商家、组建购物车并预览结账",
+    image: "https://opengraph.githubassets.com/1/doordash-oss/doordash-cli",
+    impact: "消费平台开始主动提供机器可读入口，Agent 商务的竞争将从浏览器自动化转向稳定接口、身份授权、支付确认和售后责任。",
+    insight: "面向 Agent 的交易接口应把搜索、价格、库存、确认和支付拆成明确状态，并在不可逆操作前强制展示真实总价与用户授权。",
+    sourceUrl: "https://github.com/doordash-oss/doordash-cli",
+    sourceLabel: "DoorDash 官方 GitHub",
+    sources: [
+      { label: "DoorDash 官方 GitHub", url: "https://github.com/doordash-oss/doordash-cli" },
+      { label: "The New Stack", url: "https://thenewstack.io/doordash-cli-agents-order/" },
+      { label: "Reddit 讨论", url: "https://www.reddit.com/r/linuxmemes/comments/1uymacn/door_dash_cli/" }
+    ]
+  },
+  {
+    slug: "roblox-build-mobile-creation",
+    name: "Roblox · Build",
+    summary: "Roblox 预告移动端 Build 公测，让用户用文字提示生成基础可玩体验，并与 Studio 共用项目后端",
+    image: "https://cms-media.roblox.com/assets/fb3c1fc8-6d2b-4463-b3c9-d628a3420bdc.webp",
+    impact: "生成式创作入口被直接放进内容消费平台后，创作供给、分发和游玩反馈可以形成更短闭环，也会放大质量、安全和同质化压力。",
+    insight: "平台型 AI 创作工具不能只优化生成成功率，还要把试玩、分析、实验与升级到专业编辑器的路径连起来，才能把一次提示变成可持续作品。",
+    sourceUrl: "https://about.roblox.com/newsroom/2026/07/build-without-limits-on-roblox",
+    sourceLabel: "Roblox 官方发布",
+    sources: [
+      { label: "Roblox 官方发布", url: "https://about.roblox.com/newsroom/2026/07/build-without-limits-on-roblox" },
+      { label: "Roblox 投资者关系", url: "https://ir.roblox.com/news/news-details/2026/Roblox-Introduces-Build-A-New-Way-to-Create-on-the-Platform/default.aspx" },
+      { label: "MacRumors", url: "https://www.macrumors.com/2026/07/16/roblox-ai-game-creation/" }
+    ]
+  }
+];
+
+const trends20260720 = [
+  {
+    title: "本地推理与本地记忆开始组合成个人 AI 底座",
+    text: "BaseRT 把模型推理压到 Apple Silicon，Rewisp 把工作记忆留在本机，Panguard 也强调本地可控的安全层。端侧产品正从单一离线功能，走向推理、记忆和治理的完整栈。"
+  },
+  {
+    title: "机器可读接口正在取代脆弱的界面自动化",
+    text: "DoorDash dd-cli、Rewisp MCP 与 Panguard 的 Agent 平台接入都把动作和数据做成结构化合同。下一阶段的 Agent 分发入口，会更多围绕 CLI、MCP、Skill 和稳定 API 展开。"
+  },
+  {
+    title: "垂直 Agent 从给建议转向受约束地完成任务",
+    text: "Double、Black Lake Industrial Agents、GuideX 与 Roblox Build 分别进入求职、制造、公共服务和游戏创作闭环。壁垒正在转向领域数据、系统连接、人工审批和可验收结果。"
+  }
+];
+
 const trends20260719 = [
   {
     title: "Agent 从助手升级为可验收的垂直生产线",
@@ -455,6 +654,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-20",
+    isoDate: "2026-07-20",
+    dateLabel: "2026年7月20日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在从云端对话框，迁移到本地底座、机器接口与垂直执行闭环",
+    products: products20260720,
+    industryEvents: industryEvents20260720,
+    trends: trends20260720
+  },
   {
     slug: "2026-07-19",
     isoDate: "2026-07-19",
