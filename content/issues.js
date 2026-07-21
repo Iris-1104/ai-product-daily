@@ -600,6 +600,207 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260721 = [
+  {
+    slug: "fuzzy-ai",
+    name: "Fuzzy AI",
+    tag: "AI Sales",
+    tagline: "先用内容和互动把陌生潜客变熟，再以你的语气发起 LinkedIn 与邮件触达",
+    image: "https://getfuzzy.ai/images/fuzzy-hero.jpeg",
+    videoEmbedUrl: "https://www.youtube.com/embed/PNs_VTpEbPo?rel=0",
+    positioning: "定位为关系优先的 AI 销售平台。壁垒来自把潜客研究、LinkedIn 互动、个人内容、外联序列、回复和团队协作串在一个共享记忆中，而不是单纯扩大冷邮件量。",
+    audience: ["B2B 创始人", "销售与增长团队", "代理商和招聘团队"],
+    killerFeature: "先识别正在关注相关市场的潜客，用 Prospect-Only Feed 和品牌语气记忆持续建立熟悉度，再按用户设定的自动化程度启动个性化触达。",
+    experience: "用户描述目标客户后，Agent 建名单、补全研究并建议评论或内容；团队可看到谁正在维护某段关系，重要消息支持逐条审核，避免重复触达和黑盒发送。",
+    growth: "用免费试用、Product Hunt 首发、销售方法论内容与 Slack 社区获客，再以团队共享上下文、重复触达防护和完整工作流提高席位扩张。",
+    businessModel: "采用 B2B SaaS 订阅与免费试用，按销售使用场景、自动化能力和团队协作需求分层，并提供会议演示与企业销售。",
+    insight: "销售 Agent 的价值不应只用发送量衡量；把关系升温信号、品牌语气、团队协同和人工审核放进同一状态机，才可能提升回复质量而不透支信任。",
+    sourceUrl: "https://getfuzzy.ai/",
+    sourceLabel: "Fuzzy AI 官方网站",
+    sources: [
+      { label: "Fuzzy AI 官网", url: "https://getfuzzy.ai/" },
+      { label: "官方定价", url: "https://getfuzzy.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/fuzzy-ai-2" }
+    ]
+  },
+  {
+    slug: "nautis",
+    name: "Nautis",
+    tag: "Startup OS",
+    tagline: "用一个共享业务记忆和 AI Chief of Staff 统筹融资、财务、CRM 与日常运营",
+    image: "https://getnautis.com/platform-og.jpg",
+    positioning: "定位为创始人的 AI-native Startup Operating System。壁垒来自 30 多个业务模块共享同一公司上下文，以及跨融资、财务、销售和运营的可审计动作链。",
+    audience: ["早期创业者", "小型创业团队", "自由职业者与代理商"],
+    killerFeature: "在一次对话中读取真实公司数据，连续完成材料审阅、投资人匹配、邮件草拟、数据室搭建和 CRM 更新，并在外发前等待批准。",
+    experience: "用户从免费账户导入业务资料后，每天获得风险和优先级简报；每次 AI 调用都记录 Credits 与美元成本，对外邮件、支付和编辑进入明确审批点。",
+    growth: "以免费起步、五分钟设置和创始人模板降低迁移门槛，通过投资人目录、计算器与生成器获取搜索流量，再以跨模块数据网络提高留存。",
+    businessModel: "Freemium 加 AI Credits 计量，免费入口用于建立完整公司上下文，付费价值来自更高用量、更多业务模块与团队协作。",
+    insight: "全栈业务 Agent 的护城河不是模块数量，而是数据能否跨模块复用、动作是否可追溯，以及用户能否在不可逆步骤前轻松接管。",
+    sourceUrl: "https://getnautis.com/",
+    sourceLabel: "Nautis 官方网站",
+    sources: [
+      { label: "Nautis 官网", url: "https://getnautis.com/" },
+      { label: "官方定价", url: "https://getnautis.com/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/nautis" }
+    ]
+  },
+  {
+    slug: "loova-ads-studio",
+    name: "Loova Ads Studio",
+    tag: "AI Ad Creative",
+    tagline: "在一个工作台生成 UGC、商品广告、数字人视频和静态素材，并围绕转化批量迭代",
+    image: "https://static.loova.ai/upload/www/Your_All_In_One_Creative_Playground_2_926b4086bf.png",
+    positioning: "定位为品牌与代理商的全栈 AI 广告工作室。壁垒来自聚合多种图像和视频模型、复用商品与角色参考，以及把生成任务封装成面向广告转化的 Agent 工作流。",
+    audience: ["电商品牌", "效果广告团队", "创意代理商与内容创作者"],
+    killerFeature: "从商品 URL 或参考素材出发，生成 UGC、商品片、Avatar 视频和静态广告，并用 Viral Ad Clone 复刻已验证的创意结构。",
+    experience: "用户在同一界面选择广告类型、商品和参考角色，Agent 自动组合脚本、画面与视频模型；生成后可继续用提示编辑，减少在多模型网站之间搬运素材。",
+    growth: "以免费注册、低单条素材成本和热门模型聚合吸引创作者，通过模板、爆款复刻和 Creative Partner Program 获取品牌与代理商分发。",
+    businessModel: "Freemium 加 Credits 订阅，并用部分模型的 Unlimited 套餐提升高频创作者付费；官方首发称单条广告生成成本可低于 2 美元。",
+    insight: "生成广告工具要从展示模型能力转向验证商业假设；把商品上下文、创意结构、版本管理和效果反馈连起来，比简单增加模型数量更重要。",
+    sourceUrl: "https://loova.ai/",
+    sourceLabel: "Loova 官方网站",
+    sources: [
+      { label: "Loova 官网", url: "https://loova.ai/" },
+      { label: "官方定价", url: "https://loova.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/loova-agents" }
+    ]
+  },
+  {
+    slug: "replay-qa",
+    name: "Replay QA",
+    tag: "Agentic Testing",
+    tagline: "持续探索 Web 应用、记录可重放会话，并把根因与修复上下文直接交给编码 Agent",
+    image: "https://www.replay.io/replayQA_og-image.png",
+    positioning: "定位为面向 AI 编码时代的自动化 QA Agent。壁垒来自可确定重放的浏览器记录、运行时上下文捕获，以及从发现缺陷到向编码 Agent 提供根因的闭环。",
+    audience: ["Web 开发团队", "使用编码 Agent 的创业公司", "QA 与工程效率团队"],
+    killerFeature: "连接 GitHub 仓库做持续测试，或输入 URL 做一次性检查；Agent 自动探索应用并为每个真实缺陷保留可重放证据。",
+    experience: "用户无需先编写测试脚本，提交仓库或网址后即可查看 Agent 的操作轨迹、失败时刻和根因；修复上下文可直接交给 Cursor、Codex 等编码工具。",
+    growth: "以免费产品和单 URL 即时检查降低试用成本，借 GitHub 持续集成进入开发流程，再用可分享的 Replay 让缺陷证据在团队内传播。",
+    businessModel: "Replay QA 首发阶段免费，通过底层 Replay 调试与团队协作能力形成开发者入口，后续可围绕持续运行、团队治理和企业支持扩展付费。",
+    insight: "AI 写代码越快，验证瓶颈越明显；测试 Agent 需要输出可复现证据和根因，而不只是另一份可能需要人工复核的缺陷描述。",
+    sourceUrl: "https://qa.replay.io/",
+    sourceLabel: "Replay QA 官方产品",
+    sources: [
+      { label: "Replay QA", url: "https://qa.replay.io/" },
+      { label: "Replay 官网", url: "https://www.replay.io/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/replayio" }
+    ]
+  },
+  {
+    slug: "skippr-ai",
+    name: "Skippr AI",
+    tag: "In-Product Agent",
+    tagline: "把能看屏幕、实时对话并操作软件的 AI 员工直接嵌入产品，为每位用户完成上手和排障",
+    image: "https://ph-files.imgix.net/690b93bb-d720-44bd-8139-c6bb55b5b385.jpeg",
+    positioning: "定位为产品内实时 AI 员工。壁垒来自会话级议程与记忆、语音和屏幕感知、内置浏览器自动化，以及只需两行代码的嵌入式分发。",
+    audience: ["SaaS 产品团队", "客户成功团队", "需要交互式上手的复杂软件"],
+    killerFeature: "Agent 能看到用户当前界面，用十种语言实时说话并直接操作软件，从讲解升级为替用户完成配置、激活和排障步骤。",
+    experience: "团队上传知识、配置品牌后生成嵌入组件或会议链接；用户在完整会话中保持共同议程，Agent 一边解释一边演示和操作，减少帮助中心与人工接力。",
+    growth: "用两行代码、无卡注册和 200 免费 Credits 获取产品团队，通过会议链接先验证场景，再以产品内嵌入扩大到每个终端用户。",
+    businessModel: "Credits 按量模式叠加企业销售，免费额度用于自助试用；更深的安全、集成、容量和服务能力面向企业客户。",
+    insight: "产品内 Agent 的关键指标应是激活率和问题解决率，而非对话数；只有具备可观察界面、可执行动作和明确回退，才真正像员工而不是悬浮客服。",
+    sourceUrl: "https://skippr.ai/",
+    sourceLabel: "Skippr 官方网站",
+    sources: [
+      { label: "Skippr 官网", url: "https://skippr.ai/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/skippr-3" }
+    ]
+  }
+];
+
+const industryEvents20260721 = [
+  {
+    slug: "mcp-2026-07-28-rc",
+    name: "Model Context Protocol · 2026-07-28 RC",
+    summary: "MCP 发布新版规范候选，移除协议级会话和初始化握手，让远程 Server 更容易无状态扩缩容",
+    image: "https://blog.modelcontextprotocol.io/og-image.png",
+    impact: "MCP 正从开发者连接协议走向大规模生产基础设施；无状态请求、可路由 Header、缓存 TTL 与 OpenTelemetry 语义会降低负载均衡和跨团队运维成本。",
+    insight: "协议升级包含破坏性变化，产品团队应在正式版前建立版本协商、兼容测试和回滚路径，并把用户确认与长任务状态从隐式会话迁到明确数据模型。",
+    sourceUrl: "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+    sourceLabel: "MCP 官方博客",
+    sources: [
+      { label: "MCP 官方 RC", url: "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" },
+      { label: "MCP 官方草案", url: "https://modelcontextprotocol.io/specification/draft" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/" }
+    ]
+  },
+  {
+    slug: "natural-series-a",
+    name: "Natural · Agentic Payments",
+    summary: "Natural 完成 3000 万美元 Series A，要把账户、支付、卡、结算和可观测性做成 Agent 原生金融底座",
+    image: "https://www.natural.com/assets/images/blog/natural-series-a/natural-series-a-hero.jpg",
+    impact: "Agent 商务的竞争开始从代用户下单延伸到持有资金、身份授权、争议处理和跨轨结算；支付基础设施需要同时支持机器速度与人类责任边界。",
+    insight: "支付 Agent 应把身份、额度、审批、审计和异常回滚设计为一等能力；越追求自动化交易量，越需要每笔动作都可解释、可冻结和可追索。",
+    sourceUrl: "https://www.natural.com/blog/natural-series-a",
+    sourceLabel: "Natural 官方公告",
+    sources: [
+      { label: "Natural 融资公告", url: "https://www.natural.com/blog/natural-series-a" },
+      { label: "Natural 产品页", url: "https://www.natural.com/" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/" }
+    ]
+  },
+  {
+    slug: "adobe-project-indigo-ai-playground",
+    name: "Adobe · Project Indigo AI Playground",
+    summary: "Project Indigo 1.1 小范围测试拍摄现场的 AI 批评、重拍建议、对象编辑和风格化",
+    image: "https://research.adobe.com/articles/playground/playground_files/playground-screenshot-lantern2.png",
+    impact: "生成式编辑正在从独立创作工具进入相机快门旁边，把拍摄、判断、重拍和编辑压缩成一个即时闭环，也让真实感与内容来源标记更重要。",
+    insight: "把 AI 放进专业流程时，应优先提供针对任务的按钮和建议，再保留自由提示；同时明确实验覆盖率、图像上传、训练用途与身份漂移等限制。",
+    sourceUrl: "https://research.adobe.com/articles/playground/playground.html",
+    sourceLabel: "Adobe Research 官方发布",
+    sources: [
+      { label: "Adobe Research", url: "https://research.adobe.com/articles/playground/playground.html" },
+      { label: "Project Indigo", url: "https://research.adobe.com/articles/indigo/indigo.html" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai/" }
+    ]
+  },
+  {
+    slug: "youtube-ai-content-policy",
+    name: "YouTube · AI Content Policy",
+    summary: "YouTube 细化不可变现的低质 AI 内容类型，并继续要求对逼真生成或重大修改内容进行披露",
+    image: "https://www.youtube.com/img/desktop/yt_1200.png",
+    impact: "内容平台正在把治理重心从是否使用 AI 转向原创价值、批量模板、误导风险和观看体验；低成本生成不再自动等于可分发或可变现。",
+    insight: "AI 内容产品应从生成阶段保存来源与编辑记录，帮助创作者披露并避免模板化重复；增长模型也要围绕长期留存，而不是短期批量供给。",
+    sourceUrl: "https://support.google.com/youtube/answer/1311392?hl=en",
+    sourceLabel: "YouTube 官方变现政策",
+    sources: [
+      { label: "YouTube 变现政策", url: "https://support.google.com/youtube/answer/1311392?hl=en" },
+      { label: "YouTube AI 披露规则", url: "https://support.google.com/youtube/answer/14328491?hl=en" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/" }
+    ]
+  },
+  {
+    slug: "hugging-face-security-incident",
+    name: "Hugging Face · Security Incident",
+    summary: "Hugging Face 披露自主 Agent 攻击利用恶意数据集取得代码执行并访问内部数据与服务凭证",
+    image: "https://huggingface.co/blog/assets/security-incident-july-2026/thumbnail.png",
+    impact: "模型与数据平台的攻击面已扩展到可执行数据处理流水线，攻击者也能用 Agent 规模化侦察和横向移动；AI 供应链安全必须覆盖数据、凭证和运行环境。",
+    insight: "接收外部数据集的产品应默认隔离解析与模板执行、最小化工作节点凭证，并为密钥轮换和客户影响通知准备可演练的响应流程。",
+    sourceUrl: "https://huggingface.co/blog/security-incident-july-2026",
+    sourceLabel: "Hugging Face 官方披露",
+    sources: [
+      { label: "Hugging Face 官方披露", url: "https://huggingface.co/blog/security-incident-july-2026" },
+      { label: "官方安全文档", url: "https://huggingface.co/docs/hub/security" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/" }
+    ]
+  }
+];
+
+const trends20260721 = [
+  {
+    title: "垂直 Agent 正把分散工具压缩成共享业务上下文",
+    text: "Fuzzy AI、Nautis 与 Skippr AI 都不满足于单点生成，而是把研究、记忆、动作和团队状态集中到一个连续工作流。竞争焦点正在从功能数量转向上下文复用和任务完成率。"
+  },
+  {
+    title: "AI 入口进入任务发生现场并保留人工批准",
+    text: "Replay QA 在缺陷出现的浏览器会话中工作，Project Indigo 在拍摄现场给重拍建议，Nautis 在外发与支付前等待确认。缩短感知到行动的距离，同时保留接管点，成为新的体验范式。"
+  },
+  {
+    title: "Agent 基础设施开始同时补齐协议、支付与安全",
+    text: "MCP 无状态化降低连接运维成本，Natural 构建机器原生支付轨道，Hugging Face 事件则暴露数据流水线和凭证风险。Agent 从演示走向生产后，基础设施必须把速度、审计和责任一起设计。"
+  }
+];
+
 const trends20260720 = [
   {
     title: "本地推理与本地记忆开始组合成个人 AI 底座",
@@ -654,6 +855,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-21",
+    isoDate: "2026-07-21",
+    dateLabel: "2026年7月21日",
+    weekday: "星期二",
+    oneSentence: "AI 产品正在把共享上下文、现场执行与人类批准收进同一个闭环",
+    products: products20260721,
+    industryEvents: industryEvents20260721,
+    trends: trends20260721
+  },
   {
     slug: "2026-07-20",
     isoDate: "2026-07-20",
