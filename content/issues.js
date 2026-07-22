@@ -600,6 +600,194 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260722 = [
+  {
+    slug: "lev8",
+    name: "Lev8",
+    tag: "AI GTM",
+    tagline: "把实时网页搜索、联系人核验、购买信号与多渠道触达交给一组并行 GTM Agent",
+    image: "https://lev8.com/og-image.png",
+    positioning: "定位为 AI-native GTM 平台。壁垒来自 50 多个数据提供方与开放网页的实时信号、跨来源身份核验，以及从发现到外联共享同一证据链，而不是一份静态联系人数据库。",
+    audience: ["B2B 创始人", "销售与 RevOps 团队", "招聘与合作伙伴团队"],
+    killerFeature: "用自然语言描述目标人群后，并行 Agent 搜索、核验、补全并解释为什么现在值得联系，再生成跨邮件和社交渠道的个性化触达。",
+    experience: "用户可从一句复杂条件或 CSV 开始，逐条查看实时来源、身份与可达性分数，在发送前检查建议角度和证据；监控 Agent 会继续跟踪换岗、融资、招聘和技术栈变化。",
+    growth: "以每月 500 Credits 的免费层和 Product Hunt 首发优惠降低试用成本，再用 1,000 多个集成、实时信号监控和多渠道工作流推动团队升级。",
+    businessModel: "Freemium 加 Credits 订阅，Free 为 0 美元／月，Starter、Pro、Scale 分别为 49、199、499 美元／月，并按线索与发送基础设施分层。",
+    insight: "销售 Agent 的差异化不在能写多少封邮件，而在能否把新鲜信号、身份消歧、来源证据和合规发送节奏做成一个可检查的决策链。",
+    sourceUrl: "https://lev8.com/",
+    sourceLabel: "Lev8 官方网站",
+    sources: [
+      { label: "Lev8 官网", url: "https://lev8.com/" },
+      { label: "官方定价", url: "https://lev8.com/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/lev8" }
+    ]
+  },
+  {
+    slug: "cartai",
+    name: "CartAI",
+    tag: "Agentic Commerce",
+    tagline: "用一个 API 或 MCP Server 让 Agent 在真实商家页面完成搜索、支付、下单与订单确认",
+    image: "https://framerusercontent.com/assets/rj32zIyR11EQviOlmHnIYume3aU.png",
+    positioning: "定位为 Agentic Commerce as a Service。壁垒来自跨商家实时商品与结账执行层、标准化订单状态、支付授权轨道，以及无需商家预先集成也能完成原生交易的覆盖面。",
+    audience: ["AI 助手与购物 Agent 团队", "内容与导购平台", "电商开发者"],
+    killerFeature: "提交商品 URL、客户与支付 Session 后，Agent 在商家真实页面完成选品、地址、支付和确认，并通过 Webhook 返回每个状态变化。",
+    experience: "开发者可以选 API、MCP Server 或即将推出的 Hosted Cart；读操作先返回跨商家实时价格和库存，购买前可要求用户确认，支付卡数据不进入开发者后端。",
+    growth: "用开发者文档、测试环境和多种接入形态进入 Agent 工作流，再通过跨 7 万多个品牌的归因与佣金能力吸引导购和内容平台。",
+    businessModel: "生产 API 按交易量、GMV 基点或其他用量指标收费，同时捕获商品与结账的联盟佣金并与发布方分成。",
+    insight: "购物 Agent 的关键基础设施不是推荐卡片，而是把价格变化、用户授权、幂等、支付合规和订单状态做成可编程且可恢复的交易协议。",
+    sourceUrl: "https://www.cartai.ai/",
+    sourceLabel: "CartAI 官方网站",
+    sources: [
+      { label: "CartAI 官网", url: "https://www.cartai.ai/" },
+      { label: "官方结账文档", url: "https://www.cartai.ai/product/checkouts" },
+      { label: "官方服务条款", url: "https://www.cartai.ai/terms" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/cartai" }
+    ]
+  },
+  {
+    slug: "ditto-site",
+    name: "ditto.site",
+    tag: "Web-to-Code",
+    tagline: "把任意公开网页确定性还原为可维护的 Next.js 或 Vite 组件化代码",
+    image: "https://ditto.site/assets/og.png",
+    positioning: "定位为 AI 建站时代的确定性网页捕获到代码编译器。壁垒来自浏览器渲染捕获、设计 Token 与交互状态提取、字节稳定输出和可公开审计的方法，而不是依赖 LLM 猜页面。",
+    audience: ["AI App Builder 团队", "前端工程师", "设计到代码工具开发者"],
+    killerFeature: "输入一个公开 URL，五分钟内获得拆分为 Section 和 Component 的 TypeScript 项目，并保留字体、资源、响应式布局、悬浮状态和可复现动效。",
+    experience: "用户可本地自托管，也能通过 REST API 或 MCP 让 Agent 发起 Clone、查看进度、按需读取文件并下载完整项目；输出默认可直接运行和继续编辑。",
+    growth: "以 MIT 开源、免费托管 API、GitHub 传播和 MCP 接入获取开发者，再把生成结果作为其他 AI 建站产品的新用户起点。",
+    businessModel: "当前官网标示 0 美元并采用 MIT 许可证，支持免费自托管与 Hosted API，尚未公布付费套餐。",
+    insight: "AI 编程产品不必把所有步骤都交给生成模型；对可观测、可验证的任务采用确定性管线，能同时降低成本、漂移与后续维护负担。",
+    sourceUrl: "https://www.ditto.site/",
+    sourceLabel: "ditto.site 官方网站",
+    sources: [
+      { label: "ditto.site 官网", url: "https://www.ditto.site/" },
+      { label: "官方 GitHub", url: "https://github.com/ion-design/ditto.site" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/ditto-site" }
+    ]
+  },
+  {
+    slug: "rerun-build",
+    name: "Rerun",
+    tag: "No-Code Agents",
+    tagline: "用自然语言搭建会持续运行、展示过程并在敏感动作前暂停审批的工作 Agent",
+    image: "https://rerun.build/og-image.png",
+    positioning: "定位为非技术团队的全天候 Agent 运行平台。壁垒来自每个工作区的私有服务器、实时运行与成本可观测性、Agent 间交接和 Slack／App 审批，而不只是一个可视化 Prompt Builder。",
+    audience: ["独立创业者", "中小团队", "代理商与运营团队"],
+    killerFeature: "Agent 可按时间、邮件或业务事件自行唤醒，在退款、付款或对外邮件等敏感步骤暂停，用户批准后从原状态继续执行。",
+    experience: "用户描述任务、连接工具即可在数分钟内上线；仪表盘持续显示每一步、Token、交接和成功率，并允许使用平台模型、自己的 API Key、订阅或本地模型。",
+    growth: "用首轮免费且无需信用卡降低启动门槛，通过无代码模板、团队邀请、专家分销与多模型兼容覆盖创业、地产、电商、代理商和财务运营场景。",
+    businessModel: "SaaS 订阅按 Agent、席位、私有服务器和内含模型用量分层，Solo、Team、Scale 月付分别为 34、74、94 美元，企业版定制。",
+    insight: "面向大众的 Agent 平台首先要消除运行焦虑：把自动触发、过程可见、成本边界和不可逆动作审批默认做进产品，而不是留给用户补安全规则。",
+    sourceUrl: "https://rerun.build/",
+    sourceLabel: "Rerun 官方网站",
+    sources: [
+      { label: "Rerun 官网与定价", url: "https://rerun.build/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/rerun-2" }
+    ]
+  },
+  {
+    slug: "jockey-twelvelabs",
+    name: "Jockey by TwelveLabs",
+    tag: "Video Intelligence",
+    tagline: "让 Agent 跨整套照片与视频资料库按人物、场景、语义和精确时刻检索与推理",
+    image: "https://ph-files.imgix.net/fac6282f-4f0f-4f1d-9a48-508a1d56db4e.jpeg",
+    positioning: "定位为视频理解的 Agent Layer。壁垒来自 Marengo 的跨模态检索、Pegasus 的视频描述、整库级推理与帧级时间戳，以及多年沉淀的视频原生模型和 API。",
+    audience: ["内容创作者与剪辑师", "品牌广告团队", "媒体应用开发者"],
+    killerFeature: "在一个 Knowledge Store 中追踪人物或主题、解释匹配原因、抽取结构化数据并把相关片段组合成可编辑 Highlight Reel。",
+    experience: "用户连接照片和视频后，可在 Jockey、Claude 的 MCP 或 API 中直接提问；答案映射到精确时刻，营销团队还能按 Hook、人才、Logo、格式与表现批量标注素材。",
+    growth: "以 Research Preview、有限免费注册和 Product Hunt 首发收集高质量反馈，再借 Claude MCP、开发者 SDK 和创作者案例进入现有内容工作流。",
+    businessModel: "按媒体存储与速率订阅，Free 提供 5GB，Plus 为 20 美元／月并提供 100GB，更高档位面向更大媒体库和团队。",
+    insight: "多模态资料库的价值不在生成一段总结，而在返回可定位、可组合、可继续执行的时刻；时间戳和结构化证据是视频 Agent 的核心接口。",
+    sourceUrl: "https://jockey.twelvelabs.io/",
+    sourceLabel: "TwelveLabs 官方产品页",
+    sources: [
+      { label: "Jockey 官方产品页", url: "https://jockey.twelvelabs.io/" },
+      { label: "TwelveLabs 发布说明", url: "https://docs.twelvelabs.io/docs/get-started/release-notes" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/twelvelabs" }
+    ]
+  }
+];
+
+const industryEvents20260722 = [
+  {
+    slug: "google-gemini-flash-july-2026",
+    name: "Google · Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber",
+    summary: "Google 同日发布面向高质量 Agent、高吞吐任务和防御型代码安全的三款 Gemini Flash 模型",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5_3-6_3-5-Cyber__key-art__statement_.width-1300.jpg",
+    impact: "模型产品正在从单一能力阶梯转向按主 Agent、低成本子 Agent 和高风险专业任务分工；3.6 Flash 降低输出成本与工具循环，Flash-Lite 面向高吞吐，Cyber 则以受限访问处理双重用途风险。",
+    insight: "产品团队应按任务价值、吞吐和风险路由模型，并把成本、工具调用次数和非预期修改纳入评测；专业高风险能力还需要独立的访问控制与审计策略。",
+    sourceUrl: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" },
+      { label: "Gemini API 文档", url: "https://ai.google.dev/gemini-api/docs/latest-model" },
+      { label: "Google DeepMind · Flash Cyber", url: "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/" }
+    ]
+  },
+  {
+    slug: "applied-intuition-dana",
+    name: "Applied Intuition · Dana",
+    summary: "Dana 把构建、测试、部署与运营收进同一 Agentic Platform，加速安全关键型 Physical AI 交付",
+    image: "https://cdn.sanity.io/images/a86leg7v/production/453c700bcadba0d0866ad9d22e4a1563498a7393-3000x2000.jpg?rect=0,213,3000,1575&w=1200&h=630",
+    impact: "Physical AI 的平台层开始复用汽车、卡车、矿业和农业积累的数据、仿真、评测与治理能力，Agent 不再只控制一次动作，而是进入从开发到车队运营的全生命周期。",
+    insight: "进入真实世界的 Agent 必须把仿真、可追溯评测、权限和部署治理做成统一产品面；自然语言入口不能替代安全边界和行业工作流。",
+    sourceUrl: "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana",
+    sourceLabel: "Applied Intuition 官方发布",
+    sources: [
+      { label: "Applied Intuition 发布", url: "https://www.appliedintuition.com/press-releases/applied-intuition-launches-dana" },
+      { label: "Dana 官方产品页", url: "https://www.appliedintuition.com/dana" },
+      { label: "Dana 官方深度介绍", url: "https://www.appliedintuition.com/blog/dana-new-way-to-build-physical-ai" }
+    ]
+  },
+  {
+    slug: "microsoft-amd-azure-ai-hpc",
+    name: "Microsoft × AMD · Azure AI & HPC Infrastructure",
+    summary: "Azure 将引入 AMD Helios 与新一代 EPYC，推出面向 AI 数据、芯片设计和规模推理的三类 VM",
+    image: "https://blogs.microsoft.com/wp-content/uploads/2026/07/OMB-Azure-AMD-Hero-1024x576.jpg",
+    impact: "云端 AI 基础设施进一步异构化：HDv2 服务数据准备与 Agent 协调，HXv2 面向 EDA 与技术计算，ND MI455X v7 承接大规模推理，给训练和推理团队增加 Nvidia 之外的完整栈选择。",
+    insight: "产品团队应按数据准备、编排、训练和推理拆分基础设施需求，用端到端成本与能耗验证硬件选择，而不是只比较单一加速器峰值。",
+    sourceUrl: "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
+    sourceLabel: "Microsoft 官方博客",
+    sources: [
+      { label: "Microsoft 官方博客", url: "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" },
+      { label: "AMD 官方公告", url: "https://www.amd.com/en/newsroom/press-releases/2026-7-20-microsoft-to-deploy-next-gen-amd-instinct-and-amd-.html" },
+      { label: "Tom's Hardware", url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-will-deploy-amds-helios-rack-scale-ai-accelerator-at-scale-on-azure-radeon-instinct-mi455x-and-epyc-venice-power-will-be-available-through-redmonds-cloud-infrastructure" }
+    ]
+  },
+  {
+    slug: "gritt-physical-ai-launch",
+    name: "Gritt · Physical AI for Infrastructure",
+    summary: "Gritt 携 3240 万美元融资出隐身，用可挂载现有工程机械的 AI 系统自动化太阳能与基础设施施工",
+    image: "https://www.gritt.ai/launch/og/pr-og.jpg",
+    impact: "Physical AI 的商业化路径开始避开从零制造机器人，转向在施工现场现有设备上叠加感知、控制和学习；每次部署同时产生任务数据与现场决策数据。",
+    insight: "具身产品可先复用客户已拥有、会维护的硬件，从高频危险任务建立 ROI 和数据飞轮；扩展任务前必须证明精度、安全边界和现场可靠性。",
+    sourceUrl: "https://www.gritt.ai/news/gritt-launches-physical-ai",
+    sourceLabel: "Gritt 官方发布",
+    sources: [
+      { label: "Gritt 官方发布", url: "https://www.gritt.ai/news/gritt-launches-physical-ai" },
+      { label: "Gritt 产品介绍", url: "https://www.gritt.ai/news/introducing-gritt" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/" }
+    ]
+  },
+  {
+    slug: "spotify-labs-studio-rollout",
+    name: "Spotify Labs · Studio Research Preview",
+    summary: "Studio 开始逐步开放，把个性化音乐、私人 Podcast、网页研究与日历邮箱动作组合成桌面 AI 工作台",
+    image: "https://storage.googleapis.com/pr-newsroom-wp/1/2026/05/Header-1024x576.png",
+    videoUrl: "https://storage.googleapis.com/pr-newsroom-wp/1/2026/05/Studio-V2-1.mp4",
+    impact: "音频平台正从推荐内容升级为基于用户品味和外部上下文生成、编排并跨设备保存内容的 Agent，Spotify 的资料库与分发网络因此变成新的个人计算界面。",
+    insight: "个性化 Agent 的壁垒来自长期偏好与原生分发，但连接日历、邮箱和浏览器后必须默认提供动作确认、结果核验与清晰的数据权限。",
+    sourceUrl: "https://newsroom.spotify.com/2026-05-21/studio-by-spotify-labs-launch/",
+    sourceLabel: "Spotify 官方更新",
+    sources: [
+      { label: "Spotify 官方更新", url: "https://newsroom.spotify.com/2026-05-21/studio-by-spotify-labs-launch/" },
+      { label: "官方演示视频", url: "https://storage.googleapis.com/pr-newsroom-wp/1/2026/05/Studio-V2-1.mp4" },
+      { label: "Reddit 早期反馈", url: "https://www.reddit.com/r/truespotify/comments/1uzxq20/studio_by_spotify_labs/" }
+    ]
+  }
+];
+
 const products20260721 = [
   {
     slug: "fuzzy-ai",
@@ -786,6 +974,21 @@ const industryEvents20260721 = [
   }
 ];
 
+const trends20260722 = [
+  {
+    title: "Agent 栈开始按任务价值拆分模型与计算资源",
+    text: "Gemini 3.6 Flash、Flash-Lite 与 Flash Cyber 分别承担主任务、高吞吐和高风险安全工作，Azure 也把数据、EDA 与推理映射到不同 AMD 基础设施。模型路由和异构计算正在成为产品成本结构的一部分。"
+  },
+  {
+    title: "可观察、可批准、可引用成为 Agent 的默认体验",
+    text: "Lev8 给出实时来源，Rerun 展示每一步并暂停敏感动作，CartAI 用状态机和 Webhook 记录交易。结合本周 MCP 无状态化与 Hugging Face 安全事件，生产 Agent 正从能执行转向能被监督和追责。"
+  },
+  {
+    title: "Physical AI 从单点机器人走向平台与存量设备改造",
+    text: "Dana 统一真实机器的开发、测试、部署与治理，Gritt 把智能层挂到现有施工机械，Robostral Navigate 则降低导航传感器门槛。行业正用平台复用和软硬解耦加速落地。"
+  }
+];
+
 const trends20260721 = [
   {
     title: "垂直 Agent 正把分散工具压缩成共享业务上下文",
@@ -855,6 +1058,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-22",
+    isoDate: "2026-07-22",
+    dateLabel: "2026年7月22日",
+    weekday: "星期三",
+    oneSentence: "AI 产品正在把专业 Agent、异构模型与可监督执行组合成新的生产栈",
+    products: products20260722,
+    industryEvents: industryEvents20260722,
+    trends: trends20260722
+  },
   {
     slug: "2026-07-21",
     isoDate: "2026-07-21",
