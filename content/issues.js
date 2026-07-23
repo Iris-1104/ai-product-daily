@@ -600,6 +600,212 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260723 = [
+  {
+    slug: "humalike-hermes",
+    name: "Humalike x Hermes",
+    tag: "Agent Behavior",
+    tagline: "用一条命令让 Hermes Agent 学会群聊中的时机、语气、人物记忆和社交边界",
+    image: "https://ph-files.imgix.net/81247ace-6ea9-4a84-8357-07eccd0257c8.jpeg",
+    positioning: "定位为 AI Agent 的行为基础设施与 Hermes 即插即用插件。壁垒来自把轮次判断、群体规范、Theory of Mind、Persona 与 Social Memory 拆成可组合 API，并用真实群聊研究和评测持续改进，而不是只靠系统提示词塑造人设。",
+    audience: ["Hermes 与开源 Agent 用户", "社区和协作产品团队", "对话式 AI 开发者"],
+    killerFeature: "一条命令安装后，Agent 会判断何时发言或保持沉默，适应群聊语气，记住谁说过什么，并在 Slack、Telegram 与 WhatsApp 中处理多人对话。",
+    experience: "用户保留原有 Hermes Agent，只添加行为插件；它会把长回复拆成更自然的短消息，并在新消息打断时重新判断是否继续。行为分类与记忆由 Humalike API 承载，便于快速更新，也要求团队认真处理多人记忆边界。",
+    growth: "借 Hermes 与 Nous Research 生态的一键集成切入，用 GitHub 插件、Product Hunt 首发和 20 美元免卡 Credits 获取开发者，再把同一组行为 API 扩展到游戏、教育、陪伴与企业协作。",
+    businessModel: "开发者先获得 20 美元免费 API Credits，后续按 API 使用量与企业合作变现；官网目前未公开标准付费价目表。",
+    insight: "对话 Agent 的产品质量不仅取决于说什么，还取决于何时不说、如何被打断以及哪些记忆可以在多人场景中安全复用。",
+    sourceUrl: "https://humalike.ai/",
+    sourceLabel: "Humalike 官方网站",
+    sources: [
+      { label: "Humalike 官网", url: "https://humalike.ai/" },
+      { label: "官方 Hermes 插件", url: "https://github.com/Humalike/hermes-humalike-plugin" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/humalike-2" }
+    ]
+  },
+  {
+    slug: "migma-ai-email-marketing",
+    name: "Migma AI",
+    tag: "AI Email Marketing",
+    tagline: "从品牌、受众和营销日历主动生成整套邮件活动，并在发送后继续学习收入表现",
+    image: "https://migmaa-sandbox.s3.us-east-1.amazonaws.com/public/media/images/1783773871836-1-series.png",
+    positioning: "定位为从创意到投递的一体化 AI 邮件营销平台。壁垒来自自研跨邮箱渲染引擎、品牌和活动上下文、细分与本地化、发送合规以及效果反馈，而不是只生成一段邮件文案。",
+    audience: ["电商品牌与 SaaS 团队", "邮件营销人员", "营销代理商"],
+    killerFeature: "描述一次活动目标后，自动建立完整邮件序列、受众分群、发送节奏和多语言版本，并在 Gmail、Outlook、Apple Mail 等邮箱中保持一致呈现。",
+    experience: "用户可从一句需求、Figma、HTML、截图或 Claude 设计开始，在可视化画布中逐元素修改；连接域名后检查链接、送达与深浅色渲染，再直接发送并追踪打开、点击与转化。",
+    growth: "以免费 Hobby 入口、品牌邮件 Remix 库和 Product Hunt 获取营销用户，通过 Mailchimp、Klaviyo、Slack、Telegram 及 Agent 工具集成进入现有流程，再以团队协作和持续效果学习提高留存。",
+    businessModel: "Freemium 加 Premium 与 Enterprise 订阅；免费 Hobby 计划承担试用，付费价值来自完整活动、发送、分析、团队协作和企业集成，官网当前未在静态定价页公开具体金额。",
+    insight: "营销 Agent 真正的闭环不是生成得更快，而是把品牌约束、跨客户端质量、合规发送和收入反馈变成下一次活动的共享记忆。",
+    sourceUrl: "https://migma.ai/",
+    sourceLabel: "Migma 官方网站",
+    sources: [
+      { label: "Migma 官网", url: "https://migma.ai/" },
+      { label: "官方定价与能力", url: "https://migma.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/migma-ai" }
+    ]
+  },
+  {
+    slug: "buzzy-ai-codirector",
+    name: "Buzzy",
+    tag: "AI Video Studio",
+    tagline: "在无限画布中完成灵感、分镜、一致角色、镜头控制和局部重绘的 Agentic 视频创作",
+    image: "https://ph-files.imgix.net/7a186743-acc3-4685-a8c5-827c2f1aa0b0.jpeg",
+    positioning: "定位为创作者的 AI Co-director 与无限视频画布。壁垒来自把灵感检索、Moodboard、故事板、跨镜头角色和场景一致性、灯光机位控制与精细编辑放在同一工程中，并聚合 Kling、Runway、Veo 等模型。",
+    audience: ["导演与短片创作者", "品牌广告团队", "动画和视觉概念设计师"],
+    killerFeature: "先把角色、物体、地点和镜头组织成详细故事板，再跨任意长度的叙事保持主体一致，并像 Photoshop 一样局部修改视频、换光线和机位。",
+    experience: "用户可从社区作品或灵感素材进入 Flow，在无限画布上并排探索参考、镜头与版本；Agent 先搭建分镜，用户再针对角色、构图、角度和局部画面反复调整。",
+    growth: "用免费生成额度、公开社区作品与可复用 Workflow 降低创作门槛，通过 Product Hunt 和作品传播获客，再以多模型整合、专业导出与品牌广告工作流推动升级。",
+    businessModel: "有限免费生成加周付或年付 Pro 订阅，并用视频 Credits 计量生成；官方条款显示不同长度按 Credits 消耗，高阶功能包含无水印高清导出、广告素材库与数据追踪。",
+    insight: "视频生成产品正在从单次 Prompt 升级为可回看、可分支、可局部修改的制作空间；一致性资产与编辑控制比模型菜单更能形成长期壁垒。",
+    sourceUrl: "https://www.buzzy.now/",
+    sourceLabel: "Buzzy 官方网站",
+    sources: [
+      { label: "Buzzy 官网", url: "https://www.buzzy.now/" },
+      { label: "官方订阅条款", url: "https://www.buzzy.now/terms-and-conditions" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/buzzy-2" }
+    ]
+  },
+  {
+    slug: "kastra-runtime-authorization",
+    name: "Kastra",
+    tag: "Agent Security",
+    tagline: "在 Claude、Cursor、Codex 与 OpenClaw 每次执行前，用确定性策略做毫秒内授权",
+    image: "https://ph-files.imgix.net/305af063-b2ab-409e-8bc8-92570b6dec0e.jpeg",
+    positioning: "定位为 AI 系统的 Runtime Authorization 控制面。壁垒来自把身份、作用域、内容、目标、人工审批和加密审计放进每个 Prompt、工具调用、Shell 命令与 API 请求的执行路径，并支持云、VPC 与离线部署。",
+    audience: ["Agent 平台工程师", "安全与合规团队", "使用编码 Agent 的开发者"],
+    killerFeature: "用一套 Policy as Code 在动作发生前返回 ALLOW、DENY 或 HOLD，p99 决策延迟低于 1 毫秒，并为每次结果写入哈希链审计证据。",
+    experience: "个人开发者可用本地 Edge 代理和一行配置保护 Claude Code、Cursor 或 Codex；平台团队可通过 Proxy、Sidecar 或 SDK 统一约束多 Agent、限制花费，并把高风险步骤送给指定人员批准。",
+    growth: "以个人开发者永久免费、本地无账户启动和 Product Hunt 首发优惠建立入口，再用 OpenAI、Anthropic、Gemini、Kubernetes 与主流 Agent 框架集成进入企业，最终通过合规和部署需求扩张。",
+    businessModel: "个人本地层永久免费，生产环境通过托管多区域云、单租户 VPC、Air-gapped 自托管和企业支持销售；企业套餐采用联系销售定价。",
+    insight: "Agent 安全不应只在输出后报警；把每个动作变成带身份、范围、批准人和可验证证据的运行时决策，才能真正限制自动化的爆炸半径。",
+    sourceUrl: "https://kastra.ai/",
+    sourceLabel: "Kastra 官方网站",
+    sources: [
+      { label: "Kastra 官网", url: "https://kastra.ai/" },
+      { label: "官方平台说明", url: "https://kastra.ai/platform" },
+      { label: "官方文档", url: "https://kastra.ai/docs" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/kastra" }
+    ]
+  },
+  {
+    slug: "box-ascii-agent-vm",
+    name: "box by ASCII",
+    tag: "Agent Compute",
+    tagline: "两秒启动带 SSH、Docker、桌面与持久状态的完整 Ubuntu VM，让 Agent 安全并行工作",
+    image: "https://ph-files.imgix.net/3e0cf7e1-069e-496e-8e92-92b1b1da81b5.jpeg",
+    positioning: "定位为 Agent Factory 的低成本完整虚拟机。壁垒来自自研快照和磁盘级 Fork、完整 VM 隔离、稳定的大规模自助并发，以及围绕长时间 Agent 而不是短时容器优化的欧洲基础设施成本。",
+    audience: ["编码 Agent 与软件工厂", "Agent 平台开发者", "需要隔离桌面的安全和自动化团队"],
+    killerFeature: "`box new` 约两秒得到 4 vCPU／8GB 的 Ubuntu VM，预装 Docker、VS Code、Chrome、GitHub CLI 等工具，并可停止快照、秒级恢复或从状态 Fork 新机器。",
+    experience: "开发者可用 CLI、HTTP API 或 Python／TypeScript SDK 批量创建机器，通过 SSH、SCP 或 60fps 虚拟桌面接管；停止后保留文件和服务配置并暂停计费，便于长任务等待和分支实验。",
+    growth: "以清晰的 Agent 专用 CLI、Markdown 文档、Product Hunt 和低至每秒计费吸引开发者，通过自助 100–1,200 台并发、模板与创始人支持进入 Agent 平台和软件工厂。",
+    businessModel: "按秒计费且账户每月最低 20 美元；20 美元包含约 200 万 VM 秒，约等于 555 小时的 4 vCPU／8GB 机器时间，可在任意数量的 box 间共享。",
+    insight: "长时间 Agent 的计算产品不能只追求冷启动；可持久化、可 Fork、可接管、停止即停费和明确隔离边界共同决定任务经济性。",
+    sourceUrl: "https://box.ascii.dev/",
+    sourceLabel: "box 官方网站",
+    sources: [
+      { label: "box 官网与定价", url: "https://box.ascii.dev/" },
+      { label: "官方 API 文档", url: "https://docs.ascii.dev/box/api/v1" },
+      { label: "官方 SDK 文档", url: "https://docs.ascii.dev/box/sdks/overview" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/box-4" }
+    ]
+  }
+];
+
+const industryEvents20260723 = [
+  {
+    slug: "openai-presence",
+    name: "OpenAI · Presence",
+    summary: "Presence 把策略、工具、仿真、评测、升级和 Codex 改进循环组合成可部署的企业语音与聊天 Agent 产品",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/7FgrwtDxicVhqi90R8xgcb/cd3875f42be331450c82ce2ee818cc68/openai-presence-still-1.png?fm=webp&q=90&w=3840",
+    impact: "头部模型公司正从提供模型和 Agent SDK，进一步进入企业高价值工作流的设计、部署与持续运营。Presence 以有限通用可用和 FDE 交付，说明可靠性、权限、评测和改进速度已成为企业 Agent 的核心商品。",
+    insight: "先为 Agent 定义一个可验收的岗位、最小知识和系统权限，再用真实会话、人工升级与回归评测驱动改进；不要从全能助手和无限权限开始。",
+    sourceUrl: "https://openai.com/index/introducing-openai-presence/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI 官方发布", url: "https://openai.com/index/introducing-openai-presence/" },
+      { label: "OpenAI Newsroom", url: "https://openai.com/news/company-announcements/" },
+      { label: "Reddit 讨论", url: "https://www.reddit.com/r/OpenAI/comments/1v3gx7e/introducing_openai_presence/" }
+    ]
+  },
+  {
+    slug: "synthesia-roleplay-sessions",
+    name: "Synthesia · Roleplay Sessions",
+    summary: "Roleplay Sessions 让员工与实时 AI Avatar 练习销售、管理和客服对话，并按技能 Rubric 获得评分与辅导",
+    image: "https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6a5face0fdf4c407b7aa2139_How-to_Roleplay-Sessions_Thumbnail%203.webp",
+    videoEmbedUrl: "https://share.synthesia.io/embeds/videos/01437df3-da5d-4b80-b89f-3bbf399b37c6",
+    impact: "企业生成式视频平台开始从内容生产扩展到行为练习和绩效测量。交互 Avatar、业务 Rubric、尝试记录与团队分析形成新的数据闭环，也把采购价值从节省制作成本推向可证明的技能提升。",
+    insight: "教育和培训产品应把观看之后的练习、针对性反馈和前后测放进同一流程；可量化能力变化比内容生成量更接近最终业务价值。",
+    sourceUrl: "https://www.synthesia.io/features/roleplay-sessions",
+    sourceLabel: "Synthesia 官方产品页",
+    sources: [
+      { label: "Synthesia 产品页", url: "https://www.synthesia.io/features/roleplay-sessions" },
+      { label: "官方互动演示", url: "https://share.synthesia.io/embeds/videos/01437df3-da5d-4b80-b89f-3bbf399b37c6" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/" }
+    ]
+  },
+  {
+    slug: "substack-scan-ai-text",
+    name: "Substack · Scan for AI Text",
+    summary: "Substack 接入 Pangram，让读者扫描新发布的文章、Notes、评论和回复，并允许作者补充创作透明度说明",
+    image: "https://support.substack.com/hc/article_attachments/51577446161940",
+    impact: "内容平台正在把 AI 来源判断直接交给读者，但检测结果仍是概率估计而非事实证明。平台一方面回应低质批量内容，另一方面必须处理误判、作者解释权、关闭检测和反馈纠错。",
+    insight: "内容治理产品不要把检测分数包装成判决；应明确适用范围和不确定性，为创作者提供上下文声明、申诉和关闭机制，并用阅读质量与信任指标验证效果。",
+    sourceUrl: "https://support.substack.com/hc/en-us/articles/50891130623508-How-can-I-detect-AI-on-Substack",
+    sourceLabel: "Substack 官方帮助中心",
+    sources: [
+      { label: "Substack 官方说明", url: "https://support.substack.com/hc/en-us/articles/50891130623508-How-can-I-detect-AI-on-Substack" },
+      { label: "Pangram 技术说明", url: "https://pangram.substack.com/p/how-does-pangram-work" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/" },
+      { label: "Reddit 社区反馈", url: "https://www.reddit.com/r/Substack/comments/1v3errp/substacks_new_ai_detection_tool/" }
+    ]
+  },
+  {
+    slug: "glow-endpoint-ai-security",
+    name: "Glow · Endpoint AI Security",
+    summary: "Glow 以 1.8 亿美元融资和 12 亿美元估值出隐身，用专用 Agent 持续发现、评估并阻止端点软件与 AI 风险",
+    image: "https://cdn.prod.website-files.com/69ef932dc67c7db253e00edc/6a60fcf0991b0523680b6eaa_Press%20Release%2001%20%281%29.png",
+    impact: "AI 工具、编码 Agent 与供应链依赖把企业攻击面重新推回员工设备。Glow 的高额 Series A 说明资本和客户开始把 Shadow AI、软件资产真实清单和自动化预防视为独立安全品类。",
+    insight: "企业 AI 产品必须提供可发现的软件和 Agent 清单、托管账户、策略执行与自动修复；安全团队若只能在事故后看到日志，就跟不上机器速度的安装和执行。",
+    sourceUrl: "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million",
+    sourceLabel: "Glow 官方公告",
+    sources: [
+      { label: "Glow 官方公告", url: "https://www.glow.io/news/glow-emerges-from-stealth-with-180-million" },
+      { label: "Glow 产品页", url: "https://www.glow.io/" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/" }
+    ]
+  },
+  {
+    slug: "samsung-galaxy-z8-ai",
+    name: "Samsung · Galaxy Z Fold8 Ultra / Fold8 / Flip8",
+    summary: "Samsung 发布三款 Z8 折叠设备，并让 Galaxy AI 与 Gemini Intelligence 针对大屏多任务和 FlexWindow 深度适配",
+    image: "https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22215435/Samsung-Mobile-Galaxy-Unpacked-July-2026-Galaxy-Z-Fold8-Ultra-Galaxy-Z-Fold8-Galaxy-Z-Flip8-Launch_main1_F.jpg",
+    impact: "移动 AI 的竞争正在从是否内置助手转向模型如何理解屏幕形态、当前内容和连续任务。Samsung 用三个折叠形态承载不同 AI 入口，也强化了硬件、系统 UI、合作模型与隐私控制的联合设计。",
+    insight: "端侧 AI 不应只是全设备复用同一个聊天框；要根据屏幕尺寸、姿态和用户当下动作设计信息密度、快捷操作和交接路径，同时保留透明度与控制。",
+    sourceUrl: "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living",
+    sourceLabel: "Samsung 官方发布",
+    sources: [
+      { label: "Samsung 官方发布", url: "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living" },
+      { label: "Samsung First Look", url: "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8" },
+      { label: "Axios", url: "https://www.axios.com/2026/07/22/samsung-foldable-galaxy-smartphones" },
+      { label: "Reddit 现场 AMA", url: "https://www.reddit.com/r/samsung/comments/1v3fkrn/ama_hands_on_with_the_galaxy_z_fold8_ultra_z/" }
+    ]
+  }
+];
+
+const trends20260723 = [
+  {
+    title: "Agent 栈开始拆出行为、授权、隔离与持续改进层",
+    text: "Humalike 管理何时说话，Kastra 决定动作能否执行，box 提供可持久化隔离环境，Presence 用真实会话和评测持续改进，Glow 则治理端点风险。生产 Agent 正从一个模型加工具，演化为可分工、可替换的完整运行栈。"
+  },
+  {
+    title: "AI 产品价值从生成结果转向可测量的业务闭环",
+    text: "Migma 把邮件生成连接到转化反馈，Synthesia 把培训视频延伸到练习、评分和技能分析，Buzzy 把视频模型放进可编辑分镜。生成质量仍重要，但能否追踪效果并驱动下一轮改进，正在决定付费和留存。"
+  },
+  {
+    title: "个人设备与沟通现场成为下一轮 Agent 入口",
+    text: "Samsung 按折叠形态重做移动 AI，Humalike 进入多人群聊，Presence 覆盖语音与聊天，Glow 围绕员工端点建立安全边界。Agent 越靠近真实意图和动作现场，越需要上下文适配、隐私分区与明确接管点。"
+  }
+];
+
 const products20260722 = [
   {
     slug: "lev8",
@@ -1058,6 +1264,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-23",
+    isoDate: "2026-07-23",
+    dateLabel: "2026年7月23日",
+    weekday: "星期四",
+    oneSentence: "AI 产品正在把行为、授权、隔离与效果反馈组装成可长期运营的 Agent 系统",
+    products: products20260723,
+    industryEvents: industryEvents20260723,
+    trends: trends20260723
+  },
   {
     slug: "2026-07-22",
     isoDate: "2026-07-22",
