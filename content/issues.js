@@ -600,6 +600,214 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260724 = [
+  {
+    slug: "teable-3",
+    name: "Teable 3.0",
+    tag: "AI Business Database",
+    tagline: "把表格、PostgreSQL、自动化和应用生成合成一个可审计的 AI 业务工作台",
+    image: "https://ph-files.imgix.net/c39739f6-9aac-4814-9aca-9b9c0a2ce105.jpeg",
+    positioning: "定位为面向业务团队的 AI Spreadsheet 与应用底座。壁垒来自真实 PostgreSQL 关系模型、开源与自托管能力，以及让 Agent 在同一份数据、权限、自动化和应用界面上工作，而不是把 AI 叠在封闭表格之上。",
+    audience: ["运营与销售团队", "需要内部工具的中小企业", "数据与自动化团队"],
+    killerFeature: "用自然语言连接或迁移现有数据，再直接生成带关系表、仪表盘、邮件、触发器和审批的业务应用；工作流会持久保存，每一步可查看、归因和回滚。",
+    experience: "用户可从 Excel、Airtable、文件或一句业务需求开始，AI 识别字段关系并搭建数据和界面；团队继续用表格式视图修改，Agent 只在授权范围内读写，失败步骤和变更历史保持可见。",
+    growth: "以免费 200 Credits、开源 GitHub 和自托管版本建立信任，通过模板社区、Airtable 迁移与 Product Hunt 日榜第一吸引团队，再用更大记录量、自动化额度和权限能力推动扩张。",
+    businessModel: "Freemium 席位订阅加用量增购；Free 为 0 美元，Pro 年付 10 美元／席位／月，Business 年付 20 美元／席位／月，AI Credits、自动化次数、记录量和企业权限形成分层。",
+    insight: "让 Agent 操作业务数据时，生成能力只是入口；真实数据模型、细粒度权限、逐步日志和可恢复变更才是团队把系统当作事实源的前提。",
+    sourceUrl: "https://teable.ai/",
+    sourceLabel: "Teable 官方网站",
+    sources: [
+      { label: "Teable 官网", url: "https://teable.ai/" },
+      { label: "官方定价", url: "https://teable.ai/pricing" },
+      { label: "官方 GitHub", url: "https://github.com/teableio/teable" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/teable-4" }
+    ]
+  },
+  {
+    slug: "promptql-multiplayer-ai",
+    name: "PromptQL",
+    tag: "Team AI Workspace",
+    tagline: "把团队对话、AI 线程、业务数据和持续更新的共享知识放进同一个多人工作空间",
+    image: "https://ph-files.imgix.net/5d9a6589-3b5e-4351-98a3-1ccd01ce5ba2.jpeg",
+    positioning: "定位为取代 Slack 加私人 AI 对话的 Multiplayer AI。壁垒来自把数据库、SaaS、代码 Agent 与事件接入共享线程，并把同事纠正沉淀为带引用、版本和权限范围的团队知识，而不是每个人重复维护自己的上下文。",
+    audience: ["跨职能产品团队", "数据密集型企业", "需要共享 AI 上下文的远程团队"],
+    killerFeature: "在共享线程里让 AI 展示来源和假设，@真正懂业务的同事纠正一次后，将结果写成团队 Skill、Wiki 条目或语义模型更新，后续所有获准用户都能复用。",
+    experience: "用户从类似 ChatGPT 的新线程开始，PromptQL 自动读取 Slack、文档、工单、CRM 和数仓；讨论、执行与审核留在一处，作用域会贯穿检索、内容创建和更新，避免机密上下文跨团队泄露。",
+    growth: "用最高 100 美元项目 Credits 和每位新队友最高 70 美元 Credits 形成邀请循环，同时提供 Web、Mac、Windows、iOS 与 Android 入口；Hasura 团队先内部停用 Slack，再以真实使用案例和 Product Hunt 验证定位。",
+    businessModel: "按 OLU 统一计量模型 Token、基础设施与 Sandbox，Starter 公开价为每 OLU 0.20 美元，首发期 0.14 美元；连接自有 Codex 套餐可免对应 OLU 费用，Enterprise 以 VPC、SSO、审计和自带模型定制定价。",
+    insight: "企业知识库的问题不是没人会写，而是维护与真实工作分离；把纠错、引用和权限更新嵌入任务线程，知识才会随使用复利而不是持续腐烂。",
+    sourceUrl: "https://promptql.io/",
+    sourceLabel: "PromptQL 官方网站",
+    sources: [
+      { label: "PromptQL 官网", url: "https://promptql.io/" },
+      { label: "官方定价", url: "https://promptql.io/pricing" },
+      { label: "官方共享上下文文章", url: "https://promptql.io/blog/on-shared-context" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/promptql" }
+    ]
+  },
+  {
+    slug: "podcastor-ai-twin",
+    name: "PodcastorAI",
+    tag: "AI Video Podcast",
+    tagline: "把脚本、链接、PDF、音频或想法在约十五分钟内变成由数字分身主持的视频播客",
+    image: "https://ph-files.imgix.net/48f4ca97-d60d-4e2c-846e-ad461fbe8425.jpeg",
+    positioning: "定位为从选题到可发布视频的一站式 AI 播客工作室。壁垒来自把脚本生成、自然语音、个人数字分身、双主持人调度、画面布局和视频渲染放在同一工程，而不是只输出音频或一张会说话的头像。",
+    audience: ["知识型创作者", "企业内容营销团队", "课程与培训制作人"],
+    killerFeature: "上传一张照片即可建立可复用 AI 主持人，并把既有音频、网页或文档转成单人或双人视频播客；同一项目可输出 YouTube 的 16:9 和 TikTok 的 9:16 版本。",
+    experience: "用户选择真人、卡通或宠物主持风格与 32 种语言声音，先审核可编辑脚本，再切换 Talk Show、Split Screen 等布局并渲染；无需摄像机、录音棚或独立剪辑软件。",
+    growth: "以免费选项和首个订阅七折降低首集门槛，用作品在 YouTube 与短视频平台自然分发；联盟计划提供每位付费客户 30% 的最长一年经常性佣金，建立创作者带创作者的渠道。",
+    businessModel: "订阅加生成额度，官方联盟页列出 Audio Creator 9.99 美元／月、Video Starter 26 美元／月和 Creator Pro 49.99 美元／月，按音频、视频与高级数字主持能力分层。",
+    insight: "AI 内容工具要压缩的不是某一个生成步骤，而是从原始素材到可发布资产的全部交接成本；固定主持人、品牌布局和多尺寸复用决定连续生产效率。",
+    sourceUrl: "https://podcastor.ai/",
+    sourceLabel: "PodcastorAI 官方网站",
+    sources: [
+      { label: "PodcastorAI 官网", url: "https://podcastor.ai/" },
+      { label: "官方 AI Hosts 说明", url: "https://podcastor.ai/studio/remote-podcast-generator" },
+      { label: "官方联盟与套餐", url: "https://podcastor.ai/affiliate" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/podcastorai" }
+    ]
+  },
+  {
+    slug: "basement-agentic-checkout",
+    name: "Basement",
+    tag: "Agentic Shopping",
+    tagline: "让浏览器记住衣橱和真实偏好，跨站比价后在预算内用一次性卡替用户完成结账",
+    image: "https://ph-files.imgix.net/76f03c6f-3fd9-4aac-a2d1-eba36991c31c.png",
+    positioning: "定位为站在消费者一侧的 AI Shopping Browser。壁垒来自用户长期购买与浏览偏好、跨网页的价格和口碑信号，以及用 Crossmint 一次性支付卡把推荐、安全授权和真实交易连成闭环。",
+    audience: ["高频网购用户", "价格敏感消费者", "希望自动补货的家庭用户"],
+    killerFeature: "Baseling 可寻找更低价格并代为下单，每笔购买只生成一张限定单个订单和预算上限的一次性卡，真实银行卡不直接交给商家，也不能超出用户授权金额。",
+    experience: "用户在 iOS 浏览器或 Chrome 扩展打开商品页，即时看到 Reddit、Trustpilot、X 与 Bluesky 的真实讨论；AI 结合 Closet 中的既有商品和浏览行为给建议，重要购买仍保留预算确认。",
+    growth: "用 iPhone 与 Chrome 完全免费降低替换浏览器的成本，以价格提醒、补货和真实社区评论制造高频回访；页面内多人讨论、好友邀请与个人信誉等级形成社交分发。",
+    businessModel: "目前对消费者免费，官网未公布订阅、佣金或支付收入方案；潜在商业化来自交易与商家服务，但在官方披露前不将其视为既定模式。",
+    insight: "Agentic Commerce 的信任不能靠一句“由你控制”；把预算上限、单次支付凭证、真实总价和可见确认做成技术边界，才能让推荐顺利进入交易。",
+    sourceUrl: "https://www.basementbrowser.com/",
+    sourceLabel: "Basement 官方网站",
+    sources: [
+      { label: "Basement 官网", url: "https://www.basementbrowser.com/" },
+      { label: "官方下载页", url: "https://www.basementbrowser.com/download" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/basement-browser" },
+      { label: "Product Hunt 编辑观察", url: "https://www.producthunt.com/newsletters/archive/53061-death-to-meetings" }
+    ]
+  },
+  {
+    slug: "megaphone-on-device",
+    name: "Megaphone",
+    tag: "On-device Dictation",
+    tagline: "按住 Fn 说话，让 Apple 端侧语音与基础模型把干净文字直接写进任意 Mac 应用",
+    image: "https://ph-files.imgix.net/ca88159b-cd89-4344-8a9b-029545ff0044.png",
+    positioning: "定位为免费、开源、完全端侧的 macOS 听写工具。壁垒来自原生 Swift 对 Apple SpeechAnalyzer 与 Foundation Models 的低延迟组合，以及不依赖账户、API Key、订阅或云端录音服务器的隐私和成本结构。",
+    audience: ["Mac 知识工作者", "开发者与写作者", "重视隐私的语音输入用户"],
+    killerFeature: "SpeechAnalyzer 边说边转写，端侧 Foundation Models 自动删除口头语、处理自我修正、补全标点并根据当前应用调整格式，还支持光标处改写和语音宏。",
+    experience: "用户按住 Fn 开始、松开即把处理后的文字写入当前光标；私有 Dictionary 可学习姓名、缩写和技术词，支持多语言、自定义快捷键与字典导入导出，全程不上传录音。",
+    growth: "以 MIT 许可、GitHub 源码和零价格获得开发者信任，通过 Product Hunt 与 Hacker News 的端侧基准话题切入；作者在首发日让 Agent 读取评论并自动提 PR，把社区建议快速变成版本更新。",
+    businessModel: "完全免费且无账户、API Key、订阅或云端服务，当前没有商业化方案；成本由用户现有 Apple Silicon 设备承担，开源项目主要以采用和贡献衡量增长。",
+    insight: "当操作系统内建模型达到可用阈值，过去依赖云推理和订阅的微型工具会被重新定价；本地速度、隐私和零边际推理成本可以共同成为产品卖点。",
+    sourceUrl: "https://megaphone.kuber.studio/",
+    sourceLabel: "Megaphone 官方网站",
+    sources: [
+      { label: "Megaphone 官网", url: "https://megaphone.kuber.studio/" },
+      { label: "官方 GitHub", url: "https://github.com/Kuberwastaken/megaphone" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/megaphone-3" },
+      { label: "Product Hunt 编辑观察", url: "https://www.producthunt.com/newsletters/archive/53061-death-to-meetings" }
+    ]
+  }
+];
+
+const industryEvents20260724 = [
+  {
+    slug: "google-atlas-ai-economy",
+    name: "Google · ATLAS v1.0",
+    summary: "Google 基于 1500 万次去标识化交互发布 AI 经济使用图谱，覆盖 150 多个国家、800 类职业和 4000 项任务",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hero_image_3_1.width-200.format-webp.webp",
+    impact: "ATLAS 将 AI 采用讨论从能力基准推进到真实使用证据：工作场景覆盖面很广，但典型职业只在约 21% 的任务中使用 AI，完全自动化不到 10%。这为产品定岗、劳动力政策和价值衡量提供了更细颗粒度的基线。",
+    insight: "不要把“某岗位可被 AI 覆盖”直接等同于自动化率；先观察用户在哪些任务主动调用、是否协作完成、失败后如何接管，再用任务渗透与结果质量设计路线图。",
+    sourceUrl: "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/" },
+      { label: "ATLAS v1.0 完整报告", url: "https://ai.google/static/documents/GoogleATLASv1.pdf" },
+      { label: "Google AI & Economy 项目", url: "https://ai.google/economy/" }
+    ]
+  },
+  {
+    slug: "gemini-flash-family",
+    name: "Google · Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber",
+    summary: "Google 用高性价比主力、低延迟轻量和受限网络安全模型组成新的 Flash 家族，面向大规模 Agent 工作负载",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5_3-6_3-5-Cyber__key-art.width-200.format-webp.webp",
+    impact: "模型分层从“旗舰与便宜版”进一步细化为任务路由产品：3.6 Flash 强调编码与计算机操作，Flash-Lite 强调吞吐，Flash Cyber 则与 CodeMender 绑定并限制在政府和可信伙伴。厂商开始同时竞争任务成本、工具能力和部署边界。",
+    insight: "产品默认模型应由延迟、吞吐、失败成本和安全权限共同决定；把轻量子任务、主 Agent 与受限高风险能力拆开，比让一个模型处理所有请求更容易控制成本和风险。",
+    sourceUrl: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" },
+      { label: "Gemini 3.6 Flash 模型卡", url: "https://deepmind.google/models/model-cards/gemini-3-6-flash/" },
+      { label: "Gemini 3.5 Flash-Lite 模型卡", url: "https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/gemini-3-6-flash-family" }
+    ]
+  },
+  {
+    slug: "procore-digital-coworkers",
+    name: "Procore · Digital Coworker Packages",
+    summary: "Procore 将 20 个建筑行业 Agent 按 Starter、Pro 和 Enterprise 打包，并预告可注入企业标准流程的 Skills",
+    image: "https://images.ctfassets.net/8pep15rt0kef/6bll9eUMO8A9FDloc9g6dh/73eea5eb91a74b2fc8e98849c107395e/Procore-AI-Hero-2.png?f=center&fit=fill",
+    impact: "垂直 SaaS 正把 Agent 从问答功能变成可采购的数字岗位组合。Procore 用工地数据、多模态图纸、权限、150 多个动作和 Control Tower 形成行业执行层，说明深行业系统比通用聊天入口更接近可量化 ROI。",
+    insight: "垂直 Agent 应按真实岗位任务打包，先交付搜索、审查、日志等可验收动作，再允许客户用 SOP 和项目标准教会系统；同时把用量、权限和每个 Agent 的结果集中治理。",
+    sourceUrl: "https://www.procore.com/press/procore-introduces-digital-coworker-packages-expands-ai-agent-library-and-previews-skills-to-help-construction-teams-put-ai-to-work",
+    sourceLabel: "Procore 官方发布",
+    sources: [
+      { label: "Procore 官方发布", url: "https://www.procore.com/press/procore-introduces-digital-coworker-packages-expands-ai-agent-library-and-previews-skills-to-help-construction-teams-put-ai-to-work" },
+      { label: "Procore 官方产品页", url: "https://www.procore.com/ai" },
+      { label: "Procore 官方博客", url: "https://www.procore.com/blog/your-digital-coworkers-are-ready-to-work" },
+      { label: "Procore 产品更新", url: "https://www.procore.com/whats-new" }
+    ]
+  },
+  {
+    slug: "amd-anthropic-mi450",
+    name: "AMD × Anthropic · MI450 / Helios 合作",
+    summary: "Anthropic 将部署最多 2GW AMD MI450 Helios 系统，AMD 同时承诺未来最多 50 亿美元战略投资并用 Claude 加速 ROCm",
+    image: "https://newsroom.amd.com/images/2026/07/0112ce03-4e6a-4481-96df-e15ba7c16fe8.jpg",
+    impact: "前沿模型公司的算力采购开始同时追求供应多元化、软硬件协同和资本绑定。Anthropic 既引入 AMD 大规模容量，又用 Claude 优化 AMD 软件栈，可能加快 ROCm 在真实训练与推理负载中的成熟度，并加强对 Nvidia 之外的选择。",
+    insight: "依赖大模型基础设施的产品应把供应商切换能力、性能回归和单位任务成本纳入架构；只在 API 层做多模型，而底层算力、数据和评测不可迁移，仍然会形成单点锁定。",
+    sourceUrl: "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/",
+    sourceLabel: "AMD 官方发布",
+    sources: [
+      { label: "AMD 官方发布", url: "https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/" },
+      { label: "Tom's Hardware", url: "https://www.tomshardware.com/tech-industry/amd-to-supply-anthropic-with-2-gigawatts-of-instinct-mi450-gpus" },
+      { label: "Reddit / Hardware", url: "https://www.reddit.com/r/hardware/comments/1v3hmwg/amd_and_anthropic_announce_strategic_partnership/" }
+    ]
+  },
+  {
+    slug: "apec-digital-ai-ministerial",
+    name: "APEC · 2026 Digital and AI Ministerial Statement",
+    summary: "APEC 数字与 AI 部长在成都发布联合声明，把基础设施、技能、互操作、数字信任、开放创新和安全数据合作列为共同方向",
+    image: "https://www.apec.org/images/default-source/newsrelease/2026/dmm-press-release-head-table.png?sfvrsn=55d2d9f3_1",
+    impact: "亚太 AI 政策讨论开始从原则宣示走向互操作、标准、数字韧性和能力建设。对跨境 AI 产品而言，身份、数据流、内容可信与安全治理将越来越需要兼顾区域共同框架和各经济体的具体规则。",
+    insight: "面向多市场的 AI 产品应提前建立可配置的数据驻留、透明度、审计和内容来源能力；把合规做成可复用平台层，才能在不同市场规则变化时快速适配。",
+    sourceUrl: "https://www.apec.org/press/news-releases/2026/0724_DMM",
+    sourceLabel: "APEC 官方发布",
+    sources: [
+      { label: "APEC 官方发布", url: "https://www.apec.org/press/news-releases/2026/0724_DMM" },
+      { label: "APEC 联合声明", url: "https://www.apec.org/meeting-papers/sectoral-ministerial-meetings/telecommunicationsandinformation/2026-apec-digital-and-ai-ministerial-statement" },
+      { label: "APEC 声明摘要", url: "https://www.apec.org/press/news-releases/2026/0723_DMM_MA" }
+    ]
+  }
+];
+
+const trends20260724 = [
+  {
+    title: "共享上下文正在从知识库功能变成 Agent 的组织资产",
+    text: "PromptQL 把同事纠正沉淀为共享 Skill，Teable 让 Agent 在同一关系数据上协作，Procore 则把企业 SOP 注入垂直 Agent。最近一周的产品共同说明：长期壁垒不只是模型记住更多，而是团队能否共同维护有来源、有权限、会随工作更新的上下文。"
+  },
+  {
+    title: "模型竞争转向单位任务成本与异构算力组合",
+    text: "Gemini Flash 家族按主力、吞吐和网络安全任务分层，AMD 与 Anthropic 把 2GW 算力采购、ROCm 优化和资本合作绑在一起，PromptQL 也按 OLU 统一不同模型成本。产品开始同时优化模型路由、步骤数、基础设施和结果成功率，而不是只比较 Token 单价。"
+  },
+  {
+    title: "可执行 Agent 的信任边界被直接做进产品体验",
+    text: "Basement 用单次预算卡限制购买，Teable 保留步骤日志与回滚，Procore 继承项目权限并提供来源引用，APEC 则把互操作和数字信任列入区域合作。Agent 越接近真实动作，授权范围、可验证证据和恢复路径越需要成为用户可见的核心界面。"
+  }
+];
+
 const products20260723 = [
   {
     slug: "humalike-hermes",
@@ -1264,6 +1472,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-24",
+    isoDate: "2026-07-24",
+    dateLabel: "2026年7月24日",
+    weekday: "星期五",
+    oneSentence: "AI 产品正在把共享上下文、异构算力与可验证执行组装成新的业务基础设施",
+    products: products20260724,
+    industryEvents: industryEvents20260724,
+    trends: trends20260724
+  },
   {
     slug: "2026-07-23",
     isoDate: "2026-07-23",
