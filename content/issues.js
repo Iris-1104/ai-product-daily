@@ -600,6 +600,213 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260727 = [
+  {
+    slug: "athena-shoplazza",
+    name: "Athena by Shoplazza",
+    tag: "AI Commerce Agent",
+    tagline: "从一句商品描述、照片或旧店链接开始，生成可上线店铺并继续执行电商运营",
+    image: "https://ph-files.imgix.net/1c1ade07-9a43-458f-965a-414dc8bfdfa6.jpeg",
+    positioning: "定位为覆盖建站、商品、营销和履约的电商编排 Agent。壁垒来自 Shoplazza 既有交易底座、订单与商品事实源，以及把广告、支付、物流和会员动作留在同一审批链，而不是只生成一个店铺模板。",
+    audience: ["跨境电商卖家", "独立站创业者", "精简型电商运营团队"],
+    killerFeature: "输入品牌描述、商品照片或现有店铺链接后，约三分钟生成三个可预览版本；店铺上线后还能批量建商品、配置折扣与配送、准备广告活动，并在重要动作前按批次请求确认。",
+    experience: "用户先用极少信息得到完整页面、商品、政策与本地化文案，再逐轮调整；Shoplazza 保持客户、商品和订单的事实源，Athena 读取实时状态并把获批动作写回对应系统，失败步骤会停止依赖任务并给出恢复建议。",
+    growth: "以首个店铺免费、100 个奖励 Credits 和七天试用降低冷启动门槛，借 Shoplazza 商家网络和 Product Hunt 日榜曝光获客，再从建站这一显性需求扩展到高频商品、促销和投放工作。",
+    businessModel: "免费体验加 Credits 与后续订阅转化；首发明确提供免费首店、奖励 Credits 和七天试用，但官网尚未公开完整付费档位，因此不推断具体价格。",
+    insight: "垂直 Agent 的价值不只是多做几步，而是明确哪个系统拥有事实、哪些动作必须批准，以及跨系统部分失败后如何恢复；这些边界决定用户是否敢把真实业务交出去。",
+    sourceUrl: "https://www.shoplaza.ai/",
+    sourceLabel: "Athena 官方网站",
+    sources: [
+      { label: "Athena 官网", url: "https://www.shoplaza.ai/" },
+      { label: "Shoplazza 官方 X", url: "https://twitter.com/shoplazzacom" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/athena-by-shoplazza" }
+    ]
+  },
+  {
+    slug: "openbase-coder",
+    name: "Openbase",
+    tag: "Voice Coding Agent",
+    tagline: "用手机语音派发、引导和审批编码 Agent，再回到电脑继续同一条工程线程",
+    image: "https://ph-files.imgix.net/d06eaf1a-fcac-48a1-92a8-1ba8e756c7de.jpeg",
+    positioning: "定位为 AI 编程的 Voice IDE 和远程监督层。壁垒来自 Mac 本地运行时、iPhone 语音与审阅入口、跨 Codex 和 Claude Code 等后端的线程路由，以及把权限批准、报告和 diff 放进同一控制面。",
+    audience: ["经常离开工位的软件工程师", "并行管理多个编码 Agent 的开发者", "需要保留本地代码边界的技术团队"],
+    killerFeature: "从手机发起真实编码任务，在 Agent 工作中继续语音纠偏、批准敏感命令、读取测试报告和审阅 diff；桌面、网页、iOS 与 CLI 围绕同一个本地线程同步。",
+    experience: "Mac 端负责仓库和实际会话，手机成为低摩擦遥控器；危险命令会暂停等待批准，完成后展示测试与变更，而不是用一句“已完成”代替工程证据。用户回到桌面时可从原线程继续。",
+    growth: "以 AGPL 开源运行时、公开文档和免费选项建立开发者信任，通过 Product Hunt、GitHub 和候补名单积累早期用户，再靠插件、Skills、Routines 与多后端兼容扩大生态。",
+    businessModel: "当前处于 Beta，开放核心 CLI／运行时并通过候补名单分发 Mac、iOS 和 Openbase Cloud；仓库已包含订阅与 Cloud DevSpace 服务层，但官方尚未公布价格。",
+    insight: "异步 Agent 越强，用户越需要低带宽的监督界面；把语音用于意图和纠偏，把审批、测试与 diff 保留为可视证据，比把完整 IDE 塞进手机更符合真实场景。",
+    sourceUrl: "https://openbase.cloud/",
+    sourceLabel: "Openbase 官方网站",
+    sources: [
+      { label: "Openbase 官网", url: "https://openbase.cloud/" },
+      { label: "官方文档", url: "https://docs.openbase.cloud/" },
+      { label: "官方 GitHub", url: "https://github.com/openbase-community/openbase-coder" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/openbase-2" }
+    ]
+  },
+  {
+    slug: "purebox-ai",
+    name: "PureBox.ai",
+    tag: "AI Email Triage",
+    tagline: "先解释并分组 Gmail 清理建议，等用户批量确认后才归档或移入垃圾箱",
+    image: "https://ph-files.imgix.net/fa819b2a-12d0-423b-81f1-eb01af9e68a4.jpeg",
+    positioning: "定位为 Review-first 的 Gmail 清理与持续分拣层。壁垒来自利用用户真实打开、回复和归档历史建立个性化判断，并把 Attention、Archive、Trash 三类建议、原因、审批和撤销做成完整信任闭环。",
+    audience: ["长期积压 Gmail 的知识工作者", "担心自动清理误删的用户", "需要把邮箱接给 AI 助手的个人用户"],
+    killerFeature: "首次扫描就按用户既有处理习惯分类，每封邮件都给出通俗理由；任何移动或删除动作都先展示再批准，并在真实 Gmail 中保留历史和可撤销路径。",
+    experience: "免费扫描最多 1000 封邮件，几分钟内展示需关注、可归档和可清理的实际分布与预计节省时间；用户可整批同意或逐项检查，之后仍在熟悉的 Gmail 中工作，无需切换邮箱客户端。",
+    growth: "用无需信用卡的免费扫描先展示个人化 ROI，通过节省时间估算推动升级；同时提供受同一护栏约束的 Remote MCP Server，让现有 AI 助手成为新的分发入口。",
+    businessModel: "Freemium 订阅；免费版扫描最多 1000 封邮件，Pro 年付折算 4.99 美元／月或月付 7.99 美元，覆盖完整邮箱、持续分类、历史与一键恢复。",
+    insight: "高风险自动化的转化关键不是更强的“自动”，而是先让用户看见系统准备做什么、为什么这样做、如何撤销；证明价值和建立信任可以是同一个体验。",
+    sourceUrl: "https://purebox.ai/",
+    sourceLabel: "PureBox 官方网站",
+    sources: [
+      { label: "PureBox 官网与定价", url: "https://purebox.ai/" },
+      { label: "官方安全说明", url: "https://purebox.ai/security" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/purebox-ai" }
+    ]
+  },
+  {
+    slug: "brainfeed-scroll-better",
+    name: "BrainFeed",
+    tag: "AI Learning Feed",
+    tagline: "把学习目标、文章、视频和 PDF 变成可滚动卡片，再用间隔重复对抗看完就忘",
+    image: "https://ph-files.imgix.net/5452d557-703f-48b3-9861-c9e4a705f6e6.png",
+    positioning: "定位为替代碎片时间刷社交媒体的个性化学习 Feed。壁垒来自把内容采集、AI 拆解、目标驱动推荐与 Star Field 记忆机制连起来，让产品不仅提高消费率，也对长期保留负责。",
+    audience: ["习惯碎片化刷手机的学习者", "积压长文和视频的知识工作者", "希望围绕目标持续输入的学生与创业者"],
+    killerFeature: "分享文章、YouTube、PDF 或设定学习目标后生成短卡片；用户双击值得记住的卡片加入 Star Field，星光随记忆衰退，再用一道快速回忆题把内容重新巩固。",
+    experience: "每次只需三到五分钟，用户继续使用熟悉的上下滚动动作，但 Feed 围绕自选目标组织；可从手机分享菜单、WhatsApp、短信或粘贴链接采集，重要知识会主动在遗忘前回来。",
+    growth: "当前完全免费并以 iOS 首发、Android 早期访问和 Discord 社区扩大种子用户；Product Hunt 与 Reddit 上“替代 doomscrolling”的强叙事带来话题传播，免费层最多支持 15 个活跃目标和 15 条分享链接。",
+    businessModel: "早期访问阶段完全免费，官网尚未公布订阅或广告方案；团队优先用采用、反馈与记忆行为验证留存，再决定商业化。",
+    insight: "把坏习惯换成好结果，比要求用户建立全新习惯更容易；真正差异不在把内容切短，而在产品是否能让用户决定什么值得记住，并对之后的回忆负责。",
+    sourceUrl: "https://www.scrollbrainfeed.com/",
+    sourceLabel: "BrainFeed 官方网站",
+    sources: [
+      { label: "BrainFeed 官网", url: "https://www.scrollbrainfeed.com/" },
+      { label: "App Store", url: "https://apps.apple.com/us/app/brainfeed-scroll-better/id6767833159" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/brainfeed-scroll-better" },
+      { label: "Reddit / SideProject", url: "https://www.reddit.com/r/SideProject/comments/1v4w5m3/dont_lose_hours_of_your_idle_moments_to_social/" }
+    ]
+  },
+  {
+    slug: "yoggi-ai-kids",
+    name: "Yoggi",
+    tag: "Kids AI Companion",
+    tagline: "为 3–15 岁儿童提供随年龄调整的语音对话、故事和画图，并把控制权留给家长",
+    image: "https://ph-files.imgix.net/cecf25dd-dc22-43d7-bdad-90d1baac07e1.png",
+    positioning: "定位为儿童第一次接触 AI 的专用聊天产品。壁垒来自按年龄调整词汇、长度和语气，叠加内容过滤、家长 PIN、用量限制、会话历史、摘要与安全提醒，而不是给通用聊天模型换一个卡通皮肤。",
+    audience: ["3–15 岁儿童家庭", "希望监督孩子使用 AI 的家长", "需要多语言语音陪学的家庭"],
+    killerFeature: "孩子可像打电话一样实时语音聊天、生成插图并参与分支故事；家长设置每日消息上限、锁定设置、查看完整历史和 AI 摘要，并通过邮件接收需要关注的安全提醒。",
+    experience: "低龄儿童无需读写即可使用，回答会随年龄与偏好自动调整；产品不展示广告和外部链接，遇到超出聊天边界的问题会引导孩子寻找可信成年人，避免把 AI 包装成父母替代品。",
+    growth: "以 iOS 和 Android 免费下载降低家庭试用门槛，通过 Product Hunt、应用商店版本更新与创始人在 Reddit 的透明讨论获取早期反馈；12 种语言扩大跨地区自然分发。",
+    businessModel: "Freemium 应用内订阅；App Store 显示免费下载，Premium 月付 6.99 美元、年付 69.99 美元，付费围绕持续使用与家长能力展开。",
+    insight: "面向儿童的 AI 产品不能只宣传过滤率；年龄适配、家长可见性、时间边界、升级到真人帮助的路径和无广告激励，必须共同构成可被家庭理解的安全模型。",
+    sourceUrl: "https://yoggichat.app/",
+    sourceLabel: "Yoggi 官方网站",
+    sources: [
+      { label: "Yoggi 官网", url: "https://yoggichat.app/" },
+      { label: "App Store", url: "https://apps.apple.com/app/yoggi-ai-chat-for-kids/id6785544354" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/yoggi" },
+      { label: "创始人 Reddit 发布", url: "https://www.reddit.com/r/ProductHunters/comments/1v6yqg1/launched_yoggi_a_safe_ai_for_kids_today/" }
+    ]
+  }
+];
+
+const industryEvents20260727 = [
+  {
+    slug: "claude-opus-5",
+    name: "Anthropic · Claude Opus 5",
+    summary: "Opus 5 以与 Opus 4.8 相同价格逼近 Fable 5 能力，并强化长任务验证、编码、知识工作与计算机操作",
+    image: "https://www.anthropic.com/_next/image?q=75&url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840",
+    impact: "Anthropic 正把前沿能力快速下沉到日常付费层：Opus 5 成为 Max 默认和 Pro 最强模型，API 仍为每百万输入 5 美元、输出 25 美元，并提供 Effort 档位与更快的 Fast mode。竞争焦点进一步从单次峰值转向单位任务成功率、验证行为和可控成本。",
+    insight: "产品选模不应只看榜单总分；用真实任务评测不同 Effort 下的完成率、工具次数、延迟与失败恢复，再把高价值复杂任务路由到强模型，才能把能力升级转成稳定毛利。",
+    sourceUrl: "https://www.anthropic.com/news/claude-opus-5",
+    sourceLabel: "Anthropic 官方发布",
+    sources: [
+      { label: "Anthropic 官方发布", url: "https://www.anthropic.com/news/claude-opus-5" },
+      { label: "Anthropic 系统卡", url: "https://www.anthropic.com/claude-opus-5-system-card" },
+      { label: "Axios", url: "https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" }
+    ]
+  },
+  {
+    slug: "meta-ai-agentic-muse-spark",
+    name: "Meta AI · Muse Spark 1.1 Agent",
+    summary: "Meta AI 开始连接邮箱与日历、持续执行计划、生成研究和幻灯片，并允许用户在运行中实时纠偏",
+    image: "https://about.fb.com/wp-content/uploads/2026/07/02_Daily-briefing_Trending_Carousel-02.jpg?fit=1920%2C1672&resize=960%2C836",
+    videoUrl: "https://about.fb.com/wp-content/uploads/2026/07/01_Shopping.mp4",
+    impact: "消费级 AI 助手从回答与生成推进到长期任务和个人上下文：一次设置后可持续交付训练计划、每日简报和商品提醒，并利用 Meta 内容与 Marketplace 完成研究和视觉结果。Meta 的社交与商业数据正在变成 Agent 的独特执行面。",
+    insight: "持续型 Agent 需要把计划、触发频率、连接的数据源、当前进度和用户随时纠偏能力放在同一界面；越强调“替你做”，越要让用户容易理解它何时运行、用了什么上下文。",
+    sourceUrl: "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/",
+    sourceLabel: "Meta 官方发布",
+    sources: [
+      { label: "Meta 官方发布", url: "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/" },
+      { label: "Muse Spark 1.1", url: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" },
+      { label: "Axios", url: "https://www.axios.com/2026/07/24/meta-muse-spark-agents" }
+    ]
+  },
+  {
+    slug: "deepseek-v4-api-alias-retirement",
+    name: "DeepSeek V4 · 旧 API 别名退役",
+    summary: "DeepSeek 按计划停止 deepseek-chat 与 deepseek-reasoner 旧模型名，开发者需显式迁移到 V4 Flash 或 V4 Pro",
+    image: "https://api-docs.deepseek.com/img/v4-spec-en.png",
+    impact: "7 月 24 日 15:59 UTC 后，旧别名不再作为 V4 Flash 思考／非思考模式的兼容入口。此次变化没有发布新模型，却会直接影响依赖旧字符串的生产调用，提醒市场关注模型升级之外的 API 生命周期、显式版本与回滚准备。",
+    insight: "所有模型调用都应经过可配置路由层，持续监控官方弃用时间、模型名与价格；在切换前跑任务级回归、准备双写或快速回滚，避免供应商的一次别名清理变成业务事故。",
+    sourceUrl: "https://api-docs.deepseek.com/news/news260424/",
+    sourceLabel: "DeepSeek 官方 API 公告",
+    sources: [
+      { label: "DeepSeek 官方公告", url: "https://api-docs.deepseek.com/news/news260424/" },
+      { label: "DeepSeek 更新日志", url: "https://api-docs.deepseek.com/updates/" },
+      { label: "DeepSeek 快速开始", url: "https://api-docs.deepseek.com/quick_start/pricing-details-usd/" },
+      { label: "Reddit / DeepSeek", url: "https://www.reddit.com/r/DeepSeek/comments/1v53d7c/deepseek_api_service_down_its_happening_bros/" }
+    ]
+  },
+  {
+    slug: "google-agentic-calling-guide",
+    name: "Google Search · Agentic Calling 更新",
+    summary: "Google 更新官方指南，用户可让 Search 或 AI Mode 致电附近商家核对库存、价格与优惠，再通过短信或邮件收取摘要",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/holiday_shopping_hero.width-200.format-webp_jYHca1x.webp",
+    impact: "Agent 正从网页点击进入现实世界的电话网络。Google 把 Gemini、Duplex、Shopping Graph 与本地商家连接起来，让没有结构化库存 API 的小店也能被 AI 查询；语音行动与结构化搜索之间的边界进一步模糊。",
+    insight: "当目标系统没有 API 时，电话和邮件仍可成为 Agent 的执行接口；产品要同时设计身份披露、问题模板、商家拒绝、结果置信度与可追溯摘要，才能把非结构化行动变成可靠数据。",
+    sourceUrl: "https://blog.google/products-and-platforms/products/shopping/how-to-agentic-calling-let-google-call/",
+    sourceLabel: "Google 官方更新",
+    sources: [
+      { label: "Google 官方使用指南", url: "https://blog.google/products-and-platforms/products/shopping/how-to-agentic-calling-let-google-call/" },
+      { label: "Google 官方功能发布", url: "https://blog.google/products-and-platforms/products/shopping/agentic-checkout-holiday-ai-shopping/" },
+      { label: "Google 商家帮助", url: "https://support.google.com/business/answer/16190256" }
+    ]
+  },
+  {
+    slug: "framer-agents-branching-community",
+    name: "Framer · Agents / Branching / Community",
+    summary: "Framer 集中推广画布 Agent、安全分支与创作者社区，让 AI 从生成页面扩展到持续修改、审查和协作发布",
+    image: "https://framerusercontent.com/images/yRScckrzBI8ErwMPJUrMpiqfdc.jpg?height=1520&width=2400",
+    impact: "网站生成工具正在吸收软件工程的协作范式：Agent 可直接修改可编辑画布、CMS 和代码组件，Branching 隔离并行的人类与 AI 变更，Community 再承担模板和作品分发。竞争从首屏生成转向完整生产与生态闭环。",
+    insight: "生成式编辑器若要进入团队，必须提供分支、预览、差异与应用回主线的路径；把 AI 变更当成可审查的协作者产物，而不是直接覆盖用户作品，才能扩大任务范围。",
+    sourceUrl: "https://www.framer.com/agents/",
+    sourceLabel: "Framer 官方 Agents 页面",
+    sources: [
+      { label: "Framer Agents", url: "https://www.framer.com/agents/" },
+      { label: "Framer AI 产品页", url: "https://www.framer.com/ai/" },
+      { label: "Framer Branching 文档", url: "https://www.framer.com/help/articles/how-to-use-branches-in-framer/" },
+      { label: "Product Hunt 发布动态", url: "https://www.producthunt.com/products/framer" }
+    ]
+  }
+];
+
+const trends20260727 = [
+  {
+    title: "Agent 的竞争焦点从回答质量转向可监督执行",
+    text: "Meta AI 开始长期运行计划，Athena 执行跨系统电商动作，Google 用电话触达没有 API 的商家，Openbase 则把编码 Agent 的批准和 diff 带到手机。最近一周共同指向：Agent 的核心体验正在变成何时行动、依据什么、哪里暂停，以及人如何低成本纠偏。"
+  },
+  {
+    title: "可逆与隔离正在成为 AI 产品的默认协作原语",
+    text: "PureBox 先展示再移动邮件，Framer 用 Branching 隔离 AI 变更，Athena 在跨系统失败时阻止依赖任务继续，DeepSeek 的别名退役也暴露了调用层回滚需求。AI 越深入真实资产，预览、审批、版本和恢复就越不是高级功能，而是采用前提。"
+  },
+  {
+    title: "产品开始围绕特定人群和习惯重做模型入口",
+    text: "Yoggi 用年龄适配与家长控制重做儿童聊天，BrainFeed 借滚动习惯承载间隔重复，Openbase 用语音远程监督工程任务，Opus 5 则按 Effort 服务不同成本边界。通用模型能力继续普及，真正的产品差异更多来自人群边界、行为设计和任务反馈回路。"
+  }
+];
+
 const products20260724 = [
   {
     slug: "teable-3",
@@ -1472,6 +1679,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-27",
+    isoDate: "2026-07-27",
+    dateLabel: "2026年7月27日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在把行动、审批、恢复与人群边界做成 Agent 的新基础体验",
+    products: products20260727,
+    industryEvents: industryEvents20260727,
+    trends: trends20260727
+  },
   {
     slug: "2026-07-24",
     isoDate: "2026-07-24",
