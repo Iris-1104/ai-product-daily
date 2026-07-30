@@ -600,6 +600,213 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260730 = [
+  {
+    slug: "prelint",
+    name: "Prelint",
+    tag: "AI Product Review",
+    tagline: "在每个 AI 生成的 Pull Request 合并前，对照产品规格、业务规则与架构决策检查方向漂移",
+    image: "https://prelint.com/api/og?title=Prevent+product+drift+in+AI-written+code.&description=Prelint+checks+every+pull+request+against+your+product+specs.+Catch+misalignment+before+it+ships.",
+    positioning: "定位为 AI 编码之后、技术代码审查之外的产品意图检查层。壁垒来自把分散在仓库、Notion、Linear、Slack 与会议中的决策构造成持续积累的 decision ledger，并区分不同来源的权威程度，而不是只做一次语义比对。",
+    audience: ["大量采用编码 Agent 的产品研发团队", "有合规与架构约束的软件公司", "需要监督异步 PR 的技术负责人"],
+    killerFeature: "每次 PR 自动解释 Agent 做了什么产品决策、是否违背既有规格与约束、后果和可逆性，并通过 GitHub、GitLab、CLI 与 MCP 让 Agent 在开发中自我修正。",
+    experience: "安装应用并指向 Markdown、YAML 等规格文件后即可在下一次 PR 获得行内反馈；用户看到的是“是否应该这样构建”的证据和建议，而不是另一组风格、性能或语法问题。",
+    growth: "用 10 美元免费 Credits 和无需信用卡的接入降低试用门槛，通过 Product Hunt 日榜、NVIDIA Inception、开发者口碑与永久推荐奖励获客；公开仓库免费，便于从开源项目扩散到付费团队。",
+    businessModel: "按完成的审查计费，每次 1 美元，无席位费或订阅最低消费；失败、取消和超时审查免费，公开开源项目免费，大客户可使用发票或年度预付。",
+    insight: "当代码产出速度不再稀缺，真正昂贵的失败会从“代码能不能跑”转向“团队是否在构建正确的产品”；围绕意图、来源权威和决策历史建立控制层，比再加一个通用审查模型更有机会形成复利。",
+    sourceUrl: "https://prelint.com/",
+    sourceLabel: "Prelint 官方网站",
+    sources: [
+      { label: "Prelint 官网", url: "https://prelint.com/" },
+      { label: "Prelint 定价", url: "https://prelint.com/pricing" },
+      { label: "Prelint 官方 X", url: "https://x.com/prelint_ai" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/prelint" }
+    ]
+  },
+  {
+    slug: "soundgate-guitar",
+    name: "SoundGate Guitar",
+    tag: "AI Music Tutor",
+    tagline: "让手机实时听辨吉他演奏，并用可视化指板、个性化反馈和练习计划补上自学者缺少老师的环节",
+    image: "https://soundgate.ai/generative_audio.png",
+    positioning: "定位为随时可用的 AI 吉他陪练。壁垒来自低延迟音高、节奏与技巧识别，叠加适应技能和目标的课程路径、练习连续性与长期演奏数据，而不是只提供乐谱或聊天问答。",
+    audience: ["自学吉他的初学者", "需要即时纠错的中级演奏者", "希望用碎片时间练习的音乐学习者"],
+    killerFeature: "用户直接对着手机演奏，交互式指板以近实时方式显示检测到的音符，AI Tutor 再根据实际演奏给出反馈、回答问题并生成定制练习。",
+    experience: "无需专用拾音硬件即可开始；反馈覆盖音高、时值和技巧，日目标与连续练习把一次演示转成可重复习惯。产品目前从吉他切入，并计划扩展到更广的音乐学习生态。",
+    growth: "以免费 iOS 应用、Product Hunt 日榜与真实演奏挑战降低体验门槛，通过每日目标、streak 和自适应课程推动留存；团队还用 GITEX 现场体验和音乐教育内容建立品牌认知。",
+    businessModel: "当前 App 与首发版本免费，官方尚未公开订阅或内购档位；先用吉他场景验证识别质量、学习效果和留存，再为更多乐器与高阶课程探索商业化。",
+    insight: "垂直教育 AI 的关键不是把知识讲得更多，而是采集学习过程中的真实行为信号、即时指出偏差，并把下一次练习自动调到合适难度。",
+    sourceUrl: "https://soundgate.ai/",
+    sourceLabel: "SoundGate 官方网站",
+    sources: [
+      { label: "SoundGate 官网", url: "https://soundgate.ai/" },
+      { label: "App Store", url: "https://apps.apple.com/us/app/soundgate-guitar/id6760704644" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/soundgate-guitar-app" }
+    ]
+  },
+  {
+    slug: "medley-mission",
+    name: "Medley /mission",
+    tag: "Multi-Agent Orchestration",
+    tagline: "在 Claude Code 里把一个结果目标拆成可视任务图，并协调 Claude、Codex 与其他模型并行或跨夜执行",
+    image: "https://medley.sh/opengraph-image?c22d6c2f3df7bbe4",
+    positioning: "定位为 Claude Code 内的长任务与多 Agent 编排插件。壁垒来自把任务分解、依赖图、异构模型路由、人类审批和网页 Mission Board 放进用户已有终端，而不是要求团队迁移到另一套独立工作台。",
+    audience: ["使用 Claude Code 的创业者与工程师", "需要跨会话推进复杂工作的独立团队", "希望组合多家模型能力的 Agent 重度用户"],
+    killerFeature: "输入 `/mission` 加结果目标后，系统生成带预算、期限和依赖的实时任务图，按步骤调用 Claude、GPT、Gemini、Grok、Qwen、DeepSeek 或本地模型，并在发布、发送、消费和联系他人前停下确认。",
+    experience: "任务从熟悉的 Claude Code 会话开始，终端展示当前树状计划，浏览器 URL 同步状态与交接；工作可顺序、并行或跨夜运行，用户无需守着多个 Agent 窗口，也能在敏感动作前重新接管。",
+    growth: "用免费插件和三条命令安装获得 Claude Code 用户，通过 Product Hunt 日榜、Y Combinator 网络和公开基准结果制造开发者传播，再凭大量现成工具连接扩大任务边界。",
+    businessModel: "Medley 当前免费，复用用户已经拥有的 Claude Code 与模型访问权限；跨模型调用可自带 OpenRouter 等密钥，官方尚未公布托管协作或企业付费方案。",
+    insight: "多 Agent 产品的核心不是同时启动更多模型，而是把目标、依赖、预算、交接与审批变成用户看得懂的结构；可观察的任务图会比“后台正在工作”更能建立长期信任。",
+    sourceUrl: "https://www.medley.sh/",
+    sourceLabel: "Medley 官方网站",
+    sources: [
+      { label: "Medley 官网", url: "https://www.medley.sh/" },
+      { label: "Medley 官方 GitHub", url: "https://github.com/Spine-AI/medley" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/spine-2" }
+    ]
+  },
+  {
+    slug: "clinicframe-scribe",
+    name: "ClinicFrame Scribe",
+    tag: "Clinical AI",
+    tagline: "在面诊或远程问诊中安静记录对话，并在会诊结束后立即生成可进入 EHR 的结构化临床笔记",
+    image: "https://clinicframe.com/assets/og-home.webp",
+    positioning: "定位为为医疗场景原生构建的桌面端 Ambient Scribe。壁垒来自 HIPAA 基础设施、医疗术语和专科适配、患者历史上下文、常用临床模板与不让会议机器人加入通话的低干扰采集方式。",
+    audience: ["门诊医生", "心理治疗师与精神科医生", "需要减少文书时间的医疗团队"],
+    killerFeature: "桌面应用自动识别面诊或 Zoom、Teams、Google Meet 会话，区分说话人并实时转写，结束后生成 SOAP、DAP、BIRP 或自定义格式的笔记，复制到 EHR 只需数十秒。",
+    experience: "医生在会前看到历史摘要，会中只需点击一次开始，Quick Bar 保持在当前窗口上方，会后审阅而非从零书写；音频在生成笔记后不保存，BAA 可按需签署。",
+    growth: "用七天免卡试用、首发三个月折扣和不限会诊的 Beta 方案降低科室试用阻力，通过 Product Hunt、医疗专业口碑与既有 CompliantChatGPT 用户交叉转化。",
+    businessModel: "按用户订阅，月付 34.99 美元，年付 335.88 美元、折合 27.99 美元／月；当前 Beta 暂不限用量，后续会在引入会话上限前通知用户。",
+    insight: "高敏感垂直 AI 的采用取决于工作流摩擦和数据边界是否同时降低；“不用机器人入会、音频不保留、输出可直接进现有系统”比单纯提高转写分数更接近购买理由。",
+    sourceUrl: "https://clinicframe.com/",
+    sourceLabel: "ClinicFrame 官方网站",
+    sources: [
+      { label: "ClinicFrame 官网", url: "https://clinicframe.com/" },
+      { label: "ClinicFrame 定价", url: "https://clinicframe.com/pricing" },
+      { label: "ClinicFrame 安全说明", url: "https://clinicframe.com/security" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/clinic-scribe-clinicframe" }
+    ]
+  },
+  {
+    slug: "memorycustodian",
+    name: "MemoryCustodian",
+    tag: "Agent Memory",
+    tagline: "把项目决策、约束与弃用方案保存为仓库内 Markdown，并只向当前任务加载真正相关的记忆",
+    image: "https://opengraph.githubassets.com/5813d41c55b73d0fe197b186f03c4ea37dd7711b4fef755ad3f5f38e2c060c7d/waittim/MemoryCustodian",
+    videoEmbedUrl: "https://www.youtube.com/embed/mYKzzATlOPw?rel=0",
+    positioning: "定位为跨 Codex、Claude Code、Gemini 与通用编码 Agent 的本地项目记忆协议。壁垒来自 manifest 路由、可审查与可回滚的 Markdown 数据、确定性 CLI 维护，以及对删除、压缩和迁移采用预览优先的安全设计。",
+    audience: ["频繁切换编码 Agent 的开发者", "需要跨会话保留架构决策的项目团队", "重视本地优先与可审计性的开源用户"],
+    killerFeature: "初始化后用 manifest 先加载项目 brief，再按任务选择 decisions、constraints、do-not-use 或特定 area 文件，避免把完整聊天历史和所有规则塞进每个提示词。",
+    experience: "记忆和代码一起进入版本控制，人类可以 diff、review、删除与恢复；CLI 在变更前展示完整计划，Agent 负责语义判断，工具只执行有预算和结构约束的确定性操作，日常运行无需云服务。",
+    growth: "以 MIT 开源、Product Hunt 发布、可复现演示和 Codex／Claude／Gemini 多入口安装获取开发者，靠仓库原生、离线可用与无运行时模型依赖建立信任，并通过社区贡献扩展适配器。",
+    businessModel: "MIT 开源且本地运行，目前没有托管订阅或商业付费层；价值先沉淀在协议、CLI 与跨 Agent 兼容性，后续商业化尚未公开。",
+    insight: "Agent 记忆不是无限保存聊天，而是建立可选择、可遗忘、可验证的项目事实层；当上下文成本和错误记忆同时增长，显式路由与治理会比更大的上下文窗口更重要。",
+    sourceUrl: "https://github.com/waittim/MemoryCustodian",
+    sourceLabel: "MemoryCustodian 官方 GitHub",
+    sources: [
+      { label: "官方 GitHub", url: "https://github.com/waittim/MemoryCustodian" },
+      { label: "官方演示", url: "https://www.youtube.com/watch?v=mYKzzATlOPw" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/memorycustodian" }
+    ]
+  }
+];
+
+const industryEvents20260730 = [
+  {
+    slug: "microsoft-mai-cyber-1-flash",
+    name: "Microsoft · MAI-Cyber-1-Flash / MDASH",
+    summary: "微软首个网络安全专用模型进入 MDASH，用轻量模型处理大部分漏洞任务，并把昂贵模型留给最难的少数案例",
+    image: "https://microsoft.ai/wp-content/uploads/2026/07/Cyber-1-New-Header.png",
+    impact: "MAI-Cyber-1-Flash 源自 MAI-Thinking-1，在 MDASH 的多 Agent 漏洞识别与修复系统中承担约 90% 的任务，难题再路由到 GPT-5.4。微软报告组合在 CyberGym 达到 95.95%，较现有最佳 MDASH 配置降低 50% 成本，并将能力扩展到 Project Perception 的持续安全工作流。安全 AI 的竞争因此从单模型榜单走向专有数据、任务路由和闭环修复。",
+    insight: "高价值 Agent 不必让最强模型处理每一步；先按失败成本分层任务，用专用小模型覆盖高频路径，再把低置信度案例升级给强模型与人工，可以同时改善完成率和单位经济。",
+    sourceUrl: "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+    sourceLabel: "Microsoft AI 官方发布",
+    sources: [
+      { label: "Microsoft AI 官方发布", url: "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/" },
+      { label: "MAI-Thinking-1 技术报告", url: "https://microsoft.ai/pdf/mai-thinking-1.pdf" },
+      { label: "Microsoft Security 官方博客", url: "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/" },
+      { label: "TECH NOISY", url: "https://tech-noisy.com/2026/07/29/ai-daily-news-2026-07-28/" }
+    ]
+  },
+  {
+    slug: "anthropic-open-weights-position",
+    name: "Anthropic · Open-Weights 模型立场",
+    summary: "Anthropic 明确反对按类别禁用开放权重模型，同时主张前沿芯片管制、遏制工业级蒸馏并对足够强的开放与闭源模型统一做安全测试",
+    image: "https://cdn.sanity.io/images/4zrzovbb/website/62993bb857986e2808c2a75024f384e7b85312b6-2400x1254.png",
+    impact: "Dario Amodei 的公开声明把行业争论从“开放还是封闭”重新拉回能力阈值与可验证风险：低危险能力的开放模型被视为公共产品，但一旦具备高水平网络、生物或对齐风险，就应接受与闭源模型相同的发布前测试。监管框架若采纳能力中立原则，将直接影响模型发布、评测披露与企业采购。",
+    insight: "产品团队需要维护可替换的模型路由和风险分级，不应把“开源”或“闭源”当作安全代理变量；真正需要记录的是模型能力、部署边界、评测证据和事故后能否撤回。",
+    sourceUrl: "https://www.anthropic.com/news/position-open-weights-models",
+    sourceLabel: "Anthropic 官方声明",
+    sources: [
+      { label: "Anthropic 官方声明", url: "https://www.anthropic.com/news/position-open-weights-models" },
+      { label: "Bloomberg Law", url: "https://news.bloomberglaw.com/privacy-and-data-security/anthropics-amodei-rejects-open-model-ban-but-calls-for-testing" },
+      { label: "TECH NOISY", url: "https://tech-noisy.com/2026/07/29/ai-daily-news-2026-07-28/" }
+    ]
+  },
+  {
+    slug: "anthropic-cognizant-expansion",
+    name: "Anthropic × Cognizant · Claude 企业合作扩展",
+    summary: "Cognizant 将 Claude 深入工程与运营平台，并以 3 万名已培训员工和全球高级合作伙伴身份把 Agent 带进制造、生命科学与保险流程",
+    image: "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+    impact: "Claude Code 已进入 Cognizant 的 Flowsource 规格驱动开发模块，Claude 也被嵌入 Neuro AI Engineering 与 IT Ops。双方披露的客户案例包括把合同审查时间最多缩短 40%、抽取准确率提高到 88% 以上，以及每名核保人员每周节省约八小时。模型厂商的企业扩张正在从直销席位转向由大型 SI 把行业上下文、治理和交付能力打包。",
+    insight: "面向大企业的 AI 产品要同时设计可复用能力和伙伴可交付边界；提供规格、评测、权限与审计接口，让懂行业的实施方能稳定落地，比单纯扩大销售团队更容易穿透核心系统。",
+    sourceUrl: "https://www.anthropic.com/news/cognizant-anthropic",
+    sourceLabel: "Anthropic 官方发布",
+    sources: [
+      { label: "Anthropic 官方发布", url: "https://www.anthropic.com/news/cognizant-anthropic" },
+      { label: "Claude Partner Network", url: "https://www.anthropic.com/partners" },
+      { label: "TECH NOISY", url: "https://tech-noisy.com/2026/07/29/ai-daily-news-2026-07-28/" }
+    ]
+  },
+  {
+    slug: "perplexity-pplx-cli",
+    name: "Perplexity · pplx CLI",
+    summary: "Perplexity 把 Search API 和网页内容提取做成终端原生 CLI，以结构化 JSON 直接服务编码 Agent、脚本与 CI 工作流",
+    image: "https://opengraph.githubassets.com/598177061b112d20b8fae7b898b5cee006d67e586dfc1c96559a29c90dcfd79c/perplexityai/perplexity-cli",
+    impact: "`pplx search web` 支持域名、时间与地域过滤，`pplx content fetch` 返回清洗内容和发布日期、作者、付费墙等元数据；macOS Apple Silicon 与 Linux x86_64／arm64 已有校验和安装包，输出统一走 stdout JSON。搜索能力开始从面向人的问答 UI 下沉为 Agent 可组合的基础命令，Perplexity Search API 定价为每千次 5 美元。",
+    insight: "Agent 工具应优先提供确定输出、稳定版本、可校验安装和清晰成本，而不是再包装一个聊天界面；当工具能自然进入 shell、Skill 与 CI，分发就会跟着现有开发流程发生。",
+    sourceUrl: "https://github.com/perplexityai/perplexity-cli",
+    sourceLabel: "Perplexity 官方 GitHub",
+    sources: [
+      { label: "Perplexity 官方 GitHub", url: "https://github.com/perplexityai/perplexity-cli" },
+      { label: "Perplexity Search API 定价", url: "https://docs.perplexity.ai/docs/getting-started/pricing" },
+      { label: "Perplexity API 限流", url: "https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers" },
+      { label: "TECH NOISY", url: "https://tech-noisy.com/2026/07/29/ai-daily-news-2026-07-28/" }
+    ]
+  },
+  {
+    slug: "nvidia-jetson-build-ai-anywhere",
+    name: "NVIDIA Jetson · Build AI Anywhere",
+    summary: "NVIDIA 用 Jetson Orin Nano Super、AGX Orin 与配套 Agent Skills 展示本地视觉、语音和机器人开发如何从云端工作流走向随身边缘设备",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/07/SarahGuo_Jetson_FeaturedImage-1680x945.png",
+    videoUrl: "https://blogs.nvidia.com/wp-content/uploads/2026/07/SarahGuo_Jetson01_captions.mp4",
+    impact: "Jetson Orin Nano Super 以 67 TOPS 支持入门级生成式 AI 与机器人开发，AGX Orin 提供 275 TOPS；官方展示的 Reachy Mini 助手可在无云、无 API Key、运行时无网络的条件下完成低延迟视觉与语音交互。Device Skills 与 BSP Skills 又让编码 Agent 参与设备配置、优化和部署，Physical AI 的进入门槛正从硬件专家项目下降到开发者工作流。",
+    insight: "边缘 AI 产品要把模型、设备管理、可复现部署和离线体验一起设计；只展示端侧推理速度不足以形成产品，能否让普通开发者通过熟悉的 Agent 工具稳定部署才决定生态增长。",
+    sourceUrl: "https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/",
+    sourceLabel: "NVIDIA 官方博客",
+    sources: [
+      { label: "NVIDIA 官方博客", url: "https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/" },
+      { label: "NVIDIA Jetson 产品页", url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" },
+      { label: "Jetson Platform Services", url: "https://github.com/NVIDIA-AI-IOT/jetson-platform-services" }
+    ]
+  }
+];
+
+const trends20260730 = [
+  {
+    title: "代码 Agent 的价值层正从生成速度上移到意图与记忆治理",
+    text: "Prelint 检查 PR 是否偏离产品决策，MemoryCustodian 把约束和弃用方案变成仓库内可路由记忆，Framer 用分支隔离 AI 修改，DeepSeek 的模型别名退役则暴露版本治理需求。最近一周表明，代码生成继续商品化后，团队会为“保持方向、保留决策、可安全回退”付费。"
+  },
+  {
+    title: "多模型路由正在取代单一旗舰模型的默认心智",
+    text: "Microsoft 用 MAI-Cyber-1-Flash 覆盖大多数安全任务、难题再升级到 GPT-5.4，Medley 在一张任务图里组合 Claude、GPT、Gemini 与开源模型，Opus 5 也用 Effort 控制成本和深度。产品架构正在从选一个默认模型，转向按价值、置信度、延迟和失败成本动态编排。"
+  },
+  {
+    title: "垂直 AI 的购买理由从能力演示转向可量化工作闭环",
+    text: "ClinicFrame 围绕会前历史、会中采集和会后 EHR 笔记闭环设计，SoundGate 直接以演奏信号驱动反馈与练习，Cognizant 则用合同审查和核保节省时间证明 Claude 的企业价值。最近七天更有说服力的产品不再只说模型更聪明，而是明确接入什么信号、交付什么产物、节省多少真实工作。"
+  }
+];
+
 const products20260727 = [
   {
     slug: "athena-shoplazza",
@@ -1679,6 +1886,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-07-30",
+    isoDate: "2026-07-30",
+    dateLabel: "2026年7月30日",
+    weekday: "星期四",
+    oneSentence: "AI 产品正在把意图、记忆、模型路由与垂直反馈组装成可持续交付的 Agent 系统",
+    products: products20260730,
+    industryEvents: industryEvents20260730,
+    trends: trends20260730
+  },
   {
     slug: "2026-07-27",
     isoDate: "2026-07-27",
