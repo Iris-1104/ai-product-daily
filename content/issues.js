@@ -600,6 +600,211 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260802 = [
+  {
+    slug: "nudgeforme",
+    name: "NudgeForMe",
+    tag: "AI Email Agent",
+    tagline: "扫描已发送邮件里的沉默机会，在原邮箱中起草符合上下文的下一封跟进",
+    image: "https://nudgeforme.com/nudge-logo.png",
+    videoUrl: "https://nudgeforme.com/nudge-demo-web.mp4",
+    positioning: "定位为收件箱里的跟进执行 Agent，而不是又一个邮件改写器。壁垒来自识别提案、回款、引荐、审批和支持请求中的真实开放环路，结合完整线程、回复状态与个人语气决定何时跟进、何时停止。",
+    audience: ["销售与商务拓展人员", "自由职业者与顾问", "需要追踪回款、审批和客户请求的小团队"],
+    killerFeature: "连接 Gmail、Google Workspace、Outlook、Microsoft 365、Yahoo、iCloud 或 IMAP 后，系统回看已发送会话，找出无人回复但仍有下一步的线程，并直接在原邮箱生成可审阅草稿；检测到回复后自动停止追踪。",
+    experience: "产品默认使用草稿模式，用户先看到为什么这条会话值得跟进，再审阅基于整段对话生成的文本；可用过滤器避开 FYI 和礼貌收尾，Pro 用户再选择自动起草或自动发送。",
+    growth: "用免费扫描、无需信用卡和首发两个月 Pro 免费降低连接邮箱的心理门槛，通过 Product Hunt 当日榜首、推荐奖励与真实漏单案例获得传播，再用多邮箱和自动化推动升级。",
+    businessModel: "免费版含 1 个邮箱、每月 100 次草稿额度和 30 天回看；Pro 月付 12 美元或年付 96 美元，含 3 个邮箱、每月 1000 次额度、更长回看、自动草稿与可选自动发送。",
+    insight: "高价值 Agent 不一定从更宽的工作流切入；把一个经常被遗忘、结果容易衡量的开放环路做成默认可控的闭环，更容易同时证明收入价值与建立授权信任。",
+    sourceUrl: "https://nudgeforme.com/",
+    sourceLabel: "NudgeForMe 官方网站",
+    sources: [
+      { label: "NudgeForMe 官网", url: "https://nudgeforme.com/" },
+      { label: "NudgeForMe 定价", url: "https://nudgeforme.com/#pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/nudgeforme" }
+    ]
+  },
+  {
+    slug: "port22",
+    name: "Port22",
+    tag: "Mobile Coding Agent",
+    tagline: "把 Mac 上正在运行的 Claude Code、Codex、OpenCode 与 Aider 会话安全带到手机",
+    image: "https://tryport22.com/port22/transcript.png",
+    videoUrl: "https://tryport22.com/port22/demo.mp4",
+    positioning: "定位为现有编码 Agent 的通用移动遥控器，而不是新的终端或 Agent 包装层。壁垒来自直接附着到 Mac 上已经运行的会话、保留原生审批选项，并在局域网与端到端加密中继之间无缝切换。",
+    audience: ["长时间运行编码 Agent 的开发者", "需要离开电脑仍能处理审批的工程师", "同时使用多种 CLI Agent 的团队成员"],
+    killerFeature: "手机实时显示会话转录、运行状态和卡住原因，Agent 请求权限时推送通知，并让用户点击原始审批选项；无需猜测快捷键、迁移终端或重配已有 Agent。",
+    experience: "在 Mac 安装轻量端并与手机配对后即可看到所有受支持会话；用户可以在通勤或会议间隙检查进展、响应输入请求，随后回到桌面继续同一任务。",
+    growth: "以一个 Mac、两个并发会话的免费入口和 Product Hunt 当日发布吸引重度 Agent 用户，通过同时支持 Claude Code、Codex、OpenCode 与 Aider 扩大可用人群，并用移动通知形成高频回访。",
+    businessModel: "首发提供 1 台 Mac 与 2 个会话的免费使用且功能完整；官网当前仍以候补名单为主要入口，更多设备或会话的付费档位尚未公开。",
+    insight: "随着 Agent 运行时间变长，新的稀缺资源不是生成速度，而是人的注意力和接管时机；把状态与授权压缩到移动端，能在不改变主工作流的前提下提升任务完成率。",
+    sourceUrl: "https://tryport22.com/",
+    sourceLabel: "Port22 官方网站",
+    sources: [
+      { label: "Port22 官网", url: "https://tryport22.com/" },
+      { label: "Port22 隐私说明", url: "https://tryport22.com/privacy" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/port22" }
+    ]
+  },
+  {
+    slug: "agentmicro",
+    name: "AgentMicro",
+    tag: "Agent Observability",
+    tagline: "在 macOS 菜单栏聚合并行 Codex 任务的实时状态、耗时与未读结果",
+    image: "https://agentmicro.cc/screenshots/agentmicro-menu.png",
+    positioning: "定位为 Codex Desktop 与 CLI 的本地优先微型可观察层。壁垒不是复杂仪表盘，而是从本机元数据可靠区分思考、完成、等待输入、错误和空闲五种状态，同时不读取或上传提示词、回复和源码。",
+    audience: ["并行运行多个 Codex 任务的开发者", "希望减少窗口切换的 macOS 用户", "重视本地数据边界的 Agent 使用者"],
+    killerFeature: "菜单栏用颜色和项目名持续显示所有任务，记录运行时长并标出未读结果；点击某条即可回到对应任务，不需要逐个翻查桌面窗口或终端标签。",
+    experience: "基础状态检测无需辅助功能权限，安装后即可在一个紧凑菜单中查看任务；可选增强检测必须显式开启，产品不会替用户点击、输入或批准任何操作。",
+    growth: "用免费开源、单一用途和可审计源码切入 Codex 重度用户，通过 Product Hunt、GitHub 与开发者口碑传播；菜单栏常驻带来天然日活，并为社区适配更多任务状态留下接口。",
+    businessModel: "当前完全免费并以开源项目分发，没有订阅、云服务或已公布的商业付费层。",
+    insight: "Agent 可观察性未必先需要企业级控制台；先把最频繁的状态焦虑变成一眼可见、点击可回的本地体验，可以用极低学习成本建立稳定使用习惯。",
+    sourceUrl: "https://agentmicro.cc/",
+    sourceLabel: "AgentMicro 官方网站",
+    sources: [
+      { label: "AgentMicro 官网", url: "https://agentmicro.cc/" },
+      { label: "AgentMicro 官方 GitHub", url: "https://github.com/fizzy718/AgentMicro" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/agentmicro" }
+    ]
+  },
+  {
+    slug: "basedash-audit-logs",
+    name: "Basedash Audit Logs",
+    tag: "AI Governance",
+    tagline: "为每次登录、配置变更与 AI 数据查询建立可筛选、可导出的原生审计轨迹",
+    image: "https://www.basedash.com/og/p/pricing.png",
+    positioning: "定位为 AI 原生 BI 内置的企业审计证据层。壁垒来自把用户、角色、数据访问、自然语言问题、生成查询与配置变化放在同一治理上下文，并与 SSO、SCIM、RBAC、行级权限和自托管组合交付。",
+    audience: ["受监管企业的数据与安全团队", "需要让业务人员自助分析的 IT 管理者", "向客户交付 AI 分析能力的 SaaS 团队"],
+    killerFeature: "系统记录谁在何时访问了什么数据、向 AI 分析师提出了什么问题、创建或发布了哪些仪表盘以及改动了哪些设置，并支持筛选、API、SIEM 流式输出和自定义保留策略。",
+    experience: "管理员无需拼接应用日志和模型调用记录即可按人员、资源与动作回溯事件；审计轨迹与数据库层行级权限协同，使 AI 即使生成异常 SQL 也无法越过用户的数据范围。",
+    growth: "Basedash 以连续拆分企业能力为独立产品的方式在 Product Hunt 高频发布，用安全审查中的真实问题教育市场，再通过 14 天试用、案例与 750 多个数据源进入团队。",
+    businessModel: "Audit Logs 已包含在定制报价的 Enterprise 方案中；Startup 方案为每月 1000 美元、最多 25 位用户并另计 AI 用量，但不含此次企业审计能力。",
+    insight: "企业 AI 的购买门槛正在从回答准确率转向能否重建一次决策的完整证据链；审计若只记录登录而不记录 AI 问题、数据范围和输出动作，就无法支撑真实问责。",
+    sourceUrl: "https://www.basedash.com/",
+    sourceLabel: "Basedash 官方网站",
+    sources: [
+      { label: "Basedash 官网", url: "https://www.basedash.com/" },
+      { label: "Basedash 定价", url: "https://www.basedash.com/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/basedash" }
+    ]
+  },
+  {
+    slug: "kopai",
+    name: "Kopai",
+    tag: "Agent Marketplace",
+    tagline: "让专家无代码上传知识、发布垂直 Agent，并按每次对话持续获得收入",
+    image: "https://usekopai.com/api/og",
+    positioning: "定位为专业知识 Agent 的创建工作台与交易市场。壁垒来自把知识库、系统提示、工具、评测、计费、发现和评论放进一条发布链路，让专家出售可交互的判断过程，而不是一次性课程或文档。",
+    audience: ["教育、合规、制造与支持领域专家", "希望产品化个人知识的顾问", "寻找垂直专业 Agent 的企业与个人买家"],
+    killerFeature: "创作者上传资料、设定范围与安全规则后即可无代码发布 Agent，平台在上线前检查知识检索、工具调用、越狱防护和范围遵循，并按每条消息计费。",
+    experience: "Agent 可先保持私有反复测试，再一键进入可搜索市场；买家按主题发现、直接对话并评价，创作者也能把同一 Agent 导入自己的站点，生成界面在隔离沙箱中运行。",
+    growth: "用免费创建、Product Hunt 当日发布和市场内 SEO 获取首批供给与需求，通过细分行业页面、评论和按使用付费降低买家试用成本，再让创作者带着既有受众进入平台。",
+    businessModel: "市场按每条消息收费，创作者保留 70% 收入、平台获得 30% 以覆盖发现、托管、评测、支付与信任机制；创建和发布入口当前免费。",
+    insight: "Agent 市场的关键不是上架数量，而是如何证明某个专家知识仍然有效、回答没有越界且按真实使用结算；评测与信任层会比模型调用本身更接近平台壁垒。",
+    sourceUrl: "https://usekopai.com/",
+    sourceLabel: "Kopai 官方网站",
+    sources: [
+      { label: "Kopai 官网", url: "https://usekopai.com/" },
+      { label: "Kopai 官方文档", url: "https://docs.usekopai.com/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents" }
+    ]
+  }
+];
+
+const industryEvents20260802 = [
+  {
+    slug: "deepseek-v4-flash-0731",
+    name: "DeepSeek · DeepSeek-V4-Flash-0731",
+    summary: "DeepSeek 正式开放 V4 Flash 更新权重，用更强 Agent 能力取代预览版并保留 MIT 许可",
+    image: "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4-Flash-0731.png",
+    impact: "官方模型卡显示，新版在 Terminal Bench 2.1 达到 82.7、DeepSWE 达到 54.4，并引入 low、high、max 三档 reasoning effort；权重可本地部署且支持 vLLM、SGLang 的 DSpark 推测解码。开放模型竞争由聊天能力进一步转向长程编码、工具使用和推理成本。",
+    insight: "开放模型发布应同时交付权重、代理评测、推理模板与部署配方；对产品团队而言，可复现的 Agent 运行链路比单一总分更能决定是否值得迁移。",
+    sourceUrl: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+    sourceLabel: "DeepSeek 官方模型卡",
+    sources: [
+      { label: "DeepSeek 官方模型卡", url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" },
+      { label: "DeepSeek-V4 技术报告", url: "https://arxiv.org/abs/2606.19348" },
+      { label: "Reddit 实测讨论", url: "https://www.reddit.com/r/DeepSeek/comments/1vbi0wk/deepseekv4flash_api_is_now_in_public_beta/" }
+    ]
+  },
+  {
+    slug: "minimax-h3-preview",
+    name: "MiniMax · H3 开放预告",
+    summary: "MiniMax 公布 H3 通用多模态视频模型，并预告北京时间 8 月 3 日开放模型权重",
+    image: "https://cdn.modelscope.cn/social-thumbnails/models/MiniMax/MiniMax-H3.png",
+    impact: "H3 把文本、图像、音频与视频放进同一上下文，统一处理生成、参考和编辑，并瞄准影视、广告、品牌、电商与游戏等商业内容场景。官方 ModelScope 页面在开放前提供订阅提醒，说明视频模型的竞争正在从单任务效果转向多素材理解、精细控制与可部署权重。",
+    insight: "对生成式视频产品，发布节奏要明确区分展示、在线体验和权重开放；产品机会在于围绕同一创作上下文持续编辑，而不是让用户在多个任务模型之间重复上传素材。",
+    sourceUrl: "https://x.com/MiniMax_AI/status/2083006198828417501",
+    sourceLabel: "MiniMax 官方 X",
+    sources: [
+      { label: "MiniMax 官方 X", url: "https://x.com/MiniMax_AI/status/2083006198828417501" },
+      { label: "MiniMax 官方 ModelScope", url: "https://modelscope.cn/models/MiniMax/MiniMax-H3" },
+      { label: "Reddit 开放时间讨论", url: "https://www.reddit.com/r/StableDiffusion/comments/1vbjta9/release_date_for_minimax_h3_open_weight_is_out/" }
+    ]
+  },
+  {
+    slug: "gemini-robotics-2",
+    name: "Google DeepMind · Gemini Robotics 2",
+    summary: "Google DeepMind 推出三款 Robotics 2 模型，让机器人获得全身控制、精细操作与多机器人协作",
+    image: "https://img.youtube.com/vi/4lSQnrMC6nY/maxresdefault.jpg",
+    videoEmbedUrl: "https://www.youtube.com/embed/4lSQnrMC6nY?rel=0",
+    impact: "Gemini Robotics 2 负责视觉语言到动作，ER 2 规划持续数分钟的多步任务并协调机器人团队，On-Device 2 可离线运行并用少于 200 个示例在数小时内适配新本体。ER 2 已进入 AI Studio，VLA 与端侧版本面向早期合作伙伴，物理 AI 正从桌面抓取扩展到全身协作系统。",
+    insight: "机器人产品不能只展示一次成功动作；应分别度量规划、执行、自纠错、人体接近安全与跨本体迁移，并为云端推理不可用时设计端侧降级。",
+    sourceUrl: "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    sourceLabel: "Google DeepMind 官方发布",
+    sources: [
+      { label: "Google DeepMind 官方发布", url: "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" },
+      { label: "Google DeepMind 官方视频", url: "https://www.youtube.com/watch?v=4lSQnrMC6nY" },
+      { label: "Axios", url: "https://www.axios.com/2026/07/30/google-robotics-software-update" }
+    ]
+  },
+  {
+    slug: "openai-astra-ten-advances",
+    name: "OpenAI · Astra 十项数学进展",
+    summary: "OpenAI 公布内部 Astra 模型生成的十项数学与理论计算机科学结果，并发布论文与 Lean 证书",
+    image: "https://opengraph.githubassets.com/1/openai/ten-proofs",
+    impact: "十项结果覆盖高维球堆积、编码理论、群论、算术电路、量子复杂性、格密码和组合数学；官方称寻找解法的总 token 按 Sol API 费率约 2000 美元，之后由人类协助整理，并由模型形式化为可机器检查的 Lean 证书。前沿模型开始从解题榜单进入公开研究主张与可验证产物。",
+    insight: "科学 Agent 的可信体验必须把发现、人工编辑、形式化证明和独立复核拆开呈现；可下载的证书、代码和推理材料，比一句“模型取得突破”更能形成产品信任。",
+    sourceUrl: "https://openai.com/index/ten-advances-in-mathematics/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI 官方发布", url: "https://openai.com/index/ten-advances-in-mathematics/" },
+      { label: "OpenAI 官方论文", url: "https://cdn.openai.com/pdf/ten-proofs-oai.pdf" },
+      { label: "Lean 证书仓库", url: "https://github.com/openai/ten-proofs" },
+      { label: "r/math 讨论", url: "https://www.reddit.com/r/math/comments/1vch950/openai_ten_advances_in_mathematics_and/" }
+    ]
+  },
+  {
+    slug: "eu-ai-act-article-50",
+    name: "欧盟 AI Act · Article 50",
+    summary: "欧盟 AI 法案第 50 条今日开始适用，要求披露 AI 交互并标记特定生成或操纵内容",
+    image: "https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/7_GPAI_CoP_Documentation_Jic10w91oXHE9jpiwiGysX4P4_241037.jpg?itok=6ixNBNvj",
+    impact: "提供方需告知用户正在与 AI 直接交互，并为生成或操纵内容加入机器可读标记；部署方需披露深度伪造、无人工编辑的公共利益文本、情绪识别和生物特征分类。现有生成系统的标记义务可过渡到 12 月 2 日，违规最高可罚 1500 万欧元或全球年营业额 3%。",
+    insight: "透明度不能只靠页面角落的一行说明；产品团队需要把交互披露、机器标记、内容标签、生成时间与人工审核状态作为可审计字段，从创建链路开始设计。",
+    sourceUrl: "https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content",
+    sourceLabel: "欧盟委员会官方指南",
+    sources: [
+      { label: "欧盟委员会 Article 50 指南", url: "https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content" },
+      { label: "欧盟委员会快速事实", url: "https://digital-strategy.ec.europa.eu/en/factpages/quick-facts-transparency-rules-ai-systems" },
+      { label: "Reuters", url: "https://live.euronext.com/en/financial-news/ai-generated-ads-should-be-exempt-eu-transparency-rules-retail-association-says" }
+    ]
+  }
+];
+
+const trends20260802 = [
+  {
+    title: "Agent 竞争转向长程执行与可观察性",
+    text: "DeepSeek 强化编码与工具评测，Port22 和 AgentMicro 则补齐移动审批与并行状态。模型能力只有进入可监控、可接管的长任务链路，才会真正转化为完成率。"
+  },
+  {
+    title: "多模态智能开始统一数字创作与物理行动",
+    text: "MiniMax H3 用统一上下文理解并生成多种媒体，Gemini Robotics 2 把视觉语言推理推进到全身动作与多机器人协作。产品边界正从单一模态工具转向连续世界状态。"
+  },
+  {
+    title: "可验证与可追责成为商业化前置条件",
+    text: "Astra 的 Lean 证书、Basedash 的 AI 审计轨迹和欧盟 Article 50 同时指向证据链。高风险 AI 产品必须说明谁做了什么、依据什么、何时由人接管，而不是只展示最终输出。"
+  }
+];
+
 const products20260730 = [
   {
     slug: "prelint",
@@ -1886,6 +2091,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-02",
+    isoDate: "2026-08-02",
+    dateLabel: "2026年8月2日",
+    weekday: "星期日",
+    oneSentence: "AI 产品正在把长程执行、多模态行动与可验证证据链组装成新的商业基础设施",
+    products: products20260802,
+    industryEvents: industryEvents20260802,
+    trends: trends20260802
+  },
   {
     slug: "2026-07-30",
     isoDate: "2026-07-30",
