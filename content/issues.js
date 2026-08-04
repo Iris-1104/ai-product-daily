@@ -600,6 +600,209 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260804 = [
+  {
+    slug: "agentsky",
+    name: "AgentSky",
+    tag: "Managed Agent Runtime",
+    tagline: "把 Claude Code、Codex 等编码 Agent 变成可恢复、可换模型并可从多端继续的托管会话",
+    image: "https://agentsky.dev/opengraph-image?a3ac3459b930bc37",
+    positioning: "定位为编码 Agent 的托管运行时，而不是新的模型或聊天壳。壁垒来自持久会话、隔离沙箱、快照恢复和跨 harness 迁移，让团队可以更换 Claude Code、Codex、Hermes 或 OpenClaw 而不丢失任务历史。",
+    audience: ["长时间运行编码 Agent 的开发者", "需要远程接管任务的工程团队", "同时评估多种 Agent 与模型的平台团队"],
+    killerFeature: "同一会话可以在 Web、API、CLI、Slack、Telegram、WhatsApp 或 iMessage 间继续，并在运行失败后从快照恢复；用户还能保留历史上下文切换 harness 或模型。",
+    experience: "创建 Agent 后直接进入独立沙箱，运行中可查看完整历史、暂停、恢复或复制环境配置；消息渠道连接到同一会话，离开电脑后也不必重开任务或重述上下文。",
+    growth: "用注册即送 3 美元额度、无订阅和按量计费降低首次托管门槛，通过 Product Hunt 首发、开发者渠道与多 harness 兼容覆盖已有 Agent 用户，再以远程渠道和恢复能力提高留存。",
+    businessModel: "采用预付 credits 按量计费，不收席位费或订阅费；harness 本身免费，模型按官方列价结算，计算资源按秒收费，暂停或挂起状态不计费。",
+    insight: "Agent 运行时间越长，产品壁垒越可能落在状态持久化、失败恢复与可替换性上；让用户能带着历史切换模型和入口，比单纯增加一个聊天界面更能建立基础设施价值。",
+    sourceUrl: "https://agentsky.dev/",
+    sourceLabel: "AgentSky 官方网站",
+    sources: [
+      { label: "AgentSky 官网", url: "https://agentsky.dev/" },
+      { label: "AgentSky 定价", url: "https://agentsky.dev/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/agentsky" }
+    ]
+  },
+  {
+    slug: "ctruh-studio",
+    name: "Ctruh Studio",
+    tag: "No-code 3D Experience",
+    tagline: "用 AI 和无代码编辑器在浏览器中制作可交互的 3D 展示、虚拟商店与 AR 体验",
+    image: "https://framerusercontent.com/images/ThnhcHqVqGvCJ07Ao0J1GoXCjkU.png",
+    positioning: "定位为品牌和零售团队的浏览器原生 3D 创作与发布平台。壁垒来自自研 Web 3D 引擎与 VersaAI，把文本、图片和视频转成可编辑资产，并把制作、交互、部署和效果分析放在同一工作流。",
+    audience: ["品牌与电商营销团队", "产品展示和零售体验设计师", "没有 3D 工程团队的中小企业"],
+    killerFeature: "用户可在浏览器里生成或导入 3D 资产，搭建产品展厅、虚拟门店、配置器和 WebAR 场景，再以链接或嵌入代码发布到网站与主流电商系统，无需安装 App 或 SDK。",
+    experience: "从模板或空白场景开始后，团队在可视化画布中布置资产、设置交互与品牌元素，实时预览不同设备上的表现；发布后继续从统一面板查看体验数据并迭代。",
+    growth: "通过 Product Hunt 发布和可分享的 3D 链接制造作品传播，以零售、汽车、房地产等垂直案例降低教育成本，再借 Shopify、Magento、WooCommerce 与定制站点集成进入商业项目。",
+    businessModel: "官方企业方案采用项目制报价，费用覆盖设计、开发、性能优化与交付；Studio 的公开自助价格尚未披露，销售路径以演示和定制方案为主。",
+    insight: "生成 3D 资产只是入口，真正可持续的产品价值来自把交互编排、跨端发布、商业系统集成和效果数据串成闭环，让一次演示变成可运营的数字触点。",
+    sourceUrl: "https://www.ctruh.com/products/studio",
+    sourceLabel: "Ctruh Studio 官方页面",
+    sources: [
+      { label: "Ctruh Studio", url: "https://www.ctruh.com/products/studio" },
+      { label: "Ctruh WebXR Commerce", url: "https://xrcommerce.ctruh.com/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/ctruh-studio" }
+    ]
+  },
+  {
+    slug: "airtop-google-ads",
+    name: "Airtop for Google Ads Automation",
+    tag: "Advertising Agent",
+    tagline: "让营销团队用对话完成 Google Ads 建设、浪费排查、优化与周期报告",
+    image: "https://www.airtop.ai/opengraph-image.jpg?7f1a3e92fb88f0aa",
+    positioning: "定位为 Google Ads 的对话式执行 Agent，而不是只读报表或通用浏览器自动化。壁垒来自将账户、CRM 上下文、关键词研究和网页操作放进同一 Agent，同时把所有真实改动保留在人类批准之后。",
+    audience: ["管理多个广告账户的增长团队", "代理商与独立投放顾问", "缺少专职投手的中小企业"],
+    killerFeature: "用户用自然语言要求创建 campaign、找出浪费支出、调整投放或生成报告，Agent 会研究关键词并操作 Google Ads，但所有变更都先形成可审阅建议，只有明确批准后才执行。",
+    experience: "连接广告账户后即可在聊天中询问表现或下达任务；系统能运行周期审计，通过 Slack 或邮件推送发现，并结合 CRM 数据解释哪些投放带来真实业务结果。",
+    growth: "借助 Google Ads 这一高价值且结果可量化的单一场景切入，用免费额度、7 天试用和 Product Hunt 首发吸引营销团队，再以持续审计、通知和多账户工作流推动付费。",
+    businessModel: "免费版提供 1000 credits、3 个会话和 1 个 Agent；Starter、Professional 与 Enterprise 月费分别为 26、170 和 502 美元，年付享 10% 折扣。",
+    insight: "高风险执行 Agent 的关键体验不是自动点击，而是把建议、依据、审批和动作结果放在同一链路；先用只读诊断建立信任，再逐步扩大可执行权限。",
+    sourceUrl: "https://www.airtop.ai/google-ads",
+    sourceLabel: "Airtop 官方 Google Ads 页面",
+    sources: [
+      { label: "Airtop for Google Ads", url: "https://www.airtop.ai/google-ads" },
+      { label: "Airtop 定价", url: "https://www.airtop.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/airtop" }
+    ]
+  },
+  {
+    slug: "mpai",
+    name: "mpai",
+    tag: "Multiplayer Coding Agent",
+    tagline: "把已经运行的 Codex 或 Claude Code 终端会话变成可邀请、可撤销的多人协作空间",
+    image: "https://godfaddaai.github.io/multiplayer-ai/og-card.png",
+    positioning: "定位为现有编码 Agent 会话的多人协作层，而不是新的云端 IDE。壁垒来自直接进入正在运行的终端会话、通过 Tailscale 建立私有连接，并为参与者权限、提示词记录和撤销访问提供明确边界。",
+    audience: ["结对使用编码 Agent 的工程师", "远程排障与代码评审团队", "希望保留本地环境和现有会话的开发者"],
+    killerFeature: "主机安装一次后，队友粘贴邀请命令即可进入同一个 Codex 或 Claude Code 会话；可以只观看或共同提示，所有提示进入追加式审计记录，主机随时撤销访问。",
+    experience: "产品保持终端原生，不要求迁移仓库、上传上下文或重开 Agent；参与者看到同一输出并共同输入，但不能获得主机 shell、删除文件或代理审批等高风险能力。",
+    growth: "以 macOS public alpha、MIT 开源和一条可复制的邀请命令降低试用成本，通过 Product Hunt、GitHub 与首批十支团队共创打磨协作边界，再依靠真实结对场景获得口碑。",
+    businessModel: "当前以 MIT 许可免费开源，允许商业使用且没有托管中继或已公布付费层；现阶段目标是获取公开 alpha 团队和社区贡献。",
+    insight: "多人 Agent 协作不应等同于共享整台机器；把会话、输入权、文件权和审批权拆开，才能在保留本地工作流的同时建立可理解的安全边界。",
+    sourceUrl: "https://godfaddaai.github.io/multiplayer-ai/",
+    sourceLabel: "mpai 官方网站",
+    sources: [
+      { label: "mpai 官网", url: "https://godfaddaai.github.io/multiplayer-ai/" },
+      { label: "mpai 官方 GitHub", url: "https://github.com/godfaddaai/multiplayer-ai" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/mpai" }
+    ]
+  },
+  {
+    slug: "open-minis",
+    name: "Open Minis",
+    tag: "On-device Mobile Agent",
+    tagline: "在 iOS 与 Android 手机上运行带 Linux 沙箱和原生系统桥接的开源 AI Agent",
+    image: "https://opengraph.githubassets.com/1/OpenMinis/OpenMinis",
+    positioning: "定位为可验证、无账户的端侧移动 Agent，而不是把手机界面接到云端自动化服务。壁垒来自手机内的 Alpine Linux 沙箱、30 多个原生系统桥接和 BYOM 模式，使文件、工具与密钥边界可由用户掌控。",
+    audience: ["重视隐私和可审计性的移动用户", "希望构建手机自动化的开发者", "需要跨 iOS 与 Android 部署个人 Agent 的开源社区"],
+    killerFeature: "Agent 可在手机沙箱里安装软件包、运行 Python、编辑文件和使用浏览器，并通过授权桥接访问健康、日历、提醒、HomeKit、联系人、蓝牙、剪贴板、媒体与设备能力。",
+    experience: "安装后无需注册账户，用户自行选择模型供应商并保存 API key；任务在隔离 Linux 环境执行，每项原生能力单独授权，数据与工作文件默认留在设备上。",
+    growth: "以免费、开源、无遥测和无内购建立隐私差异，通过 App Store、GitHub release 与 Product Hunt 获取开发者用户，再由社区扩展桥接和端侧工作流。",
+    businessModel: "当前应用免费、开源且没有内购，用户自行承担所选远程模型的 API 费用；项目未公布订阅或托管商业方案。",
+    insight: "端侧 Agent 的机会不只在离线推理，而在于给模型一个用户可检查、系统可隔离的执行环境；权限逐项授权和 BYOM 能把隐私承诺落实为产品结构。",
+    sourceUrl: "https://openminis.app/",
+    sourceLabel: "Open Minis 官方网站",
+    sources: [
+      { label: "Open Minis 官网", url: "https://openminis.app/" },
+      { label: "Open Minis GitHub Releases", url: "https://github.com/OpenMinis/OpenMinis/releases" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/open-minis" }
+    ]
+  }
+];
+
+const industryEvents20260804 = [
+  {
+    slug: "qwen3-8-max",
+    name: "Alibaba Qwen · Qwen3.8-Max",
+    summary: "阿里发布 2.4 万亿参数 MoE 旗舰模型 Qwen3.8-Max，面向百万上下文与长程多模态 Agent",
+    image: "https://img.alicdn.com/imgextra/i3/O1CN01eBklSt1jT2S77Xekm_!!6000000004548-2-tps-224-224.png",
+    impact: "官方页面显示模型每次激活 950 亿参数，支持文本、图像和视频输入，最大输入约 99.1 万 token、输出 13.1 万 token，并内置代码解释器、网页与图像搜索工具。Qwen 同时预告开放权重版本随后到来，旗舰模型竞争进一步转向长时间工作、工具调用和可部署性。",
+    insight: "百万上下文不是把更多文件塞进提示词就结束；产品应为多日任务设计状态压缩、阶段检查、失败恢复和工具证据，让长程能力能稳定转化为交付。",
+    sourceUrl: "https://qwen.ai/blog?id=qwen3.8",
+    sourceLabel: "Qwen 官方发布",
+    sources: [
+      { label: "Qwen 官方发布", url: "https://qwen.ai/blog?id=qwen3.8" },
+      { label: "Qwen Cloud 模型页", url: "https://www.qwencloud.com/models/qwen3.8-max" },
+      { label: "Qwen 官方 X", url: "https://x.com/Alibaba_Qwen/status/2084100707423289643" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/qwen3" }
+    ]
+  },
+  {
+    slug: "nvidia-nemotronlabs-voicechat-11b",
+    name: "NVIDIA · NemotronLabs VoiceChat 11B",
+    summary: "NVIDIA 开放 11B 全双工语音模型，在自然打断与低延迟对话中加入实时工具调用",
+    image: "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B.png",
+    impact: "官方模型卡标注 8 月 3 日发布：单一端到端架构联合流式语音理解与生成，约 450 毫秒轮次延迟，并用独立输出通道产生工具调用脚本。模型采用 OpenMDW 1.1 许可，提供离线推理与 WebSocket 流式部署，但当前明确仅面向研究用途。",
+    insight: "语音 Agent 的体验指标应从转写准确率扩展到抢话、停顿、工具等待话术和失败恢复；在动作执行期间仍保持自然对话，才是真正区别于 ASR、LLM、TTS 串联方案的价值。",
+    sourceUrl: "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    sourceLabel: "NVIDIA 官方模型卡",
+    sources: [
+      { label: "NVIDIA 官方模型卡", url: "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B" },
+      { label: "NVIDIA NeMo 官方代码", url: "https://github.com/NVIDIA-NeMo/Speech/tree/nemotron-labs-voicechat" },
+      { label: "NVIDIA VoiceChat Early Access", url: "https://developer.nvidia.com/nemotron-voicechat-early-access" }
+    ]
+  },
+  {
+    slug: "microsoft-project-perception-preview",
+    name: "Microsoft · Project Perception 公测",
+    summary: "微软开放 Project Perception 公测，用红、蓝、绿三类 Agent 连续发现、判断并修复安全风险",
+    image: "https://blogs.microsoft.com/wp-content/uploads/2026/07/OMB-Project-Perception-Final-Hero-7_27-1024x576.png",
+    impact: "Project Perception 于 8 月 3 日进入 public preview，首个场景把 MAI-Cyber-1-Flash 接入 MDASH 多模型团队处理软件漏洞管理。微软称该配置在 CyberGym 得分 96%，比 Mythos 高 12 点，并较当前 MDASH 配置节省近 50% 成本，Agent 安全由生成告警走向闭环防御。",
+    insight: "企业 Agent 平台需要把感知、上下文、模型路由、协调器和执行器分层，并让人类保留最终控制；只有把质量、延迟和成本一起路由，全天候工作流才有可持续经济性。",
+    sourceUrl: "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+    sourceLabel: "Microsoft 官方博客",
+    sources: [
+      { label: "Microsoft 官方博客", url: "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/" },
+      { label: "Microsoft Security 客户案例", url: "https://techcommunity.microsoft.com/blog/microsoft-security-blog/how-nationwide-stays-ahead-of-attackers-with-project-perception/4540534" },
+      { label: "Microsoft 研究访谈", url: "https://commandline.microsoft.com/taesoo-kim-interview-mdash-security-research/" }
+    ]
+  },
+  {
+    slug: "white-house-frontier-ai-framework",
+    name: "美国白宫 · 前沿 AI 自愿评估框架",
+    summary: "白宫完成前沿模型自愿评估框架，拟让开发者在发布前与政府开展受控网络能力测试",
+    image: "https://www.whitehouse.gov/wp-content/uploads/2025/03/WH47-Presidential-Actions-Social-Share-Card.jpg",
+    impact: "Axios 8 月 3 日报道框架已经完成但内容尚未公开，并将与企业继续讨论。其法源行政令要求建立机密网络能力基准，允许开发者自愿提交覆盖范围内模型供政府在向可信伙伴开放前最多评估 30 天，同时明确不构成强制许可、预先审查或发布审批。",
+    insight: "前沿模型团队应提前把发布前评测、机密材料访问、合作方分级与披露边界产品化；即使框架自愿，能否用可审计流程证明风险控制也会影响政府和关键基础设施采购。",
+    sourceUrl: "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+    sourceLabel: "白宫行政令",
+    sources: [
+      { label: "白宫行政令", url: "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" },
+      { label: "白宫官方事实清单", url: "https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/" },
+      { label: "Axios", url: "https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors" }
+    ]
+  },
+  {
+    slug: "palantir-q2-2026-aip-growth",
+    name: "Palantir · Q2 2026 AIP 增长",
+    summary: "Palantir 披露二季度收入同比增长 93%，美国商业业务在 AIP 需求推动下增长 149%",
+    image: "https://img.youtube.com/vi/yTHNjVWnoWo/maxresdefault.jpg",
+    videoEmbedUrl: "https://www.youtube.com/embed/yTHNjVWnoWo?rel=0",
+    impact: "SEC 财报附件显示，季度收入 19.35 亿美元，美国商业收入 7.64 亿美元，Rule of 40 得分达到 155%；公司把全年收入指引上调至 81.50 亿至 81.58 亿美元。企业 AI 采购的评价正在从模型试验转向能否在受控数据和业务流程中产生可量化价值。",
+    insight: "面向企业的 AI 产品要把模型能力包装为可部署、可治理且能对应经营指标的工作流；销售材料若不能连接真实使用、合同扩张和利润结构，就很难跨过试点阶段。",
+    sourceUrl: "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+    sourceLabel: "Palantir SEC 财报附件",
+    sources: [
+      { label: "Palantir SEC 财报附件", url: "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm" },
+      { label: "Palantir SEC 8-K", url: "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/pltr-20260803.htm" },
+      { label: "Palantir 官方财报直播", url: "https://www.youtube.com/live/yTHNjVWnoWo" }
+    ]
+  }
+];
+
+const trends20260804 = [
+  {
+    title: "Agent 基础设施从模型绑定转向可替换运行时",
+    text: "AgentSky、mpai、Open Minis 与 Qwen3.8-Max 共同显示，持久状态、跨入口继续、失败恢复和模型切换正在变成基础能力。团队应把上下文和权限设计成可迁移资产，而不是锁在单一模型或聊天窗口中。"
+  },
+  {
+    title: "AI 执行界面深入浏览器、终端与端侧系统",
+    text: "Airtop 把广告账户变成对话式执行面，Ctruh 把 3D 生产放进浏览器，mpai 与 Open Minis 则进入终端和手机。产品竞争正从回答质量转向能否在用户已有环境里安全完成动作。"
+  },
+  {
+    title: "安全评测与结果证据成为发布和采购门槛",
+    text: "Project Perception、美国前沿模型框架和 Palantir 财报把同一信号放大：高风险 AI 必须同时证明能力、成本、人类控制与业务结果。可审计评测和清晰权限会越来越接近产品本身，而不只是合规附件。"
+  }
+];
+
 const products20260802 = [
   {
     slug: "nudgeforme",
@@ -2091,6 +2294,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-04",
+    isoDate: "2026-08-04",
+    dateLabel: "2026年8月4日",
+    weekday: "星期二",
+    oneSentence: "AI 产品正在把可替换运行时、环境内执行与可审计结果组装成新一代 Agent 基础设施",
+    products: products20260804,
+    industryEvents: industryEvents20260804,
+    trends: trends20260804
+  },
   {
     slug: "2026-08-02",
     isoDate: "2026-08-02",
