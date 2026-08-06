@@ -600,6 +600,207 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260806 = [
+  {
+    slug: "adant-ai",
+    name: "AdAnt AI",
+    tag: "Social Ad Creative Agent",
+    tagline: "把产品网址或参考视频变成可编辑、可批量测试的短视频广告方案",
+    image: "https://adant.ai/og-image.png",
+    positioning: "定位为社交广告团队的创意 Agent，而不是单次文生视频工具。壁垒来自把受众与卖点提炼、爆款结构拆解、素材管理和多版本迭代放进同一对话画布，让策略与制作共享上下文。",
+    audience: ["DTC 与电商品牌增长团队", "负责短视频投放的创意团队", "需要持续产出广告变体的代理商"],
+    killerFeature: "粘贴产品网址或灵感视频后，系统会拆解钩子、场景、节奏、字幕和视觉节拍，再结合品牌资产生成面向 TikTok、Instagram Reels 与 YouTube Shorts 的 9:16 可编辑变体。",
+    experience: "用户先与创意 Agent 对齐受众、卖点和方向，再在同一工作区复用产品、头像与参考素材；一条有效结构可以继续更换钩子、演员、CTA 和产品角度，减少跨工具搬运。",
+    growth: "以至少一条免费视频和 Product Hunt 当日首发降低试用成本，用可分享广告成片制造作品传播；官方首发方案再通过月度订阅与按量 credits 覆盖高频测试团队。",
+    businessModel: "当前公开单一方案为每月 39 美元，额外生成额度按量购买；Product Hunt 首发期提供首月优惠，企业或更高用量方案尚未公开。",
+    insight: "生成式广告的价值不在一次产出，而在让洞察、素材、实验变量和结果复用形成循环；把赢家结构沉淀为可继续对话的资产，才可能压缩下一轮测试成本。",
+    sourceUrl: "https://adant.ai/",
+    sourceLabel: "AdAnt 官方网站",
+    sources: [
+      { label: "AdAnt 官网", url: "https://adant.ai/" },
+      { label: "AdAnt 定价", url: "https://adant.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/adant-ai" }
+    ]
+  },
+  {
+    slug: "wispr-flow-notetaker",
+    name: "Wispr Flow Notetaker",
+    tag: "Context-aware Meeting Notes",
+    tagline: "在 Mac 本地捕捉任意会议，把准确逐字稿、说话人、决策与行动项变成可搜索上下文",
+    image: "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/6a724a4e3c71e2882636aa0f_notetaker-og%20(1).jpg",
+    positioning: "定位为 Flow 语音输入之上的会议上下文层，而不是入会机器人。壁垒来自个人词典、日历与历史会议信息共同校正人名和术语，并把会议、消息与邮件连接成可追溯答案。",
+    audience: ["会议密集的管理者与知识工作者", "需要准确决策记录的产品和销售团队", "已经使用 Claude、ChatGPT 或 Cursor 的 Flow 用户"],
+    killerFeature: "无需邀请机器人，只要 Mac 能播放或麦克风能听到的 Zoom、Meet、Teams、Slack Huddles 和线下对话都能捕捉；会后识别真实姓名，并通过 MCP 把历史会议接入 Claude、ChatGPT 与 Cursor。",
+    experience: "会议开始时一键记录，实时查看按说话人分离的转录；走神时点击 What did I miss 即刻追上，结束后获得按主题整理的决定、依赖和下一步，还能跨会议提问并回到原始来源。",
+    growth: "借 Flow 现有跨端用户与个人词典降低冷启动，通过免费计划、Granola 一键迁移和 Product Hunt 首发吸引替换用户，再用无限用量与团队管理推动升级。",
+    businessModel: "Notetaker 包含在 Wispr Flow 中，免费计划可长期使用；Pro 提供无限使用，Flow for Teams 覆盖公司级协作，具体价格沿用 Flow 现有订阅体系。",
+    insight: "会议记录的竞争正在从摘要文风转向上下文可信度；把人名、术语、历史关系与原始证据先做准，再开放给其他 Agent，笔记才会成为可执行的组织记忆。",
+    sourceUrl: "https://wisprflow.ai/notetaker",
+    sourceLabel: "Wispr Flow Notetaker 官方页面",
+    sources: [
+      { label: "Wispr Flow Notetaker", url: "https://wisprflow.ai/notetaker" },
+      { label: "Wispr Flow 定价", url: "https://wisprflow.ai/pricing" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/wisprflow" }
+    ]
+  },
+  {
+    slug: "ngrok-ai-gateway",
+    name: "ngrok AI Gateway",
+    tag: "Unified Model Gateway",
+    tagline: "用一个 OpenAI 兼容端点统一路由公共、定制与私有自托管模型",
+    image: "https://ngrok.ai/og-image.png",
+    positioning: "定位为开发者的托管模型流量控制面，而不是新的推理供应商。壁垒来自 ngrok 既有私网连接能力，把本地模型与公共 API 放进同一网关，同时提供密钥权限、故障转移和成本可观测性。",
+    audience: ["同时使用多家模型的 AI 应用团队", "部署私有或自托管模型的平台工程师", "需要统一成本与权限治理的开发组织"],
+    killerFeature: "应用只需把 baseURL 改为 gateway.ngrok.ai，即可在 OpenAI、Anthropic、定制端点和私网本地模型之间路由，并按应用或开发者限制可访问的供应商与模型。",
+    experience: "用户预付 credits 后创建网关 key，用原有 OpenAI、Anthropic 或 Vercel AI SDK 发起请求；控制台按应用、模型和供应商展示 token、延迟、错误与成本，失败时按配置自动重试和切换。",
+    growth: "以 OpenAI 兼容接口和无需分别注册供应商的默认 key 缩短首次调用，通过 ngrok 既有开发者社区、文档与 Product Hunt 首发获客，再用私网模型连接和 BYOK 扩展企业场景。",
+    businessModel: "网关按每百万 token 0.05 美元收取路由与可观测费用，推理成本另计；采用预付 credits，不设订阅或长期承诺，BYOK 用户继续由原供应商计费。",
+    insight: "模型路由真正的护城河不是多一个下拉框，而是把网络边界、密钥最小权限、失败策略和单位经济性放在同一控制面，让换模型不再意味着重做基础设施。",
+    sourceUrl: "https://ngrok.ai/",
+    sourceLabel: "ngrok AI Gateway 官方网站",
+    sources: [
+      { label: "ngrok AI Gateway", url: "https://ngrok.ai/" },
+      { label: "ngrok 官方文档", url: "https://ngrok.com/docs/ai-gateway/overview" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/ngrok-ai-gateway" }
+    ]
+  },
+  {
+    slug: "cloudflare-wallets",
+    name: "Cloudflare Wallets",
+    tag: "Programmable Agent Wallet",
+    tagline: "给人和 AI Agent 提供可读身份、稳定币账户与带预算边界的机器支付钱包",
+    image: "https://blog.cloudflare.com/_emdash/api/media/file/01KZ517FXTQNNJ8YGVAX2EV3YW.png",
+    positioning: "定位为 Agentic Internet 的买方支付与身份基础设施，与 Cloudflare Monetization Gateway 的卖方收款能力配套。壁垒来自把 Cloudflare 账户、可读 handle、x402 微支付和网络侧 Agent 工具连接起来。",
+    audience: ["让 Agent 购买 API 与内容的开发者", "需要给员工 Agent 分配预算的组织", "通过 x402 销售数据、工具和推理服务的商家"],
+    killerFeature: "一个 Account Wallet 可以创建多个面向 Agent 的 Virtual Wallet，并分别设置额度、允许清单与单笔交易上限；Agent 通过 API key 自主付款，超限时再请求人类授权。",
+    experience: "当前用户先在 cloudflare.pay 认领与账户绑定的可读 handle；钱包开放后可入金、创建虚拟钱包并委派预算，让 Agent 无需传统注册、绑卡和生成 API key 就能试用 x402 端点。",
+    growth: "先用稀缺 handle 预约形成身份网络，再借 Cloudflare Agents SDK、Monetization Gateway 与既有网站和开发者分发构建双边市场；低额微支付降低 Agent 试用新 API 的摩擦。",
+    businessModel: "目前处于 handle 认领与候补阶段，钱包、入金和交易的正式收费尚未公布；未来价值来自支付、身份与 Cloudflare 商家基础设施之间的网络效应。",
+    insight: "Agent 商业化需要同时解决谁在行动、能花多少、钱付给谁和异常时谁接管；把预算约束做成钱包原语，比在每个应用里重复开发审批更容易规模化。",
+    sourceUrl: "https://blog.cloudflare.com/wallets/",
+    sourceLabel: "Cloudflare 官方博客",
+    sources: [
+      { label: "Cloudflare Wallets 发布", url: "https://blog.cloudflare.com/wallets/" },
+      { label: "Cloudflare Wallet handle", url: "https://cloudflare.pay/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/cloudflare" }
+    ]
+  },
+  {
+    slug: "kiro-crew",
+    name: "Kiro Crew",
+    tag: "Persistent Agent Workspace",
+    tagline: "用开源工作区让多个编码 Agent 跨会话记住项目上下文、经验与技能",
+    image: "https://kiro.dev/images/crew/session-pr.png?h=db3a350a",
+    positioning: "定位为编码 Agent 的持久协作工作区，而不是另一个 IDE。壁垒来自把会话、项目知识、可复用技能与多种工具表面连接起来，让 Agent 在本地或远程运行后仍能累积经验。",
+    audience: ["并行运行多个编码 Agent 的开发者", "需要保留项目知识的工程团队", "在终端、聊天渠道与云端之间切换任务的 Agent 用户"],
+    killerFeature: "Crew 把 Agent 会话收进同一项目工作区，并持续保存上下文、教训和技能；用户能跨本地与远程环境、Discord 或 Telegram 继续工作，而不必每次重新解释代码库。",
+    experience: "打开工作区即可看到项目内的 Agent 会话、当前进展与合并结果；任务完成后的经验可沉淀为后续会话可调用的记忆或技能，多个 Agent 共享项目背景但保持各自执行轨迹。",
+    growth: "以开源仓库、Kiro 首页入口和 Product Hunt 首发进入现有编码 Agent 社区，通过本地优先与多工具连接降低迁移成本，再把 Crew 用户导向 Kiro 的云端、模型与企业治理能力。",
+    businessModel: "Crew 本身以开源方式提供，仓库未公布独立订阅；Kiro 主产品采用 credits 计费并提供付费与企业方案，Crew 可作为其 Agent 工作流入口。",
+    insight: "当 Agent 数量增加，团队最容易丢失的不是代码而是经验；把会话结果沉淀为项目级记忆，并允许不同入口继续使用，能让一次执行转化为复利。",
+    sourceUrl: "https://kiro.dev/",
+    sourceLabel: "Kiro 官方网站",
+    sources: [
+      { label: "Kiro Crew", url: "https://kiro.dev/" },
+      { label: "KiroCrew GitHub Releases", url: "https://github.com/kirodotdev/KiroCrew/releases" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/kiro" }
+    ]
+  }
+];
+
+const industryEvents20260806 = [
+  {
+    slug: "meta-muse-code-spark-1-2",
+    name: "Meta · Muse Code 与 Muse Spark 1.2",
+    summary: "Meta 发布终端编码 Agent Muse Code 测试版，并用协同训练的 Muse Spark 1.2 支撑长程软件工程任务",
+    image: "https://research.meta.ai/images/media-backups/introducing-muse-code-and-muse-spark-1-2/hero-light-v1.webp",
+    impact: "Muse Code 把规划、编码、验证与工具调用写入可重放的本地事件日志，并让常驻后台 Agent 在隔离 worktree 中并行工作；Meta 展示的 GPU 内核优化任务超过 1000 次工具调用、单次可运行 24 小时。竞争由单轮代码补全进一步转向可恢复的长程执行系统。",
+    insight: "长时间编码 Agent 的核心产品指标应包含恢复成功率、重复探索成本和验证闭环，而不只是基准分；模型与 harness 协同训练会让运行时设计本身成为能力的一部分。",
+    sourceUrl: "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+    sourceLabel: "Meta 官方研究博客",
+    sources: [
+      { label: "Meta 官方发布", url: "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2" },
+      { label: "Meta Muse Spark 模型页", url: "https://developer.meta.com/ai/models/muse-spark/" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/" }
+    ]
+  },
+  {
+    slug: "macpaw-liquid-ai-elix",
+    name: "MacPaw × Liquid AI · Elix",
+    summary: "MacPaw 与 Liquid AI 合作，把面向 Apple Silicon 的端侧推理带入 Elix，并计划开放给 Setapp 开发者",
+    image: "https://ai.macpaw.com/og-image.png",
+    impact: "MacPaw 的 Elix 以 MLX、量化、推测解码和 KV cache 复用在 Mac 上运行模型，并与本地优先记忆层 Mnemos 组成 Agent 底座。合作把 Liquid AI 的小模型路线接入消费级 Mac 与 Setapp 分发，端侧 AI 从单个应用功能走向可供第三方复用的平台层。",
+    insight: "端侧推理若要成为生态能力，必须同时解决模型适配、Swift 开发体验、记忆、订阅校验与分发；把这些公共成本集中在平台层，才能让小团队经济地交付私密 AI 功能。",
+    sourceUrl: "https://ai.macpaw.com/",
+    sourceLabel: "MacPaw AI 官方页面",
+    sources: [
+      { label: "MacPaw AI", url: "https://ai.macpaw.com/" },
+      { label: "MacPaw 官方活动回顾", url: "https://macpaw.com/news/flip-the-script-2026-recap" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/" }
+    ]
+  },
+  {
+    slug: "nvidia-osaa-safe",
+    name: "NVIDIA · OSAA SAFE 工作组",
+    summary: "Open Secure AI Alliance 推进 SAFE 提案，为企业共享 AI 网络安全事件建立保密、无责的行业机制",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/08/osaia-logo-garden_press-kit_1920x1080_84_use.png",
+    impact: "NVIDIA 发起的 OSAA 汇集云、安全、企业软件与开源组织，联盟成立后进一步讨论 Shared AI Findings Exchange：让成员在不暴露敏感细节的前提下报告事件、接收通知并复盘。AI Agent 安全开始从各家内部红队扩展为跨供应链的共同防御基础设施。",
+    insight: "平台团队应把事件分类、最小披露、可信接收方和修复证据提前标准化；当 Agent 跨模型、工具与供应商运行，单一厂商的告警已经不足以覆盖系统风险。",
+    sourceUrl: "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+    sourceLabel: "NVIDIA 官方博客",
+    sources: [
+      { label: "NVIDIA OSAA 发布", url: "https://blogs.nvidia.com/blog/open-secure-ai-alliance/" },
+      { label: "Linux Foundation", url: "https://www.linuxfoundation.org/blog/open-models-and-open-weights-are-foundational-to-secure-ai" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/" }
+    ]
+  },
+  {
+    slug: "shopify-q2-ai-commerce",
+    name: "Shopify · Q2 AI Commerce",
+    summary: "Shopify 披露 AI 搜索带来的流量与订单同比增至约三倍，商品页成为主要承接入口",
+    image: "https://cdn.shopify.com/b/shopify-brochure2-assets/d617483c5e5cdd01ae8b4f2571c76f34.png?originalWidth=2400&originalHeight=1260",
+    impact: "Shopify 二季度收入 35.83 亿美元、同比增长 34%，GMV 达 1155.67 亿美元。公司在财报电话会上称 AI 推荐会话更常直接进入商品详情页，且购买分布延伸到长尾类别；AI 搜索正在成为增量发现渠道，而非只复制传统关键词流量。",
+    insight: "面向 Agent 的商业增长依赖结构化商品数据、实时库存与可直接交易的接口；品牌不应只做面向人的 SEO，还要把目录语义和结账能力设计成机器可以可靠调用的产品面。",
+    sourceUrl: "https://www.shopify.com/investors/press-releases/shopify-delivers-big-30-growth-across-gmv-revenue-gross-profit",
+    sourceLabel: "Shopify 官方财报",
+    sources: [
+      { label: "Shopify Q2 2026 财报", url: "https://www.shopify.com/investors/press-releases/shopify-delivers-big-30-growth-across-gmv-revenue-gross-profit" },
+      { label: "Shopify Commerce for Agents", url: "https://www.shopify.com/commerce-for-agents" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/" }
+    ]
+  },
+  {
+    slug: "klaviyo-acquires-agency-ai",
+    name: "Klaviyo · 收购 Agency AI",
+    summary: "Klaviyo 收购客户成功 Agent 创业公司 Agency AI，创始人 Elias Torres 将出任首席产品官",
+    image: "https://cdn.prod.website-files.com/68dfcddc308200f286057fd2/68e6f00ab8d0611cd0ba1264_og-image.jpg",
+    impact: "Agency AI 的约 25 人团队与客户成功 Agent 技术将并入 Klaviyo，交易条款未披露。Torres 从 Drift 与 HubSpot 积累的 B2B 产品经验将用于加速 Composer、Customer Agent 等能力，B2C CRM 的竞争继续从营销自动化转向跨获客、服务与留存的 Agent 组合。",
+    insight: "收购垂直 Agent 团队的价值不仅是模型或功能，更是领域工作流、评估数据与产品领导力；平台并购后应保留原产品的闭环指标，避免只把 Agent 拆成零散入口。",
+    sourceUrl: "https://www.klaviyo.com/newsroom",
+    sourceLabel: "Klaviyo 官方新闻室",
+    sources: [
+      { label: "Klaviyo 新闻室", url: "https://www.klaviyo.com/newsroom" },
+      { label: "Agency AI 官方介绍", url: "https://www.agency.inc/press" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/" }
+    ]
+  }
+];
+
+const trends20260806 = [
+  {
+    title: "Agent 运行时开始围绕持久状态设计",
+    text: "Muse Code 的可重放事件日志、Kiro Crew 的项目记忆与 Wispr 的跨会议上下文都指向同一变化：长程任务的关键资产是可恢复状态。产品应把会话、经验和验证结果做成可迁移数据，而不是一次性聊天记录。"
+  },
+  {
+    title: "身份、预算与事件共享成为 Agent 信任边界",
+    text: "Cloudflare Wallets 把支付权限下沉到虚拟钱包，ngrok 用 scoped key 约束模型访问，OSAA 则探索跨公司的安全事件交换。Agent 能力越强，越需要在基础设施层明确谁能做什么、能花多少和出事后如何共同响应。"
+  },
+  {
+    title: "垂直数据与本地执行重新塑造分发",
+    text: "Shopify 的 AI 推荐流量、AdAnt 的广告实验闭环与 MacPaw 的端侧平台表明，通用模型正通过结构化商业数据和设备内运行进入具体工作。下一阶段优势更可能来自渠道、专有反馈和低摩擦执行，而非单一模型包装。"
+  }
+];
+
 const products20260804 = [
   {
     slug: "agentsky",
@@ -2294,6 +2495,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-06",
+    isoDate: "2026-08-06",
+    dateLabel: "2026年8月6日",
+    weekday: "星期四",
+    oneSentence: "AI 产品正在把持久状态、机器支付与垂直数据组装成可执行、可治理的新基础设施",
+    products: products20260806,
+    industryEvents: industryEvents20260806,
+    trends: trends20260806
+  },
   {
     slug: "2026-08-04",
     isoDate: "2026-08-04",
