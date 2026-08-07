@@ -600,6 +600,209 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260807 = [
+  {
+    slug: "cloudflare-os",
+    name: "Cloudflare OS",
+    tag: "Company-wide AI Operating System",
+    tagline: "用开源企业 AI 操作系统为每位员工生成带权限边界的 Agent、应用与工作流",
+    image: "https://blog.cloudflare.com/_emdash/api/media/file/01KZ7KNNANPJDHWFZFBPEFG96H.png",
+    positioning: "定位为承载企业上下文、工具和规则的 AI 操作系统，而不是单点聊天助手。壁垒来自 Cloudflare 将身份访问、MCP 工具目录、AI Gateway、DLP 与 Workers 运行时组合成统一权限和执行层。",
+    audience: ["希望把 AI 扩展到全公司的管理者", "负责内部工具与权限的平台团队", "需要安全自助自动化的业务团队"],
+    killerFeature: "员工用自然语言描述需求后，系统可在个人工作区生成一次性应用或可复用工作流；Agent 默认没有访问权，只能继承当前用户被明确授予的数据与工具权限。",
+    experience: "用户从自己的 Agent 工作区调用公司连接器、规则与知识，不必先学习新的低代码界面；生成的应用可继续迭代并分享给同事，管理侧则能在统一入口审计身份、模型调用和数据流向。",
+    growth: "以开源 starter kit 和 Cloudflare 现有开发者、Zero Trust 客户降低采用门槛，再用内部实践案例证明规模化价值；官方称内部已生成超过 4,000 个应用和工具，并在上月节省 10,000 个销售工时。",
+    businessModel: "Cloudflare OS starter 以开源方式提供，官方未公布独立订阅；商业价值主要随 Workers、Access、MCP Portal、AI Gateway 与数据防护等 Cloudflare 服务的使用增长。",
+    insight: "企业 Agent 的关键不是给所有人同一个聊天框，而是让身份、权限、工具和组织规则成为生成应用时自动继承的底座，业务自助与安全治理才能同步扩张。",
+    sourceUrl: "https://blog.cloudflare.com/how-we-use-ai-with-cloudflare-os/",
+    sourceLabel: "Cloudflare 官方博客",
+    sources: [
+      { label: "Cloudflare OS 发布", url: "https://blog.cloudflare.com/how-we-use-ai-with-cloudflare-os/" },
+      { label: "Cloudflare OS Starter", url: "https://github.com/cloudflare/cloudflare-os-starter" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/cloudflare" }
+    ]
+  },
+  {
+    slug: "rippling-ai-spend-console",
+    name: "AI Spend Console by Rippling",
+    tag: "AI Spend Intelligence",
+    tagline: "把企业 AI 支出按供应商、模型、员工和团队拆开，并关联到可验证的业务产出",
+    image: "https://ph-files.imgix.net/9ad1bcd8-64eb-4e40-89a1-279309d409f0.jpeg",
+    positioning: "定位为 AI 工具采购与价值归因控制台，而不是传统 SaaS 费用看板。壁垒来自 Rippling 的人员、组织、应用和设备数据，可把模型账单映射到团队结构、GitHub 产出与绩效信号。",
+    audience: ["需要治理 AI 预算的财务与 IT 团队", "评估开发者 AI 工具 ROI 的工程管理者", "管理多家模型和席位的企业采购团队"],
+    killerFeature: "统一追踪 OpenAI、Claude、Cursor 等工具的费用，并按供应商、模型、员工和团队下钻；管理者还能把支出与 PR 数量、修订次数和绩效信号并排比较，用自然语言生成看板与策略。",
+    experience: "团队接入现有账单和员工目录后即可看到异常增长、重复工具与低利用率席位；筛选器从总预算一路钻取到个人和模型，让预算讨论从发票汇总转向谁在什么工作中产生了什么结果。",
+    growth: "以无需 Rippling 订阅的免费独立产品进入尚未购买其主平台的公司，通过 Product Hunt 与官方社区首发获客，再把 AI 治理需求延伸到身份、设备、费用和人力系统。",
+    businessModel: "AI Spend Console 当前免费且无需 Rippling 主产品订阅；官方未公布独立付费层，现阶段更像导入企业数据关系并带动 Rippling 平台销售的获客入口。",
+    insight: "企业 AI 预算会从统计 token 和席位，升级到验证产出与组织目标的关联；能把费用、身份和工作结果接起来的产品，比单纯压缩模型单价更接近采购决策。",
+    sourceUrl: "https://www.rippling.com/platform/ai/ai-spend-console",
+    sourceLabel: "Rippling 官方页面",
+    sources: [
+      { label: "Rippling AI Spend Console", url: "https://www.rippling.com/platform/ai/ai-spend-console" },
+      { label: "Rippling 官方社区发布", url: "https://www.reddit.com/r/rippling/comments/1vhmnxf/introducing_ai_spend_console/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/rippling" }
+    ]
+  },
+  {
+    slug: "superlog-responder",
+    name: "Superlog Responder",
+    tag: "Slack Incident Response Agent",
+    tagline: "在 Slack 告警线程里自动完成排噪、根因调查、证据汇总并提交可合并修复",
+    image: "https://ph-files.imgix.net/2f855288-7e17-4daa-a4a0-1b30dca9ecf7.jpeg",
+    positioning: "定位为驻留在现有 Slack 告警流里的事故响应 Agent，而不是新的监控面板。壁垒来自把 Sentry、Datadog 告警与代码仓库、运行上下文、团队记忆和修复验证连接成一个线程内闭环。",
+    audience: ["需要降低告警噪音的平台与 SRE 团队", "没有专职值班工程师的创业公司", "希望缩短根因定位和修复时间的开发团队"],
+    killerFeature: "连接现有 Sentry 或 Datadog Slack 告警后，Responder 会判断是否需要升级、收集代码和运行证据、在原线程解释根因，并在能够安全修复时创建可审阅和合并的 PR。",
+    experience: "团队继续使用熟悉的 Slack 频道，不用切到额外控制台；每次响应都保留证据、推理和升级路径，用户可用提示词、仓库范围、记忆与升级规则调整 Agent 的自主边界。",
+    growth: "用 100 个免费 credits、Apache 2.0 开源仓库和无需替换现有监控的集成路径降低试用成本，通过 Product Hunt 与工程师社区传播真实事故线程，再向持续高频值班团队售卖托管额度。",
+    businessModel: "社区版免费开源；Superlog Cloud 提供免费层、按量付费和月度 credit 套餐，具体团队价格随使用量与托管需求选择。",
+    insight: "事故 Agent 要赢得信任，必须在团队已有的告警入口里给出证据、可逆补丁和明确升级条件；减少切换成本与保留人类审阅同样重要。",
+    sourceUrl: "https://responder.superlog.sh/",
+    sourceLabel: "Superlog Responder 官方页面",
+    sources: [
+      { label: "Superlog Responder", url: "https://responder.superlog.sh/" },
+      { label: "Superlog GitHub", url: "https://github.com/superloglabs/superlog" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/superlog" }
+    ]
+  },
+  {
+    slug: "annotate",
+    name: "Annotate",
+    tag: "Visual Context for Coding Agents",
+    tagline: "录下屏幕、指向问题并边说边画，再让编码 Agent 读取逐帧时间线与转录",
+    image: "https://ph-files.imgix.net/a1277012-5c25-421c-a58b-73e355bc76e2.jpeg",
+    positioning: "定位为人向编码 Agent 传递视觉问题的本地上下文工具，而不是通用录屏软件。壁垒来自把语音、光标、绘图和关键帧精确同步，并通过本地 MCP 暴露成 Agent 可检索的结构化时间线。",
+    audience: ["用 Cursor、Claude Code 或 Codex 开发界面的工程师", "需要高效提交视觉 bug 的设计和产品团队", "重视代码与屏幕数据本地处理的 Mac 用户"],
+    killerFeature: "用户录制屏幕时可以指点、圈画并口述问题，Annotate 将语音与对应帧同步；Cursor、Claude Code 和 Codex 可经本地 MCP 直接读取时间线、截图与转录，不再依赖模糊文字描述。",
+    experience: "按下录制后像给同事讲解一样操作应用，结束即得到可回放的标注时间线；把记录交给 Agent 后，它能跳到口述发生的准确画面，减少手动截图、命名和粘贴上下文。",
+    growth: "以免登录、免上传、免费和 Apple Silicon 原生体验吸引隐私敏感的开发者，通过 MCP 指南和 Product Hunt 展示从录屏到修复的短闭环，再依靠作品演示在编程社区自然传播。",
+    businessModel: "当前产品免费，全部处理在本地完成；官方尚未公布订阅、团队版或其他商业化计划。",
+    insight: "多模态开发工具不应只让模型看见屏幕，还要保留人类注意力发生的时间和位置；同步的指向、语音和帧比一次性截图包含更高密度的意图。",
+    sourceUrl: "https://xannotate.com/",
+    sourceLabel: "Annotate 官方网站",
+    sources: [
+      { label: "Annotate 官网", url: "https://xannotate.com/" },
+      { label: "Annotate MCP 指南", url: "https://xannotate.com/mcp" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/annotate-8" }
+    ]
+  },
+  {
+    slug: "copilotkit-channels-sdk",
+    name: "CopilotKit Channels SDK",
+    tag: "Chat-native Agent Delivery",
+    tagline: "把现有 AG-UI Agent 直接发布到 Slack 和 Microsoft Teams，并保留流式交互与审批",
+    image: "https://cdn.sanity.io/images/y3fjfzcd/production/1b206c0d2d53c2942a619360d2fdc71418d54741-1600x1000.png?w=1200&h=630&fit=crop&auto=format",
+    positioning: "定位为 Agent 从应用内界面走向工作聊天渠道的开源交付层。壁垒来自 AG-UI 协议、平台原生卡片、身份映射、持久状态与人工审批共同保持同一个 Agent 的交互语义。",
+    audience: ["已有 AG-UI Agent 的应用开发者", "在 Slack 或 Teams 内部署内部 Agent 的平台团队", "需要审批和持久会话的企业 AI 产品团队"],
+    killerFeature: "开发者不用重写 Agent，即可把同一 AG-UI 后端接入 Slack 与 Teams；消息支持流式输出、平台原生按钮和卡片、人工审批、身份和会话状态，Discord 与 Google Chat 在官方路线图中。",
+    experience: "用户在每天工作的频道里提及或私聊 Agent，审批和结果都留在原对话上下文；开发者可自行运行 SDK，也可接入 CopilotKit 的持久化与企业部署层处理身份、状态和生产运维。",
+    growth: "以开源 SDK、文档和现有 CopilotKit 开发者生态降低接入门槛，通过 Product Hunt 触达需要聊天分发的团队，再用 Slack、Teams 之外的渠道扩展形成协议与适配器网络效应。",
+    businessModel: "Channels SDK 开源且可自行运行；生产级持久状态和企业部署由 Enterprise Intelligence 承接，目前处于早期访问阶段，官方未公开标准价格。",
+    insight: "Agent 的下一轮分发不只发生在独立应用商店，而是在用户已经协作的对话里；渠道适配必须保留状态、审批和原生组件，不能退化成纯文本 webhook。",
+    sourceUrl: "https://www.copilotkit.ai/channels",
+    sourceLabel: "CopilotKit Channels 官方页面",
+    sources: [
+      { label: "CopilotKit Channels", url: "https://www.copilotkit.ai/channels" },
+      { label: "Channels SDK 官方博客", url: "https://www.copilotkit.ai/blog/channels-sdk" },
+      { label: "官方文档", url: "https://docs.copilotkit.ai/reference/channels" },
+      { label: "CopilotKit GitHub", url: "https://github.com/CopilotKit/CopilotKit" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/copilotkit" }
+    ]
+  }
+];
+
+const industryEvents20260807 = [
+  {
+    slug: "anthropic-fable-5-biology-safeguards",
+    name: "Anthropic · Fable 5 生物安全更新",
+    summary: "Anthropic 更新 Fable 5 生物分类器，在维持高风险防护的同时将生物相关降级约减少 85%",
+    image: "https://www.anthropic.com/api/opengraph-illustration?name=Node%20Bird&backgroundColor=heather",
+    impact: "新分类器已经覆盖 Anthropic 产品表面，更多健康教育、临床信息和低风险生物问题可以继续由 Fable 5 回答；涉及双重用途病毒学、毒理学或分子设计的高风险请求仍会降级到 Opus 5。前沿模型的安全竞争开始从统一拒答，转向更细粒度地保留合法专业价值。",
+    insight: "安全体验应同时衡量危险请求拦截率与正常任务受损率；当模型能力分层存在时，把高风险请求路由到更合适的安全配置，比对所有用户一刀切更可持续。",
+    sourceUrl: "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+    sourceLabel: "Anthropic 官方发布",
+    sources: [
+      { label: "Anthropic 安全更新", url: "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards" },
+      { label: "Anthropic Newsroom", url: "https://www.anthropic.com/news" },
+      { label: "Fable 5 与 Mythos 5 发布", url: "https://www.anthropic.com/news/claude-fable-5-mythos-5" }
+    ]
+  },
+  {
+    slug: "openai-gpt-5-6-sol-luna-august-update",
+    name: "OpenAI · GPT-5.6 Sol / Luna 八月更新",
+    summary: "OpenAI 调整 ChatGPT 的 GPT-5.6 Sol 与 Luna，让付费用户获得更聚焦推理，并扩大免费用户的思考入口",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "Plus 与 Pro 用户的 Sol 更新将即时回答与更深推理收进同一模型并加入思考强度滑杆；Free 与 Go 默认逐步切换到 Luna，并提供 Think 按钮和不限量文本聊天。OpenAI 的内部评估显示，在选定的高细节提示中，相比 GPT-5.5 Instant，Luna 与 Sol 出现事实错误的回答分别减少约 62% 与 68%，但该结果不代表所有任务。",
+    insight: "模型升级的产品价值需要同时落在默认路径、用户可控的思考成本和可解释的质量指标上；让轻量用户也能明确触发推理，比只在模型选择器增加名称更能改变行为。",
+    sourceUrl: "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI ChatGPT 更新", url: "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/" },
+      { label: "GPT-5.6 八月更新系统卡", url: "https://cdn.openai.com/pdf/GPT_5_6_August_Updates.pdf" },
+      { label: "OpenAI 官方账号", url: "https://x.com/OpenAI" }
+    ]
+  },
+  {
+    slug: "google-weathernext-cyclones",
+    name: "Google DeepMind · WeatherNext Cyclones",
+    summary: "Google DeepMind 开源 WeatherNext 2 与专用气旋模型，把热带气旋路径、强度和风场预测提前一天",
+    image: "https://lh3.googleusercontent.com/3BMNDD6KsweyeknlgRFzv4YGRpwQsVyHMAoWStS_AVk1AFjAKHWNNIdPx1C4r3jjUVRZzk0XzQrReViFE9Af824sc-ttQTU1afHB5aLvNGEYX8QRtw%3Dw1440-h810-n-nu",
+    impact: "官方论文与业务测试显示，新系统的三日预测可达到前代模型两日预测的水平，相当于增加一天有效提前量；WeatherNext 能在 TPU 上不到一分钟生成 1,000 个成员、最长 15 天的集合预报，并同时覆盖路径、强度与风场不确定性。专业科学模型正在从单次精度展示走向开放权重与业务验证。",
+    insight: "高风险预测产品不能只给一个最可能答案；快速生成大规模集合、公开模型并与领域机构持续验证，才能把模型能力转化为可操作的概率和提前量。",
+    sourceUrl: "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+    sourceLabel: "Google DeepMind 官方博客",
+    sources: [
+      { label: "Google DeepMind 发布", url: "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/" },
+      { label: "WeatherNext GitHub", url: "https://github.com/google-deepmind/weathernext" },
+      { label: "Google Earth AI", url: "https://ai.google/earth-ai/" }
+    ]
+  },
+  {
+    slug: "nvidia-cosmos-3-physical-ai-workflows",
+    name: "NVIDIA · Cosmos 3 物理 AI 生态",
+    summary: "NVIDIA 集中展示 Cosmos 3 开放世界模型如何生成训练数据、测试策略并专门化机器人与自动驾驶系统",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/08/nv-ov-ito-social-1920x1080-1.jpg",
+    impact: "Cosmos 3 家族覆盖 Edge、Nano 与 Super 等尺寸，并被机器人、自动驾驶和视觉 AI 团队用于合成世界、后训练策略与仿真验证；模型、权重、代码和技术资料通过 Hugging Face 与 GitHub 开放。物理 AI 的竞争正从单个演示转向数据生成、世界建模、策略训练与部署工具链的组合。",
+    insight: "面向现实世界的模型需要与仿真数据、策略评估和部署硬件共同设计；开放权重只有接上可复现工作流和行业伙伴，才会形成真正的开发平台。",
+    sourceUrl: "https://blogs.nvidia.com/blog/open-world-models-physical-ai/",
+    sourceLabel: "NVIDIA 官方博客",
+    sources: [
+      { label: "NVIDIA 官方发布", url: "https://blogs.nvidia.com/blog/open-world-models-physical-ai/" },
+      { label: "NVIDIA Cosmos 3 模型集合", url: "https://huggingface.co/collections/nvidia/cosmos3" },
+      { label: "NVIDIA Cosmos GitHub", url: "https://github.com/NVIDIA/Cosmos" }
+    ]
+  },
+  {
+    slug: "hugging-face-baseten-inference-provider",
+    name: "Hugging Face × Baseten · Inference Providers",
+    summary: "Hugging Face 将 Baseten 接入 Inference Providers，让开发者从模型页与统一 SDK 调用托管开源模型",
+    image: "https://huggingface.co/blog/assets/inference-providers/welcome-baseten.png",
+    impact: "首批集成覆盖对话与文本生成任务，开发者可通过 Hugging Face JavaScript、Python SDK 或模型页调用 Baseten 上的 Kimi K3、DeepSeek V4 Flash、GLM-5.2 等模型，并选择自带 Baseten key 或由 Hugging Face 路由计费。模型发现、统一接口和专业推理基础设施进一步收敛。",
+    insight: "模型市场的关键体验不只是列出更多权重，而是让发现、鉴权、调用和账单在同一条路径完成；供应商适配越标准化，差异化就越需要回到可靠性、延迟和部署能力。",
+    sourceUrl: "https://huggingface.co/blog/baseten",
+    sourceLabel: "Hugging Face 官方博客",
+    sources: [
+      { label: "Hugging Face × Baseten 发布", url: "https://huggingface.co/blog/baseten" },
+      { label: "Hugging Face Inference Providers", url: "https://huggingface.co/docs/inference-providers/index" },
+      { label: "Baseten 官方网站", url: "https://www.baseten.co/" }
+    ]
+  }
+];
+
+const trends20260807 = [
+  {
+    title: "AI 价值度量从使用量转向可归因结果",
+    text: "Rippling 把模型支出连接到 PR 与绩效信号，Cloudflare 用应用数量和节省工时披露内部价值，OpenAI 则用事实错误率解释默认模型更新。采购与增长叙事正在从多少人用了 AI，转向哪些工作结果因 AI 改变。"
+  },
+  {
+    title: "Agent 分发进入工作实际发生的界面",
+    text: "Cloudflare OS 把 Agent 放进员工工作区，CopilotKit 将同一 Agent 带到 Slack 与 Teams，Annotate 让屏幕讲解直接进入编码上下文。新入口的共同点是保留身份、状态和人类意图，而不是再造孤立聊天框。"
+  },
+  {
+    title: "开放模型走向专业化与可部署生态",
+    text: "WeatherNext 面向气旋预测开放专用模型，NVIDIA 用 Cosmos 3 连接世界建模与物理 AI 工作流，Hugging Face 与 Baseten 打通模型发现和托管推理。开放权重的竞争正在延伸到领域验证、工具链与稳定部署。"
+  }
+];
+
 const products20260806 = [
   {
     slug: "adant-ai",
@@ -2495,6 +2698,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-07",
+    isoDate: "2026-08-07",
+    dateLabel: "2026年8月7日",
+    weekday: "星期五",
+    oneSentence: "AI 产品正在把权限、可归因价值与专业化开放模型装进用户已经工作的界面",
+    products: products20260807,
+    industryEvents: industryEvents20260807,
+    trends: trends20260807
+  },
   {
     slug: "2026-08-06",
     isoDate: "2026-08-06",
