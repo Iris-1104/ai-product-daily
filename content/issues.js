@@ -600,6 +600,205 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260811 = [
+  {
+    slug: "oqoqo",
+    name: "Oqoqo",
+    tag: "Coding Agent Evaluation Lab",
+    tagline: "在隔离云沙箱中复现实战编码任务，并横向比较 Claude Code、Codex、Cursor 等 Agent",
+    image: "https://ph-files.imgix.net/4803aacd-f18f-46bc-b10c-5a2e31ffb701.jpeg",
+    positioning: "定位为编码 Agent 的实验与采购决策平台，而不是只跑固定题库的模型排行榜。壁垒来自可复用任务集、隔离云沙箱，以及对工具调用、命令、token、摩擦点和通过率的统一追踪。",
+    audience: ["评估编码 Agent 的工程管理者", "维护内部基准与回归测试的平台团队", "需要为团队选择 AI 开发工具的技术负责人"],
+    killerFeature: "把真实仓库任务或私有基准放进隔离环境后，可用相同任务比较 Claude Code、Codex、Cursor、GitHub Copilot、OpenCode 等 Agent，并记录完整执行轨迹与结果。",
+    experience: "用户可从网页、CLI 或 MCP 发起实验，选择任务集、Agent 与模型后并行运行；结果页把成功率、耗时、token、命令和失败摩擦点放在同一视图，便于复现差异而不是凭单次演示判断。",
+    growth: "以免费月度运行额度和主流编码 Agent 预置适配降低首次评估成本，通过 Product Hunt 触达正在采购或迁移工具的工程团队，再用私有任务集和持续回归形成留存。",
+    businessModel: "提供免费月度运行额度，后续可订阅或购买额外运行次数；全部功能向不同套餐开放，模型推理费用由用户自带密钥或另行承担。",
+    insight: "Agent 评测必须从静态问答升级为可复现的环境内执行；统一任务、工具权限与轨迹证据，才能把排行榜分数转化为真实采购和上线判断。",
+    sourceUrl: "https://oqoqo.ai/",
+    sourceLabel: "Oqoqo 官方网站",
+    sources: [
+      { label: "Oqoqo 官网", url: "https://oqoqo.ai/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/oqoqo" }
+    ]
+  },
+  {
+    slug: "portfolio-lab",
+    name: "Portfolio Lab",
+    tag: "AI Quant Strategy Builder",
+    tagline: "用专业量化模型生成、检验并纸上交易投资策略，再通过 MCP 接入用户券商",
+    image: "https://cdn.prod.website-files.com/69ba9f13686f8d9624d189cb/6a579ab3835f1b82820216e4_og-image-home.png",
+    positioning: "定位为把自然语言投资想法转成可审计策略的 AI 量化实验室，而不是给出单次买卖建议的聊天机器人。壁垒来自专业量化模型、长期市场数据、样本外验证和真实券商执行路径。",
+    audience: ["希望验证投资假设的个人投资者", "需要快速研究策略的量化与财富管理团队", "构建金融 Agent 的开发者"],
+    killerFeature: "Agent 会把目标转成策略并依次经过样本内、样本外和实时纸上交易验证；用户确认后还能经 MCP 让 Agent 在自己的券商账户执行，同时保留规则和测试证据。",
+    experience: "用户先描述收益目标、风险偏好或市场观点，系统生成可查看的策略与回测；每一步都能比较基准、检查失效区间并在模拟环境观察，避免从一段自然语言直接跳到真实交易。",
+    growth: "以免费 Explorer 和公开策略审计内容吸引自助投资者，通过 Product Hunt 首发折扣促进年付，再用 Agent 交易、更多资产与高级分析推动升级。",
+    businessModel: "基础 Explorer 免费，付费层解锁 Agent 交易、更多资产与高级分析；官方同时以注册投资顾问身份提供托管服务，具体费率以产品内披露为准。",
+    insight: "高风险 Agent 的核心体验不是更快执行，而是把假设、样本外验证、模拟运行和最终授权串成证据链；越接近资金动作，越需要明确的阶段门。",
+    sourceUrl: "https://portfoliolab.ai/",
+    sourceLabel: "Portfolio Lab 官方网站",
+    sources: [
+      { label: "Portfolio Lab 官网", url: "https://portfoliolab.ai/" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/portfolio-lab" }
+    ]
+  },
+  {
+    slug: "paritok",
+    name: "Paritok",
+    tag: "Coding Agent Context Compression",
+    tagline: "在不删除原始上下文的前提下压缩工具输出、文件和历史，让编码 Agent 工作更久",
+    image: "https://www.paritok.com/logo.png",
+    positioning: "定位为编码 Agent 与模型之间的上下文压缩网关，而不是摘要插件。壁垒来自针对工具轨迹训练的本地 4B 模型、可回读原文的非破坏式设计，以及对主流 Agent 的低摩擦接入。",
+    audience: ["运行长程编码任务的开发者", "控制模型输入成本的 AI 工程团队", "需要私有化处理代码上下文的企业"],
+    killerFeature: "网关自动压缩工具结果、文件与对话历史，同时保留原始内容；当 Agent 需要细节时可调用 read_original 回读，降低 token 占用而不把信息永久丢掉。",
+    experience: "用户用两条命令接到现有编码 Agent 后即可工作，无需改变提示方式；压缩在后台发生，出现疑问时 Agent 能追溯原文，因此长任务不会因一次激进摘要而失去恢复路径。",
+    growth: "以 Apache 2.0 模型、本地自托管和开源 GitHub 建立开发者信任，通过 Product Hunt 展示 token 节省与长任务对比，再用免运维托管网关承接团队用户。",
+    businessModel: "本地自托管免费；托管服务按输入 token 计费，官网标示每百万 token 0.30 美元，并在 8 月底前提供免信用卡试用。",
+    insight: "长程 Agent 的上下文管理不应只有删除与保留两种状态；可压缩、可定位、可回读的分层记忆，能同时改善成本、续航和失败恢复。",
+    sourceUrl: "https://www.paritok.com/",
+    sourceLabel: "Paritok 官方网站",
+    sources: [
+      { label: "Paritok 官网", url: "https://www.paritok.com/" },
+      { label: "Paritok GitHub", url: "https://github.com/Paritok-official/paritok-4b-v1" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/paritok" }
+    ]
+  },
+  {
+    slug: "prime-agent",
+    name: "Prime Agent",
+    tag: "Self-improving Coding Harness",
+    tagline: "让编码 Agent 在运行中把经验沉淀为记忆、技能、提示与新子 Agent，并持续改写自身脚手架",
+    image: "https://primeintellect.ai/blog/prime-agent/cover.png?v=prime-agent",
+    positioning: "定位为可自我改进的开源编码 Agent harness，而不是固定提示与工具集。壁垒来自 Recursive Language Model、Continual Harness、持久 Python REPL、可恢复会话和运行后自我精炼机制的组合。",
+    audience: ["研究自改进 Agent 的开发者与实验室", "需要长程自动化的开源工程团队", "构建专用编码 Agent 的平台团队"],
+    killerFeature: "Agent 可调用 refine 检查执行轨迹，把有效模式写成持久记忆、技能、提示或子 Agent，甚至调整自己的脚手架；下一次任务因此从上一次失败和成功中继续学习。",
+    experience: "用户安装开源 harness 后可在持久 REPL 中运行任务、派生子 Agent 并恢复中断会话；自我改进结果是可检查的文件和配置，团队可以保留有用变化，也能发现测试环境中的投机行为。",
+    growth: "以开源代码、研究博客和 ARC-AGI-3、Factorio 等可复现实验吸引 Agent 开发者，通过 Product Hunt 扩散，再与 Prime Intellect 的环境、评测和训练基础设施形成生态入口。",
+    businessModel: "Prime Agent 免费开源；商业价值主要承接到 Prime Intellect 的算力、环境、评测与训练平台，Agent 本身未公布独立付费方案。",
+    insight: "自我改进产品必须同时设计学习与约束：让 Agent 保存有效经验很重要，但评测防投机、变更可审阅和会话可恢复决定了改进能否被信任。",
+    sourceUrl: "https://www.primeintellect.ai/blog/prime-agent",
+    sourceLabel: "Prime Intellect 官方研究博客",
+    sources: [
+      { label: "Prime Agent 研究博客", url: "https://www.primeintellect.ai/blog/prime-agent" },
+      { label: "Prime Agent GitHub", url: "https://github.com/PrimeIntellect-ai/prime-agent" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/prime-intellect" }
+    ]
+  },
+  {
+    slug: "ai-group-call",
+    name: "AI Group Call",
+    tag: "Multi-agent Voice Room",
+    tagline: "把一个目标变成六个不同角色的实时语音圆桌，并在会后输出总结与行动项",
+    image: "https://aigroupcall.app/assets/icon.png",
+    positioning: "定位为多视角实时讨论空间，而不是单个语音助手。壁垒来自六角色轮流发言、真正打断、可编辑角色阵容、实时转录与可重进房间构成的群聊状态机。",
+    audience: ["需要快速拆解复杂决策的个人与小团队", "进行创意发散和风险评审的产品经理", "希望通过语音获得多视角反馈的创业者"],
+    killerFeature: "用户输入目标后即可进入六个 AI 角色组成的语音房间，成员一次一人发言并能被用户随时打断；角色可编辑，会议时钟可暂停，离开后还能回到同一房间。",
+    experience: "从一句目标直接开会，用户像主持人一样插话、追问或调整角色；屏幕同步显示逐字稿，结束后自动整理结论和行动项，减少在多个聊天线程间手动复制观点。",
+    growth: "以 Android 首发、每个账户 1 分钟免信用卡体验和 Product Hunt 演示降低尝试成本，用可分享的多角色讨论场景传播，并预告 iOS 版本扩大移动端覆盖。",
+    businessModel: "每个账户提供 1 分钟免费体验；免费额度后的具体分钟包或订阅价格尚未在官网公开，当前商业化方向预计围绕语音使用量。",
+    insight: "多 Agent 产品的价值不只是增加回答数量，而是把角色差异、轮次秩序、打断权和会后收敛做成可控体验，避免圆桌退化为并排生成。",
+    sourceUrl: "https://aigroupcall.app/",
+    sourceLabel: "AI Group Call 官方网站",
+    sources: [
+      { label: "AI Group Call 官网", url: "https://aigroupcall.app/" },
+      { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.aigroupcall" },
+      { label: "Product Hunt", url: "https://www.producthunt.com/products/ai-group-call" }
+    ]
+  }
+];
+
+const industryEvents20260811 = [
+  {
+    slug: "meta-muse-glimmer",
+    name: "Meta · Muse Glimmer 30B",
+    summary: "Meta 开放可在消费级设备运行的 30B 多模态 Agent 模型 Muse Glimmer，并提供官方本地量化版本",
+    image: "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/meta-models/Muse-Glimmer-30B.png",
+    impact: "Muse Glimmer 把文本、图像、工具调用与长上下文 Agent 能力压进单张消费级 GPU 可运行的开放权重模型，并以 Apache 2.0 许可降低二次开发门槛。头部实验室再次把前沿产品竞争延伸到本地推理、隐私和开发者可控性。",
+    insight: "本地 Agent 模型的产品指标不应只看榜单，还要共同评估内存占用、量化质量、工具兼容和持续运行稳定性；官方量化与完整运行配方会直接影响采用速度。",
+    sourceUrl: "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    sourceLabel: "Meta AI Research 官方发布",
+    sources: [
+      { label: "Meta AI Research", url: "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" },
+      { label: "官方 Hugging Face 模型", url: "https://huggingface.co/meta-models/Muse-Glimmer-30B" },
+      { label: "Associated Press", url: "https://apnews.com/article/df8a4e7d7825470d09e8090367457c2c" }
+    ]
+  },
+  {
+    slug: "openai-gpt-5-6-cyber-daybreak",
+    name: "OpenAI · GPT-5.6-Cyber 与 Daybreak",
+    summary: "OpenAI 发布面向受信防御者的 GPT-5.6-Cyber，并把 Daybreak 扩展为 Blue 与 Red 两级访问",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "Daybreak Blue 为授权防御工作开放 GPT-5.6 Sol 的更多能力，Red 则提供拒答更少、面向漏洞研究和利用验证的 GPT-5.6-Cyber。访问通过身份核验、硬件密钥、监控和用途限制治理，说明高能力模型正在形成按风险与专业资质分层的产品面。",
+    insight: "当能力与滥用风险同时上升，产品不能只在开放与封闭之间二选一；模型、用户资格、任务范围、工具权限和持续监控必须被设计成同一个访问系统。",
+    sourceUrl: "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "GPT-5.6-Cyber 发布", url: "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/" },
+      { label: "Daybreak 合作伙伴计划", url: "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands/" },
+      { label: "Astra 能力响应", url: "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" }
+    ]
+  },
+  {
+    slug: "nvidia-ai-compute-financing-platforms",
+    name: "NVIDIA · AI 算力融资平台",
+    summary: "NVIDIA 联合六家全球资管与投行建立独立融资平台，计划长期动员超过 5000 亿美元第三方资本",
+    image: "https://iprsoftwaremedia.com/219/files/20224/6296531eb3aed3741918b6b5_DH1L4415-HDR-20220527-r5/DH1L4415-HDR-20220527-r5_dba29dde-5a9b-4ac8-bf58-a0b78da89547-prv.jpg?v=dba29dde-5a9b-4ac8-bf58-a0b78da89547",
+    impact: "Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs 与 KKR 将围绕芯片、电力、土地和数据中心建立融资能力。超过 5000 亿美元指平台计划长期动员的第三方资本总额，并非 NVIDIA 收入或单一基金；算力开始被包装成可融资的基础设施资产类别。",
+    insight: "AI 基础设施产品需要同时优化技术利用率与金融可承保性；长期合同、可预测现金流、资产残值和客户集中风险，都会变成算力平台的核心产品参数。",
+    sourceUrl: "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+    sourceLabel: "NVIDIA 官方新闻稿",
+    sources: [
+      { label: "NVIDIA 官方新闻稿", url: "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" },
+      { label: "Axios", url: "https://www.axios.com/2026/08/10/nvidia-financing-ai-goldman-sachs-blackrock" },
+      { label: "Reddit 市场讨论", url: "https://www.reddit.com/r/singularity/comments/1vkywi9/breaking_nvidia_partners_with_apollo_blackrock/" }
+    ]
+  },
+  {
+    slug: "anthropic-riot-rockdale-lease",
+    name: "Anthropic × Riot · Rockdale 191MW 长约",
+    summary: "Anthropic 与 Riot 签署 20 年、191MW 的 AI 数据中心租约，把比特币矿场电力资产转向模型算力",
+    image: "https://www.riotplatforms.com/wp-content/uploads/2024/04/Riot-share-image-1.png",
+    impact: "Riot 在二季度公告中把该交易列为首项战略进展，长期租约为 Rockdale 园区提供 AI 数据中心需求，并把原有电力、土地和并网能力重新定价。模型公司的算力扩张正在加速吸收加密矿业已锁定的能源基础设施。",
+    insight: "把矿场改造成 AI 数据中心不是简单换客户；供电稳定性、网络、冷却、建设里程碑与客户集中度需要共同产品化，长期租约也应保留容量交付和风险分段。",
+    sourceUrl: "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/",
+    sourceLabel: "Riot Platforms 官方公告",
+    sources: [
+      { label: "Riot 二季度官方公告", url: "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/" },
+      { label: "SEC Riot 公司文件", url: "https://www.sec.gov/edgar/browse/?CIK=1167419&owner=exclude" },
+      { label: "Reddit 交易讨论", url: "https://www.reddit.com/r/FRMI/comments/1vkx8jx/riot_platforms_announces_a_new_datacenter_lease/" }
+    ]
+  },
+  {
+    slug: "scale-ai-francis-desouza-ceo",
+    name: "Scale AI · Francis deSouza 就任 CEO",
+    summary: "Francis deSouza 于 8 月 10 日正式接任 Scale AI CEO，负责扩张数据与应用两条业务线",
+    image: "https://mmx.prnewswire.com/media/MS1960933/20260726_Scale3909-ID-4d11b0cd5cd7.jpg?id=OA2802380&p=publish",
+    impact: "Scale 在创始人 Alexandr Wang 转任董事长、Jason Droege 担任过渡 CEO 后进入新的经营阶段。deSouza 的企业软件与生命科学经历，配合 Scale 在政府、医疗和企业应用的增长，表明数据基础设施公司正在向高风险行业的完整应用交付延伸。",
+    insight: "从数据供应商升级为应用平台，需要把领域销售、合规、交付责任与模型评测能力一起补齐；领导团队的行业运营经验会直接影响产品能否进入关键业务。",
+    sourceUrl: "https://www.prnewswire.com/news-releases/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth-302838437.html",
+    sourceLabel: "Scale AI 官方新闻稿",
+    sources: [
+      { label: "Scale AI 官方新闻稿", url: "https://www.prnewswire.com/news-releases/scale-ai-appoints-francis-desouza-as-ceo-to-lead-next-phase-of-companys-growth-302838437.html" },
+      { label: "Scale AI 公司介绍", url: "https://scale.com/about" },
+      { label: "Axios", url: "https://www.axios.com/2026/07/30/scale-ai-google-cloud-coo-francis-desouza" }
+    ]
+  }
+];
+
+const trends20260811 = [
+  {
+    title: "Agent 竞争从能力演示转向可复现评测与自我改进",
+    text: "Oqoqo 用隔离任务和完整轨迹比较编码 Agent，Prime Agent 让脚手架从执行经验中持续变化，OpenAI 则为高风险能力增加分级访问与监控。Agent 产品的核心资产正在变成环境、证据、恢复和治理闭环。"
+  },
+  {
+    title: "上下文效率与本地运行成为新的分发杠杆",
+    text: "Paritok 用可回读压缩延长编码任务，Muse Glimmer 把多模态 Agent 能力带到消费级设备。模型与工具开始围绕内存、token、隐私和离线可用性共同优化，本地部署不再只是企业合规选项。"
+  },
+  {
+    title: "算力扩张进入长期资本与能源资产重组阶段",
+    text: "NVIDIA 把 AI 算力包装成可融资资产，Anthropic 与 Riot 用 20 年长约把矿场电力迁移到模型基础设施。竞争焦点正从谁能买到 GPU，延伸到谁能锁定资本、土地、电力并持续交付容量。"
+  }
+];
+
 const products20260807 = [
   {
     slug: "cloudflare-os",
@@ -2698,6 +2897,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-11",
+    isoDate: "2026-08-11",
+    dateLabel: "2026年8月11日",
+    weekday: "星期二",
+    oneSentence: "AI 产品正在把可复现评测、本地效率与长期算力资产组装成更可控的 Agent 基础设施",
+    products: products20260811,
+    industryEvents: industryEvents20260811,
+    trends: trends20260811
+  },
   {
     slug: "2026-08-07",
     isoDate: "2026-08-07",
