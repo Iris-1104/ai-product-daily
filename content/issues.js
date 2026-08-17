@@ -600,6 +600,216 @@ const industryEvents20260720 = [
   }
 ];
 
+const products20260817 = [
+  {
+    slug: "grok-bot",
+    name: "Grok Bot",
+    tag: "Persistent AI Teammate",
+    tagline: "给每个长期任务一台独立云电脑，让 Agent 登录工具、持续执行并带回完成结果",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2087221157787525120/img/n9OrR6nUrxVZL4oY.jpg",
+    positioning: "定位为可长期运行的通用知识工作 Agent，而不是一次性浏览器自动化。壁垒来自 SpaceXAI 模型、Cursor 分发、独立虚拟机、持久登录状态和多 Bot 协作形成的完整执行环境。",
+    audience: ["需要自动化跨系统运营的知识工作者", "希望把重复流程交给 Agent 的团队", "已有 Cursor 或 SuperGrok 付费账户的重度用户"],
+    killerFeature: "每个 Bot 拥有自己的浏览器、文件与终端，可保持登录并在用户关闭电脑后继续工作；多个 Bot 还能分工协作并在需要决策时回到用户。",
+    experience: "用户为 Bot 命名、描述岗位并登录所需工具，之后像给同事发消息一样派活；结果、阻塞和升级请求回到同一会话，减少重复搭环境与重放步骤。",
+    growth: "先向 SuperGrok Heavy、Cursor Ultra 与 Cursor Teams Premium 用户开放早期 Beta，借助官方工作案例和高传播演示建立认知，再通过企业候补名单进入团队采购。",
+    businessModel: "Grok Bot 当前捆绑在 SuperGrok Heavy、Cursor Ultra 与 Cursor Teams Premium 等高阶订阅中，企业版采用候补与销售接洽，尚未公布独立定价。",
+    insight: "持久 Agent 的产品单位正在从一次会话变成一个有环境、有身份、有状态的岗位；真正的留存来自任务历史、登录上下文和可复用工作方式。",
+    sourceUrl: "https://x.com/bot/status/2087224798078517251",
+    sourceLabel: "Grok Bot 官方发布",
+    sources: [
+      { label: "Grok Bot 官方发布", url: "https://x.com/bot/status/2087224798078517251" },
+      { label: "SpaceXAI Grok 文档", url: "https://docs.x.ai/grok/overview" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/grok-bot-launches-in-early-beta--x_2087224798078517251" },
+      { label: "Reddit 使用讨论", url: "https://www.reddit.com/r/SPCXInvestors/comments/1vmbjgl/introducing_grok_bot_now_in_early_beta_bots_are/" }
+    ]
+  },
+  {
+    slug: "matic-cues",
+    name: "Matic Cues",
+    tag: "Embodied Home Interface",
+    tagline: "让家庭清洁机器人理解 70 多种语言和指向手势，用自然交流定位并处理具体污渍",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2087962757044015104/img/VoFGBTb05E5fYBQd.jpg",
+    positioning: "定位为 Matic 家庭机器人的自然交互层，而不是额外的语音遥控器。壁垒来自设备端视觉、持续 3D 地图、语音与人体姿态联合理解，以及已在真实家庭运行的清洁硬件。",
+    audience: ["Matic 现有家庭用户", "有儿童或老人的多成员家庭", "重视本地隐私与低学习成本的智能家居用户"],
+    killerFeature: "用户只需指向地面并说出清洁请求，Matic 就会把语音、手势和 3D 空间位置合并，自动前往目标区域并选择清洁动作。",
+    experience: "交互不要求打开 App 或记住菜单；儿童、老人和非英语用户可用日常说话与指向完成请求。首批用户反馈显示功能会随机器人固件分批推送，跟随速度等边界仍在迭代。",
+    growth: "用高传播的家庭演示视频把机器人能力从参数转成可理解场景，并向已售设备免费更新形成口碑；硬件端以六个月试用、限时折扣和美国本地交付降低购买风险。",
+    businessModel: "Cues 作为 Matic 软件能力随硬件提供；单机器人加底座当前售价 1,245 美元，耗材另有每台每年 96 美元的 Annual Bag Pass。",
+    insight: "具身 AI 的好界面不是让人学习机器人指令，而是让机器人读懂人已经会用的语言、视线和手势；自然交互本身就是硬件采用率的增长功能。",
+    sourceUrl: "https://x.com/maticrobots/status/2087962897267990915",
+    sourceLabel: "Matic Robots 官方发布",
+    sources: [
+      { label: "Matic Cues 官方发布", url: "https://x.com/maticrobots/status/2087962897267990915" },
+      { label: "Matic 官方产品页", url: "https://maticrobots.com/product" },
+      { label: "Matic 社区反馈", url: "https://www.reddit.com/r/MaticRobots/comments/1vnj5n9/introducing_cues_voice_gesture_control_for_matic/" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/cues-voice-and-gesture-control-for-matic--x_2087962897267990915" }
+    ]
+  },
+  {
+    slug: "lindy-teammate",
+    name: "Lindy Teammate",
+    tag: "Shared AI Employee",
+    tagline: "把会学习的 AI 同事放进 Slack，让整支团队共享公司知识并持续交付跨工具工作",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2086858922296819712/img/mgQL8qpJv6GMjuzP.jpg",
+    positioning: "定位为团队共享的 AI 员工，而不是个人自动化工作流集合。壁垒来自 Slack 原生分发、跨会议与文件的组织记忆、数百个应用连接器，以及从团队反馈中更新工作方式。",
+    audience: ["希望在 Slack 内部署 Agent 的运营团队", "需要共享知识与重复流程自动化的中小企业", "已有 Lindy 个人助理使用经验的团队"],
+    killerFeature: "任何成员都能在 Slack 中 @mention 同一个 Teammate，请它引用会议、文件和连接工具回答问题或执行任务；它会把反馈沉淀为全团队可复用的工作记忆。",
+    experience: "用户无需切换到 Agent 控制台，直接在现有频道派活、追问和补充规则；共享上下文减少每个人单独配置助手的成本，但团队权限与错误学习仍需要管理员治理。",
+    growth: "从 Lindy 已有个人助理与 5,000 多家客户向团队场景扩张，以 Slack 入口降低培训成本，再用案例、模板和会自我更新的组织记忆提高席位渗透。",
+    businessModel: "个人方案按月订阅与使用量分层，官方页面列出 Plus 49.99 美元、Pro 99.99 美元和 Max 199.99 美元；Teammate 的共享记忆与团队治理主要面向 Enterprise 销售。",
+    insight: "团队 Agent 的护城河不是再多一个聊天入口，而是能否把个人反馈变成受控的组织记忆；学习速度越快，权限、纠错和版本回滚越重要。",
+    sourceUrl: "https://x.com/Altimor/status/2086861887611019623",
+    sourceLabel: "Lindy 创始人发布",
+    sources: [
+      { label: "Lindy Teammate 发布", url: "https://x.com/Altimor/status/2086861887611019623" },
+      { label: "Lindy 官方网站", url: "https://www.lindy.ai/" },
+      { label: "Lindy 官方功能与定价说明", url: "https://www.lindy.ai/blog/personal-assistant-salary" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/flo-crivello--x_2086861887611019623" }
+    ]
+  },
+  {
+    slug: "nuphos-ai",
+    name: "NuphosAI",
+    tag: "Governed DevOps Agent Workspace",
+    tagline: "给生产运维 Agent 加上原生 IAM、审批、审计与团队记忆，让调查到执行都留在可控边界内",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2086830387028971520/img/nTTexAoOgy4afnfC.jpg",
+    positioning: "定位为 AI 原生 DevOps 工作区，而不是给通用编码 Agent 一把云账号密钥。壁垒来自 AWS、GCP、Azure 与 Cloudflare 的细粒度身份接入、临时权限、审批审计和跨事故积累的基础设施记忆。",
+    audience: ["平台工程与 SRE 团队", "需要安全引入运维 Agent 的云安全负责人", "管理多云迁移、事故响应和合规整改的工程组织"],
+    killerFeature: "每个 Agent 会话都能绑定原生 IAM 角色，先观察资源、读取日志和生成计划，再按审批流申请动作权限；所有建议与执行进入审计轨迹。",
+    experience: "团队下载 macOS 工作区并连接现有云栈，不必迁移监控与部署工具；成员也可从 Slack、Discord 或 iMessage 发起调查和批准动作，Agent 则持续学习服务、运行手册与历史事故。",
+    growth: "以 macOS 预览和无需迁移的接入路径吸引早期 DevOps 团队，通过公开演示与工程师社交传播展示生产治理差异，再用事故响应、云迁移和合规修复场景进入企业。",
+    businessModel: "官网提供预览下载和 Contact Sales，尚未公开标准套餐；商业化预计以团队席位、生产连接器、自托管与企业安全能力报价。",
+    insight: "生产 Agent 的第一产品需求不是更高自治，而是最小权限、可审批动作和可重放证据；把治理做进日常体验，才能从终端玩具进入值班流程。",
+    sourceUrl: "https://nuphos.ai/",
+    sourceLabel: "Nuphos 官方网站",
+    sources: [
+      { label: "Nuphos 官方网站", url: "https://nuphos.ai/" },
+      { label: "Nuphos 创始人发布", url: "https://x.com/yuaan1in/status/2086833877902061595" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/nuphosai-ai-native-devops-workspace--x_2086833877902061595" }
+    ]
+  },
+  {
+    slug: "unsloth-desktop",
+    name: "Unsloth Desktop",
+    tag: "Local Model Workbench",
+    tagline: "在 Mac、Windows 和 Linux 的一个开源桌面应用里本地运行、训练、搜索、调工具并导出模型",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2087174761277538304/img/-4DttctjenMfxyVf.jpg",
+    positioning: "定位为本地模型从下载、运行到微调和导出的统一工作台。壁垒来自 Unsloth 的训练内核、广泛硬件与模型格式兼容、数据配方，以及可连接 Claude Code 和 Codex 的 OpenAI 兼容接口。",
+    audience: ["希望离线使用模型的开发者", "需要低显存微调的 ML 工程师", "对代码与数据隐私敏感的个人和企业"],
+    killerFeature: "同一桌面界面支持 MLX、GGUF、扩散视频、音频与多 GPU 模型，并把无代码训练、沙箱代码执行、私有搜索、RAG、MCP 和格式导出串成一条本地流水线。",
+    experience: "用户可从图形界面选择模型和硬件，直接聊天、比较、生成数据集或启动训练；安装和首版兼容仍在快速迭代，社区最新 Beta 已继续修复外部推理连接与搜索工具问题。",
+    growth: "用开源、离线和跨平台降低试用阻力，借助 Unsloth 的模型仓库与开发者社区快速分发，再通过 GitHub、Reddit 和持续 Beta 发布吸收硬件兼容反馈。",
+    businessModel: "Desktop 标准版与核心开源能力免费；Unsloth Pro 和 Enterprise 通过更快训练、多 GPU、多节点与支持服务销售，价格需联系团队。",
+    insight: "本地 AI 的机会不只是隐私，而是把推理、训练和 Agent 工具做成普通开发者可操作的产品；硬件适配与安装恢复力会像模型质量一样决定口碑。",
+    sourceUrl: "https://unsloth.ai/docs/desktop",
+    sourceLabel: "Unsloth Desktop 官方文档",
+    sources: [
+      { label: "Unsloth Desktop 文档", url: "https://unsloth.ai/docs/desktop" },
+      { label: "Unsloth 官方发布", url: "https://x.com/UnslothAI/status/2087177146662072546" },
+      { label: "Unsloth GitHub", url: "https://github.com/unslothai/unsloth" },
+      { label: "Reddit 首发反馈", url: "https://www.reddit.com/r/unsloth/comments/1vli9xs/meet_unsloth_desktop_the_first_desktop_app_to_run/" }
+    ]
+  }
+];
+
+const industryEvents20260817 = [
+  {
+    slug: "cursor-joins-spacex",
+    name: "Cursor × SpaceX · 收购完成",
+    summary: "Cursor 于 8 月 14 日确认正式并入 SpaceX，模型训练、算力与开发者分发进入同一体系",
+    image: "https://cursor.com/marketing-static/_next/image?q=70&url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fuploads%2Fclose-og-image-1-B5D1caLmbVsj0JInrL2qKgXzLPMGoU.png&w=1920",
+    impact: "收购把 Cursor 的专业开发者入口、模型 harness 与 SpaceXAI 的大规模算力和 Grok 模型垂直整合。Cursor 表示将用更大 GPU 资源训练更强且更经济的模型，Grok 4.6 已展示合作方向；AI 编码竞争进一步从应用层扩展到算力、模型与渠道的一体化。",
+    insight: "当底层模型与应用入口被同一公司整合，产品团队需要同时评估能力增益和供应商集中风险；可替换模型、数据可迁移与合同边界会成为企业采购重点。",
+    sourceUrl: "https://cursor.com/blog/joining-spacex",
+    sourceLabel: "Cursor 官方公告",
+    sources: [
+      { label: "Cursor 官方公告", url: "https://cursor.com/blog/joining-spacex" },
+      { label: "Cursor 官方发布 / X", url: "https://x.com/cursor_ai/status/2088249881718919393" },
+      { label: "AP 收购背景", url: "https://apnews.com/article/a5c60fcbaaca262cf107d30f1de899ef" },
+      { label: "Reddit 用户讨论", url: "https://www.reddit.com/r/cursor/comments/1vo6zxz/cursor_is_now_part_of_spacex_cursor_ai/" }
+    ]
+  },
+  {
+    slug: "zai-glm-5-3",
+    name: "Z.ai · GLM-5.3",
+    summary: "GLM-5.3 强化编码 Agent 与网络防御能力，并因高风险能力把开放权重发布延后两周",
+    image: "https://pbs.twimg.com/media/HPqGDYVXAAEtyrV.jpg",
+    impact: "Z.ai 在官方发布中把 GLM-5.3 定位为面向编码和网络防御的 743B 基座后训练版本。公司选择先开放服务、延迟权重并进行额外安全测试，显示开放模型厂商也开始把能力发布与风险分级绑定，而不是把 API 与权重同步视为默认。",
+    insight: "开放权重不等于一次性全量开放；产品可以按 API、受控测试、模型卡和权重分阶段交付，并把高风险评测与延迟策略提前写进发布计划。",
+    sourceUrl: "https://x.com/Zai_org/status/2088132965922476159",
+    sourceLabel: "Z.ai 官方发布",
+    sources: [
+      { label: "Z.ai 官方发布", url: "https://x.com/Zai_org/status/2088132965922476159" },
+      { label: "Z.ai 开发者文档", url: "https://docs.z.ai/guides/llm/glm-5" },
+      { label: "Axios", url: "https://www.axios.com/2026/08/14/china-open-source-ai-glm-53" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/glm-5-3-built-to-code-for-cyber-defense--x_2088132965922476159" }
+    ]
+  },
+  {
+    slug: "deepseek-v4-pro-ga",
+    name: "DeepSeek · V4-Pro GA",
+    summary: "DeepSeek 推出 V4-Pro 正式版，增强 Agent 生产表现、可调推理强度与原生 Responses API",
+    image: "https://pbs.twimg.com/media/HPmOJZlbUAAOgVt.jpg",
+    impact: "V4-Pro 从预览进入正式版后覆盖 App、Web 与 API，并以 low、high、max 等推理强度适配不同任务成本。原生 OpenAI Responses API 降低迁移门槛，同时新的峰谷定价引发开发者对实际成本与替代服务的公开比较。",
+    insight: "模型升级不只要公布能力分数，还要让推理强度、价格与接口兼容可配置；产品应基于真实任务建立路由和预算上限，避免默认使用最高强度。",
+    sourceUrl: "https://x.com/deepseek_ai/status/2087864585504305397",
+    sourceLabel: "DeepSeek 官方发布",
+    sources: [
+      { label: "DeepSeek 官方发布", url: "https://x.com/deepseek_ai/status/2087864585504305397" },
+      { label: "DeepSeek API 更新", url: "https://api-docs.deepseek.com/updates" },
+      { label: "DeepSeek 模型与价格", url: "https://api-docs.deepseek.com/quick_start/pricing/" },
+      { label: "Reddit 成本讨论", url: "https://www.reddit.com/r/DeepSeek/comments/1vnujem/my_deepseek_bill_goes_from_33_to_100_offpeak_and/" }
+    ]
+  },
+  {
+    slug: "ltx-2-5",
+    name: "LTX · LTX-2.5",
+    summary: "LTX-2.5 以开放权重、原生多镜头和按场景复杂度分配算力，升级本地音视频生成工作流",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2087232120250867712/img/U-7HW8OFEz4_4gNh.jpg",
+    impact: "LTX-2.5 把角色、场景、灯光、声音和风格一致性放进一次多镜头生成，并通过 Diffusion Fidelity Rendering 将更多计算分给复杂画面。模型权重、Hugging Face 与 ComfyUI 工作流同步开放，使本地创作团队能直接评测、微调和商业部署。",
+    insight: "视频模型的产品竞争正从单段画质转向跨镜头一致性、可控算力与现有节点工作流兼容；首日提供权重、模板和迁移路径能显著缩短社区采用周期。",
+    sourceUrl: "https://ltx.io/newsroom/introducing-ltx-2-5",
+    sourceLabel: "LTX 官方发布",
+    sources: [
+      { label: "LTX 官方发布", url: "https://ltx.io/newsroom/introducing-ltx-2-5" },
+      { label: "LTX 官方模型页", url: "https://ltx.io/model/ltx-2-5" },
+      { label: "官方 Hugging Face", url: "https://huggingface.co/Lightricks/LTX-2.5" },
+      { label: "Reddit 首发反馈", url: "https://www.reddit.com/r/StableDiffusion/comments/1vlqy46/ltx25_is_here/" }
+    ]
+  },
+  {
+    slug: "dyna-2-world-action-model",
+    name: "DYNA Robotics · Dyna-2",
+    summary: "Dyna-2 用超过 100 万小时人类视频预训练世界动作模型，并验证人类到机器人的迁移缩放规律",
+    image: "https://pbs.twimg.com/amplify_video_thumb/2086855652966817792/img/39LJteONqeNrvXhO.jpg",
+    impact: "Dyna-2 在 1,000 到 100 万小时数据阶梯上呈现可持续缩放，并报告人类视频规模增加会改善未见过的机器人数据预测。模型只需少量机器人后训练即可覆盖多种双臂与灵巧手任务，为具身 AI 提供了比昂贵遥操作数据更可扩展的预训练轴。",
+    insight: "物理 AI 团队应把公开视频预训练、少量真机后训练和盲测任务拆成清晰证据链；缩放规律能指导数据投资，但仍需用真实成功率、延迟和失败恢复验证产品价值。",
+    sourceUrl: "https://www.dyna.co/dyna-2",
+    sourceLabel: "DYNA Robotics 官方研究",
+    sources: [
+      { label: "Dyna-2 官方研究", url: "https://www.dyna.co/dyna-2" },
+      { label: "DYNA 官方发布 / X", url: "https://x.com/DynaRobotics/status/2086856327150858298" },
+      { label: "DYNA 官方网站", url: "https://www.dyna.co/" },
+      { label: "Launch Archive", url: "https://launcharchive.ai/launches/dyna-2-world-action-model-introduced--x_2086856327150858298" }
+    ]
+  }
+];
+
+const trends20260817 = [
+  {
+    title: "AI 员工从单次自动化升级为持久身份与共享记忆",
+    text: "Grok Bot 为每个任务提供独立云电脑，Lindy Teammate 把反馈沉淀为团队记忆，NuphosAI 则把生产身份、审批和审计放进运维 Agent。Agent 的产品边界正在从回答能力扩展到环境、权限、连续状态与组织协作。"
+  },
+  {
+    title: "开放模型进入分阶段发布与本地工作台竞争",
+    text: "GLM-5.3 因网络能力延迟开放权重，LTX-2.5 同步发布模型与 ComfyUI 工作流，Unsloth Desktop 把运行、训练和导出带到本地。开放不再只是许可证，而是发布节奏、硬件可达性和工具链完整度的综合产品策略。"
+  },
+  {
+    title: "视频成为连接生成内容与具身智能的新数据轴",
+    text: "LTX-2.5 用多镜头和动态算力服务创作，Dyna-2 则用百万小时人类视频验证跨具身迁移。视频模型正在同时向可控生产和物理世界理解扩张，数据质量、时序一致性与真实任务评测成为共同壁垒。"
+  }
+];
+
 const products20260811 = [
   {
     slug: "oqoqo",
@@ -2897,6 +3107,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-17",
+    isoDate: "2026-08-17",
+    dateLabel: "2026年8月17日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在把持久身份、受控执行与视频世界模型组装成可持续交付的新工作系统",
+    products: products20260817,
+    industryEvents: industryEvents20260817,
+    trends: trends20260817
+  },
   {
     slug: "2026-08-11",
     isoDate: "2026-08-11",
