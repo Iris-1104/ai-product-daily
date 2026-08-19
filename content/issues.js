@@ -1,3 +1,208 @@
+const products20260819 = [
+  {
+    slug: "clara-ai-sdr",
+    name: "Clara AI SDR",
+    tag: "Inbound AI SDR",
+    tagline: "把高意向网站访客即时转成有资格的销售机会，并自动演示、答疑、异议处理和预约会议",
+    image: "https://clarasdr.ai/clarasdr_open_graph_image.png",
+    positioning: "定位为网站内的全流程 AI 销售代表，而不是收集联系方式的聊天窗口。壁垒来自把产品资料、实时意图识别、个性化演示、CRM 写回和人工接管组合成连续成交路径。",
+    audience: ["有稳定网站流量的 B2B SaaS 团队", "需要覆盖多时区的销售与市场团队", "希望提升入站线索转化率的增长负责人"],
+    killerFeature: "访客无需填表或等待销售，Clara 会实时资格判断、展示匹配其角色与行业的产品内容、处理异议并直接预约会议；高意向会话还能带摘要交给人工。",
+    experience: "团队上传 Pitch、产品文档、FAQ 和销售脚本后，把 Clara 部署到网站或产品内；访客以自然语言进入一段完整购买对话，销售在需要时从 Slack、Teams 等渠道接手。",
+    growth: "以免费 10 次买家对话和在线演示降低试用门槛，借 Product Hunt 首日榜首获得早期曝光，再通过 CRM 集成、跨语言覆盖和可量化的会议预约向中大型团队扩张。",
+    businessModel: "Starter 免费含每月 10 次买家对话；Pay as You Go 为每月 299 美元含 300 次对话并按超额用量收费；Enterprise 提供无限并发、白标、自托管与定制集成。",
+    insight: "入站销售 Agent 的价值不在多聊几句，而在把访客意图、产品演示、资格判断和人工接管连成一条可归因漏斗；每一步都应能回写 CRM 并衡量转化。",
+    sourceUrl: "https://clarasdr.ai/",
+    sourceLabel: "Clara 官方网站",
+    sources: [
+      { label: "Clara 官网", url: "https://clarasdr.ai/" },
+      { label: "Clara 官方定价", url: "https://clarasdr.ai/#pricing" },
+      { label: "Product Hunt 首发", url: "https://www.producthunt.com/products/clara-ai-sdr" }
+    ]
+  },
+  {
+    slug: "superflow-ai-qa",
+    name: "Superflow AI",
+    tag: "Agentic Website QA",
+    tagline: "把团队现有 QA 清单变成并行网站检查 Agent，在桌面与移动端定位问题并等待人工放行",
+    image: "https://usesuperflow.ai/opengraph-image.png",
+    positioning: "定位为网站上线前的 Agentic QA 层，而不是通用爬虫或又一套评论工具。壁垒来自把团队自有检查标准转成可学习 Agent、跨页面并行执行，并把发现直接钉在真实页面上。",
+    audience: ["Webflow、Framer 与 Shopify 代理商", "频繁发布营销网站的增长团队", "需要品牌、内容和功能联合验收的 QA 团队"],
+    killerFeature: "上传 XLS、CSV、PDF 或文档清单后自动生成一组专职 Agent，同时扫过桌面和移动页面；被否决的问题不再重复，人工补抓的遗漏会变成以后检查项。",
+    experience: "用户沿用已有验收清单并安装脚本，Agent 在几分钟内并行检查大量页面、附上截图和页面定位；最终判断仍由人完成，确认前内容不会被视为可发布。",
+    growth: "用免费 500 Credits 覆盖一次真实站点检查，通过 Webflow、Framer、WordPress、Shopify、Next.js 与 Netlify 适配进入现有交付栈，再借共享问题与团队记忆推动协作扩散。",
+    businessModel: "当前免费起步且无需信用卡，以 Credits 承担扫描成本；后续商业价值可围绕高频运行、团队席位、项目管理双向同步和企业治理分层。",
+    insight: "生成速度提升后，验证会成为新的交付瓶颈；最有效的 QA Agent 不是给出一份泛化报告，而是学习团队标准、提供页面证据并保留明确的人工发布权。",
+    sourceUrl: "https://usesuperflow.ai/",
+    sourceLabel: "Superflow 官方网站",
+    sources: [
+      { label: "Superflow 官网", url: "https://usesuperflow.ai/" },
+      { label: "Product Hunt 首发", url: "https://www.producthunt.com/products/superflow-webflow-plugin-for-revisions" },
+      { label: "Product Hunt 团队说明", url: "https://www.producthunt.com/products/superflow-webflow-plugin-for-revisions#superflow-ai" }
+    ]
+  },
+  {
+    slug: "elevenlabs-mcp-claude",
+    name: "ElevenLabs MCP in Claude",
+    tag: "Voice Agent Operations",
+    tagline: "在 Claude 中用自然语言配置、检查和改进 ElevenLabs 语音 Agent，并通过 OAuth 统一授权",
+    image: "https://opengraph.githubassets.com/1/elevenlabs/elevenlabs-mcp",
+    positioning: "定位为 ElevenLabs 语音 Agent 的对话式运维入口，而不是只生成音频的 MCP 工具。壁垒来自官方 API 覆盖、Claude Connectors 分发、OAuth 授权和对既有 Agent 配置的读写闭环。",
+    audience: ["运营 ElevenLabs 语音 Agent 的产品团队", "希望减少控制台操作的客服与销售团队", "在 Claude 中编排语音工作流的开发者"],
+    killerFeature: "连接账户一次后即可让 Claude 查找、审阅、复制、删除或更新语音 Agent 的提示词与声音，并在对话中检查运行配置和持续改进。",
+    experience: "用户从 Claude 连接器目录完成 OAuth，无需手工搬运 API Key；随后用自然语言描述要审查或调整的 Agent，Claude 调用官方工具执行并返回可继续讨论的配置结果。",
+    growth: "借 Claude 连接器目录触达现有付费用户，同时以官方开源 MCP Server 覆盖 Cursor、Claude Desktop 等开发者入口，让语音能力从 API 发现转成工作流内安装。",
+    businessModel: "MCP 连接器本身作为生态入口，实际使用沿用 ElevenLabs 语音、Agent 与 API 的订阅和用量计费；Claude 侧能力与可用性取决于对应套餐。",
+    insight: "MCP 的高价值不只是让模型调用新功能，而是让运营人员在熟悉的对话入口管理既有生产对象；官方 OAuth、对象级权限和变更可追踪决定能否进入真实团队。",
+    sourceUrl: "https://claude.ai/directory/elevenlabs",
+    sourceLabel: "Claude 官方连接器目录",
+    sources: [
+      { label: "Claude 官方目录", url: "https://claude.ai/directory/elevenlabs" },
+      { label: "ElevenLabs 官方 MCP", url: "https://github.com/elevenlabs/elevenlabs-mcp" },
+      { label: "Product Hunt 首发", url: "https://www.producthunt.com/products/elevenlabs-mcp-2" },
+      { label: "Reddit 社区发布", url: "https://www.reddit.com/r/ElevenLabs/comments/1vqtisu/introducing_the_elevenlabs_mcp_now_available_in/" }
+    ]
+  },
+  {
+    slug: "controller-ai",
+    name: "Controller AI",
+    tag: "Deterministic Agent Workflows",
+    tagline: "把关键业务流程做成带类型、版本和审批的 Agent 工具，让每次执行遵循同一条可审计路径",
+    image: "https://getcontroller.ai/og-image-v3.png",
+    positioning: "定位为 Agent 的确定性执行与治理层。壁垒来自可视化工作流、类型化输入输出、开发与线上版本、逐节点运行日志、人工审批，以及两千多个业务系统集成。",
+    audience: ["把 Agent 接入财务、广告和运营流程的团队", "需要审计与审批的企业自动化负责人", "希望把业务规则从长提示词中抽离的 Agent 开发者"],
+    killerFeature: "团队先把流程画成可测试工作流，再作为 Tool 挂到 Agent；模型负责判断何时调用，Controller 保证同样步骤和结构化输出，并在高风险动作前等待人工批准。",
+    experience: "用户可从现成集成动作开始，也可组合分支、转换、状态和子流程；每次运行都能查看输入、输出、耗时与错误，修改先在开发版本验证后再发布到线上。",
+    growth: "以免费选项和自然语言生成工作流降低首次搭建成本，通过 Product Hunt 展示受控 Agent 差异，再借常用 SaaS 集成与团队共享进入生产流程。",
+    businessModel: "官网提供免费起步，付费价值围绕工作流运行量、更多集成、团队协作、版本治理和企业级安全支持展开；具体套餐以官方产品内报价为准。",
+    insight: "让 Agent 可靠执行的关键不是把流程写进更长提示，而是把规则变成有类型、有版本、有审批的产品对象；推理与确定性执行应各自承担擅长的部分。",
+    sourceUrl: "https://getcontroller.ai/",
+    sourceLabel: "Controller AI 官方网站",
+    sources: [
+      { label: "Controller AI 官网", url: "https://getcontroller.ai/" },
+      { label: "Controller AI 文档", url: "https://docs.getcontroller.ai/" },
+      { label: "Product Hunt 首发", url: "https://www.producthunt.com/products/insight-ai" }
+    ]
+  },
+  {
+    slug: "meterless-ai",
+    name: "Meterless.ai",
+    tag: "Local-First Agent Runtime",
+    tagline: "把桌面操作、长期记忆和多 Agent 图保存在本地，让成功工作流跨会话、设备与模型持续复用",
+    image: "https://opengraph.githubassets.com/1/Meterless/Meterless",
+    positioning: "定位为用户拥有的本地 Agent 工作层，而不是一次性聊天输出。壁垒来自 Relay 可复用任务、Gaia 分层记忆、Swarms 可视化任务图，以及模型无关、可审计的开源 Runtime。",
+    audience: ["重视隐私与本地控制的知识工作者", "需要重复桌面流程的运营团队", "构建长期运行与多 Agent 系统的开发者"],
+    killerFeature: "Relay 记录并视觉验证跨应用步骤，成功运行保存为 Mission 后可编辑、计划和重放；Gaia 保留项目记忆，Swarms 把一个目标展开成可见、可检查的并行 Agent 图。",
+    experience: "用户描述任务并只授权必要窗口，先审查计划和批准高风险步骤；完成后保留任务图、证据和记忆，下次可换更便宜模型复用结构，不必把全部历史重新塞进上下文。",
+    growth: "以浏览器内免费工具、Apache 2.0 引擎和 GitHub 可复现实验吸引隐私与 Agent 开发者，再用 Windows Relay、Gaia 候补和平台实施服务承接高价值场景。",
+    businessModel: "免费工具与开源引擎负责获客，桌面应用二进制保持专有；未来收入可来自 Relay、Gaia 等产品订阅、企业实施与把 Meterless Runtime 嵌入客户平台。",
+    insight: "长期 Agent 的真正资产不是某次模型回答，而是可迁移的任务结构、状态、证据和记忆；让用户拥有这些资产，才能降低模型切换和重复推理成本。",
+    sourceUrl: "https://meterless.ai/",
+    sourceLabel: "Meterless 官方网站",
+    sources: [
+      { label: "Meterless 官网", url: "https://meterless.ai/" },
+      { label: "Meterless 官方 GitHub", url: "https://github.com/Meterless/Meterless" },
+      { label: "Product Hunt 首发", url: "https://www.producthunt.com/products/meterless-ai" }
+    ]
+  }
+];
+
+const industryEvents20260819 = [
+  {
+    slug: "chatgpt-for-teens",
+    name: "OpenAI · ChatGPT for Teens",
+    summary: "OpenAI 为 13 至 17 岁用户推出自动启用的青少年体验，把学习引导、健康使用和更强默认保护组合在一起",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3zuG1U7vovcdCnrvHKD29K/00129a9e8d57a02da54c9e9e57d9f87a/OAI_ChatGPTWork_PressBlog_WebMobilePicker_16x9_260708.png?fm=webp&q=90&w=3840",
+    impact: "通用 AI 产品开始按年龄重做默认体验，而不是只增加一层内容过滤。年龄预测、Study Mode、作业提醒、Study Hours、家长控制和高风险通知被放进同一产品面，教育价值与发展阶段安全将共同影响未成年用户的采用。",
+    insight: "面向未成年人的 AI 应把年龄识别、默认保护、家长可控边界和学习目标做成系统能力；既不能把责任推给一份条款，也不能让家长控制演变为无限读取私人对话。",
+    sourceUrl: "https://openai.com/index/chatgpt-for-teens/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI 官方发布", url: "https://openai.com/index/chatgpt-for-teens/" },
+      { label: "OpenAI 青少年说明", url: "https://help.openai.com/en/articles/20001262-what-changes-when-a-chatgpt-user-turns-18" },
+      { label: "Associated Press", url: "https://apnews.com/article/650cb35591de6546054d6c4e73b3290a" },
+      { label: "Reddit 用户讨论", url: "https://www.reddit.com/r/OpenAI/comments/1vrn6rt/chatgpt_is_getting_a_dedicated_mode_for_teens/" }
+    ]
+  },
+  {
+    slug: "openai-astra-cyber-pacing",
+    name: "OpenAI · Astra 训练与安全节奏调整",
+    summary: "OpenAI 因 Astra 可能达到关键网络能力门槛暂停两周部署向强化学习，并继续暂缓最大规模前沿训练",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "前沿实验室首次把研究环境隔离、全链路监控和对齐证据直接变成训练节奏的约束。OpenAI 表示工具型 Sol 级及以上训练与评测需监控，Astra 高风险工作负载采用更严格隔离，监控计算开销估计约为被监控推理的 20%。",
+    insight: "高能力模型的发布门禁要前移到训练与评测环境；团队应预先定义触发暂停的能力阈值、网络与凭证边界、告警处置时限，以及恢复训练所需的证据。",
+    sourceUrl: "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    sourceLabel: "OpenAI 官方安全更新",
+    sources: [
+      { label: "OpenAI 官方更新", url: "https://openai.com/index/pacing-model-development-cyber-capabilities/" },
+      { label: "OpenAI 事故披露", url: "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" },
+      { label: "Axios", url: "https://www.axios.com/2026/08/18/openai-pause-astra-preparedness-framework" },
+      { label: "Reddit 行业讨论", url: "https://www.reddit.com/r/ArtificialInteligence/comments/1vrz5h9/openai_paused_ai_training_for_two_weeks_unveils/" }
+    ]
+  },
+  {
+    slug: "ports-pike-ai-campus",
+    name: "OpenAI × NVIDIA × SB Energy · PORTS-Pike",
+    summary: "OpenAI 签约俄亥俄州约 8 IT-GW 算力园区，NVIDIA 提供独家计算栈、信用支持并向 SB Energy 投资 15 亿美元",
+    image: "https://iprsoftwaremedia.com/219/files/202608/091eea2d2fde579be40f8220fdb42526/partner-promo-pack-logo-lockup-openai-sbenergy-5590550_-press-1920x1080-1.png",
+    impact: "项目以 20 年租约把土地、电力、建筑、芯片和模型需求绑定到同一基础设施合同，首批 800MW 目标于 2028 年可用，完整建设预计延续至 2032 年。算力竞争正从采购 GPU 升级为锁定十年级能源、融资与社区承诺。",
+    insight: "超大算力项目需要把容量里程碑、电网成本、水资源、技术升级周期和社区收益公开成可核验指标；规模越大，融资结构与单一客户风险越应透明。",
+    sourceUrl: "https://openai.com/index/openai-joins-ports-pike-project/",
+    sourceLabel: "OpenAI 官方公告",
+    sources: [
+      { label: "OpenAI 官方公告", url: "https://openai.com/index/openai-joins-ports-pike-project/" },
+      { label: "NVIDIA 官方新闻稿", url: "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute" },
+      { label: "Axios", url: "https://www.axios.com/2026/08/17/openai-nvidia-ohio-data-center-sb-energy" },
+      { label: "Reddit 行业讨论", url: "https://www.reddit.com/r/technology/comments/1vr12af/openai_announces_massive_data_center_in_ohio_with/" }
+    ]
+  },
+  {
+    slug: "openai-democratic-ai-oversight",
+    name: "OpenAI · 民主监督能力计划",
+    summary: "OpenAI 启动政府 AI 国家安全监督计划，并投入 500 万美元培训、技术支持、Credits 与审查工具试点",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/7FgrwtDxicVhqi90R8xgcb/cd3875f42be331450c82ce2ee818cc68/openai-presence-still-1.png?fm=webp&q=90&w=3840",
+    impact: "政府采用 AI 后，监督机构也需要能审查输入、输出与工具调用，传统人工抽查难以跟上机器速度。该计划提出可追踪、可读且尽量模型无关的审查工具，同时让授权机构保有证据和结论控制权。",
+    insight: "高风险 Agent 的治理产品不应只服务部署方，也要服务独立监督者；证据归属、权限隔离、模型无关导出和人类最终判断，应从架构阶段就确定。",
+    sourceUrl: "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
+    sourceLabel: "OpenAI 官方公告",
+    sources: [
+      { label: "OpenAI 监督计划", url: "https://openai.com/index/strengthening-democratic-oversight-in-national-security/" },
+      { label: "OpenAI 国家安全原则", url: "https://openai.com/index/government-national-security-partnerships/" },
+      { label: "OpenAI Preparedness Framework", url: "https://openai.com/index/updating-our-preparedness-framework/" }
+    ]
+  },
+  {
+    slug: "snowflake-cortex-model-rbac-migration",
+    name: "Snowflake Cortex AI · Model RBAC 迁移",
+    summary: "Snowflake 从 8 月 17 日开始把 Cortex 模型 Allowlist 映射到 Model RBAC，并将逐步强制嵌入模型权限",
+    image: "https://www.snowflake.com/content/dam/snowflake-site/blog/security/12-security.png",
+    impact: "企业 AI 的模型访问控制从账户级开关转向可授予具体角色的权限对象。迁移持续至 9 月 4 日，随后 2026_07 Bundle 将推进嵌入模型 RBAC；PUBLIC 角色回填并不覆盖所有执行上下文，生产团队需要主动验证。",
+    insight: "多模型平台应把模型与工具都纳入最小权限和回归测试；自动迁移只能解决常见路径，Native Apps、受限调用者与禁用次级角色等边界必须逐一演练。",
+    sourceUrl: "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378",
+    sourceLabel: "Snowflake 官方发布说明",
+    sources: [
+      { label: "Snowflake 迁移说明", url: "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-2378" },
+      { label: "Cortex 模型权限文档", url: "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access" },
+      { label: "Snowflake AI 治理公告", url: "https://www.snowflake.com/en/blog/enterprise-ai-security-agentic-mcp-governance/" }
+    ]
+  }
+];
+
+const trends20260819 = [
+  {
+    title: "Agent 竞争从会执行转向可验证、可批准与可重复",
+    text: "Superflow 把 QA 清单变成有截图证据的并行检查，Controller 把流程做成带版本和审批的工具，OpenAI 则因 Astra 风险把暂停门禁前移到训练阶段。产品价值正在由自治程度转向可验收结果与清晰接管点。"
+  },
+  {
+    title: "长期工作资产开始与底层模型解耦",
+    text: "Meterless 把任务图、记忆和证据留给用户，ElevenLabs MCP 让生产语音 Agent 从不同对话入口被管理，近一周的本地工作台与多模型路由更新也指向同一趋势：真正可迁移的是工作结构，而不是一次回答。"
+  },
+  {
+    title: "AI 治理正在按年龄、能力与组织角色细分",
+    text: "ChatGPT for Teens 以年龄决定默认体验，OpenAI 对关键网络能力采用更严格训练隔离，Snowflake 把模型访问迁到角色级权限，民主监督计划则为审查者提供独立工具。统一条款正在让位于分层控制与专门界面。"
+  }
+];
+
 const products20260718 = [
   {
     slug: "codex-app",
@@ -3107,6 +3312,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-19",
+    isoDate: "2026-08-19",
+    dateLabel: "2026年8月19日",
+    weekday: "星期三",
+    oneSentence: "AI 产品正在把自然交互、可验证执行与分层治理组装成更可信的长期工作系统",
+    products: products20260819,
+    industryEvents: industryEvents20260819,
+    trends: trends20260819
+  },
   {
     slug: "2026-08-17",
     isoDate: "2026-08-17",
