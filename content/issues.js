@@ -1,3 +1,210 @@
+const products20260824 = [
+  {
+    slug: "construct-computer",
+    name: "Construct Computer",
+    tag: "AI Workforce OS",
+    tagline: "给每个 AI 同事一台持续运行的云电脑，把成功任务锁定为团队可复用的工作流",
+    image: "https://construct.computer/og/home.jpg?v=2",
+    positioning: "定位为独立创始人与小团队的托管 AI 员工工作区，而不是一次性聊天 Agent。壁垒来自每个 Agent 的云桌面、可检查记忆、应用与 MCP 商店、多人协作，以及把成功运行固化为确定性工作流。",
+    audience: ["独立创始人与精简创业团队", "需要自动化 CRM、研究和运营的业务负责人", "希望让非技术成员共用 Agent 的小公司"],
+    killerFeature: "任务跑通后可把 Agent 步骤、连接应用与通知锁定为有版本、可计划、全团队可触发的工作流，重复执行时无需再次从头推理。",
+    experience: "Agent 在带浏览器、终端、文件、邮箱、日历和持久记忆的云桌面继续工作；用户可从任意设备观看、接管或纠偏，也能从 Slack、Telegram、Discord 和专属邮箱委派。",
+    growth: "用 Product Hunt 日榜第一和 7 天 Pro 试用建立首批口碑，通过 9 美元入门档覆盖个人，再以后台任务、更多 Agent、长运行和团队权限向高价值计划扩张。",
+    businessModel: "Lite 每月 9 美元，Starter 每月 59 美元，Pro 每月 299 美元；年付分别折算约 7.5、39、199 美元/月，Enterprise 增加 SSO、私有部署与定制 MCP。",
+    insight: "重复任务不应每次都支付完整推理成本；把一次成功运行沉淀为有版本的可执行资产，同时保留失败告警与人工修复入口，才是 Agent 规模化的成本杠杆。",
+    sourceUrl: "https://construct.computer/",
+    sourceLabel: "Construct 官方网站",
+    sources: [
+      { label: "Construct 官网", url: "https://construct.computer/" },
+      { label: "Construct 技术博客", url: "https://construct.computer/blog" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/construct-computer" }
+    ]
+  },
+  {
+    slug: "fetchsandbox-mcp",
+    name: "FetchSandbox MCP",
+    tag: "Agent Integration Testing",
+    tagline: "让编码 Agent 在 IDE 内复现 webhook、重试和异步状态故障，并交付可重放的修复凭证",
+    image: "https://fetchsandbox.com/opengraph-image?8bb458c414162a3e",
+    positioning: "定位为 Agent 编写 API 集成后的验证层，而不是只返回模拟响应的 Mock Server。壁垒来自 67 个以上预配置 API、状态化失败场景、跨系统不变量、故障记忆图和可公开重放的 Receipt。",
+    audience: ["使用 Cursor、Claude Code 或 Codex 的开发者", "维护支付、身份和消息集成的工程团队", "需要稳定复现异步故障的 QA 与平台团队"],
+    killerFeature: "Agent 可通过 MCP 选择重复 webhook、乱序事件、过期事件等失败条件，先确定性复现真实 Bug，再修改本地代码并生成可贴进 PR 或 Slack 的重放凭证。",
+    experience: "添加一段 MCP 配置后，用户在原有 IDE 描述故障；FetchSandbox 运行含前置条件、终态、必需事件和不变量的场景，不消耗真实 API 配额，并把验证结果交回同一 Agent 循环。",
+    growth: "用免费 MCP、CLI 与 67 个以上热门 API Sandbox 降低接入门槛，通过 Product Hunt 日榜第二触达 Agent 开发者，再以可分享 Receipt 在 PR 和团队协作中自然传播。",
+    businessModel: "当前 MCP 发布免费，官网提供免费层；商业化可围绕更高请求量、自定义 API、团队监控与企业安全展开，尚未在公开页面披露完整付费价格。",
+    insight: "Agent 修复不能止于测试绿灯；把成功定义、失败条件和可重放证据放进同一工具调用，才能让修复从模型判断变成团队可验证事实。",
+    sourceUrl: "https://fetchsandbox.com/",
+    sourceLabel: "FetchSandbox 官方网站",
+    sources: [
+      { label: "FetchSandbox 官网", url: "https://fetchsandbox.com/" },
+      { label: "官方 MCP 包", url: "https://www.npmjs.com/package/fetchsandbox-mcp" },
+      { label: "官方 GitHub", url: "https://github.com/fetchsandbox" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/fetchsandbox" }
+    ]
+  },
+  {
+    slug: "claude-academy",
+    name: "Claude Academy",
+    tag: "Official AI Learning Hub",
+    tagline: "把 Claude、Cowork、Code、Tag、API 与 MCP 的官方课程集中为免费的自学入口",
+    image: "https://academy.claude.com/og/site.png",
+    positioning: "定位为 Anthropic 全产品栈的官方学习层，而不是零散帮助文档。壁垒来自与 Claude 产品同步的第一方课程、AI Fluency 框架、按角色和产品组织的学习路径，以及未来认证入口。",
+    audience: ["初次使用生成式 AI 的知识工作者", "采用 Claude Code、MCP 与 API 的开发者", "负责团队 AI 推广与治理的管理者"],
+    killerFeature: "一个学习站同时覆盖 Claude.ai、Claude Cowork、Claude Code、Claude Tag 和 Claude Platform，并用 Delegation、Description、Discernment、Diligence 四项 AI Fluency 能力贯穿基础课程。",
+    experience: "用户可按产品或学习目标进入自定进度课程、教程与测验；当前首页已列出 14 课时的 AI Fluency 基础课、模型能力与限制课程，以及面向工作、编码和平台开发的入口。",
+    growth: "以完全免费的官方内容和 Product Hunt 日榜第五获取广泛用户，通过课程与产品内实践互相导流；按开发者、创意人员和领导者组织路径，降低团队采用时的培训成本。",
+    businessModel: "学习平台当前免费，作为 Claude 个人订阅、团队产品和 API 生态的教育与采用入口；官方尚未公布单独收费计划。",
+    insight: "AI 平台进入多产品阶段后，教育本身就是产品面；围绕真实角色与工作任务组织课程，比按功能罗列文档更能缩短从试用到稳定采用的距离。",
+    sourceUrl: "https://academy.claude.com/",
+    sourceLabel: "Claude Academy 官方网站",
+    sources: [
+      { label: "Claude Academy 官网", url: "https://academy.claude.com/" },
+      { label: "官方 AI Fluency 课程", url: "https://academy.claude.com/collections/ai-fluency" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/claude-academy" }
+    ]
+  },
+  {
+    slug: "open-analytics",
+    name: "Open Analytics",
+    tag: "AI-Native Analytics",
+    tagline: "把实时流量、漏斗与收入归因放进无 Cookie 的开源分析台，并让 AI Agent 通过 MCP 直接查询",
+    image: "https://getopen.so/og-open.png",
+    positioning: "定位为面向人和 AI Agent 的隐私优先网站分析产品，而不是 GA4 的简化报表。壁垒来自无 Cookie 采集、收入归因、固定查询型 MCP、ClickHouse 实时分析和可自托管的 AGPL 代码库。",
+    audience: ["需要替代 GA4 的 SaaS 与独立开发者", "重视 GDPR 与数据所有权的团队", "希望让 Agent 读取业务指标的增长与产品团队"],
+    killerFeature: "同一套数据既能在实时仪表盘里查看，也能通过 MCP 用自然语言查询；MCP 只允许模型选择固定、命名的只读工具和参数，不让模型临时生成 SQL。",
+    experience: "用户添加约 2 KB 的异步脚本或运行初始化命令后即可看到实时访客、来源、Web Vitals、漏斗和旅程；连接 Stripe 后，付款、退款、争议与费用可沿访问来源核对。",
+    growth: "用开源代码、自托管选项和 Product Hunt 日榜第二建立信任，再以无卡 7 天试用、GA4/Plausible 历史导入和不限席位降低迁移成本，借 MCP 进入 Agent 工作流。",
+    businessModel: "托管版按事件量分层：Starter 每月 9 美元含 5 万事件，Growth 每月 19 美元含 50 万事件，Pro 每月 49 美元含 500 万事件；各档功能一致，并保留自托管版本。",
+    insight: "AI 分析产品要把可审计性做进查询边界；固定工具、明确身份范围和拆分展示收入构成，比让模型自由写 SQL 更适合生产决策。",
+    sourceUrl: "https://getopen.so/",
+    sourceLabel: "Open Analytics 官方网站",
+    sources: [
+      { label: "Open Analytics 官网", url: "https://getopen.so/" },
+      { label: "官方 GitHub", url: "https://github.com/OpenLabs-so/openanalytics" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/open-analytics-2" },
+      { label: "Reddit 开发者说明", url: "https://www.reddit.com/r/SaaS/comments/1vrw955/i_built_an_open_source_and_ainative_google/" }
+    ]
+  },
+  {
+    slug: "subtitlegenerator",
+    name: "SubtitleGenerator",
+    tag: "Browser AI Subtitles",
+    tagline: "在浏览器里完成字幕生成、低置信词修正、整轨翻译、样式与多格式导出",
+    image: "https://subtitlegenerator.app/og.svg",
+    positioning: "定位为从视频导入到可发布字幕的浏览器工作台，而不是单点语音转文字工具。壁垒来自不确定词逐个复核、整轨翻译、样式与品牌预设，以及原视频不离开浏览器的隐私边界。",
+    audience: ["短视频与播客创作者", "需要多语言本地化的内容团队", "不想安装桌面剪辑软件的轻量用户"],
+    killerFeature: "Fix 模式把低置信词和未确认片段集中成可逐项处理的队列，直到显示 All clear；付费档还能把完整字幕轨翻译后保留时间轴。",
+    experience: "用户拖入视频即可生成字幕，随后修正不确定词、翻译、套用 30 种样式并导出；官网说明原视频留在本地，仅提取的音频被发送处理并在任务后删除。",
+    growth: "用无需注册的每月 60 个一分钟视频和全部基础样式制造即时价值，通过 Product Hunt 与创作者社区展示修正流程，再以水印移除、高清和品牌预设促成升级。",
+    businessModel: "免费档提供每月 60 个一分钟视频；Pro 与 Max 围绕完整字幕轨翻译、高清无水印、8 种字幕格式、自定义字体和品牌样式分层，同时提供按量购买。",
+    insight: "字幕 Agent 的体验差异不只在首轮准确率，而在把模型不确定性变成一条可完成的复核队列；让用户知道还剩什么没确认，能显著降低发布焦虑。",
+    sourceUrl: "https://subtitlegenerator.app/",
+    sourceLabel: "SubtitleGenerator 官方网站",
+    sources: [
+      { label: "SubtitleGenerator 官网", url: "https://subtitlegenerator.app/" },
+      { label: "Product Hunt 8 月 22 日榜单", url: "https://www.producthunt.com/leaderboard/daily/2026/8/22" },
+      { label: "SuperPublic 当日发布", url: "https://superpublic.org/" }
+    ]
+  }
+];
+
+const industryEvents20260824 = [
+  {
+    slug: "nvidia-avo-arc-agi-3",
+    name: "NVIDIA · AVO 完成 ARC-AGI-3 公开集",
+    summary: "NVIDIA 的 AVO Agent 系统在 ARC-AGI-3 公开集完成 25 个环境的 183 个关卡，把 Claude Opus 5 基线约 30% 提升到 100%",
+    image: "https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/agentic-ai-visual-cybersecurity-avo-1.webp",
+    impact: "结果显示长期 Agent 的能力不只由底层模型决定，持续记忆、监督器和工具循环可显著改变完成率。该 100% 仅针对 ARC-AGI-3 公开集，不代表半私有集、私有集或通用智能；AVO 还在 B200 上的内核优化实验中比 FlashAttention-4 最快提升 10.5%。",
+    insight: "评估长程 Agent 时，应同时公布底层模型基线、系统组件、动作数、失败恢复与未见任务结果；只报一个满分会掩盖系统设计贡献和泛化边界。",
+    sourceUrl: "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+    sourceLabel: "NVIDIA 官方技术博客",
+    sources: [
+      { label: "NVIDIA 官方技术博客", url: "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/" },
+      { label: "ARC-AGI-3 论文", url: "https://arxiv.org/abs/2603.24621" },
+      { label: "Reddit 技术讨论", url: "https://www.reddit.com/r/LocalLLaMA/comments/1vuh7to/nvidia_avo_got_100_on_arcagi3_it_completed_all/" }
+    ]
+  },
+  {
+    slug: "anthropic-mythos-5-defenders",
+    name: "Anthropic · Mythos 5 扩大防守方可用范围",
+    summary: "Claude Mythos 5 已进入 Claude Security，并将接入合作伙伴的网络防御产品，同时启动 3500 万美元开源安全基金",
+    image: "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69f398245c0b3933c7940d49_og_claude-security-public-beta%20(1).jpg",
+    impact: "前沿网络能力从少量 Glasswing 合作方开始进入更可用的防御产品面。Defender Advantage Fund 将以 Credits 支持开源漏洞修复、扫描和新安全方法，Anthropic 还计划扩大 Cyber Verification Program，让能力开放与身份核验同步推进。",
+    insight: "高风险模型商业化不能只靠统一拒答；把能力放进限定用途产品、验证专业用户、记录工具调用，并补贴公共安全任务，才能把防守窗口转成可执行机制。",
+    sourceUrl: "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+    sourceLabel: "Anthropic 官方发布",
+    sources: [
+      { label: "Anthropic 官方发布", url: "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders" },
+      { label: "Claude Security 官方页", url: "https://claude.com/solutions/cybersecurity" },
+      { label: "Mythos 5 模型页", url: "https://www.anthropic.com/claude/mythos" },
+      { label: "Associated Press 背景", url: "https://apnews.com/article/028db5135128fce6b38c873bf9cb5e09" }
+    ]
+  },
+  {
+    slug: "openai-gpt-5-6-sol-price-cut",
+    name: "OpenAI · GPT-5.6 Sol 临时降价",
+    summary: "OpenAI 将 GPT-5.6 Sol 的 API 与 Credits 价格下调超过 20%，优惠期为三个月",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "8 月 21 日更新把 Sol 输入与输出价格降至每百万 Token 4 美元和 20 美元，并称三个月后将重新评估。前沿推理模型的价格竞争从发布时一次定价转向阶段性效率返还，模型路由和单位任务毛利需要更频繁重算。",
+    insight: "依赖高价前沿模型的产品应把模型单价、缓存、思考强度和任务成功率统一进成本面板；临时优惠不应直接固化为永久面向客户的价格承诺。",
+    sourceUrl: "https://openai.com/index/gpt-5-6/",
+    sourceLabel: "OpenAI 官方更新",
+    sources: [
+      { label: "OpenAI GPT-5.6 官方页", url: "https://openai.com/index/gpt-5-6/" },
+      { label: "OpenAI API 定价", url: "https://platform.openai.com/pricing" },
+      { label: "Tenbrief 价格追踪", url: "https://tenbrief.com/en/2026/08/23/gpt-56-sol-api-price-cut/" },
+      { label: "Reddit 开发者讨论", url: "https://www.reddit.com/r/GithubCopilot/comments/1vusvih/openai_pricing_updates_gpt56_sol_has_a_new_lower/" }
+    ]
+  },
+  {
+    slug: "meta-pocket-us-expansion",
+    name: "Meta · Pocket 扩大美国可用范围",
+    summary: "Meta 将可用文字生成、分享与 Remix 互动 Gizmo 的 Pocket 扩大到美国用户，并在 Product Hunt 集中发布",
+    image: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/51/1d/a4/511da480-a674-bd18-1a10-105885aac0ba/Placeholder.mill/1200x630wa.jpg",
+    impact: "Pocket 把 AI 生成代码包装成可滑动、可玩和可 Remix 的消费内容，而不只是开发工具。应用先于此次扩大发布在有限地区测试，因此这不是产品首次出现；更重要的变化是 Meta 开始用社交分发验证互动生成内容的留存与治理。",
+    insight: "当代码变成内容，产品必须同时设计生成成功率、即时可玩性、Remix 归属、相机与相册权限和信息流审核；生成一个作品只是供给侧起点。",
+    sourceUrl: "https://apps.apple.com/us/app/pocket-make-gizmos/id6761221765",
+    sourceLabel: "Meta 官方 App Store 页面",
+    sources: [
+      { label: "Apple App Store 官方页面", url: "https://apps.apple.com/us/app/pocket-make-gizmos/id6761221765" },
+      { label: "Product Hunt 8 月 22 日榜单", url: "https://www.producthunt.com/leaderboard/daily/2026/8/22" },
+      { label: "SQ Magazine 可用范围追踪", url: "https://sqmagazine.co.uk/meta-launches-pocket-ai-game-maker-nationwide-us/" },
+      { label: "Digital Trends 产品背景", url: "https://www.digitaltrends.com/phones/meta-just-launched-a-vibe-coding-app-for-games-and-its-called-pocket/" }
+    ]
+  },
+  {
+    slug: "google-antigravity-ide-extensions",
+    name: "Google · Antigravity IDE Extensions",
+    summary: "Google 将 Antigravity Agent 工作流带进 VS Code、Visual Studio 预览版、JetBrains 与 Zed，并开放个人免费层和企业治理",
+    image: "https://antigravity.google/assets/image/blog/IDE-Extensions-Wide.png",
+    impact: "开发者无需迁移到独立 IDE，也能在现有编辑器中查看计划、逐行 Diff 和多步执行。企业版通过 Gemini Enterprise 与 Google Cloud 提供 IAM、VPC 控制和不用于训练的承诺，Agent 编码竞争进一步从编辑器替换转向可嵌入能力。",
+    insight: "编码 Agent 的分发不必押注替换用户编辑器；统一后端配合原生侧栏、细粒度 Diff、现有身份权限和企业数据边界，更容易跨团队落地。",
+    sourceUrl: "https://gweb-jetski.appspot.com/blog/antigravity-ide-extensions",
+    sourceLabel: "Google Antigravity 官方发布",
+    sources: [
+      { label: "Google Antigravity 官方发布", url: "https://gweb-jetski.appspot.com/blog/antigravity-ide-extensions" },
+      { label: "官方扩展文档", url: "https://antigravity.google/docs/ide/extensions/" },
+      { label: "Google Cloud 企业版说明", url: "https://cloud.google.com/blog/products/ai-machine-learning/expanding-google-antigravity-for-enterprise-customers" },
+      { label: "Reddit 用户讨论", url: "https://www.reddit.com/r/google_antigravity/comments/1vtr2k7/introducing_better_ide_solutions/" }
+    ]
+  }
+];
+
+const trends20260824 = [
+  {
+    title: "Agent 壁垒从底层模型转向记忆、监督与确定性边界",
+    text: "NVIDIA AVO 用持续记忆、监督器和工具循环显著抬高长程任务完成率，Open Analytics 则让模型只能选择固定只读查询。近一周的产品更新共同说明，可靠 Agent 需要把模型能力装进可审计系统，而不是只追求更自由的调用。"
+  },
+  {
+    title: "AI 能力正在嵌入已有编辑器，也在形成独立工作系统",
+    text: "Antigravity 把 Agent 放进主流 IDE，FetchSandbox 把集成验证放进编码循环，Construct 则给 Agent 持续运行的云桌面。新的分发竞争同时沿着嵌入既有界面与承接完整工作两条路径展开。"
+  },
+  {
+    title: "高能力模型的定价与访问控制开始动态化",
+    text: "OpenAI 对 Sol 采用三个月阶段性降价，Anthropic 则用验证计划、限定防御产品和专项 Credits 扩大 Mythos 5 使用。模型产品正在同时按时间、任务风险、用户资格和用量调整价格与权限。"
+  }
+];
+
 const products20260819 = [
   {
     slug: "clara-ai-sdr",
@@ -3312,6 +3519,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-24",
+    isoDate: "2026-08-24",
+    dateLabel: "2026年8月24日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在把长程 Agent、动态模型供给与已有工作界面组装成可审计的新执行层",
+    products: products20260824,
+    industryEvents: industryEvents20260824,
+    trends: trends20260824
+  },
   {
     slug: "2026-08-19",
     isoDate: "2026-08-19",
