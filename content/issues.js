@@ -1,3 +1,207 @@
+const products20260825 = [
+  {
+    slug: "decawork",
+    name: "Decawork",
+    tag: "Internal Agent Governance",
+    tagline: "给员工自建的 Claude Code、Codex 等内部 Agent 统一身份、最小权限、审批与审计",
+    image: "https://decawork.ai/control-plane-scene-daylight-v14-poster.jpg",
+    positioning: "定位为内部 AI Agent 的 IT 控制平面，而不是另一个 Agent 构建器。壁垒来自跨 Agent 的统一身份、细粒度凭证、所有者责任、审批门槛和完整审计，以及员工离职时可一次撤销全部访问。",
+    audience: ["允许员工自建 Agent 的中大型企业", "负责身份、权限和合规的 IT 与安全团队", "需要把实验性 Agent 推进生产的平台团队"],
+    killerFeature: "每个内部 Agent 获得独立身份与所有者，IT 可按工具和数据范围发放短期凭证、设置高风险动作审批，并在一个审计轨迹里查看谁授权了什么。",
+    experience: "员工继续使用 Claude Code、Codex 等熟悉工具创建 Agent；管理员不必重建这些工作流，只需在 Decawork 为 Agent 登记身份、限制连接范围、指定审批人，并在停用时同步回收权限。",
+    growth: "先以高频的影子 Agent 治理问题切入 IT 和安全团队，通过 Y Combinator S26 与 Product Hunt 获取早期企业线索，再随 Agent 数量和连接系统增加扩大部署范围。",
+    businessModel: "官网当前以预约演示为主要入口，尚未公开标准价格；商业化预计围绕受管 Agent 数量、企业身份集成、审计保留和合规支持收费。",
+    insight: "企业不会因为员工开始自建 Agent 就更换全部工具；把身份、凭证、审批和退出机制做成覆盖异构 Agent 的控制层，通常比强推单一构建平台更容易落地。",
+    sourceUrl: "https://decawork.ai/",
+    sourceLabel: "Decawork 官方网站",
+    sources: [
+      { label: "Decawork 官网", url: "https://decawork.ai/" },
+      { label: "Y Combinator 公司页", url: "https://www.ycombinator.com/companies/decawork" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/decawork" },
+      { label: "SuperPublic 产品页", url: "https://superpublic.org/tools/decawork" }
+    ]
+  },
+  {
+    slug: "offloop",
+    name: "Offloop",
+    tag: "Human-Agent Workspace",
+    tagline: "用持续保留目标、证据、责任和审批的工作频道，让人和 Agent 在同一组织上下文协作",
+    image: "https://ph-files.imgix.net/24781330-b318-4d26-a063-1a6f0238749a.jpeg?auto=compress%2Cformat&codec=mozjpeg&cs=strip&fit=max&frame=1&w=1600",
+    positioning: "定位为人与 Agent 共用的组织工作空间，而不是聊天机器人或任务看板。壁垒来自可持续的 Channels、可复用 Flows、工作区身份与精确授权、隔离运行、人工审批和可撤销连接。",
+    audience: ["希望把 Agent 接进日常运营的成长型团队", "需要跨人和 Agent 保留责任链的运营负责人", "重视权限与运行证据的企业工作组"],
+    killerFeature: "Channel 不只保存消息，还持续维护目标、上下文、证据、所有者、批准状态和下一步；Agent 可在隔离环境执行，关键动作等待指定人员放行。",
+    experience: "团队围绕一项持续工作建立 Channel，把文件、任务和外部信号接入，再用 Flow 编排人和 Agent；用户可以查看每次运行留下的证据，在同一界面批准、纠偏或撤销连接。",
+    growth: "以私测 Operator 和团队 Pilot 获取高触达设计伙伴，提供 30 天 AI Credits 降低首轮试用成本，并允许自带模型订阅且不加价，减少从现有模型工具迁移的阻力。",
+    businessModel: "Operator 处于私测，Team Pilot 采用定制方案，Enterprise 面议；支持自带模型订阅，官方明确不在模型费用上加价。",
+    insight: "人机协作的核心记录不是聊天历史，而是可交接的责任状态；把目标、证据、审批和下一步变成一等对象，Agent 才能真正进入组织流程。",
+    sourceUrl: "https://offloop.org/",
+    sourceLabel: "Offloop 官方网站",
+    sources: [
+      { label: "Offloop 官网", url: "https://offloop.org/" },
+      { label: "Offloop 官方定价", url: "https://offloop.org/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/offloop" }
+    ]
+  },
+  {
+    slug: "navigara",
+    name: "Navigara",
+    tag: "AI Engineering ROI",
+    tagline: "把提交历史、AI Token 支出与产品路线图对应起来，衡量 AI 编码真正交付了什么",
+    image: "https://ph-files.imgix.net/5042b6a6-0335-411e-ba55-6417b3ec93c5.jpeg?auto=compress%2Cformat&codec=mozjpeg&cs=strip&fit=max&frame=1&w=1600",
+    positioning: "定位为 AI 工程投资回报与团队效能分析层，而不是按代码行或席位统计的采用仪表盘。壁垒来自读取提交语义、估算工程价值、把 Token 成本映射到业务计划，并提供 SaaS、单次本地审计与企业部署。",
+    audience: ["为 AI 编码工具预算负责的 CTO 与 VP Engineering", "需要解释研发投入的工程运营团队", "评估 AI 转型效果的董事会与投资团队"],
+    killerFeature: "模型理解提交实际改变的系统行为并估算 Engineering Time Value，再把 AI Token 消耗归因到具体 Initiative 和 Roadmap，而不是只报告接受率或生成代码量。",
+    experience: "连接代码库后，用户可从团队、开发者、项目和时间段查看交付价值、质量与 AI 成本；敏感团队还可选择一次性本地 Audit，让代码和历史不离开环境。",
+    growth: "以 14 天免费 Explore 和 1000 美元 PR 分析额度降低首次评估成本，再用公开的 Navigara 500 方法论制造基准话题，向持续团队订阅、单次审计和企业合同扩张。",
+    businessModel: "Explore 提供 14 天试用和最多 1000 个 PR 的额度，Pro 为每位开发者每月 30 美元，On-Prem Audit 一次性 4500 美元，Enterprise 定制。",
+    insight: "AI 编码的 ROI 不应由席位激活率替代；只有把模型成本、提交语义、业务路线图和质量结果放在同一归因链上，管理者才能决定下一美元投向哪里。",
+    sourceUrl: "https://navigara.com/",
+    sourceLabel: "Navigara 官方网站",
+    sources: [
+      { label: "Navigara AI ROI", url: "https://navigara.com/product/ai-roi" },
+      { label: "Navigara 官方定价", url: "https://navigara.com/pricing" },
+      { label: "Navigara 500 方法论", url: "https://500.navigara.com/methodology" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/navigara" }
+    ]
+  },
+  {
+    slug: "dropstone",
+    name: "Dropstone",
+    tag: "Self-Hosted AI Runtime",
+    tagline: "让同一个自托管 AI 助手带着长期记忆穿梭 CLI、聊天与现实世界动作",
+    image: "https://www.dropstone.io/images/brain.jpg",
+    positioning: "定位为模型无关、可自托管的个人 AI 运行时，而不是绑定单一入口的聊天应用。壁垒来自跨界面的长期记忆、主动任务、审批式动作执行，以及用户自己掌控模型、数据和基础设施。",
+    audience: ["希望自托管个人 AI 的技术用户", "在多个聊天与终端入口工作的开发者", "重视数据控制和模型可替换性的团队"],
+    killerFeature: "同一助手可以在 CLI、聊天入口和现实世界动作间延续记忆与目标，主动推进任务；发送消息、调用外部系统等动作仍需按策略等待用户批准。",
+    experience: "用户在自己的环境部署 Dropstone、选择模型并连接常用入口；助手把对话和任务沉淀为长期上下文，随后能主动提醒或执行，但高影响步骤保留清晰确认。",
+    growth: "用免费自托管层和文档吸引偏技术的早期用户，通过 Product Hunt 的多轮迭代持续展示进展，再以托管能力、更高用量和企业支持向付费层转化。",
+    businessModel: "Free 为 0 美元，Pro 每月 15 美元，Max 每月 75 美元起，Enterprise 定制；开源或自托管入口承担获客，托管资源与高级能力承担收入。",
+    insight: "长期助手的信任来自两种相反能力同时成立：它必须记住足够多才能主动，又必须在真正改变外部世界前把决定权交还给用户。",
+    sourceUrl: "https://www.dropstone.io/",
+    sourceLabel: "Dropstone 官方网站",
+    sources: [
+      { label: "Dropstone 官网", url: "https://www.dropstone.io/" },
+      { label: "Dropstone 官方定价", url: "https://www.dropstone.io/pricing" },
+      { label: "Dropstone 官方文档", url: "https://docs.dropstone.io/" },
+      { label: "Product Hunt 产品页", url: "https://www.producthunt.com/products/dropstone-2" }
+    ]
+  },
+  {
+    slug: "lucid-train",
+    name: "Lucid Train",
+    tag: "Architecture-First Coding",
+    tagline: "先把代码库还原成可审阅的系统架构，再让编码 Agent 按这份规格修改代码",
+    videoEmbedUrl: "https://www.youtube.com/embed/s7N6cglt0rk",
+    positioning: "定位为系统设计优先的本地编码 Harness，而不是继续给 Agent 堆更多聊天上下文。壁垒来自代码库架构抽取、确定性 ELK 布局、架构即规格、依赖与 MCP 审计，以及本地和自带模型路径。",
+    audience: ["接手复杂代码库的开发者", "需要评审 Agent 改动的架构师与团队负责人", "希望保持本地控制和自带模型的工程团队"],
+    killerFeature: "工具先把仓库绘制成稳定的架构图，用户在图上确认系统边界和关系，再把这份结构化规格传给编码 Agent，减少模型对大型代码库的盲猜。",
+    experience: "桌面端和约 6 MB 的 Rust CLI 都在本地运行；用户打开仓库后查看确定性架构、审计依赖与 MCP，再发起代码修改并逐项检查 Diff 和批准。",
+    growth: "用永久免费且开源的 CLI 建立开发者信任，让架构图成为可分享的自然传播物；低价桌面订阅和 7 天试用承接需要图形界面、持续分析和团队工作流的用户。",
+    businessModel: "CLI 免费且开源；桌面版年付 30 美元，折合每月 2.50 美元，并提供 7 天试用。",
+    insight: "大型仓库的 Agent 可靠性问题常常不是上下文不够长，而是缺少可讨论的系统模型；先让人与模型对架构达成一致，再生成代码，能把评审提前到成本更低的位置。",
+    sourceUrl: "https://www.lucidtrain.com/",
+    sourceLabel: "Lucid Train 官方网站",
+    sources: [
+      { label: "Lucid Train 官网", url: "https://www.lucidtrain.com/" },
+      { label: "Lucid Train 官方文档", url: "https://www.lucidtrain.com/docs" },
+      { label: "Rust 官方包文档", url: "https://docs.rs/lucid-train/latest/lucid_train/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/lucid-train" }
+    ]
+  }
+];
+
+const industryEvents20260825 = [
+  {
+    slug: "thomson-reuters-proprietary-model",
+    name: "Thomson Reuters · 首个自有前沿模型",
+    summary: "Thomson Reuters 用专业内容与专家反馈训练首个自有大模型，并先把 Tabular Analysis 能力接入 CoCounsel Legal",
+    image: "https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2026/08/243523_G.jpg-800x450.jpeg",
+    impact: "这项投入把法律与税务 AI 的竞争从检索专业内容推进到训练专有模型。公司称当前只使用了不到 10% 的内容资产，并将用 4000 万美元支持人才和算力；其与领先模型相当的早期评测仍是厂商结果，需等待外部验证。",
+    insight: "垂直模型的真正飞轮是可授权数据、领域专家反馈和嵌入式工作流共同增长；发布时应把自有评测、外部基准与真实任务结果分开呈现。",
+    sourceUrl: "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model",
+    sourceLabel: "Thomson Reuters 官方发布",
+    sources: [
+      { label: "Thomson Reuters 官方新闻稿", url: "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model" },
+      { label: "Thomson Reuters CTO 解读", url: "https://www.thomsonreuters.com/en-us/posts/innovation/the-future-of-ai-is-knowing-how-to-use-the-intelligence-available-to-you/" },
+      { label: "CoCounsel Legal 官方更新", url: "https://legal.thomsonreuters.com/blog/the-next-generation-of-cocounsel-legal/" }
+    ]
+  },
+  {
+    slug: "nvidia-vera-rubin-nvl72-efficiency",
+    name: "NVIDIA · Vera Rubin NVL72 效率更新",
+    summary: "NVIDIA 公布 Vera Rubin NVL72 的 Agent 工作负载早期数据，称单位兆瓦吞吐最高提升 30 倍且每百万 Token 成本最高降低 35 倍",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/08/end-to-end-social-chart1-agentx-activation-s1-1920x1080-1.jpg",
+    impact: "若这些结果在真实部署中成立，Agent 经济性将更依赖整机、网络和软件栈协同，而非单颗 GPU。数字来自 NVIDIA 在指定 AgentX 工作负载上的测量，并仍待 SemiAnalysis 审阅，不能直接外推到所有模型和任务；平台现已进入全面生产阶段。",
+    insight: "基础设施性能声明必须绑定模型、精度、延迟、功耗和利用率；产品团队应以每次成功任务成本复测厂商指标，而不是直接把峰值倍数写进商业预测。",
+    sourceUrl: "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents/",
+    sourceLabel: "NVIDIA 官方博客",
+    sources: [
+      { label: "NVIDIA 官方博客", url: "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents/" },
+      { label: "NVIDIA 官方技术博客", url: "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/" },
+      { label: "SemiAnalysis InferenceX", url: "https://inferencex.semianalysis.com/blog" }
+    ]
+  },
+  {
+    slug: "google-cloud-verizon-enterprise-ai",
+    name: "Google Cloud × Verizon · 企业 AI 战略合作",
+    summary: "Verizon 将以 Gemini Enterprise 和 Google Agentic Data Cloud 扩展客服、网络自治、营销、安全与员工生产力场景",
+    image: "https://mmx.prnewswire.com/media/MS1189558/Google-Cloud-Logo.jpg?id=OA2903764",
+    impact: "合作把生成式 AI 从单点助手推进到电信网络异常预测与自动处置等运营核心，并用统一数据和 Agent 平台串联多个业务部门。双方没有披露合同金额或实施节奏，实际影响仍取决于上线范围和可量化服务指标。",
+    insight: "大型企业采用 AI 时，平台故事必须落到按场景定义的运营指标；客服、网络和安全不应共享一套模糊成功标准，而要分别设置自动化边界与人工接管。",
+    sourceUrl: "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI",
+    sourceLabel: "Google Cloud 官方新闻稿",
+    sources: [
+      { label: "Google Cloud 官方新闻稿", url: "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI" },
+      { label: "CIO Dive 行业报道", url: "https://www.ciodive.com/news/verizon-google-cloud-partner-enterprise-AI/828648/" },
+      { label: "Bloomberg Law 报道", url: "https://news.bloomberglaw.com/artificial-intelligence/google-cloud-enters-new-ai-partnership-with-verizon" }
+    ]
+  },
+  {
+    slug: "uk-ukraine-avengers-ai-labs",
+    name: "英国 × 乌克兰 · Avengers AI Labs 合作",
+    summary: "英国成为首个获准接入乌克兰 Avengers AI Labs 的国际伙伴，双方将用真实战场数据联合开发防务 AI",
+    image: "https://mod.gov.ua/assets/avengers-labs-site-01-en-jpg-07ed6e72ca.webp",
+    impact: "合作把由日光与红外传感器采集的真实战场数据开放给英国研究者和企业，并已涉及光纤感知与低功耗 AI 芯片试点。乌克兰国防部称平台包含 500 万张标注帧，但具体访问规则、数据安全和模型使用边界仍是规模化关键。",
+    insight: "高稀缺数据合作不能只定义谁能访问，还要明确任务许可、审计、模型产物归属和撤回机制；对防务 AI，数据治理本身就是产品核心。",
+    sourceUrl: "https://www.gov.uk/government/news/new-partnership-set-to-see-the-uk-and-ukraine-develop-battle-winning-technology-as-britain-secures-access-to-ukraines-avengers-ai-labs",
+    sourceLabel: "英国政府官方新闻稿",
+    sources: [
+      { label: "英国政府官方新闻稿", url: "https://www.gov.uk/government/news/new-partnership-set-to-see-the-uk-and-ukraine-develop-battle-winning-technology-as-britain-secures-access-to-ukraines-avengers-ai-labs" },
+      { label: "乌克兰国防部平台说明", url: "https://mod.gov.ua/en/news/ukrainian-defense-companies-to-train-their-own-ai-models-on-the-avengers-labs-platform" },
+      { label: "European Pravda 报道", url: "https://www.eurointegration.com.ua/news/2026/08/24/7244104/" }
+    ]
+  },
+  {
+    slug: "ibm-arm-dual-architecture-processor",
+    name: "IBM × Arm · 双架构主机处理器",
+    summary: "IBM 公布面向未来 IBM Z 与 LinuxONE 的首款双架构处理器设计，让每个核心并行执行 IBM 与 Arm 指令",
+    image: "https://filecache.mediaroom.com/mr5mr_ibmnewsroom/201727/IBM%20Arm%20Processor%20(1).png",
+    impact: "2 纳米设计计划在单颗芯片放入 11 个超过 5.7 GHz 的核心、AI 加速器和 DPU，让主机事务与 Arm 生态工作负载更紧密协同。它目前是未来产品方向而非可购买芯片，上市时间、最终规格和实际性能仍可能变化。",
+    insight: "企业 AI 基础设施的异构化正在进入处理器核心；产品规划应围绕数据移动、软件兼容和端到端任务延迟评估新架构，而不是只比较峰值算力。",
+    sourceUrl: "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone",
+    sourceLabel: "IBM 官方新闻稿",
+    sources: [
+      { label: "IBM 官方新闻稿", url: "https://newsroom.ibm.com/2026-08-24-ibm-unveils-next-generation-dual-architecture-processor-for-ibm-z-and-linuxone" },
+      { label: "Arm 官方解读", url: "https://newsroom.arm.com/blog/ibm-and-arm-expanding-ecosystem-for-next-era-of-enterprise-computing" }
+    ]
+  }
+];
+
+const trends20260825 = [
+  {
+    title: "AI ROI 从席位与 Token 转向业务交付归因",
+    text: "Navigara 把提交价值和路线图对应，Google Cloud 与 Verizon 则把合作拆到客服、网络和安全场景。近一周的信号表明，AI 预算将越来越依赖每个工作流的成功率、质量和单位任务成本，而不是采购了多少席位。"
+  },
+  {
+    title: "专有数据与领域反馈重新成为模型壁垒",
+    text: "Thomson Reuters 用专业内容与专家反馈训练自有模型，Avengers AI Labs 以真实战场标注数据支持联合研发。通用模型继续进步时，可合法使用的稀缺数据、持续反馈和嵌入式场景正在决定垂直产品的差异。"
+  },
+  {
+    title: "Agent 规模化同时拉动治理与基础设施效率",
+    text: "Decawork 和 Offloop 把身份、审批与责任链前置，NVIDIA 和 IBM 则从整机效率与异构处理器降低运行约束。Agent 从试验走向生产后，权限边界和每瓦吞吐已成为同一套单位经济问题的两端。"
+  }
+];
+
 const products20260824 = [
   {
     slug: "construct-computer",
@@ -3519,6 +3723,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-25",
+    isoDate: "2026-08-25",
+    dateLabel: "2026年8月25日",
+    weekday: "星期二",
+    oneSentence: "AI 产品正在把垂直数据、可归因价值与受控执行组装成可规模化的新工作系统",
+    products: products20260825,
+    industryEvents: industryEvents20260825,
+    trends: trends20260825
+  },
   {
     slug: "2026-08-24",
     isoDate: "2026-08-24",
