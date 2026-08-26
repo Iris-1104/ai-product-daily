@@ -1,3 +1,216 @@
+const products20260826 = [
+  {
+    slug: "akta-pro",
+    name: "akta.pro",
+    tag: "Agent-Native Company Intelligence",
+    tagline: "把 2000 万家私营公司、70 多项字段与实时事件信号做成 Agent 可直接消费的数据 API",
+    image: "https://akta.pro/assets/hero-main.svg",
+    positioning: "定位为 Agent 经济里的私营公司情报基础设施，而不是锁在席位制界面里的传统数据库。壁垒来自覆盖 2000 万家公司的统一实体图谱、采集阶段完成的实体解析、100 多类事件标签、去重与来源归因，以及 API、MCP、CLI 和批量数据的多入口交付。",
+    audience: ["构建研究与销售 Agent 的开发者", "私募、风投、咨询与信用风险团队", "需要公司触发信号的 RevOps 与出海销售团队"],
+    killerFeature: "同一公司 ID 下同时返回结构化基本面、资金与管理层历史，以及已消噪的实时新闻信号；Agent 不必再从数百个搜索结果里自行消歧和拼接。",
+    experience: "用户在 Playground 获取 API Key 后，可通过确定性 Schema 查询公司、行业或自然语言主题，并把结果接进 MCP、CLI 或自动化流程；每个响应保留来源元数据，便于继续核验。",
+    growth: "以 50 个免费 Credits 和按量付费降低开发者试接门槛，通过 Product Hunt 日榜第一与公开 Benchmark 获客，再从单次查询扩张到持续监控、列表生成和企业级批量数据。",
+    businessModel: "按量付费为每 Credit 0.05 美元、无月费；常规订阅每 Credit 0.04 美元并提高限额，Enterprise 提供定制 Credits、速率、历史数据与专属支持。",
+    insight: "面向 Agent 的数据产品不能只把旧数据库套上 API；实体解析、紧凑响应、稳定 Schema 和逐条归因必须在采集层完成，才能真正减少下游 Token 与纠错成本。",
+    sourceUrl: "https://akta.pro/",
+    sourceLabel: "akta.pro 官方网站",
+    sources: [
+      { label: "akta.pro 官网", url: "https://akta.pro/" },
+      { label: "akta.pro 官方定价", url: "https://akta.pro/pricing" },
+      { label: "akta.pro 官方文档", url: "https://docs.akta.pro/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/akta-pro" }
+    ]
+  },
+  {
+    slug: "diet-claude",
+    name: "Diet Claude",
+    tag: "Claude Usage Companion",
+    tagline: "用实时额度、上下文成本提示与跨模型交接，避免 Claude 会话在关键工作中突然撞限",
+    image: "https://lh3.googleusercontent.com/jr5xYoIzQvcWyOUcENNz7HdIPg0qxwzn9TZUsgUUwpQ-Q0rCPFtvdqukZitHH2RWjf9UoK5CYC3N_R0Bk6Or2bzoxUw%3Ds60",
+    positioning: "定位为 Claude 网页端的用量与上下文控制层，而不是另一个聊天客户端。壁垒来自直接读取用户浏览器里 Claude 已提供的额度数据、会话上下文成本提示、本地聊天索引，以及额度耗尽时可审阅的跨模型交接。",
+    audience: ["高频使用 Claude 的知识工作者", "依赖长会话完成编码与研究的专业用户", "需要在多家模型之间保持上下文连续的个人用户"],
+    killerFeature: "可拖动的汽水罐用量计同时显示 5 小时与周额度、重置倒计时和 70%/90% 预警，并在长会话变贵时建议 Fork & Compress 或切换新对话。",
+    experience: "安装 Chrome 扩展后无需新账户或 API Key；用户在 Claude 页面直接看到额度和 Token 指示，可一键压缩当前上下文，或把摘要先填入 ChatGPT、Gemini、Grok，确认后再发送。",
+    growth: "以免费扩展解决 Claude 重度用户高频痛点，通过 Product Hunt 日榜第二和 Chrome Web Store 获客；汽水罐视觉、额度告警与可复用提示模板形成日常留存。",
+    businessModel: "当前完全免费，不要求独立订阅或 API Key；官方尚未公布付费层，现阶段以 Chrome 扩展分发和用户增长为主。",
+    insight: "模型额度是一种看不见的产品状态；把剩余额度、恢复时间和上下文边际成本持续可视化，能让用户在中断发生前主动调整工作策略。",
+    sourceUrl: "https://www.dietclaude.com/",
+    sourceLabel: "Diet Claude 官方网站",
+    sources: [
+      { label: "Diet Claude 官网", url: "https://www.dietclaude.com/" },
+      { label: "Chrome Web Store 官方上架", url: "https://chromewebstore.google.com/detail/diet-claude/jngclbkljdepkgiomnmokmmmkeffjddg" },
+      { label: "Diet Claude 隐私政策", url: "https://www.dietclaude.com/privacy/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/diet-claude" }
+    ]
+  },
+  {
+    slug: "agnost-ai",
+    name: "Agnost AI",
+    tag: "Production Agent Analytics",
+    tagline: "从真实对话里自动发现静默失败、行为漂移与流失信号，再把证据转成评测和修复建议",
+    image: "https://agnost.ai/agnost/og-card.png",
+    positioning: "定位为对话式 Agent 的产品分析层，而不是只看延迟和 200 状态码的可观测工具。壁垒来自把会话与 Trace 联合分析、自动聚类用户意图和挫败模式、链接到具体用户证据，并把新问题继续转为 Eval 与修复工作流。",
+    audience: ["运行聊天或语音 Agent 的产品团队", "负责 Agent 质量与评测的工程团队", "需要理解用户流失与隐藏需求的 AI 创业公司"],
+    killerFeature: "自动把海量生产对话聚成反复出现的失败、幻觉链接、用户纠正和功能请求，并让每条洞察都能下钻到原始会话与工具 Trace。",
+    experience: "团队可用 SDK、OpenTelemetry 或官方 Skill 在几分钟内接入；仪表盘按影响排序问题，给出证据和建议改动，再把已确认问题变成回归评测。",
+    growth: "免费层先覆盖早期生产 Agent，并通过无需登录的 Live Demo、YC S26、Launch HN 与 Product Hunt 获取开发者；接入后随事件量、保留期和改进循环扩张到高价计划。",
+    businessModel: "Free 每月 1000 个事件、保留 7 天；Starter 每月 49 美元含 1 万事件，Pro 每月 499 美元含 100 万事件；Enterprise 提供 VPC、自定义保留、审计与 SLA。",
+    insight: "Agent 的失败常发生在技术调用成功之后；只有把用户反复改写、纠正和放弃等行为与 Trace 放在一起，产品团队才会发现传统 Eval 根本不知道的问题。",
+    sourceUrl: "https://agnost.ai/",
+    sourceLabel: "Agnost AI 官方网站",
+    sources: [
+      { label: "Agnost AI 官网", url: "https://agnost.ai/" },
+      { label: "Agnost AI 官方文档", url: "https://docs.agnost.ai/" },
+      { label: "Y Combinator 公司页", url: "https://www.ycombinator.com/companies/agnost-ai" },
+      { label: "Launch HN 讨论", url: "https://news.ycombinator.com/item?id=48908950" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/agnost-ai" }
+    ]
+  },
+  {
+    slug: "jotform-ai-data-assistant",
+    name: "Jotform AI Data Assistant",
+    tag: "Conversational Form Operations",
+    tagline: "让团队用自然语言直接创建表格、分析表单数据、批量改记录、生成图表并完成后续跟进",
+    videoEmbedUrl: "https://www.youtube.com/embed/oHtY4eg7E6Q",
+    positioning: "定位为表单提交后的对话式运营工作台，而不是把数据导出到另一个 AI 表格。壁垒来自与 Jotform Tables、Inbox、权限和既有表单数据原生连接，把分析、编辑、协作和跟进动作放在同一个上下文中。",
+    audience: ["依赖表单处理业务的小企业与运营团队", "管理调查、活动和教育数据的非技术用户", "需要从提交数据快速发起跟进的销售与客服团队"],
+    killerFeature: "同一对话既能回答数据问题、生成统计与图表，也能批量编辑、归档或恢复记录、创建 AI Columns、管理共享权限并草拟后续邮件。",
+    experience: "用户在 Jotform Workspace 新建或打开 Table 后，可用文字或语音描述任务；Assistant 直接在当前表格或 Inbox 执行，并支持把结果导出为 CSV、Excel 或 PDF。",
+    growth: "向全部现有 Jotform 用户开放并包含在免费 Starter 计划中，借 4000 万用户基础、官方教程、直播与 Product Hunt 日榜第四完成低成本分发，再用提交量和团队协作需求推动升级。",
+    businessModel: "AI Data Assistant 本身免费使用，但受 Jotform 计划的提交、存储与协作额度限制；Starter 免费，年付 Bronze、Silver、Gold 分别为每月 34、39、99 美元，Enterprise 定制。",
+    insight: "垂直 AI 的优势不只是更懂数据，而是能在原系统里安全地完成下一步；当读取、变更、分享和跟进共享同一权限模型，用户才无需在多个工具间搬运上下文。",
+    sourceUrl: "https://www.jotform.com/ai/announcing-jotform-ai-data-assistant/",
+    sourceLabel: "Jotform 官方发布",
+    sources: [
+      { label: "Jotform 官方发布", url: "https://www.jotform.com/ai/announcing-jotform-ai-data-assistant/" },
+      { label: "Jotform 官方功能页", url: "https://www.jotform.com/ai/data-assistant/features/" },
+      { label: "Jotform 官方 FAQ", url: "https://www.jotform.com/ai/data-assistant/faq/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/jotform" }
+    ]
+  },
+  {
+    slug: "nimbia",
+    name: "Nimbia",
+    tag: "AI Onboarding Calls",
+    tagline: "让 AI 通过实时语音和屏幕控制，为每个 SaaS 新用户完成一对一上手引导",
+    image: "https://nimbia.ai/videos/nimbia-demo-poster.jpg",
+    positioning: "定位为可规模化的 AI 用户上手专员，而不是静态产品导览或帮助中心聊天框。壁垒来自实时双向语音、屏幕理解与浏览器操作、按用户目标调整路径，以及把每场上手对话沉淀为销售和产品反馈。",
+    audience: ["自助上手转化偏低的 B2B SaaS", "由创始人亲自承担 Onboarding 的早期团队", "需要跨时区覆盖新用户的客户成功团队"],
+    killerFeature: "Agent 在实时通话里听用户提问、允许打断，并直接点击、填写和导航用户浏览器，把口头解释变成当场完成的首个关键动作。",
+    experience: "团队提供帮助中心、演示录像或测试账户训练 Nimbia，再用一行代码接入产品；新用户可主动呼叫，或在注册后和停滞时触发 24/7 的屏幕共享语音引导。",
+    growth: "以真实客户的随机 A/B 测试展示激活率与付费转化提升，通过 Product Hunt 日榜第五获取 SaaS 创始人，再从单次 Onboarding 扩张到销售情报、客户成功和产品反馈。",
+    businessModel: "官网以预约演示和定制试点为主要入口，未公开标准单价；商业化预计围绕上手通话量、并发、集成与企业安全需求收费。",
+    insight: "复杂产品的 Aha Moment 很难被固定 Tour 穷举；让 Agent 在用户真实界面里边问边做，并把结果与后续跟进连接起来，才更接近可复制的人类上手服务。",
+    sourceUrl: "https://nimbia.ai/",
+    sourceLabel: "Nimbia 官方网站",
+    sources: [
+      { label: "Nimbia 官网", url: "https://nimbia.ai/" },
+      { label: "Nimbia 官方客户案例", url: "https://nimbia.ai/customers/wemind" },
+      { label: "Nimbia 24/7 上手说明", url: "https://nimbia.ai/use-cases/24-7-onboarding" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/nimbia" }
+    ]
+  }
+];
+
+const industryEvents20260826 = [
+  {
+    slug: "perplexity-portable-computer",
+    name: "Perplexity · Portable Computer",
+    summary: "Perplexity 将 Computer 的编排器、工具路由、队列与本地搜索搬到 DGX Spark，并以授权式云升级处理复杂任务",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/08/nv-blog-1280x680-1-1-960x510.jpg",
+    impact: "这次发布把高频 Agent 工作从按 Credit 的云调用转为用户拥有的本地算力：Qwen 3.8 27B 或 PPLX 27B 在设备端运行，私有文件和语音可不离机，只有需要 Web、连接应用或前沿推理时才经用户批准上云。首发目前限 Pro/Max 订阅、Linux 与 DGX Spark，Windows 和 RTX PC 支持仍在后续计划中。",
+    insight: "混合 Agent 不应把本地与云端做成技术设置，而要做成逐步可见的权限决策；默认本地、明确解释升级原因，并在每次数据出机前确认，才能把隐私优势转成可信体验。",
+    sourceUrl: "https://www.perplexity.ai/ml/hub/blog/introducing-portable-computer-for-local-first-ai",
+    sourceLabel: "Perplexity 官方发布",
+    sources: [
+      { label: "Perplexity 官方发布", url: "https://www.perplexity.ai/ml/hub/blog/introducing-portable-computer-for-local-first-ai" },
+      { label: "Perplexity 官方研究", url: "https://www.perplexity.ai/ml/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work" },
+      { label: "NVIDIA 官方说明", url: "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/" },
+      { label: "VentureBeat 报道", url: "https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs" }
+    ]
+  },
+  {
+    slug: "apple-m6-mac-mini",
+    name: "Apple · M6 Mac mini",
+    summary: "Apple 发布搭载 M6 或 M5 Pro 的新款 Mac mini，把双神经网络引擎与设备端 Agent 持续算力带入紧凑桌面主机",
+    image: "https://www.apple.com.cn/newsroom/images/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/article/Apple-Mac-mini-agentic-AI-260825_big.jpg.large.jpg",
+    impact: "M6 版采用 12 核 CPU、12 核 GPU、双 16 核神经网络引擎和最高 170GB/s 内存带宽，首次在 Mac mini 的每颗 GPU 核心加入神经网络加速器。Apple 称相对 M4 机型 AI 性能最高提升 4 倍、CPU 最高提升 40%、图形和存储最高提升 2 倍；这些是特定测试条件下的厂商结果，不能外推到所有本地模型。中国大陆起售价为 6999 元，显示端侧 AI 能力提升也伴随更高入门成本。",
+    insight: "端侧 AI 产品需要围绕模型容量、内存带宽、长时间功耗与任务恢复来设计，而不只是展示峰值算力；硬件升级只有在持续 Agent 工作流中形成可感知的时间节省，才会转化为购买理由。",
+    sourceUrl: "https://www.apple.com.cn/newsroom/2026/08/apple-unveils-powerful-mac-mini-with-m6-and-m5-pro/",
+    sourceLabel: "Apple 官方新闻稿",
+    sources: [
+      { label: "Apple 官方新闻稿", url: "https://www.apple.com.cn/newsroom/2026/08/apple-unveils-powerful-mac-mini-with-m6-and-m5-pro/" },
+      { label: "Apple Mac mini 产品页", url: "https://www.apple.com.cn/mac-mini/" },
+      { label: "MacRumors 发布报道", url: "https://www.macrumors.com/2026/08/25/apple-announces-2026-mac-mini/" },
+      { label: "Reddit LocalLLaMA 讨论", url: "https://www.reddit.com/r/LocalLLaMA/comments/1vy09xv/apple_unveils_a_more_powerful_mac_mini_featuring/" }
+    ]
+  },
+  {
+    slug: "google-gemini-enterprise-legal",
+    name: "Google Cloud · Gemini Enterprise for Legal",
+    summary: "Google Cloud 推出法律行业专用 Agent 套件，以技能、MCP 连接器、合作伙伴 Agent 和统一治理覆盖端到端法律工作流",
+    image: "https://storage.googleapis.com/gweb-cloudblog-publish/images/Gemini_Enterprise_for_legal.max-2500x2500.jpg",
+    impact: "该预览把合同审阅、监管扫描、DSAR、法律研究与文书起草接到 iManage、NetDocuments、RelativityOne、Harvey、Thomson Reuters 等现有系统，并继承文档级权限与伦理墙。它显示企业 Agent 的竞争正在从通用模型质量转向可部署的行业包，但输出可追溯与权限继承仍不能替代律师最终判断。",
+    insight: "高风险垂直市场的产品单元不是一个更懂行业的聊天框，而是技能、可信数据连接、动作 Agent 与治理控制面的组合；每项能力都应沿用原系统权限并返回可核验依据。",
+    sourceUrl: "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal",
+    sourceLabel: "Google Cloud 官方博客",
+    sources: [
+      { label: "Google Cloud 官方博客", url: "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal" },
+      { label: "Google Cloud 产品页", url: "https://cloud.google.com/ai/legal" },
+      { label: "Google Cloud 官方新闻稿", url: "https://www.googlecloudpresscorner.com/2026-08-25-Google-Cloud-Launches-Gemini-Enterprise-for-Legal" },
+      { label: "Reuters 报道", url: "https://www.investing.com/news/stock-market-news/google-expands-gemini-ai-platform-for-law-firms-lawyers-4875249" },
+      { label: "Reddit 法律科技讨论", url: "https://www.reddit.com/r/legaltech/comments/1vy6d03/introducing_gemini_enterprise_for_legal_google/" }
+    ]
+  },
+  {
+    slug: "nvidia-groq-3-lpx-production",
+    name: "NVIDIA · Groq 3 LPX 全面量产",
+    summary: "NVIDIA 宣布 Groq 3 LPX 进入全面量产，并由 Nebius 首先把面向低延迟解码的 LPX 机架接入云端 Token Factory",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/08/HotChips_2026_MKT_KV_Rubin_Rack_Family_Front_comp_4k_V004-2-1-1280x720.png",
+    impact: "Groq 3 LPX 与 Vera Rubin NVL72 协同处理长上下文和逐 Token 解码，NVIDIA 引用 Artificial Analysis 的 Gemma 4 31B、10 万 Token 上下文测试称达到约 3400 输出 Token/秒、约为最近平台的 4 倍。指标来自特定模型与 NVIDIA 数据中心系统，不能外推到所有工作负载；其更大意义是推理基础设施开始按 Prefill 与 Decode 分工。",
+    insight: "Agent 的多步延迟会把每个 Token 的小等待放大；基础设施评估应拆开首 Token、持续解码、长上下文、并发与任务成功率，而不是用单一峰值吞吐代表真实体验。",
+    sourceUrl: "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Groq-3-LPX-Now-in-Full-Production-With-World-Class-Speed-for-Agentic-AI/default.aspx",
+    sourceLabel: "NVIDIA 官方新闻稿",
+    sources: [
+      { label: "NVIDIA 官方新闻稿", url: "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Groq-3-LPX-Now-in-Full-Production-With-World-Class-Speed-for-Agentic-AI/default.aspx" },
+      { label: "NVIDIA 官方博客", url: "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/" },
+      { label: "NVIDIA 技术博客", url: "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-unlocks-ultrafast-interactivity-at-long-context-on-nvidia-vera-rubin/" },
+      { label: "Reddit 行业讨论", url: "https://www.reddit.com/r/singularity/comments/1vy7cry/the_next_ai_hardware_race_might_be_about_inference/" }
+    ]
+  },
+  {
+    slug: "marin-535b-open-training",
+    name: "Marin · 535B-A23B 开放训练",
+    summary: "Marin 启动 535B 总参数、23B 激活参数的 MoE Hero Run，并实时公开配方、扩展梯与训练监控",
+    image: "https://opengraph.githubassets.com/1/marin-community/marin",
+    impact: "该项目计划在 11 套 GB200 NVL72 上处理 18.75 万亿 Token，约 80% 用于预训练、20% 用于中期训练，并先用四级 Scaling Ladder 预测大规模轨迹与排错。它目前只是进行中的训练计划，没有最终权重或评测，行业价值在于把通常封闭的数月级大模型训练过程、失败与干预决策实时暴露给社区。",
+    insight: "开放模型不应只在成功后发布权重；把算力预算、缩放预测、风险阈值、失败记录和实时曲线一起公开，才让外部团队真正复现决策并改进训练方法。",
+    sourceUrl: "https://github.com/marin-community/marin/issues/8435",
+    sourceLabel: "Marin 官方 GitHub 训练计划",
+    sources: [
+      { label: "Marin 官方 Hero Run 计划", url: "https://github.com/marin-community/marin/issues/8435" },
+      { label: "Marin 官方代码库", url: "https://github.com/marin-community/marin" },
+      { label: "Weights & Biases 实时报告", url: "https://wandb.ai/marin-community/marin_moe/reports/535B-A23B-18T-Token-Hero-Run-Scaling-Ladder--VmlldzoxNzc2MDM5Ng" },
+      { label: "LamjinLab 技术解读", url: "https://www.lamjinlab.com/en/blog/marin-begins-open-training-535b-moe-model" }
+    ]
+  }
+];
+
+const trends20260826 = [
+  {
+    title: "垂直 Agent 从功能插件升级为受治理的行业系统",
+    text: "Google 把法律技能、行业连接器、合作伙伴 Agent 与权限控制打包，Jotform 和 Nimbia 则把分析或上手动作留在原工作界面。近一周的共同信号是，垂直产品的壁垒正在从提示词专业化转向数据、动作和治理的一体化交付。"
+  },
+  {
+    title: "本地优先与授权上云成为新的 Agent 架构",
+    text: "Perplexity Portable Computer 把私有数据和高频任务留在设备端，仅在需要实时 Web 或前沿推理时授权上云；Apple 则把 M6 Mac mini 直接定位为全天候 Agent 计算主机。模型能力与个人算力同步提高后，数据何时离机将成为用户可见的核心交互。"
+  },
+  {
+    title: "生产反馈与推理经济性进入同一优化循环",
+    text: "Agnost 从真实会话发现失败，akta.pro 在采集层降低信息噪声，NVIDIA 则针对 Agent 解码延迟重构硬件分工。团队开始把用户行为、数据质量、任务成功率和每次完成成本放进同一套产品迭代指标。"
+  }
+];
+
 const products20260825 = [
   {
     slug: "decawork",
@@ -3723,6 +3936,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-26",
+    isoDate: "2026-08-26",
+    dateLabel: "2026年8月26日",
+    weekday: "星期三",
+    oneSentence: "AI 产品正在把生产反馈、本地执行与行业治理闭合成可持续优化的新 Agent 系统",
+    products: products20260826,
+    industryEvents: industryEvents20260826,
+    trends: trends20260826
+  },
   {
     slug: "2026-08-25",
     isoDate: "2026-08-25",
