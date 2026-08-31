@@ -1,3 +1,210 @@
+const products20260831 = [
+  {
+    slug: "topview-motion-studio",
+    name: "Topview Motion Studio",
+    tag: "AI Launch Video Studio",
+    tagline: "把产品卖点、界面截图和品牌素材编排成可逐镜头修改的发布视频，而不是只生成一段随机动态画面",
+    image: "https://ph-files.imgix.net/d7605c87-ce6c-47a8-85d6-52d8cf521040.jpeg?auto=compress%2Cformat&codec=mozjpeg&cs=strip&fit=max&frame=1&w=1600",
+    positioning: "定位为面向产品发布的 AI Motion Design 工作台，而不是单镜头视频生成器。壁垒来自把故事顺序、节奏、字体动效、音乐音效和多家视频模型组织成完整项目，并让每个场景在 Canvas 中独立编辑或重生成。",
+    audience: ["需要快速制作发布片的产品营销团队", "展示 App、SaaS 或硬件的创业公司", "同时服务多个品牌的创意代理与独立设计师"],
+    killerFeature: "输入一句产品故事并上传 UI、实拍或品牌参考图后，系统一次生成多场景成片；不满意时只改具体场景、文字或节奏，无需推倒整支视频。",
+    experience: "用户先描述产品与叙事目标，上传截图、素材和品牌参考，再选择 Motion Style、时长与横竖比例；系统生成带音乐和音效的镜头序列，用户在 Canvas 逐场景预览、调整并导出。",
+    growth: "借助 Topview 既有 AI 视频用户完成产品内交叉分发，以 Product Hunt 当日第一、官方用自身工具制作发布片和限时 5% 优惠建立示范，再用模板与多种比例覆盖社媒传播。",
+    businessModel: "按月订阅与 Credits 计费：Free 提供有限生成，Pro、Business、Ultra 官网月付分别为 29、75、150 美元；不同档位提高 Credits、并发、商用授权和去水印能力。",
+    insight: "生成视频的产品价值正在从单个漂亮镜头迁移到可编辑的叙事结构；让用户只返工失败场景，往往比继续提高一次成片概率更能改善真实交付效率。",
+    sourceUrl: "https://www.topview.ai/",
+    sourceLabel: "Topview 官方网站",
+    sources: [
+      { label: "Topview 官网", url: "https://www.topview.ai/" },
+      { label: "Topview 官方定价", url: "https://www.topview.ai/pricing?source=official_website" },
+      { label: "Topview Credits 指南", url: "https://www.topview.ai/guides/credits-consumption" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/topview-ai" }
+    ]
+  },
+  {
+    slug: "olostep",
+    name: "Olostep",
+    tag: "Web Data API for Agents",
+    tagline: "用一套 API 完成搜索、抓取、爬取、结构化、批处理和变化监控，为 Agent 提供可直接消费的网页数据",
+    image: "https://ph-files.imgix.net/5a4ff97f-6f2d-4fcc-91ec-c91bf0fa88fb.jpeg?auto=compress%2Cformat&codec=mozjpeg&cs=strip&fit=max&frame=1&w=1600",
+    positioning: "定位为 Agent 的统一 Web Data Layer，而不是单一搜索或网页抓取接口。壁垒来自把 JavaScript 渲染、代理与反爬处理、Markdown/JSON/截图输出、批量任务、答案生成和持续监控放在同一套 API、SDK 与异步任务模型中。",
+    audience: ["构建联网研究与销售 Agent 的开发者", "需要批量采集和监控网站的数据团队", "做竞品、SEO 与市场情报的自动化团队"],
+    killerFeature: "一套端点覆盖 Search、Scrape、Crawl、Map、Batch、Answer 与 Monitor，批任务最高可并发提交 1 万个 URL，失败请求不计费。",
+    experience: "用户免费领取 API Key 后，可用 Python、Node 或 cURL 请求并选择 Markdown、结构化 JSON 或截图；长任务返回 ID，通过轮询或 Webhook 取回结果，监控任务则持续推送页面变化。",
+    growth: "以 500 个免费成功请求、无需信用卡和失败不扣费降低试接成本，通过 Product Hunt 当日第三、完善文档与双语言 SDK 进入开发者工作流，并用限时 50% 优惠推动批量场景升级。",
+    businessModel: "按成功请求订阅：Trial 免费 500 次，Starter 每月 9 美元含 5000 次，Standard 99 美元含 20 万次，Scale 399 美元含 100 万次并开放浏览器自动化；支持额外 Credits。",
+    insight: "Agent 的网页能力会从一次性浏览动作升级为可重试、可结构化、可监控的数据产品；统一异步任务、结果格式和计费语义，比堆叠多个抓取工具更能降低生产复杂度。",
+    sourceUrl: "https://www.olostep.com/",
+    sourceLabel: "Olostep 官方网站",
+    sources: [
+      { label: "Olostep 官网", url: "https://www.olostep.com/" },
+      { label: "Olostep 官方定价", url: "https://www.olostep.com/pricing" },
+      { label: "Olostep 官方文档", url: "https://docs.olostep.com/features/scrapes" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/olostep" }
+    ]
+  },
+  {
+    slug: "superagent-desktop",
+    name: "Superagent",
+    tag: "Local Agent Desktop",
+    tagline: "给 Claude Code 一个带真实浏览器、独立 Git Worktree 和 iOS 模拟器的本地桌面，让用户看见并接管每一步",
+    image: "https://superagent.computer/hero.png",
+    positioning: "定位为非终端优先的本地 Coding Agent 桌面，而不是云端 IDE 或 App Builder。壁垒来自每个对话独立 Worktree、可使用已登录会话的可见浏览器、内嵌 iOS Simulator、跨重启持久会话和端到端加密手机伴侣。",
+    audience: ["希望用视觉结果判断代码工作的产品与设计人员", "需要并行隔离多个 Claude Code 任务的开发者", "要求代码、浏览器会话和项目数据留在本机的团队"],
+    killerFeature: "每个对话自动拥有独立 Git Worktree 与分支，并能在同一窗口驱动真实浏览器或 iOS Simulator；主检出目录不移动，用户可随时观察、批准、保留或丢弃更改。",
+    experience: "用户在 Apple Silicon Mac 安装并登录现有 Claude Code，选择本地项目后直接聊天；浏览器、文件、Diff 与模拟器并排展示，任务完成或等待批准时通过 Mac 或已配对 iPhone 通知。",
+    growth: "以 MIT 开源、无需账户或独立 API Key、使用现有 Claude 订阅降低信任与价格门槛，通过 Product Hunt、GitHub、签名 DMG 和手机伴侣形成开发者口碑与跨设备留存。",
+    businessModel: "桌面端、iPhone 端与中继均以 MIT 开源并免费提供；当前使用用户已有的 Claude Code 订阅，官方尚未公布额外付费层，Codex 与 Antigravity 仍标注为即将支持。",
+    insight: "本地 Agent 的差异化不只是更强模型，而是让并行任务彼此隔离、执行过程可见且可以安全接管；Worktree、真实界面和明确保留动作会成为桌面 Agent 的基础交互。",
+    sourceUrl: "https://superagent.computer/",
+    sourceLabel: "Superagent 官方网站",
+    sources: [
+      { label: "Superagent 官网", url: "https://superagent.computer/" },
+      { label: "Superagent 官方 GitHub", url: "https://github.com/pungme/superagent-desktop" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents" }
+    ]
+  },
+  {
+    slug: "omlx",
+    name: "oMLX",
+    tag: "Apple Silicon Inference Server",
+    tagline: "把多模型并发、本地缓存和 OpenAI/Anthropic 兼容接口做成原生 macOS 推理服务器，让 Agent 循环更快复用上下文",
+    image: "https://omlx.ai/images/omlx_dashboard_dark.png",
+    positioning: "定位为 Apple Silicon 上的生产级本地推理服务器，而不是单次模型聊天 App。壁垒来自 MLX 连续批处理、RAM 与 SSD 分页 KV Cache、跨重启持久缓存，以及 LLM、VLM、OCR、Embedding 和 Reranker 的统一管理。",
+    audience: ["在 Mac 上开发本地 AI 应用的工程师", "需要私有推理和 OpenAI 兼容接口的团队", "同时运行多个 Coding Agent 或检索任务的 Apple Silicon 用户"],
+    killerFeature: "分页 KV Cache 可在 RAM 和 SSD 间持久化并跨进程重启复用长上下文；官方 M3 Ultra 测试中，第二轮首 Token 时间低于 5 秒，并在 8 路并发达到最高 4.14 倍吞吐提升。",
+    experience: "用户在 macOS 15 以上系统安装原生菜单栏应用，下载或导入 MLX 模型后启动服务；现有客户端可直接改用 OpenAI 或 Anthropic 兼容端点，并在仪表盘查看队列、缓存和模型状态。",
+    growth: "通过 Apache-2.0 开源、Homebrew/GitHub 安装和兼容主流 API 降低迁移成本，以 Product Hunt 和本地 AI 社区传播，再用多 Agent 并发与隐私场景形成高频使用。",
+    businessModel: "当前完全免费并以 Apache-2.0 开源，官方未披露托管版或商业付费计划；价值主要通过社区采用、贡献和本地部署生态积累。",
+    insight: "Agent 工作负载反复复用长上下文，性能瓶颈往往不在单流 Tokens/s；把 KV Cache 的持久化、分页和并发调度产品化，可能比追求一次生成峰值更有体感。",
+    sourceUrl: "https://omlx.ai/",
+    sourceLabel: "oMLX 官方网站",
+    sources: [
+      { label: "oMLX 官网", url: "https://omlx.ai/" },
+      { label: "oMLX 官方 GitHub", url: "https://github.com/jundot/omlx" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/omlx" }
+    ]
+  },
+  {
+    slug: "maritime",
+    name: "Maritime",
+    tag: "Per-Agent MicroVM Cloud",
+    tagline: "为每位客户的 AI Agent 分配一个可休眠、保留状态并秒级唤醒的独立 microVM，用固定月费替代常驻服务器",
+    image: "https://maritime.sh/_next/image?q=75&url=%2Fmtmlockers-t.png&w=3840",
+    positioning: "定位为面向客户型 Agent 的每实例隔离云，而不是共享 Worker 或短命 Sandbox。壁垒来自每个 Agent 独立 Kernel、Secrets、外部 ID 与状态盘，配合自动休眠、约 1 秒唤醒、生命周期 Webhook 和框架无关 SDK。",
+    audience: ["为每位客户部署长期 Agent 的 SaaS 创业公司", "运行 OpenClaw、Hermes 或自研 Agent 的团队", "需要租户硬隔离、持久状态和可预测成本的平台工程师"],
+    killerFeature: "后端一次 API 调用就能为新客户创建专属 microVM；实例空闲时休眠但保留全部状态，流量到来约 1 秒唤醒，从而同时保留长期身份和低空闲成本。",
+    experience: "开发者用 TypeScript、Python SDK 或 REST 把外部客户 ID 绑定到 Agent，注入专属 Secrets 并订阅部署、休眠、唤醒或失败 Webhook；需要时可 SSH、导出状态或迁移现有容器。",
+    growth: "以无需信用卡的 3 个永久免费 Agent、CLI、模板和 Product Hunt 降低首个部署门槛，通过学生与创业公司 Credits 扩大开发者入口，再按客户数自然扩张付费席位。",
+    businessModel: "Free 含 3 个 Agent；Starter 每月 20 美元含 20 个，Growth 100 美元含 100 个，Scale 500 美元含 500 个，超额每个 Agent 每月 1–1.5 美元；RAM、SSD 与常驻运行按固定月费加购。",
+    insight: "长驻 Agent 需要身份和状态，却不该为每秒空闲计算付费；睡眠与快速唤醒会像数据库连接池一样，成为多租户 Agent 平台的核心成本与体验原语。",
+    sourceUrl: "https://maritime.sh/",
+    sourceLabel: "Maritime 官方网站",
+    sources: [
+      { label: "Maritime 官网", url: "https://maritime.sh/" },
+      { label: "Maritime 官方文档", url: "https://maritime.sh/docs/build" },
+      { label: "Maritime 官方定价", url: "https://maritime.sh/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/maritime" }
+    ]
+  }
+];
+
+const industryEvents20260831 = [
+  {
+    slug: "tencent-hy4-preview",
+    name: "腾讯混元 · Hy4 preview",
+    summary: "腾讯开源 7700 亿总参数、490 亿激活参数的混合专家模型 Hy4 preview，并同步上线 API 与生产力产品体验",
+    image: "https://opengraph.githubassets.com/1/Tencent-Hunyuan/Hy4-preview",
+    impact: "Hy4 preview 于 8 月 28 日以 Preview 形态开放权重，官方称上下文能力突破 100 万 Tokens，并进入 WorkBuddy、CodeBuddy、元宝和 ima；腾讯云同时给出每百万输入 6 元、输出 18 元、缓存命中最低 0.3 元的价格。大型 MoE、长上下文、开源权重与低价 API 被打包发布，会加速企业对国产模型的替换评估和社区量化适配。",
+    insight: "今天的开源模型发布已不是只上传权重；同时交付 API、桌面产品、定价、推理代码和社区运行时，才能把 Benchmark 注意力转换为真实迁移与反馈。",
+    sourceUrl: "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+    sourceLabel: "腾讯官方发布",
+    sources: [
+      { label: "腾讯官方发布", url: "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" },
+      { label: "Hy4 preview 官方 GitHub", url: "https://github.com/Tencent-Hunyuan/Hy4-preview" },
+      { label: "Reddit LocalLLaMA 讨论", url: "https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped/" }
+    ]
+  },
+  {
+    slug: "cohere-parse-5",
+    name: "Cohere · Parse 5",
+    summary: "Cohere 发布面向企业文档的视觉解析模型 Parse 5，以 Markdown 和视觉元素边界框保留表格、表单与图文布局",
+    image: "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/39e689bdef1fa7b6cdb967bba9b5095ec4d91379-3840x2160.png?auto=format&fit=max&q=80&w=1130",
+    impact: "Parse 5 于 8 月 27 日 GA，支持 9 种主要语言，可通过 Cohere API、Model Vault、Microsoft Foundry 与 AWS SageMaker 使用，API 标价每 1000 页 1.5 美元。Cohere 在自建 ParseBench 上报告 79.2 分、单张 H100 每秒 4.5 页；这些厂商基准仍需按真实合同、扫描质量和图表场景复测，且当前不直接抽取图表数据。",
+    insight: "企业 RAG 的质量上限越来越由解析层决定；专门模型应把版面、坐标、吞吐和单位页成本作为一等指标，并明确哪些视觉结构仍需下游模型补全。",
+    sourceUrl: "https://cohere.com/blog/parse",
+    sourceLabel: "Cohere 官方发布",
+    sources: [
+      { label: "Cohere 官方发布", url: "https://cohere.com/blog/parse" },
+      { label: "Cohere 模型文档", url: "https://docs.cohere.com/docs/models" },
+      { label: "Cohere 官方定价", url: "https://cohere.com/pricing" },
+      { label: "Reddit RAG 讨论", url: "https://www.reddit.com/r/Rag/comments/1vztlqw/introducing_parse_coheres_vision_parsing_model/" }
+    ]
+  },
+  {
+    slug: "google-gemini-omni-1-1-flash",
+    name: "Google · Gemini Omni 1.1 Flash",
+    summary: "Google 将 Gemini Omni 1.1 Flash 推向生产，加入首尾关键帧、连续场景延长、360p 草稿和 4K 放大工作流",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Omni_1-1_Flash_hero.width-1200.format-webp.webp",
+    impact: "8 月 27 日更新把视频生成从一次性 Prompt 变成可控迭代：开发者可用首尾帧限定镜头、每次延长 10 秒并累计到 40 秒，以 360p 低成本试稿后放大至 4K。模型通过 Gemini API 上线，并扩展到 AI Studio、Enterprise Agent Platform、Flow 与 Gemini 应用，意味着同一控制语义开始覆盖开发者和创作者产品。",
+    insight: "视频模型进入生产后，竞争重点会从单次画质转向预演、约束、延长和局部返工；低分辨率草稿加确定性关键帧，是控制生成成本与创意方向的有效产品闭环。",
+    sourceUrl: "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+    sourceLabel: "Google 官方博客",
+    sources: [
+      { label: "Google 官方博客", url: "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" },
+      { label: "Gemini API 官方文档", url: "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash?hl=en" },
+      { label: "Google DeepMind 模型卡", url: "https://deepmind.google/models/model-cards/gemini-omni-flash/" },
+      { label: "Reddit Google 官方账号", url: "https://www.reddit.com/r/u_NewsFromGoogle/comments/1vzyfnn/introducing_gemini_omni_11_flash/" }
+    ]
+  },
+  {
+    slug: "anthropic-claude-for-teachers-districts",
+    name: "Anthropic · Claude for Teachers 企业版",
+    summary: "Anthropic 将 Claude for Teachers 从个人教师扩展到美国 K-12 学校与学区，提供一年免费企业级统一管理",
+    image: "https://www.anthropic.com/_next/image?q=75&url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc39f489c0763bac41638f8ea29a0ae1335c3ecb2-1200x630.jpg&w=3840",
+    impact: "8 月 28 日发布让合资格学校和学区在 2027 年 6 月 30 日前注册，可获得一年免费 Enterprise，包括 SSO、RBAC、域名接管、采用情况管理和统一 K-12 条款；数据不用于模型训练，并提供 FERPA-aligned DPA。两项新教学 Skills 和覆盖全美 50 州的标准连接，把竞争从个人工具试用推向机构采购、治理与教学评估。",
+    insight: "教育 AI 要从教师个人采用扩张到系统部署，决定性产品不是更多 Prompt，而是身份、隐私条款、管理员控制、课程标准连接和可公开评测的教学 Skills。",
+    sourceUrl: "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts",
+    sourceLabel: "Anthropic 官方发布",
+    sources: [
+      { label: "Anthropic 学校与学区公告", url: "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts" },
+      { label: "Claude for Teachers 原始公告", url: "https://www.anthropic.com/news/claude-for-teachers" },
+      { label: "Anthropic K-12 Skills GitHub", url: "https://github.com/anthropics/k12-teacher-skills" }
+    ]
+  },
+  {
+    slug: "openai-cursor-contract-wind-down",
+    name: "OpenAI × Cursor · 模型供应合同终止计划",
+    summary: "OpenAI 通知 SpaceX 拟于 11 月 12 日停止向 Cursor 提供 OpenAI 模型，并给出合同允许的最长过渡期",
+    image: "https://cursor.com/marketing-static/_next/image?q=70&url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fuploads%2Fclose-og-image-1-B5D1caLmbVsj0JInrL2qKgXzLPMGoU.png&w=1920",
+    impact: "OpenAI 8 月 28 日声明称，在 Cursor 被 SpaceX 收购后，公司因其对合同条款和 Astra 治理问责的担忧而决定逐步终止供应；这些理由属于 OpenAI 单方陈述。若按计划执行，Cursor 将在 11 月 12 日后失去现有 OpenAI 模型且无法获得新模型，提醒所有多模型产品把供应商集中、合同控制权变更和迁移时间纳入连续性设计。",
+    insight: "模型访问不仅是 API 集成，也是一项可能因并购和治理变化而中断的合同依赖；产品应预置多供应商路由、BYOK、能力降级和用户可见的迁移计划。",
+    sourceUrl: "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    sourceLabel: "OpenAI 官方声明",
+    sources: [
+      { label: "OpenAI 官方声明", url: "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" },
+      { label: "Cursor 被 SpaceX 收购公告", url: "https://cursor.com/blog/joining-spacex" },
+      { label: "Reuters 报道", url: "https://live.euronext.com/en/financial-news/openai-end-partnership-spacexs-cursor" },
+      { label: "Reddit Cursor 社区讨论", url: "https://www.reddit.com/r/cursor/comments/1w1el4y/openai_ends_partnership_and_stop_giving_access_to/" }
+    ]
+  }
+];
+
+const trends20260831 = [
+  {
+    title: "Agent 基础设施正在同时解决隔离、状态与空闲成本",
+    text: "Superagent 用每对话 Worktree 隔离代码，Maritime 用每客户 microVM 隔离运行环境，oMLX 则让长上下文缓存跨请求和重启复用。最近一周的产品开始把边界、持久状态和资源回收设计成同一套运行时能力。"
+  },
+  {
+    title: "生成式创意产品从一次成片转向可控迭代",
+    text: "Topview Motion Studio 允许逐场景返工，Gemini Omni 1.1 Flash 增加首尾帧、场景延长、低清草稿和 4K 放大。竞争重心正从展示一个惊艳样片，迁移到缩短试稿、约束与局部修改的完整生产循环。"
+  },
+  {
+    title: "AI 商业化的非模型层正在成为决定性壁垒",
+    text: "Olostep 把网页数据变成可计费、可监控的统一接口，Claude for Teachers 依靠机构权限与隐私条款扩张，OpenAI 与 Cursor 的合同变化则暴露模型供应风险。产品需要同时设计数据、治理和供应连续性，而非只比较模型能力。"
+  }
+];
+
 const products20260827 = [
   {
     slug: "x1",
@@ -4141,6 +4348,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-08-31",
+    isoDate: "2026-08-31",
+    dateLabel: "2026年8月31日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在把可控生成、持久状态与供应治理组装成可规模化的新执行系统",
+    products: products20260831,
+    industryEvents: industryEvents20260831,
+    trends: trends20260831
+  },
   {
     slug: "2026-08-27",
     isoDate: "2026-08-27",
