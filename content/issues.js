@@ -1,3 +1,209 @@
+const products20260902 = [
+  {
+    slug: "almanac",
+    name: "Almanac",
+    tag: "Company-Context Agent",
+    tagline: "让常驻独立电脑的 Agent 从公司工具持续整理可溯源知识，并通过短信或 Slack 代办跨应用工作",
+    image: "https://usealmanac.com/opengraph-image?5038a70137ec138b",
+    positioning: "定位为拥有公司上下文与真实浏览器的常驻工作 Agent，而不是只在对话时检索资料的知识库。壁垒来自把 Gmail、Calendar、Granola、PostHog、GitHub 等工具同步成自更新 Wiki，并让每行结论保留原始来源。",
+    audience: ["需要跨工具汇总经营信息的创始人与管理者", "希望减少重复查资料和手工跟进的运营团队", "需要共享、可追溯公司记忆的成长型团队"],
+    killerFeature: "Almanac 在自己的云电脑里保持登录状态，后台持续更新个人与共享 Wiki；用户可从 iMessage 或 Slack 派活，遇到登录、付款或关键决策时再接管实时浏览器。",
+    experience: "用户连接常用工具后，系统先建立带逐行来源的公司知识图谱，再在后台完成研究、汇总和网页操作；执行过程中提供建议与进度，关键动作暂停确认，而不是要求用户全程盯着聊天窗口。",
+    growth: "以 YC S26、Product Hunt 与 Launch HN 获取早期团队用户，用 7 天试用和常用 SaaS 一键连接降低迁移门槛，再通过个人知识与团队 Wiki 的共享形成席位扩张。",
+    businessModel: "按席位订阅：Starter 每人每月 30 美元，Pro 100 美元，Scale 200 美元，不同档位提升模型和浏览器用量；Enterprise 提供定制额度与支持。",
+    insight: "通用 Agent 的黏性不会只来自模型能力，而会来自持续积累、可验证且能直接驱动动作的组织记忆；把来源追溯和关键节点接管做成默认交互，才能让后台执行获得信任。",
+    sourceUrl: "https://usealmanac.com/",
+    sourceLabel: "Almanac 官方网站",
+    sources: [
+      { label: "Almanac 官网", url: "https://usealmanac.com/" },
+      { label: "Almanac 官方定价", url: "https://usealmanac.com/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/almanac-5?launch=almanac-5" },
+      { label: "9 月 1 日产品发布汇总", url: "https://startupcorners.com/digest/product-digest-2026-09-01" }
+    ]
+  },
+  {
+    slug: "hflow",
+    name: "HFlow",
+    tag: "Robotics Data Pipelines",
+    tagline: "用可版本化、可追溯的开源数据管线，把机器人多模态日志变成可复现的训练与评测数据集",
+    image: "https://hebbianrobotics.com/opengraph-image.png",
+    positioning: "定位为 Physical AI 的数据工程底座，而不是机器人日志浏览器。壁垒来自把 MCAP Episode、Parquet Catalog、DuckDB 查询、版本固定 Manifest、Airflow 3 编排与逐步 Provenance 组合成一套 Python SDK。",
+    audience: ["训练机器人基础模型的 Physical AI 团队", "管理相机、传感器和控制日志的数据工程师", "需要复现筛选与评测数据集的机器人研究者"],
+    killerFeature: "用户只需用 Python 写变换、检查、标注和富化逻辑，HFlow 自动记录每一步输入、输出与版本，并生成可重复运行的 Airflow DAG 和固定数据 Manifest。",
+    experience: "Quickstart 无需 Docker 或真实机器人即可运行；团队把原始 Episode 写入统一存储，查询目录、组合处理步骤并物化版本化数据集，再用 Manifest 保证训练和评测读取同一快照。",
+    growth: "以 Apache-2.0 开源、YC S26、GitHub 与 Product Hunt 触达机器人开发者，并通过开放评测结果和 LocalLLaMA 社区讨论证明对不同开放模型的实际数据价值。",
+    businessModel: "当前核心 SDK 与管线能力免费开源，官方正在收集托管版需求；尚未公布托管控制面或付费价格，短期以项目采用和设计合作积累商业入口。",
+    insight: "机器人模型的护城河越来越取决于数据生产过程能否复现，而不只是采集规模；把血缘、版本和调度内建到数据接口，可让一次实验沉淀成团队可复用资产。",
+    sourceUrl: "https://hebbianrobotics.com/",
+    sourceLabel: "Hebbian Robotics 官方网站",
+    sources: [
+      { label: "HFlow 官网", url: "https://hebbianrobotics.com/" },
+      { label: "HFlow 官方 GitHub", url: "https://github.com/Hebbian-Robotics/hflow" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/hflow?launch=hflow" },
+      { label: "LocalLLaMA 社区评测", url: "https://www.reddit.com/r/LocalLLaMA/comments/1w2r6v8/we_used_hflow_to_evaluate_the_latest_open_weights/" }
+    ]
+  },
+  {
+    slug: "fotor-video-agent",
+    name: "Fotor Video Agent",
+    tag: "Editable AI Video Agent",
+    tagline: "把创意、脚本、PDF 或素材自动编排成带动态图表的成片，同时保留可逐层修改的时间线",
+    videoEmbedUrl: "https://www.youtube.com/embed/LX9zcrhvPw0",
+    positioning: "定位为从策划到剪辑的一体化视频 Agent，而不是只生成若干视频片段。壁垒来自把脚本拆解、画面生成、AE 级动态图形、品牌元素和多轨时间线放进同一个可编辑项目。",
+    audience: ["需要快速制作产品发布片的营销团队", "把报告与数据做成解释视频的内容团队", "高频交付广告、短视频和品牌素材的创作者"],
+    killerFeature: "系统可从一句想法、脚本、PDF 或原始素材生成完整视频，并把文字、数字、Logo、图表、场景和动效保留为时间线中的独立可编辑元素。",
+    experience: "用户选择解释片、产品发布、广告或短视频等起点，提交材料后由 Agent 完成规划、生成和组装；成片支持 16:9、720p 或 1080p，用户可继续改场景、时长、动效与字幕。",
+    growth: "依托 Fotor 既有设计用户与模板入口完成产品内分发，以 Product Hunt 8 月 31 日当日第一和官方演示视频建立认知，再用免费 Credits 让用户先完成一次成片。",
+    businessModel: "采用 Freemium、订阅与 Credits 组合：Basic 可免费使用有限 Credits、对话和 Agent 任务，Pro 与 Pro+ 提升对话、Agent 任务、存储和生成额度；具体价格随地区与促销动态展示。",
+    insight: "AI 视频开始从不可控的生成结果迁移到可返工的项目文件；当结构化文字、数据和品牌资产能在时间线上继续编辑，Agent 才真正进入商业内容交付链路。",
+    sourceUrl: "https://www.fotor.com/video/",
+    sourceLabel: "Fotor Video Agent 官方页面",
+    sources: [
+      { label: "Fotor Video Agent 官网", url: "https://www.fotor.com/video/" },
+      { label: "Fotor 官方定价", url: "https://www.fotor.com/pricing/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/fotor" },
+      { label: "9 月 1 日产品发布汇总", url: "https://startupcorners.com/digest/product-digest-2026-09-01" }
+    ]
+  },
+  {
+    slug: "houndly",
+    name: "Houndly",
+    tag: "Self-Learning GTM Copilot",
+    tagline: "从每次触达、回复、会议和管线结果持续学习，自动调整 B2B 获客对象、信息与下一步动作",
+    image: "https://houndly.io/og-image.jpg",
+    positioning: "定位为自学习的 GTM 控制层，而不是又一个邮件序列生成器。壁垒来自把 prospect、campaign、reply、meeting 和 pipeline 结果写入同一反馈循环，持续修正 ICP、信号、话术和渠道投入。",
+    audience: ["需要提升有效会议率的 B2B 销售团队", "同时运营多客户出海获客的增长代理", "希望统一 HubSpot、Clay 与外联工具数据的 Revenue Ops 团队"],
+    killerFeature: "系统按 Observe、Reason、Decide、Act 循环读取真实回复和成交信号，自动测试行业、角色、触发事件和消息组合，并把资源重新分配给更可能产生合格会议的动作。",
+    experience: "团队连接 Gmail、Apollo、Clay、LinkedIn、Smartlead 或 HubSpot 后，让 Houndly 分析既有 GTM 数据并给出下一步；官网同时提供 Analyze my GTM 入口，让用户先看到诊断再进入持续自动优化。",
+    growth: "以 Product Hunt 发布和创始人 LinkedIn 演示获取早期线索，用免费 GTM 分析作为高意图入口，再借助兼容现有销售栈降低替换成本，并以预约 Demo 推进团队采购。",
+    businessModel: "采用预约 Demo 的 B2B SaaS 销售模式，官网暂未公开价格；商业价值围绕持续优化获客投入和合格会议转化，而不是按单封邮件收费。",
+    insight: "GTM Agent 的关键指标不应是生成了多少名单和文案，而应是反馈能否持续改变下一次决策；把结果学习做成跨工具控制层，比替换每个单点工具更容易进入现有收入栈。",
+    sourceUrl: "https://houndly.io/",
+    sourceLabel: "Houndly 官方网站",
+    sources: [
+      { label: "Houndly 官网", url: "https://houndly.io/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/houndly" },
+      { label: "官方 LinkedIn 发布镜像", url: "https://www.outx.ai/pl/linkedin/startups/producthunt-launch" },
+      { label: "9 月 1 日产品发布汇总", url: "https://startupcorners.com/digest/product-digest-2026-09-01" }
+    ]
+  },
+  {
+    slug: "leasebase",
+    name: "LeaseBase",
+    tag: "AI Landlord Operator",
+    tagline: "把收租、租约、维修、合规和报表集中到一个由房东批准关键动作的 AI 物业运营台",
+    image: "https://leasebase.ai/wp-content/themes/leasebase-theme-v2/assets/images/screenshots/dashboard-hd.webp",
+    positioning: "定位为独立房东的自管理运营系统，而不是抽取租金比例的全托管物业公司。壁垒来自把租约电子签、支付、维修供应商、州级合规、财务报表和主动式 AI 监控统一到房源级工作流。",
+    audience: ["自行管理少量到中型房源的独立房东", "从电子表格迁移到系统化运营的小型物业团队", "希望保留决策权但减少日常催办的投资者"],
+    killerFeature: "AI 可从租金表、租约或表格提取房源数据，持续扫描组合并生成每日简报与待办；付款、发件和其他关键动作仍由用户审阅批准。",
+    experience: "用户导入现有文件并核对 AI 提取结果，随后在同一仪表盘完成收租、签约、维护工单和合规提醒；移动端支持随时查看房源状态，避免在邮件、表格和支付工具间切换。",
+    growth: "以 30 天 Operator 全功能试用且无需信用卡降低迁移阻力，通过房东合规指南、计算器、应用商店与产品发现站获客，再用房源数据和日常简报形成使用留存。",
+    businessModel: "按账户收取固定订阅而非租金抽成：Platform 每月 19 美元、Assistant 49 美元、Operator 99 美元；100 套以上提供 API、SSO 与定制支持。",
+    insight: "垂直 Agent 更适合先做主动监控和决策准备，再让用户批准高风险动作；固定月费配合明确权限边界，可同时挑战传统服务抽成和分散工具订阅。",
+    sourceUrl: "https://leasebase.ai/",
+    sourceLabel: "LeaseBase 官方网站",
+    sources: [
+      { label: "LeaseBase 官网", url: "https://leasebase.ai/" },
+      { label: "LeaseBase 官方定价", url: "https://leasebase.ai/pricing/" },
+      { label: "LeaseBase Google Play", url: "https://play.google.com/store/apps/details?id=com.leasebase.mobile" },
+      { label: "9 月 1 日产品发布汇总", url: "https://startupcorners.com/digest/product-digest-2026-09-01" }
+    ]
+  }
+];
+
+const industryEvents20260902 = [
+  {
+    slug: "anthropic-claude-fable-mythos-5-1",
+    name: "Anthropic · Claude Fable 5.1 与 Mythos 5.1",
+    summary: "同一前沿模型按风险场景拆成通用版与受控版，并把成本、上下文保留和高风险访问策略同步产品化",
+    image: "https://cdn.sanity.io/images/4zrzovbb/website/932ca7d6f414ca22fd5a26dcc131410575b9b3e5-1200x630.jpg",
+    impact: "Fable 5.1 面向广泛生产负载开放，Anthropic 称其通过减少缓存读取让典型 Token 工作负载成本下降约 25%；Mythos 5.1 则把同一模型能力置于面向网络安全与生命科学可信客户的专门访问层。模型发布因此不再只是能力与单价表，而是能力、数据保留、误报控制和分级准入的一体化交付。",
+    insight: "前沿模型厂商会越来越多地用同权重、不同保障与访问边界服务差异化市场；产品团队应提前把客户资格、审计、数据保留和误拒绝率当成版本设计，而不是上线后的合规补丁。",
+    sourceUrl: "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    sourceLabel: "Anthropic 官方公告",
+    sources: [
+      { label: "Anthropic 官方公告", url: "https://www.anthropic.com/claude-fable-and-mythos-5-1" },
+      { label: "AWS 上的 Fable 5.1", url: "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/" },
+      { label: "Axios 报道", url: "https://www.axios.com/2026/09/01/anthropic-releases-new-models-cost-structures-and-safeguards" }
+    ]
+  },
+  {
+    slug: "openai-astra-critical-cyber",
+    name: "OpenAI · Astra 确认为 Critical 网络安全模型",
+    summary: "Astra 成为 OpenAI 首个被判定达到 Critical 网络安全能力阈值的模型，并采用受限 Alpha 到 Daybreak Blue 的渐进发布路径",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "OpenAI 在 9 月 1 日确认 Astra 达到 Preparedness Framework 的 Critical 网络安全能力级别，并称其在内部评测中能端到端完成浏览器逃逸与提权链。公司计划先向受控研究者开放，再进入带身份验证、监控和使用边界的 Daybreak Blue；这让能力分级首次直接决定旗舰模型的可用人群与产品形态。",
+    insight: "当模型能力跨过高风险阈值，默认公开 API 将不再是唯一发布终点；模型公司与应用开发者都需要准备分阶段准入、持续监控、可撤销权限和滥用响应，把安全控制做成可运营的产品层。",
+    sourceUrl: "https://openai.com/index/path-to-astra/",
+    sourceLabel: "OpenAI 官方公告",
+    sources: [
+      { label: "OpenAI 官方公告", url: "https://openai.com/index/path-to-astra/" },
+      { label: "Axios 报道", url: "https://www.axios.com/2026/09/01/openai-astras-cyber-critical" },
+      { label: "TechCrunch 报道", url: "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/" }
+    ]
+  },
+  {
+    slug: "microsoft-responsible-ai-report-2026",
+    name: "Microsoft · 2026 Responsible AI Transparency Report",
+    summary: "第三份年度透明度报告把 Agent 身份、工具权限、动作监控与分层责任纳入新的动态治理框架",
+    image: "https://blogs.microsoft.com/wp-content/uploads/sites/5/2026/08/MOI-blog-banner-1024x576.png",
+    impact: "Microsoft 将 Responsible AI Standard 按模型、平台与应用层重新划分责任，并把 Agent 的身份、工具权限、长期记忆和动作监控列为新治理重点。报告同时展示 AI Red Teaming Agent、Agent Evaluators、RAMPART 与 ASSERT 等实践，说明大型平台正从静态发布审查转向开发、部署和运行期持续控制。",
+    insight: "Agent 风险不只由底层模型决定，还取决于它以什么身份、带哪些权限、记住什么并能执行哪些动作；产品团队应在架构阶段建立分层责任和运行时遥测，否则上线后的单次评测无法覆盖真实风险。",
+    sourceUrl: "https://blogs.microsoft.com/on-the-issues/2026/09/01/responsible-ai-in-2026-how-we-are-adapting-for-whats-ahead/",
+    sourceLabel: "Microsoft 官方博客",
+    sources: [
+      { label: "Microsoft 官方博客", url: "https://blogs.microsoft.com/on-the-issues/2026/09/01/responsible-ai-in-2026-how-we-are-adapting-for-whats-ahead/" },
+      { label: "Microsoft 2026 透明度报告", url: "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/" },
+      { label: "Microsoft Reports Hub", url: "https://www.microsoft.com/en-us/corporate-responsibility/reports-hub" }
+    ]
+  },
+  {
+    slug: "aws-ai-business-strategist",
+    name: "AWS · Certified AI Business Strategist",
+    summary: "AWS 推出不考云服务实操的 AI 商业战略认证，把投资判断、治理与规模化落地正式做成职业能力标准",
+    image: "https://d2908q01vomqb2.cloudfront.net/9109c85a45b703f87f1413a405549a2cea9ab556/2026/09/01/Introducing-AWS-Certified-AI-Business-Strategist-Built-for-the-people-who-scale-AI.png",
+    impact: "新认证面向产品、销售、咨询、业务与项目负责人，不要求编码或 AWS 实施经验，考核 AI 基础、战略与价值、治理、组织准备度四个领域。Beta 在 9 月 1 日开放注册、9 月 29 日开始考试，表明云厂商正在把 AI 从技术采购扩展到组织决策与变革管理的人才体系。",
+    insight: "企业 AI 的瓶颈正在从有没有模型转向谁能判断项目值得做、如何衡量并安全扩张；面向业务角色的产品应提供 ROI、治理与变革模板，而不只是功能培训和技术文档。",
+    sourceUrl: "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+    sourceLabel: "AWS 官方博客",
+    sources: [
+      { label: "AWS 官方发布", url: "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/" },
+      { label: "AWS 认证页面", url: "https://aws.amazon.com/certification/certified-ai-business-strategist/" },
+      { label: "AWS 中文认证页面", url: "https://aws.amazon.com/cn/certification/certified-ai-business-strategist/" }
+    ]
+  },
+  {
+    slug: "google-mapl-emit",
+    name: "Google Research · MAPL-EMIT",
+    summary: "Google 用视觉 Transformer 从卫星高光谱辐射数据自动识别、量化并定位全球甲烷点源，同时开放模型、代码和数据",
+    image: "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+    impact: "MAPL-EMIT 直接读取 NASA EMIT 的高光谱辐射数据，同时完成甲烷检测、增强量估计和源头定位。Google 报告其在专家标注羽流上的召回率达到 84%，并将全球 60 米级结果放入 Earth Engine，同时开放训练模型、合成数据与推理库；气候监测由依赖人工复核的研究流程转向可复现、可扩展的数据产品。",
+    insight: "垂直 AI 的影响力来自模型、数据和可执行工具链一起开放；将结果放进领域用户已有的平台，并提供不确定性、限制和复现路径，比只发布一个更高的论文指标更容易形成真实采用。",
+    sourceUrl: "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+    sourceLabel: "Google Research 官方博客",
+    sources: [
+      { label: "Google Research 官方博客", url: "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/" },
+      { label: "Earth Engine MAPL-EMIT 数据集", url: "https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_ghg_emit_mapl_emit_plumes_v1_0" },
+      { label: "MAPL-EMIT 论文预印本", url: "https://arxiv.org/abs/2604.10094" }
+    ]
+  }
+];
+
+const trends20260902 = [
+  {
+    title: "长期记忆正在变成 Agent 的控制面",
+    text: "最近 7 天，Almanac 把跨工具知识变成可溯源公司记忆，Houndly 用真实回复和管线结果持续修改 GTM 决策，HFlow 则把机器人数据血缘固化为版本 Manifest。共同方向不是存更多上下文，而是让记忆能解释并改变下一次动作。"
+  },
+  {
+    title: "前沿能力开始按风险与责任重新分层",
+    text: "Anthropic 用 Fable 与 Mythos 区分通用和受控访问，OpenAI 为 Critical 网络安全能力设计渐进发布，Microsoft 把 Agent 身份、权限和运行监控写进治理框架。安全不再是统一拒答层，而是决定版本、准入与运营方式的产品架构。"
+  },
+  {
+    title: "垂直 AI 从生成内容走向运营现实世界数据",
+    text: "HFlow 面向机器人多模态日志建立可复现数据管线，Google MAPL-EMIT 把卫星高光谱数据转成全球甲烷点源地图。模型价值正在通过标准数据格式、领域评测、公开数据集和既有专业平台进入物理世界工作流。"
+  }
+];
+
 const products20260831 = [
   {
     slug: "topview-motion-studio",
@@ -4348,6 +4554,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-02",
+    isoDate: "2026-09-02",
+    dateLabel: "2026年9月2日",
+    weekday: "星期三",
+    oneSentence: "AI 产品正在把长期记忆、可控执行与领域数据闭环做成新的交付底座",
+    products: products20260902,
+    industryEvents: industryEvents20260902,
+    trends: trends20260902
+  },
   {
     slug: "2026-08-31",
     isoDate: "2026-08-31",
