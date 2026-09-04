@@ -1,3 +1,211 @@
+const products20260904 = [
+  {
+    slug: "agent-builder-airtop",
+    name: "Agent Builder by Airtop",
+    tag: "Self-Healing Web Automation",
+    tagline: "把自然语言工作流编译成可复用代码，并在网站变化导致失败时自动诊断、测试修复和等待部署确认",
+    image: "https://www.airtop.ai/opengraph-image.jpg?96eefe0fca2fd4b7",
+    positioning: "定位为可维护的网页自动化编译器，而不是每一步都重新推理的通用浏览器 Agent。壁垒来自认证云浏览器、代理与验证码处理、构建期真实测试、确定性代码执行、失败录像和自修复草稿组成的闭环。",
+    audience: ["需要自动化登录后门户的运营与财务团队", "不想维护 Playwright 脚本的增长和销售团队", "希望把网页能力接入 Claude、Codex、n8n 或 Zapier 的开发者"],
+    killerFeature: "运行失败后，Airtop 会定位页面变化、修改自动化草稿并在真实浏览器中复测；修复通过后仍由用户决定部署或丢弃，线上版本不会被静默替换。",
+    experience: "用户用一句话描述登录、提取、填表或监控任务，Agent Builder 先跑通流程并编译为可调度代码；后续每次执行保留日志和录像，异常时推送带测试结果的修复草稿，必要时再向用户询问。",
+    growth: "以 Product Hunt 当日头部排名和一月免费 Starter 兑换码触达早期团队，用免费额度完成首个 Agent；再借 Claude、Codex、n8n、Make、Zapier 原生连接与可分享部署扩大工作流数量和团队采用。",
+    businessModel: "按月订阅叠加 Credits：Free 每月 0 美元并含基础额度，Starter 29 美元、Professional 189 美元、Enterprise 558 美元，分别提高已部署 Agent 和并发会话数量；大客户可谈定制额度与批量价格。",
+    insight: "高频 Agent 的经济性来自把昂贵推理前移到构建和修复阶段，让正常运行更像软件；自修复若以可审阅草稿交付，能同时降低维护成本和自动改动带来的信任风险。",
+    sourceUrl: "https://www.airtop.ai/agent-builder",
+    sourceLabel: "Airtop Agent Builder 官方页面",
+    sources: [
+      { label: "Agent Builder 官网", url: "https://www.airtop.ai/agent-builder" },
+      { label: "Airtop 官方定价", url: "https://www.airtop.ai/pricing" },
+      { label: "Airtop AI 成本文档", url: "https://docs.airtop.ai/guides/how-to/ai/ai-costs" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/airtop" }
+    ]
+  },
+  {
+    slug: "nex-gtm-workflows",
+    name: "Nex",
+    tag: "High-Volume GTM Agents",
+    tagline: "把 CRM 清理、批量筛选、流失商机唤回和会议准备变成可审批、可追溯的高吞吐 GTM 工作流",
+    image: "https://framerusercontent.com/assets/x8hSfFQ3sImiqkoAA4t2ekZyiUU.png",
+    positioning: "定位为面向收入团队的大规模执行层，而不是生成几封邮件的销售 Copilot。壁垒来自前 HubSpot 核心团队对 CRM 数据模型的经验，以及把邮件、Slack、日历与客户记录汇成实时权限化知识图谱。",
+    audience: ["需要批量治理 HubSpot、Salesforce 或 Attio 的 RevOps 团队", "执行大规模名单研究与个性化外联的 GTM 工程师", "希望找回沉默商机并统一销售上下文的 B2B 团队"],
+    killerFeature: "用户给出目标和护栏后，Nex 可在一次流程中审计成千上万条 CRM 记录、提出去重与补全方案，并对改库或发信等动作逐项等待人工批准，同时保留完成、失败和错误报告。",
+    experience: "团队连接 HubSpot、Gmail、Slack 与 Calendar 后，系统先学习成交阶段、跟进节奏和升级规则，再从模板或一句 Prompt 部署 Agent；结果以可溯源列表、草稿和待审批变更返回，无需盯住聊天窗口逐步操作。",
+    growth: "以 YC S26、Product Hunt 和前 HubSpot 团队背景建立可信度，提供免费试用与现成 GTM 模板缩短价值验证；通过 100 多个工具连接、共享上下文和使用量扩张进入更多收入工作流。",
+    businessModel: "采用免费开发者入口、按使用量计费与企业合同组合；官网提供 Start Trial，但面向本次工作流发布未展示统一自助价格，企业层通过 SLA、权限和合规能力销售。",
+    insight: "垂直 Agent 的规模壁垒不只是一次任务完成率，而是能否让十万条记录的部分失败仍然可见、可重跑、可审批；批量状态和真实业务上下文应成为 Agent 产品的一等界面。",
+    sourceUrl: "https://nex.ai/",
+    sourceLabel: "Nex 官方网站",
+    sources: [
+      { label: "Nex 官网", url: "https://nex.ai/" },
+      { label: "Nex 官方产品事实", url: "https://nex.ai/brand-facts" },
+      { label: "Nex 官方模板库", url: "https://nex.ai/templates" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/nex-4" }
+    ]
+  },
+  {
+    slug: "omi-computer-memory",
+    name: "Omi",
+    tag: "Local-First Computer Memory",
+    tagline: "在 Mac 本地持续记录屏幕和会议，让用户从任意应用查询刚看过或听过的内容并回到原始时刻",
+    image: "https://cdn.shopify.com/s/files/1/0879/7490/4100/files/App_with_devices.png",
+    positioning: "定位为覆盖屏幕与声音的个人记忆层，而不是只加入会议的转写机器人。壁垒来自桌面、手机和可穿戴端的连续采集、逐答案时间与屏幕引用、开源代码，以及用户可自行选择云端或本地模型。",
+    audience: ["一天跨多个会议和应用的知识工作者", "需要回溯设计、代码与研究过程的创作者和开发者", "重视数据控制并愿意自选模型的开源用户"],
+    killerFeature: "按住一个快捷键即可在任何应用用语音或文字提问，答案同时引用对应会议、时间点和屏幕；用户可按人或日期搜索全部记忆，并随时暂停、删除或改用自己的模型密钥。",
+    experience: "安装 macOS 应用后，Omi 在后台采集屏幕、麦克风与系统音频，并把 Zoom、Meet、Slack Huddle 或线下对话整理成摘要、任务和记忆；需要追溯时从引用直接核对原始上下文。",
+    growth: "以 MIT 开源、免费起步和 Product Hunt 当日前三降低信任门槛，借 1.3 万以上 GitHub Stars 与社区贡献持续迭代；再通过手机应用、可穿戴硬件和 App 市场扩展使用场景。",
+    businessModel: "软件提供免费 Basic，每月含 300 分钟云端处理；Plus 每月 19 美元含 1500 分钟，Unlimited 每月 29 美元；另售 179 美元 Omi 设备，并允许本地处理与开源自建。",
+    insight: "环境记忆产品真正的竞争点是可核验与可撤回，而不是记录得更多；当每个答案能回到时间、会议和屏幕，且用户掌握采集开关与模型选择，持续感知才可能换来长期授权。",
+    sourceUrl: "https://www.omi.me/pages/download",
+    sourceLabel: "Omi 官方下载页",
+    sources: [
+      { label: "Omi 官方下载", url: "https://www.omi.me/pages/download" },
+      { label: "Omi 官方产品与价格", url: "https://www.omi.me/pages/product" },
+      { label: "Omi 官方 GitHub", url: "https://github.com/BasedHardware/omi" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/open-source-ai-necklace-friend?launch=omi-3" }
+    ]
+  },
+  {
+    slug: "magicrew-workforce",
+    name: "MagiCrew",
+    tag: "Enterprise Agent Workforce",
+    tagline: "把研究、数据、法务、销售等专职 Agent 组织成可协作的数字员工队伍，并直接交付 PPT、看板和 Excel",
+    image: "https://www.magicrew.ai/web/og-image.png",
+    positioning: "定位为企业级开源 Agent 工作台，而不是多个聊天机器人的集合。壁垒来自多 Agent 调度、业务知识封装、可直接使用的文档与看板渲染、部门到任务三级预算，以及高风险动作审批和沙盒隔离。",
+    audience: ["需要用小团队覆盖多职能工作的一人公司与创业团队", "希望沉淀并复用 ERP、CRM 和业务专家知识的企业", "要求私有部署、费用归因和人工审批的 IT 管理者"],
+    killerFeature: "主理人 Agent 可并行调度研究、分析、法务等专家，并把结果直接渲染成报告、PPT、Excel 或交互看板；危险操作进入审批队列，成本则按部门、用户和任务实时归因。",
+    experience: "用户从数字员工市场选角色或用 Skill Creator 对话生成能力，提交目标和材料后观察多 Agent 分工；项目上下文持续保留，团队成员实时协作，最终拿到可编辑交付物而非等待二次排版的长文本。",
+    growth: "以开源自托管、云端免费入口和 Product Hunt 获取个人与开发者，再用 Anthropic/OpenClaw Skills 兼容降低迁移成本；组织共享数字员工、知识和预算会自然推动团队席位与私有化部署。",
+    businessModel: "云端采用免费加订阅与 Points：Plus 每月 9.99 美元、Pro 24.99 美元、Max 49.99 美元、Ultra 99.99 美元，提升并发、额度和存储；社区版可自托管，企业私有部署与深度集成另行报价。",
+    insight: "企业不会长期为孤立聊天框买单，而会为可管理的产能组合付费；把角色、预算、审批和交付物放在同一控制面，能把 Agent 从个人效率工具变成组织资源。",
+    sourceUrl: "https://www.magicrew.ai/",
+    sourceLabel: "MagiCrew 官方网站",
+    sources: [
+      { label: "MagiCrew 官网", url: "https://www.magicrew.ai/" },
+      { label: "MagiCrew 官方定价", url: "https://www.magicrew.ai/pricing" },
+      { label: "MagiCrew 官方 GitHub", url: "https://github.com/dtyq/magic" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/magicrew" }
+    ]
+  },
+  {
+    slug: "world-labs-atlas",
+    name: "Atlas by World Labs",
+    tag: "Omni World Model",
+    tagline: "统一接收文字、图片、视频和 3D 输入，生成可精确控镜的 1440p 视频并从少量视角重建空间",
+    videoUrl: "https://wlt-ai-cdn.art/atlas/assets-0831/hero/optimized/atlas-1080.mp4",
+    positioning: "定位为服务创意制作、3D 重建与机器人模拟的通用世界模型，而不是只依赖文本描述镜头的视频生成器。壁垒来自原生接收相机几何的多模态自回归扩散架构，以及生成、重建和时空模拟共用的空间表示。",
+    audience: ["需要精确镜头路径和新视角的影视与广告团队", "从少量照片重建场景的 3D 内容开发者", "构造 Real-to-Sim 数据与机器人视角的 Physical AI 团队"],
+    killerFeature: "Atlas 把相机位置和路径作为原生输入，可从一至六张参考图生成最长一分钟的 1440p 视频，也能补全未拍摄区域并输出新视角帧与显式 3D 结果。",
+    experience: "用户组合文字、图像、视频或 3D 资产并设计镜头路径，模型在共享空间上下文中生成一致的新视角；创作者可重构已拍素材的机位，机器人团队则把真实录像转成可变光照、物体和动作的模拟环境。",
+    growth: "先通过官方研究发布、Product Hunt 与视觉 Demo 获得创作者和 3D 社区关注，以 Early Access 收集高价值工作流；后续将 Atlas 能力带入已有 Marble 与 World API 产品，承接现有开发者分发。",
+    businessModel: "Atlas 当前仅开放 Early Access，官方尚未公布独立价格、通用 API 或 GA 时间；预计先作为 World Labs 现有 Marble 和 World API 的下一代能力进入商业产品，但本次发布未给出具体计费。",
+    insight: "生成视频的下一道门槛不是更会写 Prompt，而是把几何、相机与时间变成可直接控制的输入；不过对机器人场景，产品必须清楚标记真实重建与模型补全的边界。",
+    sourceUrl: "https://www.worldlabs.ai/blog/atlas",
+    sourceLabel: "World Labs 官方发布",
+    sources: [
+      { label: "World Labs 官方发布", url: "https://www.worldlabs.ai/blog/atlas" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/atlas-by-world-labs" },
+      { label: "Reddit Computer Vision 讨论", url: "https://www.reddit.com/r/computervision/comments/1w4m5yr/world_labs_new_atlas_model_spacetime_simulation/" }
+    ]
+  }
+];
+
+const industryEvents20260904 = [
+  {
+    slug: "openai-gpt-6-astra-launch",
+    name: "OpenAI · GPT-6 Astra",
+    summary: "OpenAI 正式发布面向复杂端到端工作的 GPT-6 Astra，以电脑操作、软件工程与科学推理提升配合受控渐进开放",
+    videoEmbedUrl: "https://www.youtube.com/embed/1QNsdr-Qx_I",
+    impact: "Astra 首批进入 Trusted Access 企业，随后计划扩展至 ChatGPT Plus、Pro、Business、Enterprise、API 与 AWS。官方模型页给出 105 万上下文、12.8 万最大输出和每百万输入/输出 Token 10/50 美元；同时它是 OpenAI 首个达到 Critical 网络安全能力阈值的广泛部署模型，所有工具调用均加入错位行为监控。",
+    insight: "前沿模型的发布包正在从能力、价格、上下文扩展到访问资格和运行期监控；高价值 Agent 产品必须把授权范围、异常暂停与人工复核写进体验，而不能只依靠模型更强的判断。",
+    sourceUrl: "https://openai.com/index/gpt-6-astra/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI 官方发布", url: "https://openai.com/index/gpt-6-astra/" },
+      { label: "OpenAI API 模型页", url: "https://developers.openai.com/api/docs/models/gpt-6-astra" },
+      { label: "OpenAI 安全概览", url: "https://openai.com/index/safety-overview-gpt-6-astra/" },
+      { label: "Axios 发布报道", url: "https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman" }
+    ]
+  },
+  {
+    slug: "google-weathernext-3",
+    name: "Google · WeatherNext 3",
+    summary: "Google 用实时卫星观测驱动每小时更新的全球天气模型，并把更细粒度预报接入 Search、Gemini、Maps 与 Cloud",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WeatherNext3_Title.width-1300.png",
+    impact: "WeatherNext 3 直接吸收每小时地球同步卫星拼图，把地表变量细化到 5 或 10 公里、部分大气变量 25 公里，相比 WeatherNext 2 的 25 公里与 6 小时间隔实现更高时空分辨率。模型同时进入消费产品和 Google Cloud，天气 AI 由研究输出转成影响导航、农业、能源与供应链决策的基础服务。",
+    insight: "领域模型真正形成规模影响时，往往会同时进入终端产品、开发平台和独立评测；产品团队应把新鲜数据接入、更新频率与下游决策接口视为同一条产品链。",
+    sourceUrl: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+    sourceLabel: "Google 官方博客",
+    sources: [
+      { label: "Google 官方博客", url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/" },
+      { label: "Operational WeatherBench 方法", url: "https://owb.brightband.com/methodology" },
+      { label: "TechCrunch 报道", url: "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/" }
+    ]
+  },
+  {
+    slug: "nvidia-hugging-face-acquisition",
+    name: "NVIDIA · 收购 Hugging Face",
+    summary: "NVIDIA 同意以 129.303 亿美元收购 Hugging Face，并承诺平台继续支持跨模型、跨云与跨加速器的开放生态",
+    image: "https://blogs.nvidia.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2.png",
+    impact: "交易将拥有 1800 多万开发者、300 多万模型、50 万数据集和 100 万应用的开放模型平台纳入 NVIDIA 版图。NVIDIA 明确称使用 Hugging Face 不要求其计算平台，但硬件、模型分发、评测与推理入口由此更紧密连接，监管者和开发者将持续关注平台中立性与多加速器支持是否兑现。",
+    insight: "开放生态的关键基础设施也可能成为垂直整合对象；依赖模型 Hub 的产品应保留权重、数据集与部署元数据的可迁移副本，并把平台中立性当作供应链风险持续验证。",
+    sourceUrl: "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+    sourceLabel: "NVIDIA 官方公告",
+    sources: [
+      { label: "NVIDIA 官方公告", url: "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" },
+      { label: "NVIDIA 8-K 附件", url: "https://www.sec.gov/Archives/edgar/data/2033991/000110465926104858/tm2619716d3_ex99-1.htm" },
+      { label: "AP 报道", url: "https://apnews.com/article/d96d50e037a2ade479dcdf81cdf2afcf" },
+      { label: "LocalLLaMA 社区讨论", url: "https://www.reddit.com/r/LocalLLaMA/comments/1w65uhf/its_official_nvidia_to_acquire_hugging_face_for/" }
+    ]
+  },
+  {
+    slug: "microsoft-mai-transcribe-2",
+    name: "Microsoft · MAI-Transcribe-2",
+    summary: "Microsoft 发布支持 60 种语言、说话人分离和逐词时间戳的转录模型，并以每小时 0.10 美元限时价格进入 Foundry",
+    image: "https://microsoft.ai/wp-content/uploads/2026/05/transcribe-social.jpg",
+    impact: "MAI-Transcribe-2 在 Microsoft Foundry 与 Azure Speech 公测，新增说话人分离、逐词时间戳、行业关键词偏置、自动语言识别和 clean/verbatim 风格。官方称一小时音频约 10 秒完成推理，并在 FLEURS 与 Artificial Analysis 指标上领先；0.10 美元每小时的价格持续到 2026 年底，将推动会议、呼叫中心和媒体转录重新比较单位经济性。",
+    insight: "语音基础模型的竞争正从单一错误率进入结构化输出、延迟和单位小时成本的组合；产品采购应使用自己的噪声、口音、术语和多人音频复测，而不是直接照搬厂商榜单。",
+    sourceUrl: "https://microsoft.ai/models/mai-transcribe-2/",
+    sourceLabel: "Microsoft AI 官方模型页",
+    sources: [
+      { label: "Microsoft AI 模型页", url: "https://microsoft.ai/models/mai-transcribe-2/" },
+      { label: "Microsoft Foundry 发布", url: "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-transcribe-2-highest-quality-transcription-at-the-fastest-speed-and-lowest-c/4550972" },
+      { label: "Microsoft News 发布索引", url: "https://news.microsoft.com/source/tag/ai/" },
+      { label: "VentureBeat 报道", url: "https://venturebeat.com/infrastructure/microsoft-ais-mai-transcribe-2-undercuts-openai-google-and-elevenlabs-on-price-and-speed" }
+    ]
+  },
+  {
+    slug: "humain-m3",
+    name: "HUMAIN · M3",
+    summary: "HUMAIN 与 MiniMax 推出面向阿拉伯语的 4280 亿参数多模态 MoE 模型，并通过 Node Playground 与兼容 OpenAI 的 API 限量预览",
+    image: "https://node.humain.com/assets/og.png",
+    impact: "M3 每次激活 230 亿参数，经过超过 1 万亿阿拉伯语 Token 的继续训练，支持文本、图像、视频、工具与电脑操作，并提供常开、自适应和关闭三种思考模式。官方自测称其在 7 个阿拉伯语基准中有 5 个领先，但当前仍标明非生产级、所有交互会记录，开放权重仅承诺后续提供。",
+    insight: "区域语言模型的壁垒正在从翻译质量扩展到原生数据、文化安全层、开发接口与本地平台；发布时同时公开限制、数据使用和访问层级，能帮助团队避免把 Preview 误当生产服务。",
+    sourceUrl: "https://node.humain.com/",
+    sourceLabel: "HUMAIN Node 官方发布",
+    sources: [
+      { label: "HUMAIN Node 官方页面", url: "https://node.humain.com/" },
+      { label: "HUMAIN M3 模型条款", url: "https://node.humain.com/legal/model-terms" },
+      { label: "HUMAIN 发布稿", url: "https://www.prnewswire.com/news-releases/humain-unveils-humain-m3-a-frontier-arabic-language-model-developed-by-minimax-in-research-preview-on-humain-node-302869158.html" }
+    ]
+  }
+];
+
+const trends20260904 = [
+  {
+    title: "Agent 开始像软件一样被编译、观察和修复",
+    text: "最近 7 天，Airtop 把重复网页推理编译成可复用代码，Nex 为批量 GTM 加入逐项状态与审批，MagiCrew 把多 Agent、预算和交付物放入同一控制面，GPT-6 Astra 则把长程电脑工作推向更高能力。趋势表明，下一阶段竞争不只看一次 Demo，而看运行成本、失败可见性、版本修复和授权边界能否长期运营。"
+  },
+  {
+    title: "开放生态与区域主权同时进入基础设施层",
+    text: "NVIDIA 拟收购 Hugging Face，让开放模型分发平台与算力供应商进一步整合；HUMAIN M3 以阿拉伯语原生数据、区域安全层和本地访问平台建立差异化，MagiCrew 与 Omi 则以开源自建争取数据控制。团队需要同时评估生态规模、迁移能力、多硬件支持和本地合规，而不能把开放权重等同于供应链独立。"
+  },
+  {
+    title: "多模态模型正在接管真实世界的连续信号",
+    text: "Atlas 统一处理图像、视频、3D 与相机轨迹，WeatherNext 3 直接吸收实时卫星观测，Omi 把屏幕和声音变成个人记忆，MAI-Transcribe-2 将多人语音结构化为带时间戳文本。价值中心正从生成单个内容转向持续理解空间、天气、工作和对话，但真实观测与模型补全的边界、隐私开关和误差传播也会成为核心产品问题。"
+  }
+];
+
 const products20260902 = [
   {
     slug: "almanac",
@@ -4554,6 +4762,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-04",
+    isoDate: "2026-09-04",
+    dateLabel: "2026年9月4日",
+    weekday: "星期五",
+    oneSentence: "AI 产品正在把高能力模型、可维护执行与连续多模态信号连接成新的生产系统",
+    products: products20260904,
+    industryEvents: industryEvents20260904,
+    trends: trends20260904
+  },
   {
     slug: "2026-09-02",
     isoDate: "2026-09-02",
