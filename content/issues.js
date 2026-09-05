@@ -1,3 +1,206 @@
+const products20260905 = [
+  {
+    slug: "trackmcp",
+    name: "TrackMCP",
+    tag: "MCP Server Analytics",
+    tagline: "用一行 SDK 追踪 MCP 工具调用、错误、延迟与任务结果，让服务端团队看见 Agent 工作流真正在哪里停止",
+    image: "https://trackmcp.com/opengraph-image",
+    positioning: "定位为 MCP 服务端的产品分析与运行诊断层，而不是转发请求的代理。壁垒来自同时理解客户端、工具调用链、重试、结果和业务失败，并允许服务所有者控制采集范围与隐私边界。",
+    audience: ["运营公开或企业内 MCP Server 的开发团队", "需要定位 Claude、Cursor、ChatGPT 等客户端差异的工具提供商", "希望用真实调用数据优化 Agent 产品的负责人"],
+    killerFeature: "TypeScript 或 Python 一行集成后即可还原每次会话的工具序列、重试、延迟与最终结果，并识别 HTTP 200 内部的静默失败和用户中途放弃的位置。",
+    experience: "开发者把 SDK 包在既有 MCP Server 上，无需改变客户端或经过第三方代理；实时仪表盘按服务器、客户端、工具与结果下钻，异常可通过 Slack 或 Webhook 进入现有响应流程。",
+    growth: "以免费 1000 次月调用和无需改造客户端降低首个接入门槛，通过 Product Hunt 与 MCP 开发者社区触达服务商；当团队增加服务器、成员和留存需求后自然升级。",
+    businessModel: "Hobby 免费，含每月 1000 次调用、7 天留存和 1 个 Server；Pro 每月 49 美元，含 5 万次调用、90 天留存、5 个 Server 与团队协作；Enterprise 提供定制额度与自托管。",
+    insight: "Agent 基础设施不能只观察请求是否返回 200，还要知道用户目标是否完成；把工具链、结果和放弃点放进同一事件模型，才能让 MCP Server 像成熟 SaaS 一样持续优化。",
+    sourceUrl: "https://www.trackmcp.com/",
+    sourceLabel: "TrackMCP 官方网站",
+    sources: [
+      { label: "TrackMCP 官网", url: "https://www.trackmcp.com/" },
+      { label: "TrackMCP 官方定价", url: "https://www.trackmcp.com/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/trackmcp" }
+    ]
+  },
+  {
+    slug: "clockwork-agent-scheduler",
+    name: "Clockwork",
+    tag: "Local Agent Scheduler",
+    tagline: "把 Claude Code、Codex 等编码 Agent 变成按日历、Cron 或 Webhook 运行的隔离任务，并在高风险动作前暂停审批",
+    image: "https://vimoxshah.github.io/clockwork/og.png",
+    positioning: "定位为 macOS 上可审计的本地 Agent 调度器，而不是常驻云端的自动编码服务。壁垒来自独立 Git Worktree、Seatbelt 或 Docker 隔离、预算护栏、失败关闭和完整执行报告组成的控制面。",
+    audience: ["希望定时处理仓库维护工作的独立开发者", "需要并行隔离 Claude Code、Codex、OpenCode 或 Hermes 的工程团队", "要求代码和凭证留在本机的安全敏感用户"],
+    killerFeature: "每次任务都在新 Worktree 和受限沙盒中运行，并设置费用、轮次与墙钟上限；遇到危险操作会暂停，约两分钟无人批准则失败关闭，不会自行越权。",
+    experience: "用户选择 13 种预设配置或自定义命令，再用日历、RRULE、Cron 或 Webhook 排程；结束后收到分支、Diffstat、成本、审批与完整转录报告，可决定合并或丢弃。",
+    growth: "以开源 GitHub、无需账户和支持多家 CLI Agent 吸引本地开发者，通过 Product Hunt 与可复制预设扩大采用；日程化任务越多，统一报告与团队策略的价值越明显。",
+    businessModel: "个人非商业使用免费；Pro 与 Teams 能力已在产品中规划，但官方尚未公开销售价格，商业使用需取得书面许可；模型或 Agent 服务费用由用户另行承担。",
+    insight: "Agent 自动化从手动触发走向定时运行后，产品核心会从聊天体验转向隔离、预算和失败语义；默认超时拒绝比默认继续执行更适合无人值守场景。",
+    sourceUrl: "https://vimoxshah.github.io/clockwork/",
+    sourceLabel: "Clockwork 官方网站",
+    sources: [
+      { label: "Clockwork 官网", url: "https://vimoxshah.github.io/clockwork/" },
+      { label: "Clockwork 官方 GitHub", url: "https://github.com/vimoxshah/clockwork" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/clockwork-5" }
+    ]
+  },
+  {
+    slug: "omarchy-4",
+    name: "Omarchy",
+    tag: "Agent-Native Linux Desktop",
+    tagline: "把 Arch、Hyprland、Quickshell 与主流编码 Agent 打包成键盘优先、可主题化、可被 Agent 持续改造的完整 Linux 工作站",
+    image: "https://omarchy.org/assets/images/opengraph.png",
+    positioning: "定位为 Agent 时代的可塑桌面操作系统，而不是一套零散 Dotfiles。壁垒来自开箱即用的 Arch 工作站、统一 Shell 与主题系统、插件架构，以及将多种编码 Agent 变成系统级入口。",
+    audience: ["希望快速获得精致 Arch 开发环境的程序员", "在多个编码 Agent 之间切换的重度用户", "愿意让 Agent 修改并版本化个人工作站的开源社区"],
+    killerFeature: "系统内置 Agent 选择器，可按快捷键或别名启动 Claude Code、Codex、OpenCode、Pi、Gemini、Grok 等工具，并为 Agent 提供崩溃诊断技能和按模型、周期聚合的用量面板。",
+    experience: "安装后即可通过键盘操作窗口、应用与系统命令，Quickshell 统一状态栏、启动器和控制面板；主题全局同步，插件与打包更新让用户或 Agent 能在可恢复边界内改变桌面。",
+    growth: "以 DHH 个人影响力、MIT 开源、GitHub 超过 3.8 万 Stars 和高辨识度视觉风格形成社区分发；Agent 兼容、主题与插件生态持续制造分享和贡献循环。",
+    businessModel: "项目以 MIT 许可证免费开源，当前没有独立订阅或商业版定价；价值主要沉淀在社区、插件与围绕开发工作站的生态影响力。",
+    insight: "当 Agent 能修改开发环境，操作系统本身就成为可编程产品界面；真正的机会不只是预装更多模型，而是给变化提供统一入口、状态反馈和可恢复更新。",
+    sourceUrl: "https://omarchy.org/",
+    sourceLabel: "Omarchy 官方网站",
+    sources: [
+      { label: "Omarchy 官网", url: "https://omarchy.org/" },
+      { label: "Omarchy 官方 GitHub", url: "https://github.com/omacom/omarchy" },
+      { label: "Omarchy 4.0 发布", url: "https://github.com/omacom/omarchy/releases/tag/v4.0.0" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/omarchy-3" }
+    ]
+  },
+  {
+    slug: "myaicademy",
+    name: "myAIcademy",
+    tag: "Personalized AI Upskilling",
+    tagline: "按岗位、目标和现有工具生成个性化 AI 学习路径，用 15 分钟跟做课程和安全模拟器把知识转成真实工作成果",
+    image: "https://ph-files.imgix.net/ef95c234-d697-457e-b35b-0bfedbd77c7b.jpeg?auto=compress%2Cformat&codec=mozjpeg&cs=strip&fit=max&frame=1&h=220&w=391",
+    positioning: "定位为面向普通职场人的 AI 能力训练系统，而不是静态课程库。壁垒来自岗位与工具个性化、短课后的模拟检查点、真实 Capstone，以及在工具变化后 24 至 72 小时更新内容。",
+    audience: ["需要把 AI 用进日常流程的非技术职场人", "负责组织 AI 采用与回报衡量的 L&D 团队", "担心员工直接在生产工具中试错的企业管理者"],
+    killerFeature: "系统根据岗位、目标与常用工具动态编排路径，每节 15 分钟课程先跟做、再进入安全模拟器验证，最后要求在真实工作中完成可评估成果。",
+    experience: "用户完成简短诊断后在 Web、iOS 或 Android 获取专属路径，以小课、检查点和 Capstone 逐步推进；每日或每周信号提示工具变化，企业策略可覆盖课程建议。",
+    growth: "免费路径预览、每周信号与社区降低进入门槛，借 Product Hunt 和创始团队既有 GenAI 培训经验建立信任；移动端、持续更新与企业管理面板提高复访和席位扩张。",
+    businessModel: "Free 永久免费；Pro 每月 12.99 美元，开放完整路径、40 多种工具、Capstone、每日信号和月度大师课；Enterprise 从 25 席起定制，加入 SSO、管理分析、训练营与 SLA。",
+    insight: "AI 培训的续费理由不是内容数量，而是课程能否跟上工具变化并证明工作结果；把安全练习、真实交付和组织策略连起来，才可能从个人课程升级为企业采用基础设施。",
+    sourceUrl: "https://www.myaicademy.com/",
+    sourceLabel: "myAIcademy 官方网站",
+    sources: [
+      { label: "myAIcademy 官网", url: "https://www.myaicademy.com/" },
+      { label: "myAIcademy 官方定价", url: "https://www.myaicademy.com/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/myaicademy" }
+    ]
+  },
+  {
+    slug: "twelvelabs-compliance",
+    name: "Compliance by TwelveLabs",
+    tag: "Video Policy Review",
+    tagline: "用多模态推理按地区和自定义规则审查长视频，为每个潜在违规点返回时间码、证据和可签署报告",
+    image: "https://framerusercontent.com/images/HCQkFF3Rw3hgP3u68YqGAP4s.webp",
+    positioning: "定位为媒体内容发布前的 AI 合规工作台，而不是只给视频打标签的审核 API。壁垒来自 Pegasus 1.5 上下文推理、可版本化地区规则包、人工复核闭环与可审计证据输出。",
+    audience: ["跨地区发行影视与流媒体内容的合规团队", "需要批量审查广告、品牌与用户视频的平台", "要求可追溯审核记录的法务、信任与安全团队"],
+    killerFeature: "同一视频可同时对照 40 多套地区或自定义规则，命中项附带时间码、上下文证据和规则版本；审核员可接受、驳回或批注，并导出签名 JSON、PDF 或 CSV。",
+    experience: "团队上传长视频并选择规则包，系统在后台完成检查后按严重度列出证据片段；审核员从原始时间码核对、修正结果，最终生成能进入法务和发行流程的审计报告。",
+    growth: "先面向高成本、强监管的影视发行团队，以官方基准和可量化的审核时长缩短价值验证；API、RBAC 与自定义规则让单项目试用扩展到内容库和多地区流程。",
+    businessModel: "采用销售驱动的企业 SaaS 模式，官方目前未公开统一价格；商业价值围绕规则包、视频处理量、审阅席位、API 与企业安全能力定制。",
+    insight: "专业审核 Agent 的价值不在替人给出最终判断，而在把海量素材压缩成可复核证据；规则版本、时间码和人工驳回率应该与模型准确率一样成为核心产品指标。",
+    sourceUrl: "https://www.twelvelabs.io/compliance",
+    sourceLabel: "TwelveLabs 官方产品页",
+    sources: [
+      { label: "TwelveLabs Compliance", url: "https://www.twelvelabs.io/compliance" },
+      { label: "TwelveLabs 官方发布", url: "https://www.globenewswire.com/news-release/2026/09/03/3355954/0/en/twelvelabs-launches-compliance-by-twelvelabs-to-find-potential-content-violations-quickly-accurately-and-easily-across-any-region.html" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/twelvelabs" }
+    ]
+  }
+];
+
+const industryEvents20260905 = [
+  {
+    slug: "openai-daybreak-frontline-defenders",
+    name: "OpenAI · Daybreak for Frontline Defenders",
+    summary: "OpenAI 承诺投入 10 亿美元补贴 Daybreak 访问、培训与技术支持，把前沿网络安全能力优先交给关键服务的一线防守者",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "计划在未来约六个月优先覆盖供水、电网、地方政府、社区银行、非营利组织与开源维护者，并与 MS-ISAC 启动公共部门和水务试点。Daybreak Defense Network 同时宣布 35 个以上合作产品或服务，前沿安全模型开始通过既有工具链进入资源不足的关键基础设施。",
+    insight: "高风险 AI 的社会价值不仅取决于模型是否存在，还取决于访问补贴、身份验证、培训和现场支持能否一起交付；能力分发正在成为与模型研发同等重要的产品问题。",
+    sourceUrl: "https://openai.com/index/daybreak-for-frontline-defenders/",
+    sourceLabel: "OpenAI 官方公告",
+    sources: [
+      { label: "OpenAI 官方公告", url: "https://openai.com/index/daybreak-for-frontline-defenders/" },
+      { label: "OpenAI Trusted Access 说明", url: "https://help.openai.com/en/articles/20001258-trusted-access-for-cyber" },
+      { label: "Axios 报道", url: "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models" }
+    ]
+  },
+  {
+    slug: "soundhound-liveperson-close",
+    name: "SoundHound AI · 完成收购 LivePerson",
+    summary: "SoundHound AI 正式完成 LivePerson 收购，把企业数字消息能力并入 OASYS，形成横跨语音、网页、移动、短信与社交渠道的 Agent 平台",
+    image: "https://ml.globenewswire.com/Resource/Download/ce79b019-d1a4-48b6-8943-99b6e0b98800/image1.png",
+    impact: "合并后客户覆盖 25 家财富 100 强企业，知识产权组合超过 750 项专利；LivePerson 的数字消息基础设施将接入 SoundHound 自学习编排系统 OASYS。企业对话式 AI 的竞争由单一语音或聊天入口，进一步转向全渠道身份、上下文和交易执行的一体化。",
+    insight: "对话 Agent 的平台价值来自跨渠道保持同一客户状态并完成交易，而不是在每个入口各做一个机器人；并购整合的成败将取决于上下文、权限和运营指标能否真正统一。",
+    sourceUrl: "https://investors.soundhound.com/news-releases/news-release-details/soundhound-ai-completes-acquisition-liveperson-creating-world",
+    sourceLabel: "SoundHound AI 官方公告",
+    sources: [
+      { label: "SoundHound AI 官方公告", url: "https://investors.soundhound.com/news-releases/news-release-details/soundhound-ai-completes-acquisition-liveperson-creating-world" },
+      { label: "LivePerson 股东批准公告", url: "https://ir.liveperson.com/news-releases/news-release-details/liveperson-stockholders-approve-acquisition-soundhound-ai" },
+      { label: "GlobeNewswire 发布", url: "https://www.globenewswire.com/news-release/2026/09/04/3356596/0/en/soundhound-ai-completes-acquisition-of-liveperson-creating-a-world-leading-omnichannel-conversational-ai-powerhouse.html" }
+    ]
+  },
+  {
+    slug: "bending-spoons-airtable-close",
+    name: "Bending Spoons · 完成收购 Airtable",
+    summary: "Bending Spoons 完成对 Airtable 的全现金收购，并承诺继续投资产品、客户支持与市场能力，接手超过 50 万家组织使用的协作数据平台",
+    image: "https://bendingspoons.com/images/og-image-2026.png",
+    impact: "这是 Bending Spoons 2026 年 7 月在纳斯达克上市后的首笔收购，Airtable 也加入 Evernote、Vimeo、WeTransfer 等产品组合。交易把可配置数据库、企业工作流与 AI Agent 入口纳入以深度运营改造著称的收购平台，客户将密切观察产品投入、定价与生态开放度。",
+    insight: "成熟协作产品的 AI 转型越来越可能由资本与运营平台推动；用户承诺与财务效率能否同时兑现，应通过发布节奏、支持质量、迁移能力和价格变化持续验证。",
+    sourceUrl: "https://www.sec.gov/Archives/edgar/data/2004711/000200471126000013/bsp_ex99-1.htm",
+    sourceLabel: "Bending Spoons SEC 公告",
+    sources: [
+      { label: "Bending Spoons SEC 公告", url: "https://www.sec.gov/Archives/edgar/data/2004711/000200471126000013/bsp_ex99-1.htm" },
+      { label: "Bending Spoons 官网", url: "https://bendingspoons.com/" },
+      { label: "Airtable 官网", url: "https://airtable.com/" }
+    ]
+  },
+  {
+    slug: "g20-ai-prosperity-compact",
+    name: "G20 · AI Prosperity Compact",
+    summary: "G20 创新部长就新兴技术原则、AI 繁荣目标与契约、AI 知识产权、标准和供应链投资形成联合声明",
+    image: "https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png",
+    impact: "9 月 2 日在美国北卡罗来纳州举行的部长会议，把 Carolina Principles、AI Prosperity Objectives 与 AI Prosperity Compact 纳入共同交付物，并同时讨论 AI for standards 与 standards for AI。跨国治理开始把创新、劳动力、知识产权、技术标准和供应链作为同一政策组合。",
+    insight: "AI 治理正在从抽象安全原则进入产业执行层；跨境产品除了跟踪模型规则，还需提前映射技能、知识产权、标准和供应链要求，因为这些会共同决定上市成本与市场准入。",
+    sourceUrl: "https://www.gov.uk/government/publications/g20-innovation-ministerial-statement-2-september-2026",
+    sourceLabel: "英国政府发布的 G20 声明",
+    sources: [
+      { label: "G20 创新部长声明", url: "https://www.gov.uk/government/publications/g20-innovation-ministerial-statement-2-september-2026" },
+      { label: "Carolina Principles", url: "https://www.commerce.gov/issues/g20-innovation-ministerial/carolina-principles-emerging-technologies" },
+      { label: "AI Prosperity Objectives", url: "https://www.commerce.gov/issues/g20-innovation-ministerial/g20-ai-prosperity-objectives" },
+      { label: "AI Prosperity Compact", url: "https://www.commerce.gov/issues/g20-innovation-ministerial/ai-prosperity-compact" }
+    ]
+  },
+  {
+    slug: "tenable-cyberagents-inspector",
+    name: "Tenable × OpenAI · CyberAgents Exchange AI Inspector",
+    summary: "Tenable 将 OpenAI GPT 网络安全模型、Tenable One 技能检查与人工研究员复核组合成 Agent、Skill 和 MCP Server 的发布前审查流程",
+    image: "https://www.tenable.com/sites/default/files/images/press-releases/Sample%20PR%20image%20-%20800x800.jpg",
+    impact: "Inspector 计划在 9 月上线，对 CyberAgents Exchange 中的 Agent、Skill、MCP Server 和多 Agent Playbook 做分层评估；该开源安全组件市场自 8 月启动后已有 100 多个社区提交。Agent 生态开始出现类似应用商店审核与软件供应链扫描结合的新信任层。",
+    insight: "可复用 Agent 组件会继承代码供应链的风险，却还多出 Prompt、工具权限和模型行为的不确定性；自动评估必须与人工复核、版本记录和部署前门禁结合，才能形成可用的分发信誉。",
+    sourceUrl: "https://www.tenable.com/press-releases/tenable-uses-openai-gpt-cyber-models-to-help-defenders-inspect-community-built-ai-components",
+    sourceLabel: "Tenable 官方公告",
+    sources: [
+      { label: "Tenable 官方公告", url: "https://www.tenable.com/press-releases/tenable-uses-openai-gpt-cyber-models-to-help-defenders-inspect-community-built-ai-components" },
+      { label: "CyberAgents Exchange", url: "https://exchange.tenable.com/" },
+      { label: "OpenAI Defense Factory", url: "https://openai.com/the-defense-factory/" }
+    ]
+  }
+];
+
+const trends20260905 = [
+  {
+    title: "Agent 可观测与供应治理正在合并",
+    text: "最近 7 天，TrackMCP 把工具链结果做成产品分析，Clockwork 把预算、隔离和审批放进调度，Tenable 则为 Agent、Skill 与 MCP Server 建立发布前检查。Agent 的开发、运行和分发正在共享同一套证据与信任需求。"
+  },
+  {
+    title: "垂直控制面比通用聊天框更接近付费",
+    text: "myAIcademy 用岗位路径和模拟器证明学习结果，TwelveLabs 用规则包、时间码与签名报告承接合规，Omarchy 把多个编码 Agent 收进系统入口。产品价值越来越来自专业流程中的控制、验证与交付，而非单次生成。"
+  },
+  {
+    title: "AI 扩张同时依赖整合与公共基础设施",
+    text: "SoundHound 收购 LivePerson 统一全渠道对话，Bending Spoons 接手 Airtable 工作流平台；另一边 OpenAI 投入 10 亿美元补贴关键基础设施防守，G20 推进技能、标准与知识产权框架。市场整合与公共能力建设正在并行加速。"
+  }
+];
+
 const products20260904 = [
   {
     slug: "agent-builder-airtop",
@@ -4762,6 +4965,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-05",
+    isoDate: "2026-09-05",
+    dateLabel: "2026年9月5日",
+    weekday: "星期六",
+    oneSentence: "AI 产品正在把可观测执行、专业控制与供应治理组装成可验证的新 Agent 基础设施",
+    products: products20260905,
+    industryEvents: industryEvents20260905,
+    trends: trends20260905
+  },
   {
     slug: "2026-09-04",
     isoDate: "2026-09-04",
