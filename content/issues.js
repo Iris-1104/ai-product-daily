@@ -155,33 +155,33 @@ const industryEvents20260907 = [
     ]
   },
   {
-    slug: "github-project-hydrafusion",
-    name: "GitHub Copilot · Project HydraFusion",
-    summary: "GitHub 在 Copilot CLI 推出多模型编排研究预览，按任务动态选择单模型、级联或独立批评再修订的执行路径",
-    image: "https://github.blog/wp-content/uploads/2026/09/OptA_UI.jpg",
-    impact: "HydraFusion 会先建立执行计划，再从多家模型中组合草拟、审查与升级。GitHub 的离线评测显示，相对 Opus 5，TerminalBench 2.1 质量高 4.9 个百分点且估算成本低 67%，但 DeepSWE 质量低 1.5 点、CheckpointBench 低 0.1 点；研究预览因此更像待真实负载验证的路由实验。",
-    insight: "模型路由的下一个阶段不是选一个赢家，而是按任务构造工作流；真正可信的产品指标应同时公布质量、总调用成本、延迟和失败模式，并区分离线基准与生产表现。",
-    sourceUrl: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
-    sourceLabel: "GitHub 官方发布",
+    slug: "tcs-hypervault-hyderabad-1gw",
+    name: "TCS HyperVault · 海得拉巴 1GW AI 数据中心",
+    summary: "HyperVault 取得 264 英亩土地，计划在印度海得拉巴分阶段建设最高 1GW 的高密度液冷 AI 数据中心园区",
+    image: "https://www.tcs.com/content/dam/global-tcs/en/images/what-we-do/services/data-and-ai/data-page/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana-card.jpg",
+    impact: "TCS 表示园区面向前沿 AI 公司和超大规模云厂商，支持高密度 GPU 训练、推理与高级计算，并采用绿色能源和水中和设计原则。HyperVault 及合作伙伴预计最多投入 7000 亿卢比，印度的主权算力竞争由云服务扩展到吉瓦级基础设施。",
+    insight: "AI 产品的约束正在向电力、液冷、网络和本地数据驻留外溢；模型与应用团队评估长期供应商时，应把容量上线节奏、能源来源、用水和区域可用性纳入路线图。",
+    sourceUrl: "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
+    sourceLabel: "TCS 官方公告",
     sources: [
-      { label: "GitHub 官方发布", url: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/" },
-      { label: "Copilot CLI 官方文档", url: "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview" },
-      { label: "VentureBeat 基准解读", url: "https://venturebeat.com/orchestration/githubs-hydrafusion-cuts-ai-coding-costs-in-every-benchmark-it-only-matches-quality-in-one" }
+      { label: "TCS 官方公告", url: "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana" },
+      { label: "TCS AI 数据中心服务", url: "https://www.tcs.com/what-we-do/services/artificial-intelligence/solution/ai-data-centers" },
+      { label: "Moneycontrol 报道", url: "https://www.moneycontrol.com/news/business/tcs-hypervault-to-build-1gw-ai-data-centre-campus-in-hyderabad-with-up-to-rs-70-000-crore-investment-14023332.html" }
     ]
   },
   {
-    slug: "google-lyria-35-multichannel",
-    name: "Google · Lyria 3.5 多端开放",
-    summary: "Google 将 Lyria 3.5 全球开放到 Gemini App 与 Gemini API，并同步覆盖 Flow Music、AI Studio 和 Google Vids",
-    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria_social.max-1440x810.png",
-    impact: "开发者现在可通过 Interactions API 用文字或最多 10 张图片生成 44.1 kHz 立体声，完整歌曲可包含主歌、副歌、桥段、定时歌词和同步编排；普通用户则能在 Gemini 选择人声或纯音乐、模板与长短曲目。音乐模型从单独实验入口转向消费端、创作端和 API 的统一分发。",
-    insight: "生成模型的采用速度越来越由分发面而非发布日决定；同一能力进入聊天、创作工具和 API 时，应保持可迁移的提示结构、来源标记与版权边界，避免每个渠道形成孤岛。",
-    sourceUrl: "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
-    sourceLabel: "Google 官方发布",
+    slug: "hisense-ai-companion-ifa-2026",
+    name: "Hisense · IFA 展示 AI Companion Suite",
+    summary: "Hisense 用 ConnectLife 与 AIOS 串联厨房、洗衣、空调和家庭能源，让设备感知场景并跨设备执行",
+    image: "https://mmx.prnewswire.com/media/MS1982485/20260905041147EDT_image_4.jpg?id=OA2932196&p=facebook",
+    impact: "AI Companion 可让冰箱识别食材并生成菜谱，再把烹饪参数同步给烤箱；洗护套装、空调与能源系统则根据衣物、人在房间的位置、天气和分时电价自动调整。家庭 AI 的竞争由单品问答进入跨设备感知、决策与执行。",
+    insight: "家庭 Agent 的价值不在给每台设备增加聊天入口，而在跨设备完成连续目标；厂商必须同时处理权限、失败接管、能耗解释和本地状态，才能让自动执行从展台进入日常。",
+    sourceUrl: "https://www.hisense.com/news/1711.html",
+    sourceLabel: "Hisense 官方发布",
     sources: [
-      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/" },
-      { label: "Gemini API Lyria 文档", url: "https://ai.google.dev/gemini-api/docs/music-generation" },
-      { label: "Google DeepMind Lyria", url: "https://deepmind.google/models/lyria/" }
+      { label: "Hisense 官方发布", url: "https://www.hisense.com/news/1711.html" },
+      { label: "Hisense 英文新闻稿", url: "https://www.newswire.ca/news-releases/experience-ai-companion-in-everyday-life-at-hisense-ifa-2026-836422181.html" },
+      { label: "IFA 官方网站", url: "https://www.ifa-berlin.com/" }
     ]
   }
 ];
@@ -192,12 +192,12 @@ const trends20260907 = [
     text: "最近 7 天，OpenAI 把内部系统定义到可完成数日研究任务的实习生层级，Anthropic 用多 Agent 形式化费马大定理，Kit 则把可复用子 Agent 做进运行时。竞争焦点正从单次回答转向长程拆解、复核与恢复。"
   },
   {
-    title: "主动感知与动态编排开始替代固定管线",
-    text: "Gemini Agentic Video 只读取问题需要的片段，HydraFusion 按任务选择单模型、级联或批评流程，Tadata 也在上下文中决定工具组合。系统开始实时构造执行路径，成本、延迟与可解释轨迹因此要被一起设计。"
+    title: "主动感知开始替代固定输入与被动响应",
+    text: "Gemini Agentic Video 只读取问题需要的片段，Tadata 在 Slack 上下文中决定工具组合，Hisense 则把环境与设备状态带入家庭执行。系统开始按目标选择信号和动作，可解释轨迹与人工接管必须一起设计。"
   },
   {
-    title: "控制层正在吸收模型商品化红利",
-    text: "AI Toolbox 统一四个聊天入口，H3 Max 用后训练和推理栈改写视频单位经济性，Lyria 3.5 则从模型页扩展到 Gemini、创作工具与 API。更持久的价值正沉淀在记忆、分发、工作流和服务效率。"
+    title: "Agent 扩张正在同时触碰软件与物理底座",
+    text: "AI Toolbox 和 Kit 把记忆与执行沉淀为软件运行层，H3 Max 用推理栈改写视频单位经济性，HyperVault 则把供给推到 1GW 数据中心。产品路线开始同时受模型、运行时、能源和区域容量约束。"
   }
 ];
 
