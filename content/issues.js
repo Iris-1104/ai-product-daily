@@ -1,3 +1,206 @@
+const products20260907 = [
+  {
+    slug: "ai-toolbox-3",
+    name: "AI Toolbox 3.0",
+    tag: "Cross-Model Chat Workspace",
+    tagline: "用一个浏览器扩展统一搜索、整理和导出 ChatGPT、Claude、Gemini 与 Grok 对话，并把常用提示词直接插回工作流",
+    image: "https://media.happyhourhub.co/ChatGPT-Toolbox-Media/banner_video_cover.jpg",
+    positioning: "定位为多模型聊天产品之上的个人工作层，而不是另一款 AI 助手。壁垒来自跨四个平台的全文索引、嵌套文件夹、提示词链与批量导出，同时让对话正文默认留在浏览器本地。",
+    audience: ["同时使用多个主流聊天模型的重度用户", "需要沉淀客户、研究或创作对话的知识工作者", "希望统一团队提示词与使用分析的组织"],
+    killerFeature: "一次安装即可跨 ChatGPT、Claude、Gemini 和 Grok 搜索全部历史对话，再用文件夹、自动标签、书签与 // 快捷指令把找到的上下文重新投入当前任务。",
+    experience: "用户无需迁移既有聊天，只在原网站侧边栏中整理和检索；对话可按文件夹批量导出为 Markdown、PDF、JSON 或 ZIP，实时上下文计量则在长会话接近上限前提醒。",
+    growth: "以免费层、Chrome 商店和 Product Hunt 当日第一触达个人用户，借 4 万以上用户与本地优先叙事建立信任；当用户跨更多模型、积累更多历史或共享团队提示词后升级。",
+    businessModel: "Free 每模块 0 美元；单模块每月 9.99 美元、每年 59 美元或一次性 99 美元；覆盖当前及未来模块的 All Access 一次性 199 美元，Teams 年付从每席每月 12 美元起。",
+    insight: "模型入口越多，真正稀缺的越不是另一个生成按钮，而是用户可带走、可检索、可重组的工作记忆；跨平台控制层必须用本地处理和明确同步边界换取长期授权。",
+    sourceUrl: "https://www.ai-toolbox.co/",
+    sourceLabel: "AI Toolbox 官方网站",
+    sources: [
+      { label: "AI Toolbox 官网", url: "https://www.ai-toolbox.co/" },
+      { label: "AI Toolbox 官方定价", url: "https://www.ai-toolbox.co/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/chatgpt-toolbox" }
+    ]
+  },
+  {
+    slug: "tadata",
+    name: "Tadata",
+    tag: "Slack AI Employee",
+    tagline: "让一个住在 Slack 里的 AI 员工连接公司工具、学习团队偏好，并在获批后完成销售研究、跟进与 CRM 更新",
+    image: "https://www.tadata.com/opengraph-image",
+    positioning: "定位为可被同事直接委派工作的 Slack AI 员工，而不是需要业务人员自己搭建节点的自动化平台。壁垒来自可移植的公司上下文、模型无关执行、丰富连接器，以及在输出质量和主动介入之间保持克制。",
+    audience: ["希望从 Slack 直接委派销售研究与跟进的团队", "需要跨 CRM、邮件、日历和知识库执行任务的 GTM Ops", "不想学习 Agent 编排但需要持续自动化的中小企业"],
+    killerFeature: "Tadata 会读取线程上下文和连接工具，自行组合研究与执行步骤；它可以起草邮件、补全 CRM 或生成下一步，但在对外发送和关键改动前等待用户确认。",
+    experience: "团队把 Tadata 加入 Slack 并连接 HubSpot、Attio、Notion、Linear、GitHub、Gmail 或 Calendar，随后像 @ 同事一样描述结果、补充反馈；系统把新偏好写入共享记忆，让后续委派更贴合公司做法。",
+    growth: "通过免费 1000 Credits、Product Hunt 当日第二和团队既有 FastAPI-MCP 开源影响力降低首试成本，以销售场景模板和多工具连接证明价值，再随任务频率和公司上下文扩展用量。",
+    businessModel: "Free 提供一次性 1000 Credits；Standard Lite 每月 39 美元含 1000 Credits，Pro 149 美元含 4000，Scale 299 美元含 1 万；Enterprise 定制并提供不限 Credits。",
+    insight: "企业 Agent 的护城河不是绑定某个最贵模型，而是保存可迁移的组织记忆并知道何时不打扰人；先以显式 @ 和审批建立边界，再逐步获得主动工作的资格。",
+    sourceUrl: "https://www.tadata.com/",
+    sourceLabel: "Tadata 官方网站",
+    sources: [
+      { label: "Tadata 官网", url: "https://www.tadata.com/" },
+      { label: "Tadata 官方定价", url: "https://www.tadata.com/pricing" },
+      { label: "Tadata 安全说明", url: "https://www.tadata.com/security" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/tadata" }
+    ]
+  },
+  {
+    slug: "gemini-agentic-video-understanding",
+    name: "Agentic Video Understanding in Gemini",
+    tag: "Active Video Analysis",
+    tagline: "让 Gemini 按问题主动决定看哪段视频、用多高帧率以及调用画面、音频或字幕，从而减少长视频分析成本",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/agentic-video___keyword__blog-header.width-1300.png",
+    positioning: "定位为 Gemini API 的主动视频理解模式，而不是固定帧率的预处理选项。壁垒来自模型推理与原生视频工具的闭环，使同一个请求能搜索、重看并按需提高局部采样精度。",
+    audience: ["处理课程、会议和档案长视频的开发团队", "需要精确定位镜头、动作或异常的视频产品", "希望降低多小时媒体分析 Token 成本的企业平台"],
+    killerFeature: "模型先理解问题，再动态搜索目标片段，并在画面、音频和字幕之间选择信号与采样速度；官方测试称最高可减少 88% Token、66% 成本并提升 7% 准确率。",
+    experience: "开发者在 Gemini API 的视频输入中把 processing 设为 agentic，即可分析上传视频或 YouTube 链接；结果仍由原模型返回，无需自行写分段、检索和重采样管线。",
+    growth: "先在 Product Hunt 与 AI Studio 面向开发者发布，再通过 Gemini Enterprise Agent Platform 进入企业工作流；后续计划把能力扩展到 Gemini App 和 YouTube 的 Ask YouTube，形成平台级分发。",
+    businessModel: "按 Gemini 3.7 Flash、3.6 Flash 或 3.5 Flash-Lite 的标准 API Token 价格计费，Agentic Video 模式不收额外功能费；实际节省取决于视频长度与模型选择的片段。",
+    insight: "多模态成本优化正在从压缩全部输入，转向让模型主动决定该看什么；当感知本身成为 Agent 循环，开发者更应记录采样路径与证据片段，才能解释答案为何可信。",
+    sourceUrl: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" },
+      { label: "Gemini Agentic Video 指南", url: "https://ai.google.dev/gemini-api/docs/video-understanding" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/google" }
+    ]
+  },
+  {
+    slug: "h3-max-fal",
+    name: "H3 Max by fal",
+    tag: "Fast Multimodal Video Model",
+    tagline: "把 MiniMax H3 做成面向生产的高速视频模型，在约 3 秒生成 5 秒短片并同步输出画面、音效与对白",
+    image: "https://storage.ghost.io/c/0e/15/0e15ee8a-bd95-4b71-9258-950f77f4d196/content/images/2026/08/fal-glitch-dust-1080x1080-1787861178159.png",
+    positioning: "定位为 fal 对开源 MiniMax H3 的后训练与推理协同版本，而不是简单托管同一权重。壁垒来自针对提示遵循和审美的新数据、可验证强化学习，以及围绕 NVIDIA GB200 NVL72 优化的服务栈。",
+    audience: ["需要批量生成广告和社交短片的创意团队", "构建视频生成产品与工作流的开发者", "重视角色、关键帧和同步音频控制的制作团队"],
+    killerFeature: "5 秒 768p 视频可在约 3 秒内完成，官方称吞吐量约为原始 H3 服务的 35 倍；同一模型覆盖文生视频、图生视频、首尾关键帧和最多 12 个参考文件。",
+    experience: "用户可在 Playground、fal Agent 或 API 中选择 5 至 15 秒、480p 或 768p，并在同一 Prompt 描述镜头、台词与声音；成片一次返回同步音画，无需额外拼接音轨。",
+    growth: "借 fal 既有开发者平台和 Product Hunt 发布触达生成式视频团队，以每日 5 次免登录生成降低试用门槛，再通过按秒计费 API 把创意实验转成批量生产。",
+    businessModel: "工具页每天提供 5 次无需账户的免费生成；超过后按使用量计费，768p 为每秒 0.08 美元，不绑定月度套餐或最低承诺，企业吞吐与基础设施能力另行组合。",
+    insight: "生成模型的产品差异正在从权重本身扩展到后训练与推理共同设计；当延迟低于素材时长，视频生成就能从等待式任务进入可迭代的创意界面。",
+    sourceUrl: "https://blog.fal.ai/introducing-h3-max-by-fal/",
+    sourceLabel: "fal 官方发布",
+    sources: [
+      { label: "fal 官方发布", url: "https://blog.fal.ai/introducing-h3-max-by-fal/" },
+      { label: "H3 Max 官方使用指南", url: "https://fal.ai/learn/tools/how-to-use-minimax-h3-max" },
+      { label: "H3 Max 模型 API", url: "https://fal.ai/models/minimax/h3-max/text-to-video" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/fal-ai" }
+    ]
+  },
+  {
+    slug: "kit-speakeasy",
+    name: "Kit by Speakeasy",
+    tag: "Composable Coding Agent Runtime",
+    tagline: "把终端客户端、ACP 与 A2A 服务和子 Agent 编排装进一个 Rust 静态二进制，让模型用一次 compose 调用完成多步代码任务",
+    image: "https://opengraph.githubassets.com/fe75ab1f071e8b2a17073ea1f66a356f42ff03fecb226420399206374ed4bd62/speakeasy-api/kit",
+    positioning: "定位为可替换模型与客户端的编码 Agent 运行时，而不是绑定单一编辑器的 AI IDE。壁垒来自把 Shell、编辑、重试、并行和子 Agent 写成一段 Runlet 程序，并用 ACP、A2A、MCP 与 Skills 保持开放互操作。",
+    audience: ["希望降低编码 Agent Token 和等待时间的开发者", "需要在 Claude Code、Codex、Cursor 等 Harness 间编排的团队", "构建远程、无头或可观测 Agent 服务的平台工程师"],
+    killerFeature: "模型只看到一个 compose 工具，却能在一次往返里读文件、跑测试、原子编辑、并行调用、重试失败和委派子 Agent；减少反复传回相同上下文的开销。",
+    experience: "安装单一二进制后可从 TUI、一次性 Prompt、ACP 编辑器或 A2A 服务启动，同一会话以追加日志落盘并在上下文接近 80% 时自动压缩；用户可切换 OpenAI、OpenRouter 或 Speakeasy 提供商。",
+    growth: "以 MIT 开源、静态二进制和 Product Hunt 面向编码 Agent 用户，通过 ACP、A2A、MCP 与 Agent Skills 兼容进入现有工具链；可复用子 Agent 与长会话再推动团队标准化运行时。",
+    businessModel: "Kit 本身以 MIT 许可证免费开源，没有独立订阅价格；用户可使用 ChatGPT 订阅 OAuth，或承担 OpenRouter、Speakeasy Control Plane 等模型提供商费用与自有基础设施成本。",
+    insight: "当模型的工具调用能被编译成小程序，Agent 效率不再只取决于推理质量，还取决于往返次数和运行时语义；开放协议让客户端、模型和编排器可以分别演进。",
+    sourceUrl: "https://github.com/speakeasy-api/kit",
+    sourceLabel: "Kit 官方 GitHub",
+    sources: [
+      { label: "Kit 官方 GitHub", url: "https://github.com/speakeasy-api/kit" },
+      { label: "Speakeasy 官网", url: "https://www.speakeasy.com/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/speakeasydev" }
+    ]
+  }
+];
+
+const industryEvents20260907 = [
+  {
+    slug: "openai-automated-research-intern",
+    name: "OpenAI · 达成自动化研究实习生里程碑",
+    summary: "OpenAI 称内部编码 Agent 已能在人工指导下完成原本需熟练研究员数天的明确任务，并把下一目标设为 2028 年 3 月的自动化 AI 研究员",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "截至 8 月中旬，OpenAI 估算研究组织每天每个真人工作日对应约 3.1 个 Agent 工作日；研究员同时运行多个编码 Agent，代码提交与实验速度上升。公司也强调这些是内部指标，研究瓶颈不会按单一使用量线性消失，优先级、判断和是否扩展仍由人决定。",
+    insight: "研究 Agent 的价值开始从写代码转向压缩完整实验循环；产品团队应同时量化可交付任务长度、人工复核负担与失败恢复，而不是把调用量误当成科研产出。",
+    sourceUrl: "https://openai.com/index/research-acceleration-view-inside-openai/",
+    sourceLabel: "OpenAI 官方研究",
+    sources: [
+      { label: "OpenAI 官方研究", url: "https://openai.com/index/research-acceleration-view-inside-openai/" },
+      { label: "OpenAI Research 索引", url: "https://openai.com/research/index/" },
+      { label: "CellCog 数据解读", url: "https://cellcog.ai/blog/openai-automated-research-intern/" }
+    ]
+  },
+  {
+    slug: "openai-alien-mind-safety",
+    name: "OpenAI · An Alien Mind 安全主张",
+    summary: "OpenAI 首席科学家 Jakub Pachocki 警告能力增长可能延续到递归自我改进，并主张在必要时单方面暂停继续扩展同时推动更广泛协调",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/7FgrwtDxicVhqi90R8xgcb/cd3875f42be331450c82ce2ee818cc68/openai-presence-still-1.png?fm=webp&q=90&w=3840",
+    impact: "文章把推理模型描述为越来越能操作计算机、协作和执行研究，却仍难以用可理解机制完整解释。Pachocki 表示 OpenAI 将继续投入对齐、监控和防御系统，并在安全需要时自行限制扩展，但认为只靠单一实验室不足以应对竞争与治理问题。",
+    insight: "前沿能力越像实验科学，产品发布就越需要可观察的停止条件与外部约束；安全承诺若不能转化为明确阈值、审计证据和跨机构协调，就难以成为可执行治理。",
+    sourceUrl: "https://openai.com/index/an-alien-mind/",
+    sourceLabel: "OpenAI 官方文章",
+    sources: [
+      { label: "OpenAI 官方文章", url: "https://openai.com/index/an-alien-mind/" },
+      { label: "OpenAI 新闻索引", url: "https://openai.com/news/" },
+      { label: "HuggingNews 报道", url: "https://huggingnews.com/ai/openai-chief-scientist-urges-scaling-slowdown-says-no-lab-solves-alignme-9a969de5" }
+    ]
+  },
+  {
+    slug: "anthropic-fermat-lean-proof",
+    name: "Anthropic · Claude 形式化费马大定理",
+    summary: "Claude 多 Agent 在 11 天内生成首个端到端、由 Lean 计算机检查的费马大定理形式化证明，并公开约 1300 万行证明工程",
+    image: "https://cdn.sanity.io/images/4zrzovbb/website/578f91575c42231f0994e341014614255149af80-1200x630.jpg",
+    impact: "数十个 Agent 借助 Prove2Me 的定理依赖图协作，最终使用约 2.95 万个中间定理；GitHub 仓库允许从头构建并用独立内核复核。新意在把既有 Wiles 路线转成机器可检查形式，而不是发现新的数学证明，但它显著缩短了原本预计数年的形式化工作。",
+    insight: "可验证领域让多 Agent 的产能第一次能被严格验收；关键基础设施不是更多并行会话，而是把目标拆成依赖图、让中间成果可复用，并由独立验证器关闭质量循环。",
+    sourceUrl: "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    sourceLabel: "Anthropic 官方研究",
+    sources: [
+      { label: "Anthropic 官方研究", url: "https://www.anthropic.com/research/formalizing-fermats-last-theorem" },
+      { label: "官方 Lean 证明仓库", url: "https://github.com/anthropics/fermats-last-theorem" },
+      { label: "Lean 社区蓝图", url: "https://imperialcollegelondon.github.io/FLT/blueprint.pdf" }
+    ]
+  },
+  {
+    slug: "github-project-hydrafusion",
+    name: "GitHub Copilot · Project HydraFusion",
+    summary: "GitHub 在 Copilot CLI 推出多模型编排研究预览，按任务动态选择单模型、级联或独立批评再修订的执行路径",
+    image: "https://github.blog/wp-content/uploads/2026/09/OptA_UI.jpg",
+    impact: "HydraFusion 会先建立执行计划，再从多家模型中组合草拟、审查与升级。GitHub 的离线评测显示，相对 Opus 5，TerminalBench 2.1 质量高 4.9 个百分点且估算成本低 67%，但 DeepSWE 质量低 1.5 点、CheckpointBench 低 0.1 点；研究预览因此更像待真实负载验证的路由实验。",
+    insight: "模型路由的下一个阶段不是选一个赢家，而是按任务构造工作流；真正可信的产品指标应同时公布质量、总调用成本、延迟和失败模式，并区分离线基准与生产表现。",
+    sourceUrl: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+    sourceLabel: "GitHub 官方发布",
+    sources: [
+      { label: "GitHub 官方发布", url: "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/" },
+      { label: "Copilot CLI 官方文档", url: "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview" },
+      { label: "VentureBeat 基准解读", url: "https://venturebeat.com/orchestration/githubs-hydrafusion-cuts-ai-coding-costs-in-every-benchmark-it-only-matches-quality-in-one" }
+    ]
+  },
+  {
+    slug: "google-lyria-35-multichannel",
+    name: "Google · Lyria 3.5 多端开放",
+    summary: "Google 将 Lyria 3.5 全球开放到 Gemini App 与 Gemini API，并同步覆盖 Flow Music、AI Studio 和 Google Vids",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria_social.max-1440x810.png",
+    impact: "开发者现在可通过 Interactions API 用文字或最多 10 张图片生成 44.1 kHz 立体声，完整歌曲可包含主歌、副歌、桥段、定时歌词和同步编排；普通用户则能在 Gemini 选择人声或纯音乐、模板与长短曲目。音乐模型从单独实验入口转向消费端、创作端和 API 的统一分发。",
+    insight: "生成模型的采用速度越来越由分发面而非发布日决定；同一能力进入聊天、创作工具和 API 时，应保持可迁移的提示结构、来源标记与版权边界，避免每个渠道形成孤岛。",
+    sourceUrl: "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/" },
+      { label: "Gemini API Lyria 文档", url: "https://ai.google.dev/gemini-api/docs/music-generation" },
+      { label: "Google DeepMind Lyria", url: "https://deepmind.google/models/lyria/" }
+    ]
+  }
+];
+
+const trends20260907 = [
+  {
+    title: "Agent 正从工具使用者升级为研究协作者",
+    text: "最近 7 天，OpenAI 把内部系统定义到可完成数日研究任务的实习生层级，Anthropic 用多 Agent 形式化费马大定理，Kit 则把可复用子 Agent 做进运行时。竞争焦点正从单次回答转向长程拆解、复核与恢复。"
+  },
+  {
+    title: "主动感知与动态编排开始替代固定管线",
+    text: "Gemini Agentic Video 只读取问题需要的片段，HydraFusion 按任务选择单模型、级联或批评流程，Tadata 也在上下文中决定工具组合。系统开始实时构造执行路径，成本、延迟与可解释轨迹因此要被一起设计。"
+  },
+  {
+    title: "控制层正在吸收模型商品化红利",
+    text: "AI Toolbox 统一四个聊天入口，H3 Max 用后训练和推理栈改写视频单位经济性，Lyria 3.5 则从模型页扩展到 Gemini、创作工具与 API。更持久的价值正沉淀在记忆、分发、工作流和服务效率。"
+  }
+];
+
 const products20260905 = [
   {
     slug: "trackmcp",
@@ -4965,6 +5168,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-07",
+    isoDate: "2026-09-07",
+    dateLabel: "2026年9月7日",
+    weekday: "星期一",
+    oneSentence: "AI 产品正在把主动感知、多模型编排与可验证协作组合成新的 Agent 运行层",
+    products: products20260907,
+    industryEvents: industryEvents20260907,
+    trends: trends20260907
+  },
   {
     slug: "2026-09-05",
     isoDate: "2026-09-05",
