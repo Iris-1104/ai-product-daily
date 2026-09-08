@@ -1,3 +1,205 @@
+const products20260908 = [
+  {
+    slug: "pr-lens-coldtea",
+    name: "PR Lens by Coldtea.ai",
+    tag: "Visual Pull Request Review",
+    tagline: "把跨文件代码变更绘成会动的架构与数据流图，直接更新在 GitHub Pull Request 评论里",
+    image: "https://prlens.dev/og.png?v=1b85cb5b",
+    positioning: "定位为 AI 时代的代码审查认知层，而不是另一款逐行摘要机器人。壁垒来自强类型图谱、确定性零依赖 SVG 渲染器，以及把新增、修改、删除和未变系统同时放进可交互全局视图。",
+    audience: ["需要快速理解大型 Pull Request 的工程师与审查者", "大量使用编码 Agent、代码产出速度高于审查速度的团队", "希望在 GitHub、CI 或本地 Agent 中复用可视化能力的平台团队"],
+    killerFeature: "每次 Push 后重写同一条 PR 评论，用架构和数据流两个 Lens 展示变更；动画由 SVG animateMotion 完成，因此即使 GitHub 过滤脚本，流程仍可在评论内播放。",
+    experience: "用户可安装 GitHub App 自动覆盖指定仓库，也可把 Skill 加入现有编码 Agent，或在 Action 中自带 Gemini、OpenAI 兼容端点密钥；完整画布支持平移、缩放、主题切换与逐步导览。",
+    growth: "借 MIT 开源、无需 API Key 的本地 Skill 和 Product Hunt 当日第一降低尝试成本，再由 GitHub App 的每个 PR 固定曝光形成团队内传播；Hall of Fame 用知名开源 PR 展示复杂变更的即时价值。",
+    businessModel: "核心代码以 MIT 许可证免费开源，GitHub App 对开源仓库免费；私有仓库商业价格尚未在官网公开，自带模型密钥的 Action 则由用户承担模型调用费用。",
+    insight: "编码吞吐上升后，瓶颈会从生成迁移到理解与批准；把 Diff 变成稳定、可回放的系统图，比再写一段摘要更能缩短审查者建立心智模型的时间。",
+    sourceUrl: "https://prlens.dev/",
+    sourceLabel: "PR Lens 官方网站",
+    sources: [
+      { label: "PR Lens 官网", url: "https://prlens.dev/" },
+      { label: "PR Lens 官方 GitHub", url: "https://github.com/coldteadotai/pr-lens" },
+      { label: "PR Lens GitHub App", url: "https://github.com/apps/coldtea-pr-lens" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/coldtea" }
+    ]
+  },
+  {
+    slug: "tucky",
+    name: "Tucky",
+    tag: "Edge-Docked AI Notes",
+    tagline: "让便签像细条一样休眠在 Mac 屏幕边缘，随时滑出记录，并用本地加密、语音和 AI 连接工作资料",
+    image: "https://tucky.io/og.png",
+    positioning: "定位为始终在手边、又不占桌面的原生 macOS 笔记层，而不是需要切换窗口的知识库。壁垒来自屏幕边缘驻留交互、本地优先加密存储，以及把 Gmail、日历、文档和代码上下文接入同一条便签。",
+    audience: ["需要在会议、编码和浏览之间快速捕捉信息的 Mac 用户", "桌面窗口繁多、不想再打开完整笔记应用的知识工作者", "希望对邮件、日程或代码做轻量 AI 处理的个人用户"],
+    killerFeature: "便签不用时收成屏幕边缘的一条细带，鼠标触碰或全局快捷键即可展开；一眼看见位置与颜色，比在应用列表中搜索笔记更接近实体便利贴。",
+    experience: "用户下载安装到 macOS 15 以上系统后，可创建彩色便签、语音记录并调用 AI；需要时连接 Gmail、Calendar、Docs、Sheets、GitHub 或 Notion，把外部上下文带进当前笔记。",
+    growth: "以免费 3 张便签、无需改变既有文档系统的边缘入口和 Product Hunt 高位发布获取个人用户；当便签数量、语音、AI 与应用连接成为日常习惯后转向 Plus。",
+    businessModel: "Free 为 0 美元，最多 3 张便签且不含 AI；Plus 每月 4 美元，含无限便签、语音、应用连接和每月 4 美元 AI 额度，超过额度后的计费以应用内说明为准。",
+    insight: "常驻型 AI 不一定要成为更大的桌面客户端；把入口压缩到屏幕边缘、把数据留在本机，再在明确动作时调用云端能力，能同时降低打断与信任成本。",
+    sourceUrl: "https://tucky.io/",
+    sourceLabel: "Tucky 官方网站",
+    sources: [
+      { label: "Tucky 官网", url: "https://tucky.io/" },
+      { label: "Tucky 官方定价", url: "https://tucky.io/#pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/tucky" }
+    ]
+  },
+  {
+    slug: "routines-databox",
+    name: "Routines by Databox",
+    tag: "Scheduled AI Analytics",
+    tagline: "把一次验证过的数据分析保存成 Skill，按日、周、月或自定义周期运行，并在 Slack、邮件或应用内主动交付报告",
+    image: "https://cdnwebsite.databox.com/wp-content/uploads/2026/09/07082959/databox-og-agentic-analytics-platform-2026.png",
+    positioning: "定位为业务分析团队的可复用执行层，而不是只回答临时问题的 BI 聊天框。壁垒来自 130 多种数据连接、统一指标语义、可保存分析方法的 Skills，以及每次运行可追溯和可继续追问的闭环。",
+    audience: ["需要周期性管理营销、销售或财务指标的业务团队", "为多个客户重复制作周报与月报的代理商", "希望让分析方法标准化又保留人工复核的运营负责人"],
+    killerFeature: "用户把与 AI Analyst 的一次成功对话直接保存成 Skill，再设定频率和交付渠道；Routine 会在没人提问时自动跑完同一套分析，并从标题提示是否需要关注。",
+    experience: "连接数据源后，用户可从对话、手写说明或 Skills Marketplace 建立分析方法，选择每日、每周、每月或自定义周期；历史记录保留每次报告，团队能在原结果上继续追问或介入。",
+    growth: "通过免费计划、14 天 Growth 试用和预制 Skill 让非技术团队数分钟内跑起第一次自动化；结果进入 Slack 与邮件后形成持续曝光，再随数据源、用户数和 AI Credits 扩张。",
+    businessModel: "Free 每月 0 美元、3 个数据源与 50 AI Credits；Analyst 年付折算每月 64 美元含 500 Credits，Pro 159 美元含 1500，Growth 399 美元含 4000，Custom 按需定价。",
+    insight: "企业 Agent 真正可规模化的单元不是一次 Prompt，而是包含方法、指标定义、周期和交付责任的可复用任务；运行历史与可追问性决定自动化能否被信任。",
+    sourceUrl: "https://databox.com/ai-agents-automation",
+    sourceLabel: "Databox 官方功能页",
+    sources: [
+      { label: "Databox Routines 官方介绍", url: "https://databox.com/ai-agents-automation" },
+      { label: "Databox 官方定价", url: "https://databox.com/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/databox?launch=routines-by-databox" }
+    ]
+  },
+  {
+    slug: "airuncode",
+    name: "AirunCode",
+    tag: "Local-First Agent Runtime",
+    tagline: "在 Windows、macOS 和 Linux 本机同时运行多个编码 Agent，自带模型密钥按原价调用，也能完全使用本地模型",
+    image: "https://airuncode.com/captures/vcore-world-1.webp",
+    positioning: "定位为本机的多 Agent 编码运行时，而不是绑定云端额度的编辑器。壁垒来自共享记忆、代码库级上下文、并行辩论与原子编辑闭环，并用 Vulkan 3D 的 V-CORE 把执行状态做成空间化界面。",
+    audience: ["希望用自有 API Key 控制模型成本的开发者", "需要并行比较多个模型或 Agent 方案的工程团队", "重视代码、索引和执行过程留在本机的隐私敏感用户"],
+    killerFeature: "多个 Agent 可共享代码库上下文并行工作、互相辩论方案，再由运行时执行原子编辑、测试、自愈和安全检查；同一界面可路由 300 多个云端或本地模型。",
+    experience: "用户安装 1.4.7 桌面版后选择仓库与模型即可工作，可用语音驱动并查看成本；代码库扫描最高覆盖 26.2 万 Token，上下文、记忆和运行过程保留在本机。",
+    growth: "用免费版、零模型加价和跨三大桌面系统扩大开发者入口，Product Hunt 发布承担发现；再通过并行 Agent、上下文快照、私有端点与团队审计把个人试用转为工作室采购。",
+    businessModel: "Free 永久免费，支持本地模型、成本追踪和基础 V-CORE；Pro 每月 15 美元，含无限 BYOK、多 Agent Swarm 与完整 V-CORE；Studio 每月 49 美元，最多 5 席并含审计导出和私有端点。",
+    insight: "当模型供应快速变化，运行时把本地状态、模型路由和成本归属拆开，能避免被单一订阅锁定；但多 Agent 的价值最终仍要用合并质量与返工率证明，而不是并发数量。",
+    sourceUrl: "https://airuncode.com/",
+    sourceLabel: "AirunCode 官方网站",
+    sources: [
+      { label: "AirunCode 官网", url: "https://airuncode.com/" },
+      { label: "AirunCode 官方演示视频", url: "https://airuncode.com/videos/vcore-demo.mp4" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/airuncode" }
+    ]
+  },
+  {
+    slug: "clipnote",
+    name: "Clipnote",
+    tag: "AI Output Library",
+    tagline: "通过 MCP 一键保存 Claude 或 ChatGPT 的完整输出，把文本、Markdown 与 HTML 变成可搜索、可分享、可版本化的个人资料库",
+    image: "https://clipnote.paritto.dev/og-image.png",
+    positioning: "定位为 AI 生成结果的独立保存层，而不是新的聊天客户端。壁垒来自 MCP 原生收集、对 Markdown 与 HTML 的忠实呈现、默认私密分享边界，以及不依赖某一家模型的长期资料组织。",
+    audience: ["经常在 Claude 与 ChatGPT 之间切换的研究和创作用户", "需要长期保存代码、报告或交互式 HTML 的开发者", "希望用链接交付 AI 产物但不公开整个对话的团队"],
+    killerFeature: "在 Claude 或 ChatGPT 里通过 MCP 一次操作即可保存完整输出，不必复制粘贴；HTML 在沙箱 iframe 中预览，既保留交互呈现又隔离潜在脚本风险。",
+    experience: "用户也可手动粘贴或拖入文本、Markdown 与 HTML，再搜索、置顶、归档、分组和回看版本；每条内容默认私密，只有主动创建公开链接后外部才能访问，删除内容进入 30 天回收站。",
+    growth: "以免费开始、浏览器直用和 Product Hunt 发布触达高频 AI 用户；公开链接让每次分享都成为传播入口，Collections 与版本历史则提高资料沉淀后的迁移成本。",
+    businessModel: "当前官网提供免费开始入口，未公布独立付费档位；MCP 自动保存取决于用户已有的 Claude 或支持自定义连接器的 ChatGPT 计划，相关订阅费用由模型平台收取。",
+    insight: "生成式工具的输出仍散落在会话里，跨模型的可携带产物层会比聊天历史更有长期价值；默认私密、版本追踪和安全渲染是这类资料库获得信任的前提。",
+    sourceUrl: "https://clipnote.paritto.dev/en",
+    sourceLabel: "Clipnote 官方网站",
+    sources: [
+      { label: "Clipnote 官网", url: "https://clipnote.paritto.dev/en" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/clipnote-2" }
+    ]
+  }
+];
+
+const industryEvents20260908 = [
+  {
+    slug: "chatgpt-work-writing-style",
+    name: "ChatGPT Work · 从工作应用学习写作风格",
+    summary: "ChatGPT Work 可从已连接的 Gmail、Google Drive、Slack 与 SharePoint 识别常用措辞、署名和大小写习惯，并沿用到下一份内容",
+    image: "https://pbs.twimg.com/media/HRoZ6fobEAAUhcN.jpg:large",
+    impact: "OpenAI 于 9 月 7 日通过 ChatGPT 官方账号发布该功能，网页端设置路径为 Personalization 下的 Writing style，并称可在拥有 Work 的付费计划中使用，风格会延续到网页和移动端生成内容。连接权限从找资料进一步变成个性化训练信号，企业需要明确哪些邮件、消息和文件可以参与风格提取。",
+    insight: "助手越像用户本人，价值越依赖私有语料而非通用模型；写作个性化应把数据来源、授权范围、删除重建和组织策略做成显式控制，而不是隐藏在一次连接同意里。",
+    sourceUrl: "https://x.com/ChatGPT/status/2097018264048251309",
+    sourceLabel: "ChatGPT 官方发布",
+    sources: [
+      { label: "ChatGPT 官方 X 发布", url: "https://x.com/ChatGPT/status/2097018264048251309" },
+      { label: "OpenAI Academy Work 指南", url: "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/get-started-with-chatgpt-work-webinar-resource-guide-2026-08-03" },
+      { label: "gihyo 功能报道", url: "https://gihyo.jp/article/2026/09/chatgpt-learning-writing-style" }
+    ]
+  },
+  {
+    slug: "google-cathay-contrail-ai-trial",
+    name: "Google × 国泰航空 · 亚太 AI 减少凝结尾迹试验",
+    summary: "双方把 AI 预测带入超长途航班高度规划，早期 80 多个航班估算将凝结尾迹增温影响降低约 40%",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Contrails_Hero.width-1300.png",
+    impact: "国泰成为 Google 在亚洲的首个商业航空公司合作伙伴，飞行团队通过小幅调整高度绕开寒冷潮湿区域，并结合卫星观测与天气数据复核结果。凝结尾迹约占航空气候影响的三分之一，这项试验把模型从预测展示推进到既有飞机和安全程序内的实际操作验证。",
+    insight: "物理世界 AI 的产品门槛不是一次预测精度，而是能否嵌入安全规程、记录干预并用独立观测评估真实效果；小幅可逆动作往往比更宏大的自动化更快形成规模。",
+    sourceUrl: "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/",
+    sourceLabel: "Google 官方研究发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/models-and-research/google-research/contrail-avoidance-ultra-long-haul-flights/" },
+      { label: "Google 初期商业飞行试验", url: "https://blog.google/innovation-and-ai/technology/ai/ai-airlines-contrails-climate-change/" },
+      { label: "Google 既有试验研究", url: "https://sites.research.google/contrails/" }
+    ]
+  },
+  {
+    slug: "cognizant-ai-era-workforce",
+    name: "Cognizant · 扩建 AI 时代人才队伍",
+    summary: "Cognizant 计划招聘 1500 名美国大学毕业生，把两类 Frontier 认证岗位扩到合计 1.5 万人，并将全球 AI 技能培训目标翻倍至 200 万人",
+    image: "https://mmx.prnewswire.com/media/MS607279/Cognizant-Logo-V1.jpg?id=OA2931783&p=facebook",
+    impact: "计划把 Frontier Certified Engineer 与 Frontier Business Operator 作为真实岗位体系，而非短期培训标签；官方称一个混合小组已为餐饮服务客户构建 17 个生产 Agent，每名客户经理每周回收约 11 小时。公司同时披露持有逾 1.5 万个 Claude 认证和 5000 个 Codex 认证。",
+    insight: "企业 AI 落地正把岗位从纯工程师扩展到懂流程、能验收 Agent 的业务操作者；大规模培训若要转化为产出，必须绑定真实生产任务、职责边界和节省时间，而不只是证书数量。",
+    sourceUrl: "https://news.cognizant.com/2026-09-07-Cognizant-Invests-in-Americas-AI-Era-Workforce",
+    sourceLabel: "Cognizant 官方公告",
+    sources: [
+      { label: "Cognizant 官方公告", url: "https://news.cognizant.com/2026-09-07-Cognizant-Invests-in-Americas-AI-Era-Workforce" },
+      { label: "PR Newswire 发布", url: "https://www.prnewswire.com/news-releases/cognizant-invests-in-americas-ai-era-workforce-302870400.html" },
+      { label: "Cognizant AI 官方入口", url: "https://www.cognizant.ai/" }
+    ]
+  },
+  {
+    slug: "artificial-analysis-index-v4-3",
+    name: "Artificial Analysis · Intelligence Index v4.3",
+    summary: "新版指数加入 657 项跨财务、人力、营销、运营、销售和支持的 AutomationBench-AA，并把终端评测升级到更难的 v4.0",
+    image: "https://artificialanalysiscdn.com/article-assets/2026/artificial-analysis-intelligence-index-v4-3-cover-square-v3.jpg",
+    impact: "指数仍由 10 项评测组成，但以 AutomationBench-AA 替换银行场景基准，并对任何违反护栏的任务记零分；Terminal-Bench v4.0 的 66 项任务各运行三次。含私有题目或答案的权重由 40% 提升到 45%，目的是减少针对榜单优化并扩大真实 Agent 工作流覆盖。",
+    insight: "Agent 评测正在从回答正确率转向目标完成、护栏遵守与单位任务成本的联合衡量；采购方应查看完整成功率和违规失败，而不是只看可获得部分分数的综合排名。",
+    sourceUrl: "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3",
+    sourceLabel: "Artificial Analysis 官方发布",
+    sources: [
+      { label: "Index v4.3 官方发布", url: "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3" },
+      { label: "官方评测方法", url: "https://artificialanalysis.ai/methodology/intelligence-benchmarking" },
+      { label: "AutomationBench 官方 GitHub", url: "https://github.com/zapier/AutomationBench" }
+    ]
+  },
+  {
+    slug: "openbmb-minicpm5-2b",
+    name: "OpenBMB · 发布 MiniCPM5-2B",
+    summary: "OpenBMB 发布 25.17 亿参数、13.1 万 Token 上下文的 Apache 2.0 小模型，面向本地助手、编码 Agent、工具调用与资源受限部署",
+    image: "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM5-2B.png",
+    impact: "团队同步开放网页、代码、50 万条 Agent SFT 与 8 万多条强化学习数据，并提供 BF16、GGUF、MLX 4-bit、GPTQ 4-bit 与 DSpark 草稿模型。官方比较中综合均分 53.9，在其所列同级模型中领先，但这些结果包含团队复现实验，仍需按真实设备、量化格式和任务独立复测。",
+    insight: "小模型正从离线问答扩展到长上下文与工具执行，训练数据和多运行时格式一起开放会显著降低端侧产品门槛；真正的选择标准将是设备内延迟、内存、调用可靠性与隐私收益的组合。",
+    sourceUrl: "https://huggingface.co/openbmb/MiniCPM5-2B",
+    sourceLabel: "OpenBMB 官方模型卡",
+    sources: [
+      { label: "MiniCPM5-2B 官方模型卡", url: "https://huggingface.co/openbmb/MiniCPM5-2B" },
+      { label: "MiniCPM 官方 GitHub", url: "https://github.com/OpenBMB/MiniCPM" },
+      { label: "Artificial Analysis 发布记录", url: "https://artificialanalysis.ai/articles/openbmb-releases-minicpm5-2b" },
+      { label: "LocalLLaMA 社区讨论", url: "https://www.reddit.com/r/LocalLLaMA/comments/1w9skjz/minicpm52b_release_day/" }
+    ]
+  }
+];
+
+const trends20260908 = [
+  {
+    title: "Agent 从被动对话转向按节奏主动出现",
+    text: "最近 7 天，Routines 把分析变成定时交付，Tucky 把入口藏在屏幕边缘，ChatGPT Work 则从工作应用持续学习个人表达。AI 体验的竞争正从用户每次发起 Prompt，转向在正确时机带着正确上下文出现。"
+  },
+  {
+    title: "生成提速迫使审查与评测同步升级",
+    text: "PR Lens 用系统图压缩代码审查成本，Artificial Analysis 把护栏违规与完整任务成功纳入榜单，AirunCode 则在本地执行中加入测试、自愈和安全检查。Agent 规模化的瓶颈越来越是可理解、可验收，而非能否生成。"
+  },
+  {
+    title: "AI 执行边界从云端软件扩到设备与物理系统",
+    text: "MiniCPM5-2B 面向端侧长上下文和工具调用，Google 与国泰把预测接入真实飞行高度决策，过去一周的数据中心与家庭设备发布也在补齐物理底座。产品团队需要同时设计本地算力、人工接管和效果验证。"
+  }
+];
+
 const products20260907 = [
   {
     slug: "ai-toolbox-3",
@@ -5168,6 +5370,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-08",
+    isoDate: "2026-09-08",
+    dateLabel: "2026年9月8日",
+    weekday: "星期二",
+    oneSentence: "AI 产品正在把主动触达、可视化审查与端侧执行组装成更可控的 Agent 工作层",
+    products: products20260908,
+    industryEvents: industryEvents20260908,
+    trends: trends20260908
+  },
   {
     slug: "2026-09-07",
     isoDate: "2026-09-07",
