@@ -1,3 +1,208 @@
+const products20260910 = [
+  {
+    slug: "type-com-shared-ai-workspace",
+    name: "Type.com",
+    tag: "Multiplayer AI Workspace",
+    tagline: "把 Claude、Codex、公司知识、连接器、Skills 和 Automations 放进团队共享空间，让个人做出的最佳 AI 工作可被同事继续复用",
+    image: "https://type.com/og-image.png",
+    positioning: "定位为部门级的多人 AI 工作空间，而不是每个人各自维护的聊天记录。壁垒来自共享电脑式 Spaces、团队记忆、近千个连接器、可复用 Skills 与 Apps，以及 Claude 和 Codex 双模型运行时的统一权限层。",
+    audience: ["希望把个人 AI 用法扩展为团队标准流程的运营与 GTM 团队", "同时使用 Claude 和 Codex、又不想重复连接数据的跨职能组织", "需要在 Slack、网页和桌面端共同监督 Agent 工作的企业"],
+    killerFeature: "每个 Space 都是一台部门共享电脑，团队共同拥有连接、Skills、记忆、线程和文件；一个成员调好的工作方法会留在空间里，下一位同事可直接继续，而不必重新解释公司背景。",
+    experience: "用户创建 Marketing、Sales、Support 或 Engineering Space，选择 Claude 或 Codex，连接 Drive、Slack、CRM 等数据，再在频道内共同聊天、生成文档、仪表盘、内部 App 与定时自动化；权限可按用户、空间和角色收紧。",
+    growth: "通过 14 天试用、免费开始、Slack 入口和现成模板降低团队首试成本；创始团队曾创建 Halp 并被 Atlassian 收购，以既有协作产品信誉和 400 万美元种子前融资推动企业采用。",
+    businessModel: "五个自助档位按团队人数与共享 AI 用量收费，从 Basic 每月 50 美元、Pro 100 美元到 Enterprise 250、500 和 750 美元；模型用量按供应商公开 API 价计量，连接个人 Claude 或 ChatGPT 订阅的合格请求不重复扣 Type 额度。",
+    insight: "组织采用 AI 的瓶颈正在从有没有 Agent 转向优秀做法能否传播；把记忆、连接和审批归属到团队空间，比再创建一个私人机器人更容易形成复利。",
+    sourceUrl: "https://type.com/blog/launch",
+    sourceLabel: "Type 官方发布",
+    sources: [
+      { label: "Type 官方发布", url: "https://type.com/blog/launch" },
+      { label: "Type 官方文档", url: "https://docs.type.com/" },
+      { label: "Type 官方定价说明", url: "https://docs.type.com/admin/billing/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/type-com" }
+    ]
+  },
+  {
+    slug: "geiger-agent-surface-scanner",
+    name: "Geiger",
+    tag: "Local Agent Exposure Scanner",
+    tagline: "用一条只读命令盘点电脑里的 AI Agent、MCP Server、插件、CLI 和扩展，并用直白标签说明它们能执行什么、能访问哪里",
+    image: "https://raw.githubusercontent.com/Atomburstofficial/geiger/main/docs/scan-terminal.svg",
+    positioning: "定位为 Agent 生态的资产与暴露面清单，而不是声称能判定恶意软件的安全扫描器。壁垒来自跨 Claude Code、Codex、MCP Host、IDE、浏览器和全局 CLI 的零依赖检测器，以及可审计证据路径和凭证值全程脱敏。",
+    audience: ["在个人电脑安装多个编码 Agent 和 MCP Server 的开发者", "需要发现 Shadow AI 与配置漂移的 IT 和安全团队", "希望为 Agent 权限审计建立机器基线的 MSP 与平台工程团队"],
+    killerFeature: "`npx geiger-scan` 不安装账户、不上传遥测，也不写入系统，就能把每个发现标为 EXECUTES、HOLDS-SECRETS、BROAD-FILESYSTEM 或 NETWORK，并指出来源、配置证据和修复动作。",
+    experience: "用户可直接在 Node 18 以上环境运行扫描，也能输出自包含 HTML 或版本化 JSON；保存一次基线后，以 `--diff` 和 `--strict` 只对新增的执行或持密组件报警，适合放进登录脚本或定期检查。",
+    growth: "以 MIT 开源、零运行时依赖、npx 即用和 Show HN 首发吸引开发者验证；公开样例报告与可扩展的小型检测器促进社区补充新 Agent 生态，再为 Atomburst 的企业策略产品建立可信入口。",
+    businessModel: "Geiger 本身免费、MIT 许可且无账户或遥测；仓库明确把组织级策略执行留给 Atomburst 的独立商业产品 DomainGuard，免费清单工具承担教育和获客。",
+    insight: "Agent 权限治理的第一步不是更复杂的策略，而是先知道机器上到底装了什么；可解释清单、稳定基线和只对漂移报警，往往比一次性风险评分更容易进入团队日常。",
+    sourceUrl: "https://github.com/Atomburstofficial/geiger",
+    sourceLabel: "Geiger 官方 GitHub",
+    sources: [
+      { label: "Geiger 官方 GitHub", url: "https://github.com/Atomburstofficial/geiger" },
+      { label: "Geiger npm 包", url: "https://www.npmjs.com/package/geiger-scan" },
+      { label: "Show HN 讨论", url: "https://news.ycombinator.com/item?id=49627646" }
+    ]
+  },
+  {
+    slug: "openmarket-m11",
+    name: "OpenMarket",
+    tag: "Evidence-Driven Agent Commerce",
+    tagline: "让卖方 Agent 在同一房间竞争，由买方 Agent整理需求、独立裁判核验证据，再把最终选择留给真人",
+    image: "https://i.ytimg.com/vi_webp/n0ukEBWoAs8/maxresdefault.webp",
+    videoEmbedUrl: "https://www.youtube.com/embed/n0ukEBWoAs8",
+    positioning: "定位为面向 Agent 时代的可验证市场实验，而不是给现有商品网格加一个搜索聊天框。壁垒来自真实商家与结构化目录、相互对抗的角色设计、独立声明裁判，以及确定性搜索边界和开放 UCP 协议。",
+    audience: ["研究 Agent 购物、谈判与采购体验的产品团队", "希望让产品声明更容易被 AI 检索和验证的品牌", "关心推荐透明度、证据质量和最终人工控制的消费者"],
+    killerFeature: "最多五个卖方 Agent 公开陈述并攻击对手最弱的声明，M11 裁判同步把每个说法分成已证实、未证实或无法核验；官方内测称约六分之一卖方声明会被拒绝。",
+    experience: "用户输入预算与偏好后，系统先用确定性逻辑搜索、去重并执行硬约束，再让模型处理主观权衡；买方 Agent 每 30 秒在需要时向真人补问，且架构上没有购买操作，测试中的价格谈判也仍处 Beta。",
+    growth: "以免费 Research Preview、真实商品和公开 Product Hunt 发布制造可体验的未来购物叙事；品牌可用免费审计查看其商品如何被 Agent 理解，再进入 M11 的企业 Trust Platform 与试点。",
+    businessModel: "OpenMarket 研究预览当前免费使用和购买，M11 品牌审计也提供免费入口；面向企业的 Agentic Trust Platform 与 Pilot 未公开标准价格，主要通过联系销售转化。",
+    insight: "多 Agent 只有在角色利益真的不同、结果可被证据推翻时才值得额外延迟与成本；把不可购买做成缺失的能力，而不是一句 Prompt 约束，是更可靠的权限设计。",
+    sourceUrl: "https://m11.ai/openmarket",
+    sourceLabel: "M11 OpenMarket 官方介绍",
+    sources: [
+      { label: "OpenMarket 官方介绍", url: "https://m11.ai/openmarket" },
+      { label: "M11 官方技术文章", url: "https://m11.ai/blog/openmarket" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/openmarket?launch=openmarket" }
+    ]
+  },
+  {
+    slug: "widgo-ai-sales-rep",
+    name: "Widgo",
+    tag: "Website AI Sales Rep",
+    tagline: "让一个只依据获批资料回答的 AI 销售代表住进网站，识别访客、给购买意图打分，并在对话中直接预约演示",
+    image: "https://framerusercontent.com/assets/emanlez0dIw30UUaL9hE4nrTCio.png",
+    positioning: "定位为覆盖网站访客从提问到入 CRM 的完整销售代表，而不是只回答 FAQ 的聊天组件。壁垒来自公司识别、0 至 100 意图评分、来源引用、会话回放、日历预订与 HubSpot、Attio、Close 的闭环。",
+    audience: ["大量匿名流量离开却没有销售线索的 B2B SaaS", "没有全天候 SDR 团队的早期创业公司", "希望统一网站对话、资格判断、预约和 CRM 更新的增长团队"],
+    killerFeature: "访客在同一个对话里获得带来源的产品回答，Widgo 随即识别其公司与角色、解释意图分数，并展示真实 Cal.com 空档完成预约；销售接手时已拥有访问路径、问题和完整记录。",
+    experience: "团队用一行代码安装，系统扫描站点并起草知识库，由管理员审核后上线；访客可用多语言提问，热度变化触发 Slack 或 Teams 提醒，Growth 用户还能自动同步 CRM 和运行 Playbook。",
+    growth: "用永久免费、免信用卡、五分钟安装和官网自身的可交互 Agent 消除传统销售软件的 Demo Gate，再借 Product Hunt 当日高位和每次网站会话在客户组织内扩散。",
+    businessModel: "Free 每月覆盖 500 访客和 1 个网站；Growth 每月 249 美元覆盖 2000 访客、2 个网站和 CRM 工作流；Scale 每月 833 美元覆盖 1 万访客、5 个网站与专属成功经理，企业版按合同定制。",
+    insight: "网站 Agent 的核心不是多回答几个问题，而是把答案、身份、意图与下一步动作接成同一条转化链；公开价格和先试后买也能直接成为反传统企业销售的增长策略。",
+    sourceUrl: "https://www.widgo.ai/",
+    sourceLabel: "Widgo 官方网站",
+    sources: [
+      { label: "Widgo 官网", url: "https://www.widgo.ai/" },
+      { label: "Widgo 官方定价", url: "https://www.widgo.ai/pricing" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/widgo" },
+      { label: "Widgo LinkedIn 公司页", url: "https://www.linkedin.com/company/widgoai" }
+    ]
+  },
+  {
+    slug: "kombai-gallery",
+    name: "Kombai Gallery",
+    tag: "Agent-Ready UI References",
+    tagline: "开放两万多个可交互网页与移动端 UI 参考，为每个设计生成可直接交给 Claude Code、Codex、Cursor 或 Kombai 的现成 Prompt",
+    image: "https://kombai.com/images/gallery-og.png",
+    positioning: "定位为人类和编码 Agent 共用的设计品味层，而不是只能收藏截图的灵感站。壁垒来自两万多个策展参考、300 多个实用类别、可操作 Live Preview，以及把视觉选择翻译成跨 Agent Prompt 的最后一公里。",
+    audience: ["难以用文字向编码 Agent 描述视觉方向的开发者和创始人", "需要快速比较真实产品模式的设计师", "为 Agent 生成界面建立参考库和标准提示的产品团队"],
+    killerFeature: "用户点开任一完整页面、区块、组件、动画或 Design System，不只看静态缩略图，还能先体验真实渲染，再复制为目标 Agent 准备的 Prompt，把模糊的好看变成具体参照。",
+    experience: "无需注册即可按 Web、Mobile 和类别浏览；网页库当前单独列出 1.35 万多个设计，用户可在 Kombai 内 Remix，也可把预填 Prompt 粘贴到任意编码 Agent，找不到类别还能请求团队在 48 至 72 小时内补充。",
+    growth: "以永久免费、免登录和可被任何 Agent 使用的中立入口最大化 SEO 与开发者分享，Taste Weekly 邮件持续召回；当用户需要自动找参考和直接生成代码时，再导向 Kombai 的付费设计工程师。",
+    businessModel: "Gallery 对人和 Agent 永久免费，不要求账户；它作为内容与获客层，为 Kombai Browser、设计 Agent 和企业定制合同输送有明确界面需求的用户。",
+    insight: "在生成成本下降后，Agent 产品的差异越来越来自输入品味；把高质量参照做成可搜索、可运行、可复制的 Prompt，比再训练一个笼统的审美模型更快产生价值。",
+    sourceUrl: "https://kombai.com/gallery/web/",
+    sourceLabel: "Kombai Gallery 官方页面",
+    sources: [
+      { label: "Kombai Gallery 网页库", url: "https://kombai.com/gallery/web/" },
+      { label: "Kombai Gallery 移动端库", url: "https://kombai.com/gallery/mobile/" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/kombai" }
+    ]
+  }
+];
+
+const industryEvents20260910 = [
+  {
+    slug: "claude-marketplace-expansion-september",
+    name: "Anthropic · Claude Marketplace 扩容",
+    summary: "Claude Marketplace 新增 CrowdStrike、Cursor、Factory、Gamma 与 Vercel，企业可把既有 Anthropic 承诺额度用于购买这些 Claude 驱动产品",
+    image: "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/699f650de5c2e793dcbd707e_og-claude-claude-marketplace.jpg",
+    impact: "Marketplace 由最初的 GitLab、Harvey、Lovable、Replit、Rogo 和 Snowflake继续扩展到安全、编码、内容生成与部署。Anthropic 统一管理合作伙伴开票，客户不必为每个 AI 应用重新建立预算渠道，模型承诺开始演变为覆盖生态产品的采购货币。",
+    insight: "模型平台的竞争正从 Token 消耗进入预算分发和渠道控制；应用团队若能证明产品以该模型为核心并满足企业安全要求，就有机会直接进入客户已经批准的支出池。",
+    sourceUrl: "https://claude.com/platform/marketplace",
+    sourceLabel: "Claude Marketplace 官方页面",
+    sources: [
+      { label: "Claude Marketplace 官方页面", url: "https://claude.com/platform/marketplace" },
+      { label: "Claude 官方 X 发布", url: "https://x.com/claudeai/status/2097718980437831935" },
+      { label: "CrowdStrike 官方合作公告", url: "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-brings-falcon-platform-to-anthropic-claude-marketplace/" }
+    ]
+  },
+  {
+    slug: "openai-ai-policy-window",
+    name: "OpenAI · AI Policy Window",
+    summary: "OpenAI 呼吁能力分级的强制国家 AI 安全规则，并支持四项加州法案、实验室自愿标准与可兼容的全球减速或停止机制",
+    image: "https://images.ctfassets.net/kftzwdyauwt9/3MPipvFMxS8m3kTyCtwFgj/015747dcd34cb667a221688cfca64e0f/Frame.png?w=3840&q=90&fm=webp",
+    impact: "公司把独立安全评估、AI 审计员标准、未成年人保护和生物风险防护列为当前州级支持对象，同时要求不同国家在能力测量、风险治理、人类控制和停止条件上形成兼容做法。前沿实验室首次把必要时放慢模型能力提升直接写入一组政策主张。",
+    insight: "安全门禁只有在触发阈值、第三方审计与跨机构协调都可执行时才不只是承诺；模型与应用团队应提前把暂停、降级和证据披露做成产品运营能力。",
+    sourceUrl: "https://openai.com/index/ai-policy-window/",
+    sourceLabel: "OpenAI 官方政策文章",
+    sources: [
+      { label: "OpenAI 官方政策文章", url: "https://openai.com/index/ai-policy-window/" },
+      { label: "OpenAI Preparedness Framework", url: "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf" },
+      { label: "Axios 行业报道", url: "https://www.axios.com/2026/09/09/openai-artificial-general-intelligence-safety" }
+    ]
+  },
+  {
+    slug: "analog-devices-acquires-alif",
+    name: "Analog Devices × Alif · 15.5 亿美元边缘 AI 并购",
+    summary: "Analog Devices 将以 13.5 亿美元现金收购 Alif Semiconductor，并设置最高 2 亿美元或有对价，把低功耗 AI 原生处理器并入其传感与模拟平台",
+    image: "https://www.analog.com/en/_/media/images/newsroom/adi-news.png?rev=f913f69add8040539da50bf040576e86&hash=B828543C22DD9D923BDC99C83DCEDD54",
+    impact: "Alif 的异构 MCU 与 Fusion Processor 已进入消费和工业量产设计，集成 NPU、图形、连接和电源管理；ADI 则掌握传感、信号处理、电源与广泛工业渠道。交易若按计划在 2026 年底前获批完成，将把端侧感知、推理和动作收进更完整的物理智能系统。",
+    insight: "具身与工业 AI 的护城河不只在模型，而在从传感器信号到低功耗本地决策的完整栈；产品路线需要同时优化延迟、能耗、安全与长期供货，而不是把云模型简单搬到设备。",
+    sourceUrl: "https://www.analog.com/en/newsroom/press-releases/2026/9-9-2026-adi-to-acquire-alif-semiconductor.html",
+    sourceLabel: "Analog Devices 官方公告",
+    sources: [
+      { label: "Analog Devices 官方公告", url: "https://www.analog.com/en/newsroom/press-releases/2026/9-9-2026-adi-to-acquire-alif-semiconductor.html" },
+      { label: "美国 SEC 交易文件", url: "https://www.sec.gov/Archives/edgar/data/6281/000119312526385938/d924057dex991.htm" },
+      { label: "Reuters 交易报道", url: "https://www.boursorama.com/bourse/actualites/analog-devices-va-racheter-alif-semiconductor-pour-1-35-milliard-de-dollars-3c332d9c66365e5f75879273243b8ba8" }
+    ]
+  },
+  {
+    slug: "harvey-550m-series",
+    name: "Harvey · 5.5 亿美元新融资",
+    summary: "法律 AI 公司 Harvey 获得 Diffusion 与 Lightspeed 共同领投的 5.5 亿美元融资，估值升至 155 亿美元",
+    image: "https://cdn.sanity.io/images/07s0r5r6/production/d46c5beb4e5eac66678d77936d49e0fd9a630b93-3840x2160.jpg?w=1200&h=675&fm=jpg",
+    impact: "Harvey 称其已覆盖 Am Law 100 中的 80% 律所和五家 Fortune 10 企业，新资金将扩展法律与专业服务机构自有知识、Agent、开放权重后训练模型和 Harvey LAB 基准。垂直 AI 的资本优势越来越绑定客户渗透、专有工作流与评测基础设施。",
+    insight: "专业服务 AI 的规模化不只靠通用模型更强，而要把机构知识、可审计工作流和领域基准变成可持续资产；高估值也会放大对真实使用深度和收入质量的检验。",
+    sourceUrl: "https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence",
+    sourceLabel: "Harvey 官方融资公告",
+    sources: [
+      { label: "Harvey 官方融资公告", url: "https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence" },
+      { label: "TechCrunch 融资报道", url: "https://techcrunch.com/2026/09/09/harvey-hits-15-5b-valuation-months-after-reaching-11b/" },
+      { label: "Reuters 融资报道", url: "https://www.investing.com/news/stock-market-news/legal-software-startup-harvey-raises-550m-at-155b-valuation-93CH-4894226" }
+    ]
+  },
+  {
+    slug: "google-finland-13b-ai-infrastructure",
+    name: "Google · 芬兰 130 亿欧元 AI 基础设施",
+    summary: "Google 计划在 2027 至 2028 年向芬兰四地投入至少 130 亿欧元建设数据中心与配套能源设施，创下公司在欧洲最大单笔投资",
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_FI_Announcement_Helsinki_2026_0556-2.width-1300.jpg",
+    impact: "项目覆盖 Hamina、Kajaani、Muhos 和 Vaala，并把北部无碳电力、海水冷却、余热回收、并网规划和 Loviisa 核电站 22 年延寿购电协议纳入同一扩容方案。官方估算建设期平均每年贡献 36 亿欧元 GDP、支持 3.7 万个岗位，投运后每年支持约 7000 个岗位。",
+    insight: "超大算力的产品约束已经前移到电网、选址、热利用和长期社会许可；基础设施叙事若要可信，需要把能源新增、价格影响、就业和社区收益一起量化。",
+    sourceUrl: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
+    sourceLabel: "Google 官方发布",
+    sources: [
+      { label: "Google 官方发布", url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/" },
+      { label: "Google Cloud Press Corner", url: "https://www.googlecloudpresscorner.com/2026-09-09-Google-Deepens-Commitment-to-Finland-with-Two-Year-EUR13-Billion-investment-in-AI-Infrastructure" },
+      { label: "Reuters 投资报道", url: "https://www.onvista.de/news/2026/09-09-google-steckt-13-milliarden-euro-in-ki-infrastruktur-in-finnland-0-20-26551669" },
+      { label: "芬兰社区讨论", url: "https://www.reddit.com/r/Finland/comments/1wbepnx/google_deepens_commitment_to_finland_with_twoyear/" }
+    ]
+  }
+];
+
+const trends20260910 = [
+  {
+    title: "团队 AI 从私人会话迁移到共享分发层",
+    text: "最近 7 天，Type 把 Claude 与 Codex 放进部门共享空间，Claude Marketplace 把模型承诺变成生态采购额度，OpenMarket 让多个 Agent 在公开市场里协作与竞争。AI 产品的价值正从单次回答转向上下文、预算和成果如何在组织中流动。"
+  },
+  {
+    title: "可验证性成为 Agent 体验的默认组件",
+    text: "Geiger 用证据路径盘点 Agent 权限，OpenMarket 让独立裁判核验卖方声明，OpenAI 则把评测、审计与必要时减速写入政策主张。产品团队需要让来源、权限和停止条件在用户界面与运行日志中同时可见。"
+  },
+  {
+    title: "AI 资本沿领域、设备与地区继续下沉",
+    text: "Harvey 的新融资押注法律工作流与专有基准，Analog Devices 收购 Alif 补齐低功耗端侧处理，Google 在芬兰把算力与能源系统共同扩建。下一轮壁垒越来越来自领域数据、硬件协同和本地基础设施，而不只是模型规模。"
+  }
+];
+
 const products20260908 = [
   {
     slug: "pr-lens-coldtea",
@@ -5370,6 +5575,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-10",
+    isoDate: "2026-09-10",
+    dateLabel: "2026年9月10日",
+    weekday: "星期四",
+    oneSentence: "AI 产品正在把共享上下文、证据校验与物理基础设施组合成可规模化的新协作层",
+    products: products20260910,
+    industryEvents: industryEvents20260910,
+    trends: trends20260910
+  },
   {
     slug: "2026-09-08",
     isoDate: "2026-09-08",
