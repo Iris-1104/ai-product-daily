@@ -1,3 +1,208 @@
+const products20260911 = [
+  {
+    slug: "openobserve-ai-observability",
+    name: "AI Observability by OpenObserve",
+    tag: "OpenTelemetry Agent Observability",
+    tagline: "把 Agent 的模型调用、工具链、后端服务、成本与质量放进同一条 OpenTelemetry 轨迹，定位循环、漂移和失败原因",
+    image: "https://openobserve.ai/o2-seo-image.png",
+    positioning: "定位为覆盖 Agent 与传统系统的统一可观测平台，而不是独立的 Prompt 日志工具。壁垒来自兼容 OTel GenAI、OpenInference、OpenLLMetry 与 Vercel AI SDK 的归一化层，以及把模型跨度、数据库等待和基础设施故障保留在同一条 Trace 中。",
+    audience: ["正在把多步 Agent 推向生产的 AI 工程团队", "不想为 LLM 监控维护第二套数据管线的平台与 SRE 团队", "需要按租户、模型和功能归集 Token 成本与质量的产品负责人"],
+    killerFeature: "Session 作为一等对象重组一次 Agent 运行中的全部模型、工具和服务 Span，自动标出循环与失败；在线评测、人工标注队列和版本化数据集直接接在生产轨迹之后。",
+    experience: "团队把现有 OpenTelemetry Exporter 指向 OpenObserve 后，即可从会话图下钻到每次 Prompt、响应、工具调用、延迟和成本；自定义属性仍可用 SQL 查询，评测器与评分本身也有可追踪记录。",
+    growth: "借 Apache 2.0 开源、自托管单文件部署、两分钟接入指南和 Product Hunt 首发吸引开发者，再用无需重复插桩、可替代 Datadog 的统一价值进入团队级采购。",
+    businessModel: "开源自托管版永久免费；Cloud 提供 14 天免信用卡试用，按写入 0.50 美元/GB、查询 0.01 美元/GB 计费且不限用户，AI 功能预览含 20 Credits，企业版按合规、支持和部署规模定制。",
+    insight: "生产 Agent 的失败单位通常是一整段运行而不是一次模型调用；把质量、成本和基础设施因果链合并，才可能从发现异常走到可复现修复。",
+    sourceUrl: "https://openobserve.ai/ai-llm-monitoring/",
+    sourceLabel: "OpenObserve 官方产品页",
+    sources: [
+      { label: "OpenObserve AI Observability", url: "https://openobserve.ai/ai-llm-monitoring/" },
+      { label: "OpenObserve 官方定价", url: "https://openobserve.ai/pricing/" },
+      { label: "OpenObserve 官方 GitHub", url: "https://github.com/openobserve/openobserve" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/openobserve?launch=ai-observability-by-openobserve" }
+    ]
+  },
+  {
+    slug: "typewise-nova",
+    name: "Typewise Nova",
+    tag: "Self-Improving CX Operator",
+    tagline: "用自然语言搭建、测试并持续改进客服 Agent，让常规请求端到端解决，敏感动作仍由团队批准",
+    image: "https://www.typewise.app/assets/shared/ui/og-image.jpg",
+    positioning: "定位为运营整套客户体验系统的 AI Operator，而不是只生成回复的客服机器人。壁垒来自跨邮件、聊天、WhatsApp 与社交渠道的统一工单层、3500 多个连接器，以及上线前模拟和上线后质量监控。",
+    audience: ["希望在没有专职 AI 运维人员时上线客服 Agent 的中小企业", "需要跨渠道统一政策、审批与人工接管的大型客服团队", "想按真实解决结果而非座席或消息量付费的运营负责人"],
+    killerFeature: "管理员只需描述退货、计费或升级规则，Nova 就会连接系统、建立专科 Agent、用历史工单测试变化并指出错误；所有修改先模拟，再由人批准发布。",
+    experience: "团队连接现有收件箱后，可在约 15 分钟内上线第一个 Agent；Nova 持续调查票量和 CSAT 变化、建议知识与路由修复，复杂请求携完整上下文交给真人后还能继续接回处理。",
+    growth: "以免信用卡试用、15 分钟首个 Agent 和 9 月 10 至 20 日赠送 1000 次解决量及三个月服务降低迁移阻力，再凭 YC 背景、现成集成和端到端解决率案例推进企业扩张。",
+    businessModel: "Starter 每月 99 美元并按完整解决 2 美元计费，Growth 每月 599 美元且量大可降至每次 1 美元，Business 每月 2000 美元按年付；半解决计 0.5 次，未解决免费，Enterprise 按需报价。",
+    insight: "Agent 产品的可持续计费单位应尽量贴近客户获得的结果；同时把配置、评测和迭代交给一个可对话的运营角色，能显著缩短从 Demo 到生产的距离。",
+    sourceUrl: "https://www.typewise.app/nova",
+    sourceLabel: "Typewise Nova 官方页面",
+    sources: [
+      { label: "Typewise Nova 官方页面", url: "https://www.typewise.app/nova" },
+      { label: "Typewise 官方定价", url: "https://www.typewise.app/pricing" },
+      { label: "Y Combinator 公司页", url: "https://www.ycombinator.com/companies/typewise" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/typewise" }
+    ]
+  },
+  {
+    slug: "speechmark-private-meeting-notes",
+    name: "Speechmark",
+    tag: "Private On-Device Meeting Memory",
+    tagline: "在 Apple Silicon Mac 上本地录音、分离说话人并生成会议纪要，再让 Claude 从私有历史中带引用回答",
+    image: "https://www.speechmark.co/og-image.png",
+    positioning: "定位为不上传会议音频的个人会议记忆，而不是派机器人入会的云端转写服务。壁垒来自麦克风与系统音频的本地捕获、端侧说话人分离，以及一键安装的 Claude Desktop 本地连接器。",
+    audience: ["处理敏感会议的产品、法律与合规人员", "不希望录音机器人出现在 Zoom、Meet 或 Teams 的顾问与管理者", "想用自己的模型密钥或完全离线模型管理会议知识的 Mac 用户"],
+    killerFeature: "录音、转写和默认摘要都留在 Mac；Claude 连接器直接读取本地笔记并在回答中引用具体会议，连接器本身不发起网络请求。",
+    experience: "用户从菜单栏一键录制，首次确认说话人后即可得到带同步逐字稿、决策与行动项的编辑式纪要；可选择 Apple Foundation Models、Ollama，或仅把文本发给自带密钥的 OpenAI 与 Anthropic。",
+    growth: "用免账户、免信用卡的免费下载和前 200 名创始用户价降低隐私敏感用户的试用门槛；一次性买断与 Claude 本地记忆形成清晰差异，再借 Product Hunt 和开发者社区口碑扩散。",
+    businessModel: "免费下载试用，创始用户一次性 49 美元，之后恢复 79 美元；单次购买覆盖最多 3 台 Mac，无订阅，用户若选择云模型则自行承担 API 费用。",
+    insight: "隐私不应只是政策承诺，也可以成为产品架构和分发卖点；把原始数据留在端侧、只让用户主动选择最小必要外发范围，更容易建立长期记忆功能的信任。",
+    sourceUrl: "https://www.speechmark.co/",
+    sourceLabel: "Speechmark 官方网站",
+    sources: [
+      { label: "Speechmark 官网", url: "https://www.speechmark.co/" },
+      { label: "Speechmark 隐私说明", url: "https://www.speechmark.co/privacy" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/speechmark" },
+      { label: "创作者社区发布", url: "https://www.reddit.com/r/ProductHunters/comments/1wcc65e/launched_my_little_mac_app_on_product_hunt_today/" }
+    ]
+  },
+  {
+    slug: "thousand-git-backed-docs",
+    name: "Thousand",
+    tag: "Agent-Ready Git Documentation",
+    tagline: "把团队文档保存在标准 Markdown Git 仓库里，同时为同事、外部协作者和 AI Agent 提供文件夹级访问控制",
+    image: "https://usethousand.com/static/icons/og.png?v=4",
+    positioning: "定位为面向人和 Agent 的文档工程层，而不是把内容锁进专有数据库的知识库。壁垒来自 Git 作为唯一事实源、按文件夹过滤的远端视图、Agent Token，以及不污染正文却能随仓库携带的评论数据。",
+    audience: ["同时维护 Git Markdown 与 Google Docs 或 Notion 的工程团队", "需要让非技术同事编辑开发者文档的产品组织", "希望精确限制 Agent 可读知识边界的安全与平台团队"],
+    killerFeature: "同一 Markdown 仓库可以让每位成员和 Agent 只克隆获准的文件夹；内容、历史和结构仍是标准 Git，停止使用服务时可完整克隆带走。",
+    experience: "工程师把 Thousand 添加为现有仓库的另一个 Remote，非技术成员则在类似普通文档的浏览器编辑器中协作；文档可生成无需注册的可撤销分享链接，Agent 还能直接请求 Markdown 版本的页面说明。",
+    growth: "用个人空间永久免费、三人团队免费、早期访问阶段团队席位暂免收费和公开 Agent 手册降低导入成本；与既有 GitHub 或 GitLab 并存，避免要求团队一次性迁移。",
+    businessModel: "Free 为个人空间及最多 3 人团队提供每空间 1GB；Team 早期访问阶段为 0 美元，正式价格标示为每成员每月 10 美元并含每空间 10GB，启用收费前至少提前 30 天通知。",
+    insight: "Agent 时代的知识库不仅要可检索，更要让权限缺失有确定语义；开放文件格式与细粒度可见性可以同时降低锁定风险和上下文泄露。",
+    sourceUrl: "https://usethousand.com/",
+    sourceLabel: "Thousand 官方网站",
+    sources: [
+      { label: "Thousand 官网", url: "https://usethousand.com/" },
+      { label: "Thousand 官方定价", url: "https://usethousand.com/pricing" },
+      { label: "Thousand Agent 手册", url: "https://usethousand.com/AGENTS.md" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/thousand" }
+    ]
+  },
+  {
+    slug: "gojo-mac-notch-workspace",
+    name: "Gojo",
+    tag: "Local Mac Notch Workspace",
+    tagline: "把本地语音输入、剪贴板、窗口、文件暂存、音乐和屏幕色温集中到 MacBook 刘海边的一块原生工作面板",
+    image: "https://trygojo.com/assets/og.jpg",
+    positioning: "定位为占用现有刘海空间的本地效率工作台，而不是再增加一排菜单栏图标。壁垒来自原生 SwiftUI 与隔离 XPC 权限架构，以及可下载 Parakeet 或 Whisper 模型的离线听写。",
+    audience: ["频繁在邮件、Slack、代码与搜索框之间输入的 Mac 用户", "同时购买剪贴板、窗口管理、文件 Shelf 和屏幕调色工具的效率爱好者", "要求语音识别不上传且可审计开源代码的隐私用户"],
+    killerFeature: "按住 Control–Option 说话、松开即把本地识别文字插入当前输入框；应用拒绝密码字段，并在焦点移动后取消插入，避免听写结果误入敏感位置。",
+    experience: "鼠标悬停刘海即可切换听写、剪贴板搜索、窗口预览与吸附、文件暂存、媒体、日历和显示控制；用户可关掉不用的模块并重排，下载语音模型后可完全离线工作。",
+    growth: "三天免账户免信用卡试用、一次性低价买断和 GPL-3.0 源码降低信任门槛；用一个入口替代多个小工具，既利于 Product Hunt 展示，也让每次日常悬停形成高频留存。",
+    businessModel: "Personal 为每月 2.99 美元或限时一次性 9.99 美元，覆盖 1 台 Mac；Multi-Mac 为每月 4.99 美元或一次性 19.99 美元，覆盖最多 3 台，均含全部功能与未来更新。",
+    insight: "端侧 AI 最有机会先进入高频、低摩擦的小动作；把推理放在本地并嵌入已有物理界面，往往比再造一个聊天窗口更容易形成习惯。",
+    sourceUrl: "https://trygojo.com/",
+    sourceLabel: "Gojo 官方网站",
+    sources: [
+      { label: "Gojo 官网与定价", url: "https://trygojo.com/" },
+      { label: "Gojo 官方 GitHub", url: "https://github.com/rohoswagger/gojo" },
+      { label: "Product Hunt 发布", url: "https://www.producthunt.com/products/gojo" }
+    ]
+  }
+];
+
+const industryEvents20260911 = [
+  {
+    slug: "openai-chatgpt-work-data-agent",
+    name: "OpenAI · ChatGPT Work Data agent",
+    summary: "ChatGPT Work 新增 Data agent，可连接企业数据与语义层，用自然语言调查指标、生成交互式仪表盘并执行经批准的后续动作",
+    videoEmbedUrl: "https://cdn.openai.com/chatgpt-work-examples/3172d1bf-d3d8-4e62-a118-46b91132bf90/index.html?validation=7bd72d873a08",
+    impact: "Data agent 可连接 Redshift、BigQuery、ClickHouse、Databricks、MongoDB、Snowflake、Drive 和 SharePoint，并继承表、行、列权限与业务指标定义。它还能在 Power BI、Tableau、Sigma、ThoughtSpot 等既有 BI 中工作，把分析入口从专职分析师扩展到业务员工。",
+    insight: "企业数据 Agent 的护城河不只在生成 SQL，而在是否继承语义层、权限、证据和行动审批；让答案回到现有 BI 与协作工具，能显著降低新界面的迁移成本。",
+    sourceUrl: "https://openai.com/index/put-data-to-work/",
+    sourceLabel: "OpenAI 官方发布",
+    sources: [
+      { label: "OpenAI 官方发布", url: "https://openai.com/index/put-data-to-work/" },
+      { label: "Data agent 官方插件页", url: "https://chatgpt.com/plugins/Plugin_fc9843a6fb34819195d6c7802398a8a7?q=data" }
+    ]
+  },
+  {
+    slug: "deepseek-v4-1-flash",
+    name: "DeepSeek · V4.1 Flash",
+    summary: "DeepSeek 发布原生多模态 V4.1 Flash，以 552B MoE 和非对称 Causal Encoder–Decoder 架构把输入与输出激活压到 8B 和 16B",
+    image: "https://www.deepseek.com/images/blog/deepseek-v4-1-flash/cover.webp",
+    impact: "新架构把 KV Cache 的 HBM 需求降至上一代约四分之一、SSD 存储降至约八分之一，并在 API 中以 deepseek-flash 上线。DeepSeek 计划 9 月 14 日起暂时把 V4-Pro 请求全部路由到 V4.1 Flash，显示高吞吐 Agent 工作负载正在反向塑造模型架构与产品线。",
+    insight: "当长上下文和多轮工具调用成为主要成本，输入缓存、预填与解码的非对称优化可能比单纯扩大总参数更有商业价值；API 迁移也必须给兼容别名和明确时间表。",
+    sourceUrl: "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+    sourceLabel: "DeepSeek 官方发布",
+    sources: [
+      { label: "DeepSeek 英文发布", url: "https://www.deepseek.com/en/news/deepseek-v4-1-flash/" },
+      { label: "DeepSeek 中文发布", url: "https://deepseek.com/news/deepseek-v4-1-flash/" },
+      { label: "官方 Hugging Face 模型卡", url: "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" },
+      { label: "社区首日反馈", url: "https://www.reddit.com/r/DeepSeek/comments/1wcfj35/deepseek_flash_v41_first_impressions/" }
+    ]
+  },
+  {
+    slug: "salesforce-trusted-enterprise-ai-harness",
+    name: "Salesforce · Trusted Enterprise AI Harness",
+    summary: "Salesforce 预告开放可组合的企业 AI Harness，以六类可信能力和统一 AI Control Plane 管理跨模型、跨平台的 Agent",
+    image: "https://www.salesforce.com/news/wp-content/uploads/sites/3/2026/09/789_0926_T17_Salesforce-Introduces-the-Data-360-Portfolio_a_v1_090926.jpg",
+    impact: "新架构把 Context、Agency、Action、Governance、Security 和 Models 组合在同一控制层，并允许第三方 Agent、模型和系统通过 MCP、API、Skills 与插件接入。企业开始把 Agent 身份、生命周期、策略、行为、成本和成果当成横跨供应商的基础设施，而不是逐个应用管理。",
+    insight: "多 Agent 企业的稀缺资产将是可复用的上下文与控制面；平台若想成为组织级底座，必须支持开放接入、确定性业务规则和统一成本归因，而不是强迫客户押注单一模型。",
+    sourceUrl: "https://www.salesforce.com/news/stories/enterprise-ai-harness/",
+    sourceLabel: "Salesforce 官方发布",
+    sources: [
+      { label: "Salesforce 官方发布", url: "https://www.salesforce.com/news/stories/enterprise-ai-harness/" },
+      { label: "VentureBeat 行业分析", url: "https://venturebeat.com/orchestration/many-models-many-agents-many-tasks-salesforces-new-enterprise-ai-harness-seeks-to-ground-all-in-your-shared-business-context" }
+    ]
+  },
+  {
+    slug: "anthropic-threat-intelligence-september-2026",
+    name: "Anthropic · 2026 年 9 月威胁情报报告",
+    summary: "Anthropic 披露并阻断七类 Claude 滥用行动，观察到攻击者已让 AI 直接执行或编排侦察、漏洞利用、数据窃取与规避检测",
+    image: "https://cdn.sanity.io/images/4zrzovbb/website/7a4426f8ffe57e7de23ff36906fb1cc3efe2a82b-1200x630.jpg",
+    impact: "报告覆盖 2025 年 12 月至 2026 年 8 月的网络、监控、影响行动、常规武器、生物滥用、诈骗和模型蒸馏案例。Anthropic 认为多数网络行动已从问答辅助升级为直接执行或编排，技术复杂度也不再可靠指示攻击者资源水平；除一次非法蒸馏外，案例未涉及 Fable 或 Mythos 级模型。",
+    insight: "平台防滥用需要从单条请求分类升级为跨会话、账户和工具链的行为检测；公开可操作的模式与指标，能让客户、同行和政府共同缩短威胁扩散窗口。",
+    sourceUrl: "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    sourceLabel: "Anthropic 官方报告页",
+    sources: [
+      { label: "Anthropic 官方报告页", url: "https://www.anthropic.com/threat-intelligence-report-september-2026" },
+      { label: "Anthropic 完整 PDF", url: "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf" },
+      { label: "AP 独立报道", url: "https://apnews.com/article/anthropic-ai-threat-bioweapon-russia-00266dca90e4f8853f669648998d3bda" }
+    ]
+  },
+  {
+    slug: "coreweave-physical-ai-field-engineering",
+    name: "CoreWeave · Physical AI Field Engineering",
+    summary: "CoreWeave 推出物理 AI 驻场工程服务，让领域专家与客户一起用专有测试、仿真和传感数据把模型部署到真实工程流程",
+    image: "https://cdn.prod.website-files.com/62bc66d283fd9c34ffec780a/6aa1d106d418e851f98894cc_Coreweave_30_WIP02_250401_1_prob4-3%20%283%29.jpg",
+    impact: "该服务基于收购 Monolith AI 后形成的方法，覆盖策略、仿真基础设施、真实数据与 Agentic Learning，并已用于汽车、航空航天和机器人领域的 100 多个项目。CoreWeave 正从卖 GPU 云扩展到派工程师共同交付、验证并留下可由客户继续运营的物理系统。",
+    insight: "物理 AI 的落地瓶颈常是领域知识、数据覆盖和真实世界验证，而不是再换一个模型；基础设施公司通过前向部署团队进入结果交付，可以把算力、软件与专业服务做成更深的闭环。",
+    sourceUrl: "https://coreweave.com/news/coreweave-launches-physical-ai-field-engineering-to-turn-proprietary-data-into-production-ai",
+    sourceLabel: "CoreWeave 官方发布",
+    sources: [
+      { label: "CoreWeave 官方发布", url: "https://coreweave.com/news/coreweave-launches-physical-ai-field-engineering-to-turn-proprietary-data-into-production-ai" },
+      { label: "CoreWeave Physical AI 说明", url: "https://www.coreweave.com/physical-ai/briefing" },
+      { label: "JOTA 工程案例", url: "https://coreweave.com/blog/testing-race-cars-faster-how-jotas-engineers-learned-from-every-run-with-coreweaves-ai-powered-recommendation-tool" },
+      { label: "社区讨论", url: "https://www.reddit.com/r/CRWV/comments/1wci9zk/coreweave_launches_physical_ai_field_engineering/" }
+    ]
+  }
+];
+
+const trends20260911 = [
+  {
+    title: "Agent 可靠性从应用功能上升为横向控制面",
+    text: "最近 7 天，OpenObserve 把 Agent 与后端故障放进同一条 Trace，Salesforce 用 Control Plane 统一身份、策略与成本，Anthropic 的威胁报告则显示攻击者已自动闭合进攻链。可观测、可评测和可阻断正在成为所有 Agent 平台共享的底层能力。"
+  },
+  {
+    title: "企业上下文开始以语义与权限直接进入 Agent",
+    text: "ChatGPT Work Data agent 继承数据仓库语义层与行列权限，Typewise Nova 把政策和系统动作编排成客服专科，Thousand 让人和 Agent 读取同一份受控 Markdown。竞争焦点正从连接更多数据转向能否安全理解并执行组织规则。"
+  },
+  {
+    title: "AI 部署按工作负载重新分化",
+    text: "DeepSeek V4.1 Flash 为长上下文 Agent 压缩 KV Cache，Speechmark 与 Gojo 把高频语音和记忆留在端侧，CoreWeave 则把专家送到物理工程现场。模型、设备与交付方式正在围绕延迟、隐私、成本和验证要求分别优化。"
+  }
+];
+
 const products20260910 = [
   {
     slug: "type-com-shared-ai-workspace",
@@ -5575,6 +5780,16 @@ const trends20260718 = [
 ];
 
 export const issues = [
+  {
+    slug: "2026-09-11",
+    isoDate: "2026-09-11",
+    dateLabel: "2026年9月11日",
+    weekday: "星期五",
+    oneSentence: "AI 产品正在把企业上下文、运行时控制与本地或物理执行组合成可验证的生产系统",
+    products: products20260911,
+    industryEvents: industryEvents20260911,
+    trends: trends20260911
+  },
   {
     slug: "2026-09-10",
     isoDate: "2026-09-10",
